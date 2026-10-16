@@ -47,6 +47,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   robots: { index: true, follow: true, googleBot: { "max-image-preview": "large" } },
   category: "travel",
+  verification: { google: "VFEJs8iZVvJafa_hVrKujs6CH1CpYB9gsMclKn4Z6ME" },
 };
 
 export const viewport: Viewport = {
