@@ -41,7 +41,7 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
   if (state.status === "success" && dismissed !== state) {
     return (
       <>
-        <div role="status" className="rounded-3xl bg-white p-8 text-center shadow-xl ring-1 ring-line sm:p-12">
+        <div role="status" className="rounded-3xl bg-white p-8 text-center text-ink shadow-xl ring-1 ring-line sm:p-12">
           <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-ball text-2xl">✓</div>
           <p className="mt-5 font-display text-2xl">{state.message ?? "Thanks, we'll be in touch."}</p>
           <p className="mt-2 text-sm text-stone">Keep an eye on your inbox (and your spam folder, just in case).</p>
