@@ -265,7 +265,7 @@ export function HotelSection({ us = false }: { us?: boolean }) {
                 Estival Maramar, a beachfront <em className="font-normal">4★</em> hotel
               </>
             }
-            intro="A modern, beautifully kept hotel on the seafront at Coma-ruga, rated “Superb” by more than 900 guests on Booking.com. After a morning on court, the rooftop pool is calling."
+            intro="A modern, beautifully kept hotel on the seafront at Coma-ruga, on the luxury end of 4-star, rated “Superb” by more than 900 guests on Booking.com. After a morning on court, the rooftop pool is calling."
           />
           <Image
             src={seafront}
