@@ -219,7 +219,7 @@ export default function LongHaulLobPage() {
         terms={[
           "Deposit: 20% reserves your place and is applied to the total trip price.",
           "Final payment: the balance is due 60 days before the trip start date.",
-          "All prices are in US dollars (USD). Hover over or tap a price to see it in euros and pounds.",
+          "All prices are in US dollars (USD). Euro and pound amounts are approximate, at the latest exchange rate.",
         ]}
       />
 

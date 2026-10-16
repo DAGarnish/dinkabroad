@@ -212,7 +212,7 @@ export default function LocalDinkPage() {
         included={included}
         notIncluded="flights, dinners, drinks, travel insurance and optional excursions."
         terms={[
-          "All prices are in pounds sterling (GBP). Hover over or tap a price to see it in euros and US dollars.",
+          "All prices are in pounds sterling (GBP). Euro and dollar amounts are approximate, at the latest exchange rate.",
           "Limited to 20 players per retreat.",
         ]}
       />
