@@ -2,9 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import bay from "@/assets/images/coma-ruga-bay.jpg";
 import seafront from "@/assets/images/coma-ruga-seafront.jpg";
-import { type Retreat, formatPrice } from "@/lib/retreats";
+import { type Price, type Retreat, formatPrice } from "@/lib/retreats";
 import { EnquiryForm } from "./EnquiryForm";
+import { PriceConverter } from "./PriceConverter";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
+
+function PriceTag({ price, placement }: { price: Price; placement?: "top" | "bottom" }) {
+  if (price.currency !== "EUR") return formatPrice(price);
+  return (
+    <PriceConverter amount={price.amount} placement={placement}>
+      {formatPrice(price)}
+    </PriceConverter>
+  );
+}
 
 export function PageHero({
   retreat,
@@ -61,7 +71,9 @@ export function PageHero({
           <p className="text-xs font-semibold tracking-[0.2em] text-terracotta uppercase">{retreat.name}</p>
           <p className="mt-2 text-sm text-stone">{retreat.duration}</p>
           <p className="mt-6 text-xs tracking-widest text-stone uppercase">Complete package from</p>
-          <p className="font-display text-6xl tracking-tight">{formatPrice(from)}</p>
+          <p className="font-display text-6xl tracking-tight">
+            <PriceTag price={from} />
+          </p>
           <p className="mt-1 text-sm text-stone">{from.note}</p>
           <Link
             href="#enquire"
@@ -98,7 +110,9 @@ export function PricingSection({
             {retreat.prices.map((price) => (
               <div key={price.label} className="rounded-3xl bg-ink p-8 text-cream shadow-xl">
                 <p className="text-xs font-semibold tracking-[0.2em] text-ball uppercase">{price.label}</p>
-                <p className="mt-3 font-display text-6xl tracking-tight">{formatPrice(price)}</p>
+                <p className="mt-3 font-display text-6xl tracking-tight">
+                  <PriceTag price={price} />
+                </p>
                 <p className="mt-2 text-sm text-cream/70">{price.note}</p>
               </div>
             ))}
@@ -165,7 +179,10 @@ export function RetreatCard({ retreat }: { retreat: Retreat }) {
         <div className="mt-8 flex items-end justify-between gap-4 border-t border-white/20 pt-6">
           <p>
             <span className="block text-xs tracking-widest text-cream/70 uppercase">From</span>
-            <span className="font-display text-4xl">{formatPrice(from)}</span>
+            <span className="font-display text-4xl">
+              {/* The card clips overflow, so the popup opens upwards. */}
+              <PriceTag price={from} placement="top" />
+            </span>
             <span className="ml-1 text-sm text-cream/70">p.p.</span>
           </p>
           <span className="rounded-full bg-cream px-5 py-3 text-sm font-semibold text-ink transition group-hover:bg-ball">

@@ -70,14 +70,14 @@ export const longHaulLob: Retreat = {
   prices: [
     {
       label: "Double room",
-      amount: 4890,
-      currency: "USD",
+      amount: 3950,
+      currency: "EUR",
       note: "per person, two travellers sharing. Airfare not included.",
     },
     {
       label: "Single room",
-      amount: 5990,
-      currency: "USD",
+      amount: 4950,
+      currency: "EUR",
       note: "per person, private room. Airfare not included.",
     },
   ],

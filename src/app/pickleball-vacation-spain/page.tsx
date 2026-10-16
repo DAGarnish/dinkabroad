@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleball Vacation in Spain: 9-Day Barcelona Coast Pickleball Trip",
   description:
-    "A 9-day pickleball vacation in Spain for American players: 6 days of pickleball, Barcelona, Montserrat, Tarragona, cava country and flamenco from a beachfront 4★ hotel. From $4,890.",
+    "A 9-day pickleball vacation in Spain for American players: 6 days of pickleball, Barcelona, Montserrat, Tarragona, cava country and flamenco from a beachfront 4★ hotel. From €3,950.",
   path: longHaulLob.href,
 });
 
@@ -116,7 +116,7 @@ const faqs: FaqItem[] = [
   {
     question: "How do payment and deposits work?",
     answer:
-      "A 20% deposit reserves your place and is applied to the total trip price. The remaining balance is due 60 days before the trip start date. All prices are in US dollars.",
+      "A 20% deposit reserves your place and is applied to the total trip price. The remaining balance is due 60 days before the trip start date. Prices are in euros; hover over or tap any price to see it in pounds and US dollars.",
   },
   {
     question: "Why is the trip based in Coma-ruga rather than central Barcelona?",
@@ -217,7 +217,7 @@ export default function LongHaulLobPage() {
         terms={[
           "Deposit: 20% reserves your place and is applied to the total trip price.",
           "Final payment: the balance is due 60 days before the trip start date.",
-          "All prices are in US dollars (USD).",
+          "All prices are in euros (EUR). Hover over or tap a price to see it in GBP and USD.",
         ]}
       />
 
