@@ -22,7 +22,7 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/pickleball-vacation-spain" className="hover:text-white">
+              <Link href="/pickleball-vacation-barcelona" className="hover:text-white">
                 Long-Haul Lob: pickleball vacation (USA & Canada)
               </Link>
             </li>

@@ -62,7 +62,7 @@ export const localDink: Retreat = {
 
 export const longHaulLob: Retreat = {
   slug: "long-haul-lob",
-  href: "/pickleball-vacation-spain",
+  href: "/pickleball-vacation-barcelona",
   name: "Long-Haul Lob",
   audience: "For players traveling from the USA & Canada",
   duration: "9 days · 8 nights",
@@ -70,7 +70,7 @@ export const longHaulLob: Retreat = {
   days: 9,
   nights: 8,
   summary:
-    "Our signature pickleball vacation in Spain. Six days on court, Gaudí's Barcelona, Roman Tarragona, Montserrat, cava country and flamenco, all from a beachfront base on the Golden Coast.",
+    "Our signature Barcelona pickleball vacation. Six days on court, Gaudí's Barcelona, Roman Tarragona, Montserrat, cava country and flamenco, all from a beachfront base on the Golden Coast.",
   image: sagrada,
   imageAlt: "The spires of Gaudí's Sagrada Família in Barcelona at golden hour",
   prices: [

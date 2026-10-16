@@ -3,7 +3,7 @@ import { Logo } from "./Logo";
 
 const nav = [
   { href: "/pickleball-holiday-barcelona", label: "Local Dink" },
-  { href: "/pickleball-vacation-spain", label: "Long-Haul Lob" },
+  { href: "/pickleball-vacation-barcelona", label: "Long-Haul Lob" },
   { href: "/#coma-ruga", label: "Coma-ruga" },
   { href: "/#hotel", label: "The hotel" },
   { href: "/#faq", label: "FAQ" },

@@ -18,9 +18,9 @@ import { longHaulLob } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Pickleball Vacation in Spain: 9-Day Barcelona Coast Pickleball Trip",
+  title: "Barcelona Pickleball Vacation: 9-Day Pickleball Trip from the USA",
   description:
-    "A 9-day pickleball vacation in Spain for American players: 6 days of pickleball, Barcelona, Montserrat, Tarragona, cava country and flamenco from a beachfront 4★ hotel. From $4,590.",
+    "A 9-day Barcelona pickleball vacation for American players: 6 days of pickleball, Gaudí's Barcelona, Montserrat, Tarragona, cava country and flamenco from a beachfront 4★ hotel. From $4,590.",
   path: longHaulLob.href,
   locale: "en_US",
 });
@@ -142,7 +142,7 @@ export default function LongHaulLobPage() {
             hotelSchema,
             breadcrumbSchema([
               { name: "Home", path: "/" },
-              { name: "Long-Haul Lob: Pickleball Vacation in Spain", path: longHaulLob.href },
+              { name: "Long-Haul Lob: Barcelona Pickleball Vacation", path: longHaulLob.href },
             ]),
             faqSchema(faqs),
           ],
@@ -151,10 +151,10 @@ export default function LongHaulLobPage() {
 
       <PageHero
         retreat={longHaulLob}
-        eyebrow="Long-Haul Lob · pickleball vacation · Spain"
+        eyebrow="Long-Haul Lob · pickleball vacation · Barcelona"
         title={
           <>
-            The ultimate pickleball vacation in <em className="font-normal">Spain</em>
+            The ultimate pickleball vacation in <em className="font-normal">Barcelona</em>
           </>
         }
         intro="Nine unforgettable days on the Mediterranean coast near Barcelona. Six days of pickleball with local players, Gaudí's masterpieces, Montserrat, Roman Tarragona, cava country and a night of flamenco, all from a beachfront 4★ base."

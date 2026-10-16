@@ -22,7 +22,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Pickleball Retreats Barcelona | Pickleball Holidays in Spain | Dink Abroad",
+    default: "Pickleball Retreats Barcelona | Pickleball Holidays & Vacations | Dink Abroad",
     template: "%s | Dink Abroad",
   },
   description: site.description,
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
     "pickleball retreat Barcelona",
     "pickleball holiday Barcelona",
     "pickleball trip Barcelona",
+    "pickleball vacation Barcelona",
+    "pickleball camp Barcelona",
     "pickleball holiday Spain",
-    "pickleball vacation Spain",
-    "pickleball camp Spain",
     "Coma-ruga",
     "Costa Daurada",
   ],

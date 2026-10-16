@@ -228,7 +228,7 @@ export default function LocalDinkPage() {
       </section>
 
       <EnquirySection
-        title="Ready for your pickleball holiday in Spain?"
+        title="Ready for your pickleball holiday in Barcelona?"
         intro="Request all the info with no strings attached: programme, dates, pricing and availability. We'll get back to you personally within 24 hours."
         defaultRetreat="Local Dink"
         defaultPhoneCode="+44"

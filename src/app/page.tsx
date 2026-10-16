@@ -12,7 +12,7 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Pickleball Retreats Barcelona | Pickleball Holidays in Spain | Dink Abroad",
+  title: "Pickleball Retreats Barcelona | Pickleball Holidays & Vacations | Dink Abroad",
   description:
     "Pickleball retreats and holidays on the Barcelona coast. Coaching, tournaments and a beachfront 4★ hotel in Coma-ruga, one hour by train from Barcelona. Max 20 players.",
   path: "/",
@@ -195,7 +195,7 @@ export default function Home() {
         <Container>
           <SectionHeading
             eyebrow="Choose your retreat"
-            title="Two ways to play pickleball in Spain"
+            title="Two ways to play pickleball in Barcelona"
             intro="Whether you're hopping over from London for a long weekend or crossing the Atlantic for the trip of a lifetime, there's a Dink Abroad retreat for you."
             align="center"
           />
