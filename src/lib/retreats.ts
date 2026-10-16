@@ -25,10 +25,10 @@ export type Retreat = {
   highlights: string[];
 };
 
-export const localLob: Retreat = {
-  slug: "local-lob",
+export const localDink: Retreat = {
+  slug: "local-dink",
   href: "/pickleball-holiday-barcelona",
-  name: "Local Lob",
+  name: "Local Dink",
   audience: "For players from the UK & Europe",
   duration: "5 days · Friday to Tuesday",
   durationIso: "P5D",
@@ -89,7 +89,7 @@ export const longHaulLob: Retreat = {
   ],
 };
 
-export const retreats = [localLob, longHaulLob];
+export const retreats = [localDink, longHaulLob];
 
 export function formatPrice(price: Pick<Price, "amount" | "currency">) {
   return new Intl.NumberFormat(price.currency === "USD" ? "en-US" : "en-GB", {

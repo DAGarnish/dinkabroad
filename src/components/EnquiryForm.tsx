@@ -4,7 +4,7 @@ import { useActionState } from "react";
 import { submitEnquiry, type EnquiryState } from "@/app/actions";
 
 type Props = {
-  defaultRetreat?: "Local Lob" | "Long-Haul Lob" | "";
+  defaultRetreat?: "Local Dink" | "Long-Haul Lob" | "";
   defaultPhoneCode?: string;
 };
 
@@ -75,7 +75,7 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
           <span className="sr-only">Retreat</span>
           <select name="retreat" defaultValue={defaultRetreat} className={input}>
             <option value="">Which retreat?</option>
-            <option>Local Lob</option>
+            <option>Local Dink</option>
             <option>Long-Haul Lob</option>
             <option>Not sure yet</option>
           </select>

@@ -288,7 +288,7 @@ export function EnquirySection({
 }: {
   title: string;
   intro: string;
-  defaultRetreat?: "Local Lob" | "Long-Haul Lob";
+  defaultRetreat?: "Local Dink" | "Long-Haul Lob";
   defaultPhoneCode?: string;
 }) {
   return (

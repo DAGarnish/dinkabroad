@@ -18,7 +18,7 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm">
             <li>
               <Link href="/pickleball-holiday-barcelona" className="hover:text-white">
-                Local Lob: pickleball holiday (UK & Europe)
+                Local Dink: pickleball holiday (UK & Europe)
               </Link>
             </li>
             <li>

@@ -13,14 +13,14 @@ import {
 } from "@/components/sections";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
-import { localLob } from "@/lib/retreats";
+import { localDink } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
   title: "Pickleball Holiday Barcelona: 5-Day Pickleball Retreat from €995",
   description:
     "A 5-day pickleball holiday on the Barcelona coast for UK & European players. Coaching, a fun tournament, a beachfront 4★ hotel, lunches and transfers. From €995 p.p.",
-  path: localLob.href,
+  path: localDink.href,
 });
 
 const reasons = [
@@ -122,13 +122,13 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export default function LocalLobPage() {
+export default function LocalDinkPage() {
   return (
     <>
       <JsonLd
         data={{
           "@graph": [
-            tripSchema(localLob, {
+            tripSchema(localDink, {
               description:
                 "A 5-day pickleball holiday on the Barcelona coast with coaching, a tournament, a beachfront 4-star hotel, lunches and airport transfers.",
               touristType: "Pickleball players from the UK and Europe",
@@ -137,7 +137,7 @@ export default function LocalLobPage() {
             hotelSchema,
             breadcrumbSchema([
               { name: "Home", path: "/" },
-              { name: "Local Lob: Pickleball Holiday Barcelona", path: localLob.href },
+              { name: "Local Dink: Pickleball Holiday Barcelona", path: localDink.href },
             ]),
             faqSchema(faqs),
           ],
@@ -145,8 +145,8 @@ export default function LocalLobPage() {
       />
 
       <PageHero
-        retreat={localLob}
-        eyebrow="Local Lob · pickleball holiday · Barcelona coast"
+        retreat={localDink}
+        eyebrow="Local Dink · pickleball holiday · Barcelona coast"
         title={
           <>
             5 days of pickleball, sun &amp; <em className="font-normal">sea</em> near Barcelona
@@ -161,7 +161,7 @@ export default function LocalLobPage() {
           <SectionHeading
             eyebrow="Why this pickleball retreat?"
             title="Everything sorted. You just play."
-            intro="A pickleball trip to Barcelona's coast that feels like a club weekend away, only sunnier. Here's what makes Local Lob special."
+            intro="A pickleball trip to Barcelona's coast that feels like a club weekend away, only sunnier. Here's what makes Local Dink special."
           />
           <div className="mt-14 grid gap-px overflow-hidden rounded-[2rem] bg-line ring-1 ring-line sm:grid-cols-2 lg:grid-cols-3">
             {reasons.map((r, i) => (
@@ -208,7 +208,7 @@ export default function LocalLobPage() {
       </section>
 
       <PricingSection
-        retreat={localLob}
+        retreat={localDink}
         included={included}
         notIncluded="flights, dinners, drinks, travel insurance and optional excursions."
         terms={["Single rooms available on request.", "Limited to 20 players per retreat."]}
@@ -227,7 +227,7 @@ export default function LocalLobPage() {
       <EnquirySection
         title="Ready for your pickleball holiday in Spain?"
         intro="Request all the info with no strings attached: programme, dates, pricing and availability. We'll get back to you personally within 24 hours."
-        defaultRetreat="Local Lob"
+        defaultRetreat="Local Dink"
         defaultPhoneCode="+44"
       />
     </>
