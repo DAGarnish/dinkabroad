@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState } from "react";
+import { useActionState, useEffect, useState } from "react";
 import { submitEnquiry, type EnquiryState } from "@/app/actions";
 
 type Props = {
@@ -29,8 +29,16 @@ const initialState: EnquiryState = { status: "idle" };
 
 export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: Props) {
   const [state, action, pending] = useActionState(submitEnquiry, initialState);
+  // The success state we've already moved on from, so the empty form shows again.
+  const [dismissed, setDismissed] = useState<EnquiryState | null>(null);
 
-  if (state.status === "success") {
+  useEffect(() => {
+    if (state.status !== "success") return;
+    const timer = setTimeout(() => setDismissed(state), 5000);
+    return () => clearTimeout(timer);
+  }, [state]);
+
+  if (state.status === "success" && dismissed !== state) {
     return (
       <div role="status" className="rounded-3xl bg-white p-8 text-center shadow-xl ring-1 ring-line sm:p-12">
         <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-ball text-2xl">✓</div>

@@ -1,5 +1,8 @@
 "use server";
 
+import { neon } from "@neondatabase/serverless";
+import nodemailer from "nodemailer";
+
 export type EnquiryState = {
   status: "idle" | "success" | "error";
   message?: string;
@@ -30,31 +33,37 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
   }
 
   const lines = fields.map((key) => `${key}: ${data[key] || "-"}`).join("\n");
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.ENQUIRY_TO_EMAIL;
 
-  if (apiKey && to) {
-    const res = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from: process.env.ENQUIRY_FROM_EMAIL ?? "Dink Abroad <onboarding@resend.dev>",
-        to: [to],
-        reply_to: data.email,
-        subject: `New enquiry: ${data.retreat || "Dink Abroad"} from ${data.firstName} ${data.lastName}`,
-        text: lines,
-      }),
+  try {
+    const sql = neon(process.env.DATABASE_URL!);
+    await sql`
+      INSERT INTO enquiries (first_name, last_name, email, phone_code, phone, retreat, level, travellers, message)
+      VALUES (${data.firstName}, ${data.lastName}, ${data.email}, ${data.phoneCode}, ${data.phone},
+              ${data.retreat}, ${data.level}, ${data.travellers}, ${data.message})
+    `;
+  } catch (err) {
+    console.error("[enquiry] database insert failed", err, lines);
+    return {
+      status: "error",
+      message: "Sorry, something went wrong sending your details. Please try again shortly.",
+    };
+  }
+
+  // The enquiry is already saved, so a failed email is logged rather than shown to the visitor.
+  try {
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
     });
-    if (!res.ok) {
-      console.error("[enquiry] email failed", res.status, await res.text(), lines);
-      return {
-        status: "error",
-        message: "Sorry, something went wrong sending your details. Please try again shortly.",
-      };
-    }
-  } else {
-    // No email provider configured yet: keep the lead in the Vercel function logs.
-    console.log("[enquiry]\n" + lines);
+    await transporter.sendMail({
+      from: `Dink Abroad <${process.env.GMAIL_USER}>`,
+      to: process.env.RECEIVER_EMAIL,
+      replyTo: data.email,
+      subject: `New enquiry: ${data.retreat || "Dink Abroad"} from ${data.firstName} ${data.lastName}`,
+      text: lines,
+    });
+  } catch (err) {
+    console.error("[enquiry] email failed", err, lines);
   }
 
   return {
