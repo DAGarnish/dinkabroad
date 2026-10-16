@@ -20,8 +20,9 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleball Vacation in Spain: 9-Day Barcelona Coast Pickleball Trip",
   description:
-    "A 9-day pickleball vacation in Spain for American players: 6 days of pickleball, Barcelona, Montserrat, Tarragona, cava country and flamenco from a beachfront 4★ hotel. From €3,950.",
+    "A 9-day pickleball vacation in Spain for American players: 6 days of pickleball, Barcelona, Montserrat, Tarragona, cava country and flamenco from a beachfront 4★ hotel. From $4,590.",
   path: longHaulLob.href,
+  locale: "en_US",
 });
 
 const days = [
@@ -116,7 +117,7 @@ const faqs: FaqItem[] = [
   {
     question: "How do payment and deposits work?",
     answer:
-      "A 20% deposit reserves your place and is applied to the total trip price. The remaining balance is due 60 days before the trip start date. Prices are in euros; hover over or tap any price to see it in pounds and US dollars.",
+      "A 20% deposit reserves your place and is applied to the total trip price. The remaining balance is due 60 days before the trip start date. All prices are in US dollars.",
   },
   {
     question: "Why is the trip based in Coma-ruga rather than central Barcelona?",
@@ -127,7 +128,8 @@ const faqs: FaqItem[] = [
 
 export default function LongHaulLobPage() {
   return (
-    <>
+    // The site defaults to en-GB; this page is written for American travelers.
+    <div lang="en-US">
       <JsonLd
         data={{
           "@graph": [
@@ -217,12 +219,12 @@ export default function LongHaulLobPage() {
         terms={[
           "Deposit: 20% reserves your place and is applied to the total trip price.",
           "Final payment: the balance is due 60 days before the trip start date.",
-          "All prices are in euros (EUR). Hover over or tap a price to see it in GBP and USD.",
+          "All prices are in US dollars (USD). Hover over or tap a price to see it in euros and pounds.",
         ]}
       />
 
       <ComaRugaSection />
-      <HotelSection />
+      <HotelSection us />
 
       <section id="faq" className="scroll-mt-10 py-24 sm:py-32">
         <Container className="grid gap-12 lg:grid-cols-[1fr_1.6fr]">
@@ -236,7 +238,8 @@ export default function LongHaulLobPage() {
         intro="Request the full itinerary, dates and availability with no obligation. We'll get back to you personally within 24 hours."
         defaultRetreat="Long-Haul Lob"
         defaultPhoneCode="+1"
+        us
       />
-    </>
+    </div>
   );
 }

@@ -8,11 +8,13 @@ export function pageMetadata({
   description,
   path,
   absoluteTitle = false,
+  locale = site.locale,
 }: {
   title: string;
   description: string;
   path: string;
   absoluteTitle?: boolean;
+  locale?: string;
 }): Metadata {
   return {
     title: absoluteTitle ? { absolute: title } : title,
@@ -21,7 +23,7 @@ export function pageMetadata({
     openGraph: {
       type: "website",
       siteName: site.name,
-      locale: site.locale,
+      locale,
       url: path,
       title,
       description,

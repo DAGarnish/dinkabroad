@@ -108,7 +108,7 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
           </select>
         </label>
         <label className="block sm:col-span-2">
-          <span className="sr-only">Number of travellers</span>
+          <span className="sr-only">Number of people</span>
           <select name="travellers" defaultValue="" className={input}>
             <option value="">How many of you?</option>
             <option>Just me</option>

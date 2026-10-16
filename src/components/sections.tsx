@@ -8,9 +8,8 @@ import { PriceConverter } from "./PriceConverter";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
 
 function PriceTag({ price, placement }: { price: Price; placement?: "top" | "bottom" }) {
-  if (price.currency !== "EUR") return formatPrice(price);
   return (
-    <PriceConverter amount={price.amount} placement={placement}>
+    <PriceConverter amount={price.amount} currency={price.currency} placement={placement}>
       {formatPrice(price)}
     </PriceConverter>
   );
@@ -262,7 +261,11 @@ const hotelFeatures = [
   ["Fitness centre", "Warm up, cool down or squeeze in an extra session."],
 ];
 
-export function HotelSection() {
+// `us` switches shared copy to American spelling on the pages aimed at US travelers.
+export function HotelSection({ us = false }: { us?: boolean }) {
+  const features = us
+    ? hotelFeatures.map(([title, text]) => [title.replace("centre", "center"), text])
+    : hotelFeatures;
   return (
     <section id="hotel" className="scroll-mt-10 bg-sand py-24 sm:py-32">
       <Container>
@@ -285,7 +288,7 @@ export function HotelSection() {
           />
         </div>
         <div className="mt-16 grid gap-px overflow-hidden rounded-[2rem] bg-line ring-1 ring-line sm:grid-cols-2 lg:grid-cols-3">
-          {hotelFeatures.map(([title, text]) => (
+          {features.map(([title, text]) => (
             <div key={title} className="bg-cream p-8">
               <h3 className="font-display text-2xl">{title}</h3>
               <p className="mt-2 leading-relaxed text-stone">{text}</p>
@@ -302,11 +305,13 @@ export function EnquirySection({
   intro,
   defaultRetreat,
   defaultPhoneCode,
+  us = false,
 }: {
   title: string;
   intro: string;
   defaultRetreat?: "Local Dink" | "Long-Haul Lob";
   defaultPhoneCode?: string;
+  us?: boolean;
 }) {
   return (
     <section id="enquire" className="scroll-mt-10 relative overflow-hidden bg-ink py-24 text-cream sm:py-32">
@@ -321,7 +326,7 @@ export function EnquirySection({
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-cream/75">{intro}</p>
           <ul className="mt-8 space-y-3 text-cream/90">
             {[
-              "Full programme, dates and pricing",
+              us ? "Full program, dates and pricing" : "Full programme, dates and pricing",
               "Personal reply within 24 hours",
               "No commitment, no spam",
             ].map((t) => (

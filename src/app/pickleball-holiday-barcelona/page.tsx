@@ -17,9 +17,9 @@ import { localDink } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Pickleball Holiday Barcelona: 5-Day Pickleball Retreat from €995",
+  title: "Pickleball Holiday Barcelona: 5-Day Pickleball Retreat from £890",
   description:
-    "A 5-day pickleball holiday on the Barcelona coast for UK & European players. Coaching, a fun tournament, a beachfront 4★ hotel, lunches and transfers. From €995 p.p.",
+    "A 5-day pickleball holiday on the Barcelona coast for UK & European players. Coaching, a fun tournament, a beachfront 4★ hotel, lunches and transfers. From £890 p.p.",
   path: localDink.href,
 });
 
@@ -79,7 +79,7 @@ const days = [
 ];
 
 const included = [
-  "4 nights at the beachfront 4★ Estival Maramar (twin room)",
+  "4 nights at the beachfront 4★ Estival Maramar (twin or single room)",
   "Daily breakfast and 4 generous Spanish lunches",
   "3 × 90-minute coaching sessions with certified coaches",
   "1 fun tournament with fellow travellers and locals",
@@ -98,7 +98,7 @@ const faqs: FaqItem[] = [
   {
     question: "Can I come alone?",
     answer:
-      "Yes, and lots of people do. The group is capped at 20 players, so you'll quickly make friends on and off the court. Ask us about single rooms.",
+      "Yes, and lots of people do. The group is capped at 20 players, so you'll quickly make friends on and off the court. Prefer your own room? Single rooms are £1,390 per person.",
   },
   {
     question: "Are flights included?",
@@ -108,7 +108,7 @@ const faqs: FaqItem[] = [
   {
     question: "What is and isn't included?",
     answer:
-      "Included: 4 nights' accommodation in a twin room, daily breakfast, 4 lunches, 3 coaching sessions, a tournament, free play and airport transfers. Not included: flights, dinners, drinks, travel insurance and optional excursions.",
+      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 4 lunches, 3 coaching sessions, a tournament, free play and airport transfers. Not included: flights, dinners, drinks, travel insurance and optional excursions.",
   },
   {
     question: "How and when do I pay?",
@@ -211,7 +211,10 @@ export default function LocalDinkPage() {
         retreat={localDink}
         included={included}
         notIncluded="flights, dinners, drinks, travel insurance and optional excursions."
-        terms={["Single rooms available on request.", "Limited to 20 players per retreat."]}
+        terms={[
+          "All prices are in pounds sterling (GBP). Hover over or tap a price to see it in euros and US dollars.",
+          "Limited to 20 players per retreat.",
+        ]}
       />
 
       <ComaRugaSection />

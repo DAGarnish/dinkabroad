@@ -41,9 +41,15 @@ export const localDink: Retreat = {
   prices: [
     {
       label: "Twin room",
-      amount: 995,
-      currency: "EUR",
+      amount: 890,
+      currency: "GBP",
       note: "per person, sharing a twin room. Flights not included.",
+    },
+    {
+      label: "Single room",
+      amount: 1390,
+      currency: "GBP",
+      note: "per person, private room. Flights not included.",
     },
   ],
   highlights: [
@@ -58,7 +64,7 @@ export const longHaulLob: Retreat = {
   slug: "long-haul-lob",
   href: "/pickleball-vacation-spain",
   name: "Long-Haul Lob",
-  audience: "For players travelling from the USA & Canada",
+  audience: "For players traveling from the USA & Canada",
   duration: "9 days · 8 nights",
   durationIso: "P9D",
   days: 9,
@@ -70,14 +76,14 @@ export const longHaulLob: Retreat = {
   prices: [
     {
       label: "Double room",
-      amount: 3950,
-      currency: "EUR",
-      note: "per person, two travellers sharing. Airfare not included.",
+      amount: 4590,
+      currency: "USD",
+      note: "per person, two travelers sharing. Airfare not included.",
     },
     {
       label: "Single room",
-      amount: 4950,
-      currency: "EUR",
+      amount: 5290,
+      currency: "USD",
       note: "per person, private room. Airfare not included.",
     },
   ],
