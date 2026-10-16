@@ -2,10 +2,10 @@
 // form). Page-specific copy lives in each page. en-US only overrides the few
 // strings that differ from British English.
 
-export type Lang = "en-GB" | "en-US" | "es" | "fr";
+export type Lang = "en-GB" | "en-US" | "es" | "fr" | "de";
 
 // The three language versions of the site (en-GB and en-US are both "en").
-export type Site = "en" | "es" | "fr";
+export type Site = "en" | "es" | "fr" | "de";
 
 export const languages: {
   site: Site;
@@ -18,10 +18,11 @@ export const languages: {
   { site: "en", label: "English", short: "EN", htmlLang: "en-GB", ogLocale: "en_GB" },
   { site: "es", label: "Español", short: "ES", htmlLang: "es-ES", ogLocale: "es_ES", numberLocale: "es-ES" },
   { site: "fr", label: "Français", short: "FR", htmlLang: "fr-FR", ogLocale: "fr_FR", numberLocale: "fr-FR" },
+  { site: "de", label: "Deutsch", short: "DE", htmlLang: "de-DE", ogLocale: "de_DE", numberLocale: "de-DE" },
 ];
 
 export function siteOf(lang: Lang): Site {
-  return lang === "es" || lang === "fr" ? lang : "en";
+  return lang === "en-GB" || lang === "en-US" ? "en" : lang;
 }
 
 export function language(lang: Lang) {
@@ -366,7 +367,115 @@ const fr: Ui = {
   },
 };
 
-const dictionaries: Record<Lang, Ui> = { "en-GB": en, "en-US": enUS, es, fr };
+const de: Ui = {
+  home: "/de",
+  homeLabel: "Startseite",
+  nav: [
+    { href: "/de/pickleball-urlaub-barcelona", label: "Local Dink" },
+    { href: "/de/pickleball-reise-barcelona", label: "Long-Haul Lob" },
+    { href: "/de#coma-ruga", label: "Coma-ruga" },
+    { href: "/de#hotel", label: "Luxushotel" },
+    { href: "/de#faq", label: "FAQ" },
+  ],
+  headerCta: "Infos anfordern",
+  openMenu: "Menü öffnen",
+  homeAria: "Dink Abroad Startseite",
+  switcherAria: "Sprache",
+  footer: {
+    about:
+      "Pickleball-Reisen in kleinen Gruppen in Coma-ruga an der Costa Daurada, eine Stunde mit dem Zug entlang der Küste von Barcelona entfernt.",
+    retreats: "Reisen",
+    links: [
+      { href: "/de/pickleball-urlaub-barcelona", label: "Local Dink: Pickleball-Urlaub (5 Tage)" },
+      { href: "/de/pickleball-reise-barcelona", label: "Long-Haul Lob: Pickleball-Reise (9 Tage)" },
+    ],
+    baseCamp: "Unser Basislager",
+    country: "Spanien",
+    rights: "© 2026 Dink Abroad. Alle Rechte vorbehalten.",
+    credits: "Bildnachweise",
+  },
+  hero: {
+    completeFrom: "Komplettpaket ab",
+    cta: "Kostenlos alle Infos erhalten",
+    seeIncluded: "Leistungen ansehen",
+  },
+  pricing: {
+    eyebrow: "Preise",
+    title: "Was kostet es?",
+    included: "Inklusive",
+    notIncluded: "Nicht inklusive:",
+    cta: "Ja, schicken Sie mir alle Infos",
+  },
+  card: { from: "Ab", pp: "p. P.", explore: "Zur Reise →" },
+  fx: { rates: "Kurs vom", approx: "ungefährer Kurs", dateLocale: "de-DE" },
+  comaRuga: {
+    imageAlt: "Die Bucht von Coma-ruga mit ruhigem, türkisfarbenem Wasser und dem Ort hinter dem Strand",
+    gettingHere: "Anreise",
+    depart: "Abfahrt",
+    alongCoast: "Entlang der Garraf-Küste",
+    duration: "≈ 1 Std., direkt",
+    arrive: "Ankunft",
+    eyebrow: "Das Reiseziel",
+    titleBefore: "Coma-ruga: Barcelonas ",
+    titleEm: "ruhigere",
+    titleAfter: " Küste",
+    intro:
+      "Coma-ruga liegt an der Costa Daurada, der „Goldküste“, mit breiten Sandstränden, palmengesäumten Promenaden und entspanntem katalanischem Lebensgefühl. Sonne und Meer ohne Großstadttrubel, und Barcelona ist trotzdem nah genug für einen Tagesausflug.",
+    facts: [
+      ["1 Stunde", "Mit dem Direktzug vom Zentrum Barcelonas, immer an der Küste entlang"],
+      ["Strandlage", "Unser Hotel liegt nur wenige Schritte vom Sandstrand von Coma-ruga entfernt"],
+      ["30 km", "Bis ins römische Tarragona, UNESCO-Weltkulturerbe"],
+      ["Penedès", "Kataloniens Cava-Region direkt vor der Haustür"],
+    ],
+  },
+  hotel: {
+    eyebrow: "Ihre Unterkunft",
+    titleBefore: "Estival Maramar, ein ",
+    titleEm: "4★",
+    titleAfter: "-Hotel direkt am Strand",
+    intro:
+      "Ein modernes, top gepflegtes Hotel an der Strandpromenade von Coma-ruga, am luxuriösen Ende der 4-Sterne-Kategorie und von über 900 Gästen auf Booking.com mit „Hervorragend“ bewertet. Nach einem Vormittag auf dem Court wartet der Pool auf dem Dach.",
+    imageAlt: "Hotels und Palmen an der Strandpromenade von Coma-ruga",
+    features: [
+      ["Direkt am Strand", "Vom Hotel geht es direkt auf den Sand des Strandes von Coma-ruga."],
+      ["Pool auf dem Dach", "Pool und Lounge nur für Erwachsene mit Blick aufs Mittelmeer."],
+      ["Spa & Wellness", "Sauna, Dampfbad, Hydrotherapie und Massagen für müde Pickleball-Beine."],
+      ["Zwei Restaurants", "Ein mediterranes Buffet und ein À-la-carte-Restaurant fürs Abendessen."],
+      ["Zimmer mit Balkon", "Hell, geräumig und klimatisiert, viele mit Meerblick."],
+      ["Fitnessstudio", "Zum Aufwärmen, Auslaufen oder für eine Extra-Einheit."],
+    ],
+  },
+  enquiry: {
+    eyebrow: "Begrenzte Plätze · max. 20 Spieler",
+    bullets: ["Komplettes Programm, Termine und Preise", "Persönliche Antwort innerhalb von 24 Stunden", "Unverbindlich und ohne Spam"],
+  },
+  form: {
+    firstName: "Vorname",
+    lastName: "Nachname",
+    email: "E-Mail-Adresse",
+    countryCode: "Vorwahl",
+    phone: "Telefonnummer",
+    retreat: "Reise",
+    whichRetreat: "Welche Reise?",
+    notSure: "Noch unentschlossen",
+    level: "Spielniveau",
+    yourLevel: "Ihr Niveau",
+    levels: ["Neu im Pickleball", "Anfänger (2.0–2.5)", "Fortgeschritten (3.0–3.5)", "Sehr erfahren (4.0+)"],
+    people: "Anzahl der Personen",
+    howMany: "Wie viele Personen?",
+    groupSizes: ["Nur ich", "2 Personen", "3–4 Personen", "5+ (Gruppe oder Verein)"],
+    anythingElse: "Sonst noch etwas?",
+    message: "Möchten Sie uns noch etwas mitteilen? (optional)",
+    sending: "Wird gesendet…",
+    submit: "Kostenlos alle Infos anfordern",
+    smallPrint: "🔒 Unverbindlich · kein Spam · Ihre Daten bleiben bei uns",
+    thanksFallback: "Danke, wir melden uns bei Ihnen.",
+    inbox: "Behalten Sie Ihr Postfach im Blick (und sicherheitshalber auch den Spam-Ordner).",
+    toast: "Ihre Anfrage wurde gesendet. Wir melden uns bald!",
+  },
+};
+
+const dictionaries: Record<Lang, Ui> = { "en-GB": en, "en-US": enUS, es, fr, de };
 
 export function ui(lang: Lang): Ui {
   return dictionaries[lang];
@@ -376,16 +485,18 @@ export function ui(lang: Lang): Ui {
 export type PageSet = Record<Site, string>;
 
 export const pageSets: PageSet[] = [
-  { en: "/", es: "/es", fr: "/fr" },
+  { en: "/", es: "/es", fr: "/fr", de: "/de" },
   {
     en: "/pickleball-holiday-barcelona",
     es: "/es/vacaciones-pickleball-barcelona",
     fr: "/fr/vacances-pickleball-barcelone",
+    de: "/de/pickleball-urlaub-barcelona",
   },
   {
     en: "/pickleball-vacation-barcelona",
     es: "/es/viaje-pickleball-barcelona",
     fr: "/fr/voyage-pickleball-barcelone",
+    de: "/de/pickleball-reise-barcelona",
   },
 ];
 

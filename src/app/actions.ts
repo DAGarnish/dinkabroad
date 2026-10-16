@@ -38,6 +38,11 @@ const replies = {
     failed: "Désolé, l’envoi de vos informations a échoué. Merci de réessayer dans quelques minutes.",
     thanks: (name: string) => `Merci ${name} ! Nous vous répondrons personnellement sous 24 heures.`,
   },
+  de: {
+    invalid: "Bitte geben Sie Ihren Vornamen und eine gültige E-Mail-Adresse an.",
+    failed: "Leider ist beim Senden ein Fehler aufgetreten. Bitte versuchen Sie es in ein paar Minuten erneut.",
+    thanks: (name: string) => `Danke, ${name}! Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen.`,
+  },
 };
 
 export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Promise<EnquiryState> {
@@ -45,7 +50,7 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
   if (formData.get("company")) return { status: "success" };
 
   const lang = formData.get("lang");
-  const site = lang === "es" || lang === "fr" ? lang : "en";
+  const site = lang === "es" || lang === "fr" || lang === "de" ? lang : "en";
   const reply = replies[site];
 
   const data = Object.fromEntries(
