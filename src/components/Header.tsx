@@ -25,11 +25,11 @@ export function Header({ lang }: { lang: Lang }) {
         <div className="flex items-center gap-3">
           <LanguageSwitcher
             lang={lang}
-            className="hidden rounded-full border border-white/30 px-4 py-2.5 text-sm font-medium transition hover:bg-white/10 sm:inline-flex"
+            className="hidden rounded-full border border-white/30 px-2 py-1.5 text-sm sm:flex"
           />
           <Link
             href="#enquire"
-            className="rounded-full bg-ball px-5 py-2.5 text-sm font-semibold text-ink shadow-sm transition hover:bg-white"
+            className="hidden rounded-full bg-ball px-5 py-2.5 text-sm font-semibold whitespace-nowrap text-ink shadow-sm transition hover:bg-white sm:inline-flex"
           >
             {t.headerCta}
           </Link>
@@ -44,8 +44,15 @@ export function Header({ lang }: { lang: Lang }) {
             </summary>
             <nav
               aria-label="Mobile"
-              className="absolute right-0 mt-3 w-56 rounded-2xl bg-cream p-2 text-ink shadow-2xl ring-1 ring-black/5"
+              className="absolute right-0 mt-3 w-60 rounded-2xl bg-cream p-2 text-ink shadow-2xl ring-1 ring-black/5"
             >
+              {/* On phones the enquiry button lives here, so the header fits in every language. */}
+              <Link
+                href="#enquire"
+                className="mb-1 block rounded-xl bg-ball px-4 py-3 text-center text-sm font-semibold sm:hidden"
+              >
+                {t.headerCta}
+              </Link>
               {t.nav.map((item) => (
                 <Link
                   key={item.href}
@@ -57,7 +64,7 @@ export function Header({ lang }: { lang: Lang }) {
               ))}
               <LanguageSwitcher
                 lang={lang}
-                className="mt-1 block rounded-xl border-t border-line px-4 py-3 text-sm font-medium hover:bg-sand"
+                className="mt-1 border-t border-line px-2 pt-2 pb-1 text-sm"
               />
             </nav>
           </details>

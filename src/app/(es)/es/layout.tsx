@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "es_ES",
     url: "/es",
-    images: [ogImage(true)],
+    images: [ogImage("es")],
   },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true, googleBot: { "max-image-preview": "large" } },

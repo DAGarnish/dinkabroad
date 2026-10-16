@@ -3,7 +3,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
-import type { Lang } from "@/lib/i18n";
+import { type Lang, language } from "@/lib/i18n";
 import { organizationSchema, websiteSchema } from "@/lib/schema";
 
 const fraunces = Fraunces({
@@ -18,10 +18,10 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
-// The <html> document shared by the English and Spanish root layouts.
+// The <html> document shared by the English, Spanish and French root layouts.
 export function SiteShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   return (
-    <html lang={lang === "es" ? "es-ES" : "en-GB"} className={`${fraunces.variable} ${manrope.variable} antialiased`}>
+    <html lang={language(lang).htmlLang} className={`${fraunces.variable} ${manrope.variable} antialiased`}>
       <body className="flex min-h-svh flex-col">
         <JsonLd data={{ "@graph": [organizationSchema, websiteSchema] }} />
         <Header lang={lang} />

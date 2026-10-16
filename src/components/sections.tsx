@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import bay from "@/assets/images/coma-ruga-bay.jpg";
 import seafront from "@/assets/images/coma-ruga-seafront.jpg";
-import { type Lang, type RetreatChoice, ui } from "@/lib/i18n";
+import { type Lang, type RetreatChoice, language, ui } from "@/lib/i18n";
 import { type Retreat, formatPrice } from "@/lib/retreats";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
 
-const priceLocale = (lang: Lang) => (lang === "es" ? "es-ES" : undefined);
+const priceLocale = (lang: Lang) => language(lang).numberLocale;
 
 export function PageHero({
   retreat,

@@ -2,7 +2,31 @@
 // form). Page-specific copy lives in each page. en-US only overrides the few
 // strings that differ from British English.
 
-export type Lang = "en-GB" | "en-US" | "es";
+export type Lang = "en-GB" | "en-US" | "es" | "fr";
+
+// The three language versions of the site (en-GB and en-US are both "en").
+export type Site = "en" | "es" | "fr";
+
+export const languages: {
+  site: Site;
+  label: string;
+  short: string;
+  htmlLang: string;
+  ogLocale: string;
+  numberLocale?: string;
+}[] = [
+  { site: "en", label: "English", short: "EN", htmlLang: "en-GB", ogLocale: "en_GB" },
+  { site: "es", label: "Español", short: "ES", htmlLang: "es-ES", ogLocale: "es_ES", numberLocale: "es-ES" },
+  { site: "fr", label: "Français", short: "FR", htmlLang: "fr-FR", ogLocale: "fr_FR", numberLocale: "fr-FR" },
+];
+
+export function siteOf(lang: Lang): Site {
+  return lang === "es" || lang === "fr" ? lang : "en";
+}
+
+export function language(lang: Lang) {
+  return languages.find((l) => l.site === siteOf(lang))!;
+}
 
 export type RetreatChoice = "Local Dink" | "Long-Haul Lob";
 
@@ -32,7 +56,7 @@ const en = {
     rights: "© 2026 Dink Abroad. All rights reserved.",
     credits: "Photo credits",
   },
-  switcher: { label: "Español", hreflang: "es", aria: "Ver esta página en español" },
+  switcherAria: "Language",
   hero: {
     completeFrom: "Complete package from",
     cta: "Get all the info free",
@@ -152,7 +176,7 @@ const es: Ui = {
     rights: "© 2026 Dink Abroad. Todos los derechos reservados.",
     credits: "Créditos de las fotos",
   },
-  switcher: { label: "English", hreflang: "en", aria: "View this page in English" },
+  switcherAria: "Idioma",
   hero: {
     completeFrom: "Paquete completo desde",
     cta: "Recibe toda la información gratis",
@@ -234,19 +258,137 @@ const es: Ui = {
   },
 };
 
-const dictionaries: Record<Lang, Ui> = { "en-GB": en, "en-US": enUS, es };
+const fr: Ui = {
+  home: "/fr",
+  homeLabel: "Accueil",
+  nav: [
+    { href: "/fr/vacances-pickleball-barcelone", label: "Local Dink" },
+    { href: "/fr/voyage-pickleball-barcelone", label: "Long-Haul Lob" },
+    { href: "/fr#coma-ruga", label: "Coma-ruga" },
+    { href: "/fr#hotel", label: "Hôtel de luxe" },
+    { href: "/fr#faq", label: "FAQ" },
+  ],
+  headerCta: "Infos gratuites",
+  openMenu: "Ouvrir le menu",
+  homeAria: "Accueil Dink Abroad",
+  switcherAria: "Langue",
+  footer: {
+    about:
+      "Séjours de pickleball en petit groupe à Coma-ruga, sur la Costa Daurada, à une heure de Barcelone par un train longeant la mer.",
+    retreats: "Séjours",
+    links: [
+      { href: "/fr/vacances-pickleball-barcelone", label: "Local Dink : vacances pickleball (5 jours)" },
+      { href: "/fr/voyage-pickleball-barcelone", label: "Long-Haul Lob : voyage pickleball (9 jours)" },
+    ],
+    baseCamp: "Notre camp de base",
+    country: "Espagne",
+    rights: "© 2026 Dink Abroad. Tous droits réservés.",
+    credits: "Crédits photos",
+  },
+  hero: {
+    completeFrom: "Forfait complet à partir de",
+    cta: "Recevez toutes les infos gratuitement",
+    seeIncluded: "Voir ce qui est inclus",
+  },
+  pricing: {
+    eyebrow: "Tarifs",
+    title: "Combien ça coûte ?",
+    included: "Inclus",
+    notIncluded: "Non inclus :",
+    cta: "Oui, envoyez-moi toutes les infos",
+  },
+  card: { from: "À partir de", pp: "/pers.", explore: "Découvrir le séjour →" },
+  fx: { rates: "taux du", approx: "taux approximatifs", dateLocale: "fr-FR" },
+  comaRuga: {
+    imageAlt: "La baie de Coma-ruga, son eau turquoise et calme et la ville derrière la plage",
+    gettingHere: "Comment venir",
+    depart: "départ",
+    alongCoast: "Le long de la côte du Garraf",
+    duration: "≈ 1 h, direct",
+    arrive: "arrivée",
+    eyebrow: "La destination",
+    titleBefore: "Coma-ruga : la côte ",
+    titleEm: "paisible",
+    titleAfter: " de Barcelone",
+    intro:
+      "Coma-ruga se trouve sur la Costa Daurada (la « Côte dorée »), avec de grandes plages de sable, des promenades bordées de palmiers et le rythme détendu de la Catalogne. Le soleil et la mer sans la foule de la ville, et Barcelone reste assez proche pour une journée d’excursion.",
+    facts: [
+      ["1 heure", "En train direct depuis le centre de Barcelone, le long du littoral"],
+      ["Bord de mer", "Notre hôtel est à quelques pas du sable de la plage de Coma-ruga"],
+      ["30 km", "Jusqu’à Tarragone la romaine, classée au patrimoine mondial de l’UNESCO"],
+      ["Penedès", "Le pays du cava, juste à côté"],
+    ],
+  },
+  hotel: {
+    eyebrow: "Votre camp de base",
+    titleBefore: "Estival Maramar, un hôtel ",
+    titleEm: "4★",
+    titleAfter: " les pieds dans l’eau",
+    intro:
+      "Un hôtel moderne et soigné sur le front de mer de Coma-ruga, dans le haut de gamme des 4 étoiles, noté « Superbe » par plus de 900 clients sur Booking.com. Après une matinée sur le terrain, la piscine sur le toit vous attend.",
+    imageAlt: "Hôtels et palmiers sur le front de mer de la plage de Coma-ruga",
+    features: [
+      ["Sur la plage", "Vous sortez de l’hôtel directement sur le sable de la plage de Coma-ruga."],
+      ["Piscine sur le toit", "Une piscine et un lounge réservés aux adultes, avec vue sur la Méditerranée."],
+      ["Spa et bien-être", "Sauna, hammam, hydrothérapie et massages pour les jambes fatiguées."],
+      ["Deux restaurants", "Un buffet méditerranéen et un restaurant à la carte pour le dîner."],
+      ["Chambres avec balcon", "Lumineuses, spacieuses et climatisées, beaucoup avec vue sur la mer."],
+      ["Salle de sport", "Pour s’échauffer, récupérer ou ajouter une séance."],
+    ],
+  },
+  enquiry: {
+    eyebrow: "Places limitées · 20 joueurs max.",
+    bullets: ["Programme complet, dates et tarifs", "Réponse personnelle sous 24 heures", "Sans engagement, sans spam"],
+  },
+  form: {
+    firstName: "Prénom",
+    lastName: "Nom",
+    email: "Adresse e-mail",
+    countryCode: "Indicatif",
+    phone: "Téléphone",
+    retreat: "Séjour",
+    whichRetreat: "Quel séjour ?",
+    notSure: "Je ne sais pas encore",
+    level: "Niveau de jeu",
+    yourLevel: "Votre niveau",
+    levels: ["Débutant complet", "Débutant (2.0–2.5)", "Intermédiaire (3.0–3.5)", "Avancé (4.0+)"],
+    people: "Nombre de personnes",
+    howMany: "Combien serez-vous ?",
+    groupSizes: ["Moi seul(e)", "2 personnes", "3–4 personnes", "5+ (groupe ou club)"],
+    anythingElse: "Autre chose ?",
+    message: "Quelque chose à nous dire ? (facultatif)",
+    sending: "Envoi…",
+    submit: "Envoyez-moi toutes les infos, gratuitement",
+    smallPrint: "🔒 Sans engagement · sans spam · vos données restent chez nous",
+    thanksFallback: "Merci, nous revenons vers vous très vite.",
+    inbox: "Surveillez votre boîte de réception (et vos spams, au cas où).",
+    toast: "Votre demande a bien été envoyée. Nous vous répondons très vite !",
+  },
+};
+
+const dictionaries: Record<Lang, Ui> = { "en-GB": en, "en-US": enUS, es, fr };
 
 export function ui(lang: Lang): Ui {
   return dictionaries[lang];
 }
 
-// Each English page and its Spanish counterpart, for hreflang and the language switcher.
-export const pagePairs: { en: string; es: string }[] = [
-  { en: "/", es: "/es" },
-  { en: "/pickleball-holiday-barcelona", es: "/es/vacaciones-pickleball-barcelona" },
-  { en: "/pickleball-vacation-barcelona", es: "/es/viaje-pickleball-barcelona" },
+// Each page in every language, for hreflang, the sitemap and the language switcher.
+export type PageSet = Record<Site, string>;
+
+export const pageSets: PageSet[] = [
+  { en: "/", es: "/es", fr: "/fr" },
+  {
+    en: "/pickleball-holiday-barcelona",
+    es: "/es/vacaciones-pickleball-barcelona",
+    fr: "/fr/vacances-pickleball-barcelone",
+  },
+  {
+    en: "/pickleball-vacation-barcelona",
+    es: "/es/viaje-pickleball-barcelona",
+    fr: "/fr/voyage-pickleball-barcelone",
+  },
 ];
 
-export function counterpart(path: string): { en: string; es: string } | undefined {
-  return pagePairs.find((p) => p.en === path || p.es === path);
+export function counterpart(path: string): PageSet | undefined {
+  return pageSets.find((set) => Object.values(set).includes(path));
 }

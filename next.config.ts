@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
-  // Needed for app/global-not-found.tsx, since there are separate English and Spanish root layouts.
+  // Needed for app/global-not-found.tsx, since there are separate English, Spanish and French root layouts.
   experimental: { globalNotFound: true },
   async redirects() {
     return [

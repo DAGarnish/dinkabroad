@@ -33,14 +33,20 @@ const replies = {
     failed: "Lo sentimos, algo ha fallado al enviar tus datos. Inténtalo de nuevo en unos minutos.",
     thanks: (name: string) => `¡Gracias, ${name}! Te escribiremos personalmente en menos de 24 horas.`,
   },
+  fr: {
+    invalid: "Merci d’indiquer votre prénom et une adresse e-mail valide.",
+    failed: "Désolé, l’envoi de vos informations a échoué. Merci de réessayer dans quelques minutes.",
+    thanks: (name: string) => `Merci ${name} ! Nous vous répondrons personnellement sous 24 heures.`,
+  },
 };
 
 export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Promise<EnquiryState> {
   // Honeypot: real visitors never see or fill this field.
   if (formData.get("company")) return { status: "success" };
 
-  const spanish = formData.get("lang") === "es";
-  const reply = spanish ? replies.es : replies.en;
+  const lang = formData.get("lang");
+  const site = lang === "es" || lang === "fr" ? lang : "en";
+  const reply = replies[site];
 
   const data = Object.fromEntries(
     fields.map((key) => [key, String(formData.get(key) ?? "").trim().slice(0, 2000)]),
@@ -74,7 +80,7 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
       from: `Dink Abroad <${process.env.GMAIL_USER}>`,
       to: process.env.RECEIVER_EMAIL,
       replyTo: data.email,
-      subject: `${spanish ? "[ES] " : ""}New enquiry: ${data.retreat || "Dink Abroad"} from ${data.firstName} ${data.lastName}`,
+      subject: `${site === "en" ? "" : `[${site.toUpperCase()}] `}New enquiry: ${data.retreat || "Dink Abroad"} from ${data.firstName} ${data.lastName}`,
       text: lines,
       html: enquiryEmailHtml(data),
     });

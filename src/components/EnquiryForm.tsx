@@ -18,6 +18,7 @@ const phoneCodes = [
   { code: "+32", label: "🇧🇪 +32" },
   { code: "+49", label: "🇩🇪 +49" },
   { code: "+33", label: "🇫🇷 +33" },
+  { code: "+41", label: "🇨🇭 +41" },
   { code: "+34", label: "🇪🇸 +34" },
   { code: "+46", label: "🇸🇪 +46" },
   { code: "+45", label: "🇩🇰 +45" },

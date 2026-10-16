@@ -160,6 +160,69 @@ export const longHaulLobEs: Retreat = {
 
 export const retreatsEs = [localDinkEs, longHaulLobEs];
 
+// French site (fr-FR). Same euro prices as the Spanish site.
+export const localDinkFr: Retreat = {
+  ...localDink,
+  href: "/fr/vacances-pickleball-barcelone",
+  audience: "Pour les joueurs de France et d’Europe",
+  duration: "5 jours · du vendredi au mardi",
+  summary:
+    "Un long week-end de pickleball au bord de la Méditerranée. Arrivée le vendredi, entraînement avec des coachs diplômés, tournoi face aux joueurs locaux et retour le mardi.",
+  imageAlt: "Palmiers sur la plage de sable de Coma-ruga sous un ciel bleu",
+  prices: [
+    {
+      label: "Chambre twin",
+      amount: 1050,
+      currency: "EUR",
+      note: "par personne, en chambre twin partagée. Vols non inclus.",
+    },
+    {
+      label: "Chambre individuelle",
+      amount: 1650,
+      currency: "EUR",
+      note: "par personne, chambre individuelle. Vols non inclus.",
+    },
+  ],
+  highlights: [
+    "20 joueurs max.",
+    "3 séances de coaching de 90 min",
+    "Tournoi amical avec les locaux",
+    "Hôtel 4★ en bord de mer",
+  ],
+};
+
+export const longHaulLobFr: Retreat = {
+  ...longHaulLob,
+  href: "/fr/voyage-pickleball-barcelone",
+  audience: "Pour les joueurs venant du Canada et d’Amérique du Nord",
+  duration: "9 jours · 8 nuits",
+  summary:
+    "Notre voyage pickleball phare à Barcelone. Six jours sur le terrain, la Barcelone de Gaudí, Tarragone la romaine, Montserrat, le pays du cava et le flamenco, depuis un hôtel les pieds dans l’eau sur la Costa Daurada.",
+  imageAlt: "Les tours de la Sagrada Família de Gaudí à Barcelone au coucher du soleil",
+  prices: [
+    {
+      label: "Chambre double",
+      amount: 3950,
+      currency: "EUR",
+      note: "par personne, deux voyageurs partageant la chambre. Vols non inclus.",
+    },
+    {
+      label: "Chambre individuelle",
+      amount: 4950,
+      currency: "EUR",
+      note: "par personne, chambre individuelle. Vols non inclus.",
+    },
+  ],
+  highlights: [
+    "6 jours de pickleball",
+    "4 excursions guidées",
+    "Accompagnateur bilingue",
+    "Flamenco et fête d’adieu",
+  ],
+};
+
+export const retreatsFr = [localDinkFr, longHaulLobFr];
+
 const priceLocale = { EUR: "en-IE", GBP: "en-GB", USD: "en-US" } as const;
 
 export function formatPrice(price: Pick<Price, "amount" | "currency">, locale?: string) {

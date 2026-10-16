@@ -12,7 +12,7 @@ export function Logo({ className = "" }: { className?: string }) {
           <circle cx="16" cy="23" r="1.6" />
         </g>
       </svg>
-      <span className="font-display text-[1.35rem] leading-none font-medium tracking-tight">
+      <span className="font-display text-[1.35rem] leading-none font-medium tracking-tight whitespace-nowrap">
         Dink <span className="italic font-normal">Abroad</span>
       </span>
     </span>

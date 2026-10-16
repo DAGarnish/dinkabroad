@@ -1,5 +1,5 @@
 import { type Currency, getFxRates } from "@/lib/fx";
-import { type Lang, ui } from "@/lib/i18n";
+import { type Lang, language, ui } from "@/lib/i18n";
 
 const currencies: { code: Currency; locale: string }[] = [
   { code: "EUR", locale: "en-IE" },
@@ -11,7 +11,7 @@ function money(amount: number, code: Currency, locale: string) {
   return new Intl.NumberFormat(locale, {
     style: "currency",
     currency: code,
-    // es-ES would otherwise print "GBP"; "US$" is the clearer Spanish form for dollars.
+    // es-ES would otherwise print "GBP"; "US$" / "$US" are the clear Spanish / French forms for dollars.
     currencyDisplay: code === "GBP" ? "narrowSymbol" : "symbol",
     maximumFractionDigits: 0,
   }).format(Math.round(amount));
@@ -43,7 +43,7 @@ export async function ConvertedPrices({
     <span className={`block font-sans text-xs font-normal tracking-normal ${className}`}>
       ≈{" "}
       {others
-        .map((c) => money(amount * rates[c.code], c.code, lang === "es" ? "es-ES" : c.locale))
+        .map((c) => money(amount * rates[c.code], c.code, language(lang).numberLocale ?? c.locale))
         .join(" · ")}
       <span className="opacity-75"> · {date ? `${t.rates} ${date}` : t.approx}</span>
     </span>

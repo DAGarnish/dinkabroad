@@ -21,7 +21,7 @@ export const metadata = pageMetadata({
   description:
     "Vacaciones de pickleball de 5 días en la costa de Barcelona. Entrenamientos, un torneo amistoso, hotel 4★ en primera línea, comidas y traslados. Desde 1050 € por persona.",
   path: localDinkEs.href,
-  locale: "es_ES",
+  siteLang: "es",
 });
 
 const reasons = [

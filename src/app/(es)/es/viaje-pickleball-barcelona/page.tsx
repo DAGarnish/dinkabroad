@@ -22,7 +22,7 @@ export const metadata = pageMetadata({
   description:
     "Un viaje de pickleball de 9 días en Barcelona: 6 días de juego, la Barcelona de Gaudí, Montserrat, Tarragona, la tierra del cava y flamenco desde un hotel 4★ en primera línea. Desde 3950 €.",
   path: longHaulLobEs.href,
-  locale: "es_ES",
+  siteLang: "es",
 });
 
 const days = [

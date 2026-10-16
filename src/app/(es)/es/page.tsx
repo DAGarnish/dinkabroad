@@ -17,7 +17,7 @@ export const metadata = pageMetadata({
     "Retiros y vacaciones de pickleball en la costa de Barcelona. Entrenamientos, torneos y un hotel 4★ en primera línea en Coma-ruga, a una hora de Barcelona en tren. Máx. 20 jugadores.",
   path: "/es",
   absoluteTitle: true,
-  locale: "es_ES",
+  siteLang: "es",
 });
 
 const pillars = [

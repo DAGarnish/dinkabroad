@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: site.locale,
     url: "/",
-    images: [ogImage(false)],
+    images: [ogImage("en")],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "/" },
