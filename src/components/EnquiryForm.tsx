@@ -40,11 +40,20 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
 
   if (state.status === "success" && dismissed !== state) {
     return (
-      <div role="status" className="rounded-3xl bg-white p-8 text-center shadow-xl ring-1 ring-line sm:p-12">
-        <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-ball text-2xl">✓</div>
-        <p className="mt-5 font-display text-2xl">{state.message ?? "Thanks, we'll be in touch."}</p>
-        <p className="mt-2 text-sm text-stone">Keep an eye on your inbox (and your spam folder, just in case).</p>
-      </div>
+      <>
+        <div role="status" className="rounded-3xl bg-white p-8 text-center shadow-xl ring-1 ring-line sm:p-12">
+          <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-ball text-2xl">✓</div>
+          <p className="mt-5 font-display text-2xl">{state.message ?? "Thanks, we'll be in touch."}</p>
+          <p className="mt-2 text-sm text-stone">Keep an eye on your inbox (and your spam folder, just in case).</p>
+        </div>
+        <div
+          role="alert"
+          className="fixed inset-x-4 bottom-4 z-50 mx-auto flex max-w-sm animate-rise items-center gap-3 rounded-2xl bg-ink px-5 py-4 text-sm font-medium text-white shadow-2xl sm:inset-x-auto sm:right-6 sm:bottom-6"
+        >
+          <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-ball text-ink">✓</span>
+          Your enquiry has been sent. We&apos;ll reply soon!
+        </div>
+      </>
     );
   }
 
