@@ -1,24 +1,8 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Manrope } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
-import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { JsonLd } from "@/components/JsonLd";
-import { organizationSchema, websiteSchema } from "@/lib/schema";
+import "../globals.css";
+import { SiteShell } from "@/components/SiteShell";
+import { ogImage } from "@/lib/metadata";
 import { site } from "@/lib/site";
-
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz", "SOFT"],
-});
-
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -43,6 +27,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: site.locale,
     url: "/",
+    images: [ogImage(false)],
   },
   twitter: { card: "summary_large_image" },
   alternates: { canonical: "/" },
@@ -55,16 +40,6 @@ export const viewport: Viewport = {
   themeColor: "#0e2a2f",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
-  return (
-    <html lang="en-GB" className={`${fraunces.variable} ${manrope.variable} antialiased`}>
-      <body className="flex min-h-svh flex-col">
-        <JsonLd data={{ "@graph": [organizationSchema, websiteSchema] }} />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
-      <GoogleAnalytics gaId="G-1KLBNS3SJ1" />
-    </html>
-  );
+export default function EnglishLayout({ children }: { children: React.ReactNode }) {
+  return <SiteShell lang="en-GB">{children}</SiteShell>;
 }

@@ -2,24 +2,30 @@ import Image from "next/image";
 import Link from "next/link";
 import bay from "@/assets/images/coma-ruga-bay.jpg";
 import seafront from "@/assets/images/coma-ruga-seafront.jpg";
+import { type Lang, type RetreatChoice, ui } from "@/lib/i18n";
 import { type Retreat, formatPrice } from "@/lib/retreats";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
 
+const priceLocale = (lang: Lang) => (lang === "es" ? "es-ES" : undefined);
+
 export function PageHero({
   retreat,
+  lang,
   eyebrow,
   title,
   intro,
   facts,
 }: {
   retreat: Retreat;
+  lang: Lang;
   eyebrow: string;
   title: React.ReactNode;
   intro: string;
   facts: string[];
 }) {
+  const t = ui(lang);
   const from = retreat.prices[0];
   return (
     <section className="relative isolate overflow-hidden text-cream">
@@ -36,8 +42,8 @@ export function PageHero({
       <Container className="grid gap-12 pt-36 pb-20 sm:pb-28 lg:grid-cols-[1.4fr_1fr] lg:items-end">
         <div>
           <nav aria-label="Breadcrumb" className="text-sm text-cream/70">
-            <Link href="/" className="hover:text-white">
-              Home
+            <Link href={t.home} className="hover:text-white">
+              {t.homeLabel}
             </Link>
             <span className="mx-2">/</span>
             <span aria-current="page">{retreat.name}</span>
@@ -61,18 +67,18 @@ export function PageHero({
         <div className="rounded-3xl bg-cream/95 p-8 text-ink shadow-2xl backdrop-blur">
           <p className="text-xs font-semibold tracking-[0.2em] text-terracotta uppercase">{retreat.name}</p>
           <p className="mt-2 text-sm text-stone">{retreat.duration}</p>
-          <p className="mt-6 text-xs tracking-widest text-stone uppercase">Complete package from</p>
-          <p className="font-display text-6xl tracking-tight">{formatPrice(from)}</p>
-          <ConvertedPrices amount={from.amount} currency={from.currency} className="mt-1 text-stone" />
+          <p className="mt-6 text-xs tracking-widest text-stone uppercase">{t.hero.completeFrom}</p>
+          <p className="font-display text-6xl tracking-tight">{formatPrice(from, priceLocale(lang))}</p>
+          <ConvertedPrices amount={from.amount} currency={from.currency} lang={lang} className="mt-1 text-stone" />
           <p className="mt-3 text-sm text-stone">{from.note}</p>
           <Link
             href="#enquire"
             className="mt-6 block rounded-full bg-terracotta px-6 py-4 text-center font-semibold text-white transition hover:bg-terracotta-dark"
           >
-            Get all the info free
+            {t.hero.cta}
           </Link>
           <Link href="#pricing" className="mt-3 block text-center text-sm font-medium text-sea hover:underline">
-            See what&rsquo;s included
+            {t.hero.seeIncluded}
           </Link>
         </div>
       </Container>
@@ -82,51 +88,59 @@ export function PageHero({
 
 export function PricingSection({
   retreat,
+  lang,
   included,
   notIncluded,
   terms,
 }: {
   retreat: Retreat;
+  lang: Lang;
   included: string[];
   notIncluded: string;
   terms?: string[];
 }) {
+  const t = ui(lang).pricing;
   return (
     <section id="pricing" className="scroll-mt-10 bg-sand py-24 sm:py-32">
       <Container className="grid gap-14 lg:grid-cols-[1fr_1.3fr]">
         <div>
-          <SectionHeading eyebrow="Pricing" title="What does it cost?" />
+          <SectionHeading eyebrow={t.eyebrow} title={t.title} />
           <div className="mt-10 space-y-4">
             {retreat.prices.map((price) => (
               <div key={price.label} className="rounded-3xl bg-ink p-8 text-cream shadow-xl">
                 <p className="text-xs font-semibold tracking-[0.2em] text-ball uppercase">{price.label}</p>
-                <p className="mt-3 font-display text-6xl tracking-tight">{formatPrice(price)}</p>
-                <ConvertedPrices amount={price.amount} currency={price.currency} className="mt-1 text-cream/60" />
+                <p className="mt-3 font-display text-6xl tracking-tight">{formatPrice(price, priceLocale(lang))}</p>
+                <ConvertedPrices
+                  amount={price.amount}
+                  currency={price.currency}
+                  lang={lang}
+                  className="mt-1 text-cream/60"
+                />
                 <p className="mt-3 text-sm text-cream/70">{price.note}</p>
               </div>
             ))}
           </div>
           {terms && (
             <ul className="mt-8 space-y-2 text-sm text-stone">
-              {terms.map((t) => (
-                <li key={t}>{t}</li>
+              {terms.map((term) => (
+                <li key={term}>{term}</li>
               ))}
             </ul>
           )}
         </div>
         <div className="rounded-[2rem] bg-cream p-8 ring-1 ring-line sm:p-12">
-          <h3 className="text-xs font-semibold tracking-[0.2em] text-terracotta uppercase">Included</h3>
+          <h3 className="text-xs font-semibold tracking-[0.2em] text-terracotta uppercase">{t.included}</h3>
           <div className="mt-6">
             <Included items={included} />
           </div>
           <p className="mt-10 border-t border-line pt-6 text-sm text-stone">
-            <strong className="font-semibold text-ink">Not included:</strong> {notIncluded}
+            <strong className="font-semibold text-ink">{t.notIncluded}</strong> {notIncluded}
           </p>
           <Link
             href="#enquire"
             className="mt-8 inline-flex rounded-full bg-terracotta px-7 py-4 font-semibold text-white transition hover:bg-terracotta-dark"
           >
-            Yes, send me all the info
+            {t.cta}
           </Link>
         </div>
       </Container>
@@ -134,7 +148,8 @@ export function PricingSection({
   );
 }
 
-export function RetreatCard({ retreat }: { retreat: Retreat }) {
+export function RetreatCard({ retreat, lang }: { retreat: Retreat; lang: Lang }) {
+  const t = ui(lang).card;
   const from = retreat.prices[0];
   return (
     <Link
@@ -167,13 +182,13 @@ export function RetreatCard({ retreat }: { retreat: Retreat }) {
         </ul>
         <div className="mt-8 flex items-end justify-between gap-4 border-t border-white/20 pt-6">
           <p>
-            <span className="block text-xs tracking-widest text-cream/70 uppercase">From</span>
-            <span className="font-display text-4xl">{formatPrice(from)}</span>
-            <span className="ml-1 text-sm text-cream/70">p.p.</span>
-            <ConvertedPrices amount={from.amount} currency={from.currency} className="mt-1 text-cream/60" />
+            <span className="block text-xs tracking-widest text-cream/70 uppercase">{t.from}</span>
+            <span className="font-display text-4xl">{formatPrice(from, priceLocale(lang))}</span>
+            <span className="ml-1 text-sm text-cream/70">{t.pp}</span>
+            <ConvertedPrices amount={from.amount} currency={from.currency} lang={lang} className="mt-1 text-cream/60" />
           </p>
           <span className="rounded-full bg-cream px-5 py-3 text-sm font-semibold text-ink transition group-hover:bg-ball">
-            Explore the trip →
+            {t.explore}
           </span>
         </div>
       </div>
@@ -181,53 +196,51 @@ export function RetreatCard({ retreat }: { retreat: Retreat }) {
   );
 }
 
-export function ComaRugaSection() {
+export function ComaRugaSection({ lang }: { lang: Lang }) {
+  const t = ui(lang).comaRuga;
   return (
     <section id="coma-ruga" className="scroll-mt-10 py-24 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <div className="relative">
           <Image
             src={bay}
-            alt="The bay at Coma-ruga with calm turquoise water and the town behind the beach"
+            alt={t.imageAlt}
             placeholder="blur"
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"
           />
           <div className="absolute -bottom-8 left-6 right-6 rounded-2xl bg-ink p-6 text-cream shadow-2xl sm:left-auto sm:right-[-1.5rem] sm:w-80">
-            <p className="text-xs font-semibold tracking-[0.2em] text-ball uppercase">Getting here</p>
+            <p className="text-xs font-semibold tracking-[0.2em] text-ball uppercase">{t.gettingHere}</p>
             <ol className="mt-4 space-y-3 text-sm">
               <li className="flex justify-between gap-4">
                 <span>Barcelona Sants</span>
-                <span className="text-cream/60">depart</span>
+                <span className="text-cream/60">{t.depart}</span>
               </li>
               <li className="flex justify-between gap-4">
-                <span>Along the Garraf coast</span>
-                <span className="text-cream/60">≈ 1 hr, direct</span>
+                <span>{t.alongCoast}</span>
+                <span className="text-cream/60">{t.duration}</span>
               </li>
               <li className="flex justify-between gap-4">
                 <span>Sant Vicenç de Calders</span>
-                <span className="text-cream/60">arrive</span>
+                <span className="text-cream/60">{t.arrive}</span>
               </li>
             </ol>
           </div>
         </div>
         <div>
           <SectionHeading
-            eyebrow="The destination"
+            eyebrow={t.eyebrow}
             title={
               <>
-                Coma-ruga: Barcelona&rsquo;s <em className="font-normal">quieter</em> coast
+                {t.titleBefore}
+                <em className="font-normal">{t.titleEm}</em>
+                {t.titleAfter}
               </>
             }
-            intro="Coma-ruga sits on the Costa Daurada (the Golden Coast), with wide sandy beaches, palm-lined promenades and a relaxed Catalan pace. You get the sun and sea without the city crowds, and Barcelona is still close enough for a day out."
+            intro={t.intro}
           />
           <dl className="mt-10 grid gap-6 sm:grid-cols-2">
-            {[
-              ["1 hour", "Direct, scenic train from central Barcelona, hugging the coastline"],
-              ["Beachfront", "Our hotel is steps from the sand on Coma-ruga beach"],
-              ["30 km", "To Roman Tarragona, a UNESCO World Heritage city"],
-              ["Penedès", "Catalonia's cava country is right on the doorstep"],
-            ].map(([k, v]) => (
+            {t.facts.map(([k, v]) => (
               <div key={k} className="border-t border-line pt-4">
                 <dt className="font-display text-3xl text-sea">{k}</dt>
                 <dd className="mt-1 text-sm leading-relaxed text-stone">{v}</dd>
@@ -240,43 +253,33 @@ export function ComaRugaSection() {
   );
 }
 
-const hotelFeatures = [
-  ["Right on the beach", "Step straight from the hotel onto the sand of Coma-ruga beach."],
-  ["Rooftop pool", "An adults-only rooftop pool and lounge with views over the Mediterranean."],
-  ["Spa & wellness", "Sauna, steam room, hydrotherapy and massages for tired pickleball legs."],
-  ["Two restaurants", "A Mediterranean buffet and an à la carte restaurant for dinner."],
-  ["Balcony rooms", "Bright, spacious, air-conditioned rooms, many with sea views."],
-  ["Fitness centre", "Warm up, cool down or squeeze in an extra session."],
-];
-
-// `us` switches shared copy to American spelling on the pages aimed at US travelers.
-export function HotelSection({ us = false }: { us?: boolean }) {
-  const features = us
-    ? hotelFeatures.map(([title, text]) => [title.replace("centre", "center"), text])
-    : hotelFeatures;
+export function HotelSection({ lang }: { lang: Lang }) {
+  const t = ui(lang).hotel;
   return (
     <section id="hotel" className="scroll-mt-10 bg-sand py-24 sm:py-32">
       <Container>
         <div className="grid gap-14 lg:grid-cols-[1fr_1.1fr] lg:items-end">
           <SectionHeading
-            eyebrow="Your base"
+            eyebrow={t.eyebrow}
             title={
               <>
-                Estival Maramar, a beachfront <em className="font-normal">4★</em> hotel
+                {t.titleBefore}
+                <em className="font-normal">{t.titleEm}</em>
+                {t.titleAfter}
               </>
             }
-            intro="A modern, beautifully kept hotel on the seafront at Coma-ruga, on the luxury end of 4-star, rated “Superb” by more than 900 guests on Booking.com. After a morning on court, the rooftop pool is calling."
+            intro={t.intro}
           />
           <Image
             src={seafront}
-            alt="Hotels and palm trees along the seafront at Coma-ruga beach"
+            alt={t.imageAlt}
             placeholder="blur"
             sizes="(min-width: 1024px) 55vw, 100vw"
             className="aspect-[16/10] w-full rounded-[2rem] object-cover shadow-xl"
           />
         </div>
         <div className="mt-16 grid gap-px overflow-hidden rounded-[2rem] bg-line ring-1 ring-line sm:grid-cols-2 lg:grid-cols-3">
-          {features.map(([title, text]) => (
+          {t.features.map(([title, text]) => (
             <div key={title} className="bg-cream p-8">
               <h3 className="font-display text-2xl">{title}</h3>
               <p className="mt-2 leading-relaxed text-stone">{text}</p>
@@ -289,18 +292,19 @@ export function HotelSection({ us = false }: { us?: boolean }) {
 }
 
 export function EnquirySection({
+  lang,
   title,
   intro,
   defaultRetreat,
   defaultPhoneCode,
-  us = false,
 }: {
+  lang: Lang;
   title: string;
   intro: string;
-  defaultRetreat?: "Local Dink" | "Long-Haul Lob";
+  defaultRetreat?: RetreatChoice;
   defaultPhoneCode?: string;
-  us?: boolean;
 }) {
+  const t = ui(lang).enquiry;
   return (
     <section id="enquire" className="scroll-mt-10 relative overflow-hidden bg-ink py-24 text-cream sm:py-32">
       <div
@@ -309,23 +313,19 @@ export function EnquirySection({
       />
       <Container className="relative grid gap-14 lg:grid-cols-2 lg:items-center">
         <div>
-          <Eyebrow invert>Limited spots · max 20 players</Eyebrow>
+          <Eyebrow invert>{t.eyebrow}</Eyebrow>
           <h2 className="mt-4 font-display text-4xl leading-[1.08] tracking-tight text-balance sm:text-6xl">{title}</h2>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-cream/75">{intro}</p>
           <ul className="mt-8 space-y-3 text-cream/90">
-            {[
-              us ? "Full program, dates and pricing" : "Full programme, dates and pricing",
-              "Personal reply within 24 hours",
-              "No commitment, no spam",
-            ].map((t) => (
-              <li key={t} className="flex items-center gap-3">
+            {t.bullets.map((b) => (
+              <li key={b} className="flex items-center gap-3">
                 <Check className="text-ball" />
-                {t}
+                {b}
               </li>
             ))}
           </ul>
         </div>
-        <EnquiryForm defaultRetreat={defaultRetreat} defaultPhoneCode={defaultPhoneCode} />
+        <EnquiryForm lang={lang} defaultRetreat={defaultRetreat} defaultPhoneCode={defaultPhoneCode} />
       </Container>
     </section>
   );

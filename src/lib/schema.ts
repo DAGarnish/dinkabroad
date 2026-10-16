@@ -11,7 +11,7 @@ export const organizationSchema = {
   name: site.name,
   url: site.url,
   logo: absoluteUrl("/icon.svg"),
-  image: absoluteUrl("/opengraph-image.jpg"),
+  image: absoluteUrl("/og-image.jpg"),
   description: site.description,
   slogan: site.tagline,
   areaServed: ["GB", "IE", "NL", "DE", "BE", "FR", "US", "CA"],

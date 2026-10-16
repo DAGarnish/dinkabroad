@@ -21,16 +21,33 @@ const fields = [
   "message",
 ] as const;
 
+// Visitor-facing replies, in the language of the page the form was sent from.
+const replies = {
+  en: {
+    invalid: "Please add your first name and a valid email address.",
+    failed: "Sorry, something went wrong sending your details. Please try again shortly.",
+    thanks: (name: string) => `Thanks ${name}! We'll be in touch personally within 24 hours.`,
+  },
+  es: {
+    invalid: "Añade tu nombre y un correo electrónico válido.",
+    failed: "Lo sentimos, algo ha fallado al enviar tus datos. Inténtalo de nuevo en unos minutos.",
+    thanks: (name: string) => `¡Gracias, ${name}! Te escribiremos personalmente en menos de 24 horas.`,
+  },
+};
+
 export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Promise<EnquiryState> {
   // Honeypot: real visitors never see or fill this field.
   if (formData.get("company")) return { status: "success" };
+
+  const spanish = formData.get("lang") === "es";
+  const reply = spanish ? replies.es : replies.en;
 
   const data = Object.fromEntries(
     fields.map((key) => [key, String(formData.get(key) ?? "").trim().slice(0, 2000)]),
   ) as Record<(typeof fields)[number], string>;
 
   if (!data.firstName || !data.email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
-    return { status: "error", message: "Please add your first name and a valid email address." };
+    return { status: "error", message: reply.invalid };
   }
 
   const lines = fields.map((key) => `${key}: ${data[key] || "-"}`).join("\n");
@@ -44,10 +61,7 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
     `;
   } catch (err) {
     console.error("[enquiry] database insert failed", err, lines);
-    return {
-      status: "error",
-      message: "Sorry, something went wrong sending your details. Please try again shortly.",
-    };
+    return { status: "error", message: reply.failed };
   }
 
   // The enquiry is already saved, so a failed email is logged rather than shown to the visitor.
@@ -60,7 +74,7 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
       from: `Dink Abroad <${process.env.GMAIL_USER}>`,
       to: process.env.RECEIVER_EMAIL,
       replyTo: data.email,
-      subject: `New enquiry: ${data.retreat || "Dink Abroad"} from ${data.firstName} ${data.lastName}`,
+      subject: `${spanish ? "[ES] " : ""}New enquiry: ${data.retreat || "Dink Abroad"} from ${data.firstName} ${data.lastName}`,
       text: lines,
       html: enquiryEmailHtml(data),
     });
@@ -68,8 +82,5 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
     console.error("[enquiry] email failed", err, lines);
   }
 
-  return {
-    status: "success",
-    message: `Thanks ${data.firstName}! We'll be in touch personally within 24 hours.`,
-  };
+  return { status: "success", message: reply.thanks(data.firstName) };
 }

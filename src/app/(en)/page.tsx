@@ -201,14 +201,14 @@ export default function Home() {
           />
           <div className="mt-16 grid gap-8 lg:grid-cols-2">
             {retreats.map((r) => (
-              <RetreatCard key={r.slug} retreat={r} />
+              <RetreatCard key={r.slug} retreat={r} lang="en-GB" />
             ))}
           </div>
         </Container>
       </section>
 
-      <ComaRugaSection />
-      <HotelSection />
+      <ComaRugaSection lang="en-GB" />
+      <HotelSection lang="en-GB" />
 
       {/* FAQ */}
       <section id="faq" className="scroll-mt-10 py-24 sm:py-32">
@@ -219,6 +219,7 @@ export default function Home() {
       </section>
 
       <EnquirySection
+        lang="en-GB"
         title="Ready to play pickleball by the sea?"
         intro="Tell us a little about you and we'll send the full programme, dates, pricing and availability, personally, within 24 hours."
       />

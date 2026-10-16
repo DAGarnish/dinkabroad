@@ -146,6 +146,7 @@ export default function LocalDinkPage() {
 
       <PageHero
         retreat={localDink}
+        lang="en-GB"
         eyebrow="Local Dink · pickleball holiday · Barcelona coast"
         title={
           <>
@@ -209,6 +210,7 @@ export default function LocalDinkPage() {
 
       <PricingSection
         retreat={localDink}
+        lang="en-GB"
         included={included}
         notIncluded="flights, dinners, drinks, travel insurance and optional excursions."
         terms={[
@@ -217,8 +219,8 @@ export default function LocalDinkPage() {
         ]}
       />
 
-      <ComaRugaSection />
-      <HotelSection />
+      <ComaRugaSection lang="en-GB" />
+      <HotelSection lang="en-GB" />
 
       <section id="faq" className="scroll-mt-10 py-24 sm:py-32">
         <Container className="grid gap-12 lg:grid-cols-[1fr_1.6fr]">
@@ -228,6 +230,7 @@ export default function LocalDinkPage() {
       </section>
 
       <EnquirySection
+        lang="en-GB"
         title="Ready for your pickleball holiday in Barcelona?"
         intro="Request all the info with no strings attached: programme, dates, pricing and availability. We'll get back to you personally within 24 hours."
         defaultRetreat="Local Dink"

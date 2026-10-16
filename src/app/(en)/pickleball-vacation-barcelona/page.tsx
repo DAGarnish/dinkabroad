@@ -151,6 +151,7 @@ export default function LongHaulLobPage() {
 
       <PageHero
         retreat={longHaulLob}
+        lang="en-US"
         eyebrow="Long-Haul Lob · pickleball vacation · Barcelona"
         title={
           <>
@@ -214,6 +215,7 @@ export default function LongHaulLobPage() {
 
       <PricingSection
         retreat={longHaulLob}
+        lang="en-US"
         included={included}
         notIncluded="airfare, tips, personal expenses, and meals other than daily breakfast and the 4 included group meals."
         terms={[
@@ -223,8 +225,8 @@ export default function LongHaulLobPage() {
         ]}
       />
 
-      <ComaRugaSection />
-      <HotelSection us />
+      <ComaRugaSection lang="en-US" />
+      <HotelSection lang="en-US" />
 
       <section id="faq" className="scroll-mt-10 py-24 sm:py-32">
         <Container className="grid gap-12 lg:grid-cols-[1fr_1.6fr]">
@@ -234,11 +236,11 @@ export default function LongHaulLobPage() {
       </section>
 
       <EnquirySection
+        lang="en-US"
         title="Ready for the pickleball trip of a lifetime?"
         intro="Request the full itinerary, dates and availability with no obligation. We'll get back to you personally within 24 hours."
         defaultRetreat="Long-Haul Lob"
         defaultPhoneCode="+1"
-        us
       />
     </div>
   );

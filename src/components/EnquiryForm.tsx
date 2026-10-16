@@ -2,9 +2,11 @@
 
 import { useActionState, useEffect, useState } from "react";
 import { submitEnquiry, type EnquiryState } from "@/app/actions";
+import { type Lang, type RetreatChoice, ui } from "@/lib/i18n";
 
 type Props = {
-  defaultRetreat?: "Local Dink" | "Long-Haul Lob" | "";
+  lang: Lang;
+  defaultRetreat?: RetreatChoice | "";
   defaultPhoneCode?: string;
 };
 
@@ -20,6 +22,9 @@ const phoneCodes = [
   { code: "+46", label: "🇸🇪 +46" },
   { code: "+45", label: "🇩🇰 +45" },
   { code: "+61", label: "🇦🇺 +61" },
+  { code: "+52", label: "🇲🇽 +52" },
+  { code: "+54", label: "🇦🇷 +54" },
+  { code: "+57", label: "🇨🇴 +57" },
 ];
 
 const input =
@@ -27,7 +32,8 @@ const input =
 
 const initialState: EnquiryState = { status: "idle" };
 
-export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: Props) {
+export function EnquiryForm({ lang, defaultRetreat = "", defaultPhoneCode = "+44" }: Props) {
+  const t = ui(lang).form;
   const [state, action, pending] = useActionState(submitEnquiry, initialState);
   // The success state we've already moved on from, so the empty form shows again.
   const [dismissed, setDismissed] = useState<EnquiryState | null>(null);
@@ -43,15 +49,15 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
       <>
         <div role="status" className="rounded-3xl bg-white p-8 text-center text-ink shadow-xl ring-1 ring-line sm:p-12">
           <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-ball text-2xl">✓</div>
-          <p className="mt-5 font-display text-2xl">{state.message ?? "Thanks, we'll be in touch."}</p>
-          <p className="mt-2 text-sm text-stone">Keep an eye on your inbox (and your spam folder, just in case).</p>
+          <p className="mt-5 font-display text-2xl">{state.message ?? t.thanksFallback}</p>
+          <p className="mt-2 text-sm text-stone">{t.inbox}</p>
         </div>
         <div
           role="alert"
           className="fixed inset-x-4 bottom-4 z-50 mx-auto flex max-w-sm animate-rise items-center gap-3 rounded-2xl bg-ink px-5 py-4 text-sm font-medium text-white shadow-2xl sm:inset-x-auto sm:right-6 sm:bottom-6"
         >
           <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-ball text-ink">✓</span>
-          Your enquiry has been sent. We&apos;ll reply soon!
+          {t.toast}
         </div>
       </>
     );
@@ -59,22 +65,23 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
 
   return (
     <form action={action} className="rounded-3xl bg-white p-6 shadow-xl ring-1 ring-line sm:p-8" noValidate={false}>
+      <input type="hidden" name="lang" value={lang} />
       <div className="grid gap-4 sm:grid-cols-2">
         <label className="block">
-          <span className="sr-only">First name</span>
-          <input name="firstName" required autoComplete="given-name" placeholder="First name" className={input} />
+          <span className="sr-only">{t.firstName}</span>
+          <input name="firstName" required autoComplete="given-name" placeholder={t.firstName} className={input} />
         </label>
         <label className="block">
-          <span className="sr-only">Last name</span>
-          <input name="lastName" autoComplete="family-name" placeholder="Last name" className={input} />
+          <span className="sr-only">{t.lastName}</span>
+          <input name="lastName" autoComplete="family-name" placeholder={t.lastName} className={input} />
         </label>
         <label className="block sm:col-span-2">
-          <span className="sr-only">Email address</span>
-          <input name="email" type="email" required autoComplete="email" placeholder="Email address" className={input} />
+          <span className="sr-only">{t.email}</span>
+          <input name="email" type="email" required autoComplete="email" placeholder={t.email} className={input} />
         </label>
         <div className="flex gap-2 sm:col-span-2">
           <label className="block w-32 shrink-0">
-            <span className="sr-only">Country code</span>
+            <span className="sr-only">{t.countryCode}</span>
             <select name="phoneCode" defaultValue={defaultPhoneCode} className={input}>
               {phoneCodes.map((p) => (
                 <option key={p.code} value={p.code}>
@@ -84,42 +91,40 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
             </select>
           </label>
           <label className="block flex-1">
-            <span className="sr-only">Phone number</span>
-            <input name="phone" type="tel" autoComplete="tel-national" placeholder="Phone number" className={input} />
+            <span className="sr-only">{t.phone}</span>
+            <input name="phone" type="tel" autoComplete="tel-national" placeholder={t.phone} className={input} />
           </label>
         </div>
         <label className="block">
-          <span className="sr-only">Retreat</span>
+          <span className="sr-only">{t.retreat}</span>
           <select name="retreat" defaultValue={defaultRetreat} className={input}>
-            <option value="">Which retreat?</option>
+            <option value="">{t.whichRetreat}</option>
             <option>Local Dink</option>
             <option>Long-Haul Lob</option>
-            <option>Not sure yet</option>
+            <option>{t.notSure}</option>
           </select>
         </label>
         <label className="block">
-          <span className="sr-only">Playing level</span>
+          <span className="sr-only">{t.level}</span>
           <select name="level" defaultValue="" className={input}>
-            <option value="">Your level</option>
-            <option>New to pickleball</option>
-            <option>Beginner (2.0–2.5)</option>
-            <option>Intermediate (3.0–3.5)</option>
-            <option>Advanced (4.0+)</option>
+            <option value="">{t.yourLevel}</option>
+            {t.levels.map((level) => (
+              <option key={level}>{level}</option>
+            ))}
           </select>
         </label>
         <label className="block sm:col-span-2">
-          <span className="sr-only">Number of people</span>
+          <span className="sr-only">{t.people}</span>
           <select name="travellers" defaultValue="" className={input}>
-            <option value="">How many of you?</option>
-            <option>Just me</option>
-            <option>2 of us</option>
-            <option>3–4 of us</option>
-            <option>5+ (group or club)</option>
+            <option value="">{t.howMany}</option>
+            {t.groupSizes.map((size) => (
+              <option key={size}>{size}</option>
+            ))}
           </select>
         </label>
         <label className="block sm:col-span-2">
-          <span className="sr-only">Anything else?</span>
-          <textarea name="message" rows={3} placeholder="Anything we should know? (optional)" className={input} />
+          <span className="sr-only">{t.anythingElse}</span>
+          <textarea name="message" rows={3} placeholder={t.message} className={input} />
         </label>
         <div aria-hidden="true" className="absolute -left-[9999px]">
           <input name="company" tabIndex={-1} autoComplete="off" />
@@ -135,9 +140,9 @@ export function EnquiryForm({ defaultRetreat = "", defaultPhoneCode = "+44" }: P
         disabled={pending}
         className="mt-6 w-full rounded-full bg-terracotta px-6 py-4 text-base font-semibold text-white shadow-lg shadow-terracotta/25 transition hover:bg-terracotta-dark disabled:opacity-60"
       >
-        {pending ? "Sending…" : "Send me all the info, free"}
+        {pending ? t.sending : t.submit}
       </button>
-      <p className="mt-3 text-center text-xs text-stone">🔒 No commitment · no spam · your details stay with us</p>
+      <p className="mt-3 text-center text-xs text-stone">{t.smallPrint}</p>
     </form>
   );
 }
