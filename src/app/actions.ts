@@ -2,6 +2,7 @@
 
 import { neon } from "@neondatabase/serverless";
 import nodemailer from "nodemailer";
+import { enquiryEmailHtml } from "@/lib/enquiryEmail";
 
 export type EnquiryState = {
   status: "idle" | "success" | "error";
@@ -61,6 +62,7 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
       replyTo: data.email,
       subject: `New enquiry: ${data.retreat || "Dink Abroad"} from ${data.firstName} ${data.lastName}`,
       text: lines,
+      html: enquiryEmailHtml(data),
     });
   } catch (err) {
     console.error("[enquiry] email failed", err, lines);
