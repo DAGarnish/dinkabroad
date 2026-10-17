@@ -3,7 +3,7 @@ import Link from "next/link";
 import bay from "@/assets/images/coma-ruga-bay.jpg";
 import seafront from "@/assets/images/coma-ruga-seafront.jpg";
 import { type Lang, type RetreatChoice, language, ui } from "@/lib/i18n";
-import { type Retreat, formatPrice } from "@/lib/retreats";
+import { type Price, type Retreat, formatPrice } from "@/lib/retreats";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
@@ -148,9 +148,10 @@ export function PricingSection({
   );
 }
 
-export function RetreatCard({ retreat, lang }: { retreat: Retreat; lang: Lang }) {
+// `price` overrides the retreat's own "from" price, e.g. to show euros on the English homepage.
+export function RetreatCard({ retreat, lang, price }: { retreat: Retreat; lang: Lang; price?: Price }) {
   const t = ui(lang).card;
-  const from = retreat.prices[0];
+  const from = price ?? retreat.prices[0];
   return (
     <Link
       href={retreat.href}

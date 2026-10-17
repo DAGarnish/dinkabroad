@@ -7,7 +7,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
-import { retreats } from "@/lib/retreats";
+import { retreats, retreatsEs } from "@/lib/retreats";
 import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
@@ -201,7 +201,12 @@ export default function Home() {
           />
           <div className="mt-16 grid gap-8 lg:grid-cols-2">
             {retreats.map((r) => (
-              <RetreatCard key={r.slug} retreat={r} lang="en-GB" />
+              <RetreatCard
+                key={r.slug}
+                retreat={r}
+                lang="en-GB"
+                price={retreatsEs.find((e) => e.slug === r.slug)?.prices[0]}
+              />
             ))}
           </div>
         </Container>
