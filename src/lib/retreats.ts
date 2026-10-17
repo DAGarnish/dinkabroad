@@ -29,7 +29,7 @@ export const localDink: Retreat = {
   slug: "local-dink",
   href: "/pickleball-holiday-barcelona",
   name: "Local Dink",
-  audience: "For players from the UK & Europe",
+  audience: "Ideal for players from the UK & Europe",
   duration: "5 days · Friday to Tuesday",
   durationIso: "P5D",
   days: 5,
@@ -64,7 +64,7 @@ export const longHaulLob: Retreat = {
   slug: "long-haul-lob",
   href: "/pickleball-vacation-barcelona",
   name: "Long-Haul Lob",
-  audience: "For players traveling from the USA & Canada",
+  audience: "Ideal for players traveling from the USA & Canada",
   duration: "9 days · 8 nights",
   durationIso: "P9D",
   days: 9,
@@ -101,7 +101,7 @@ export const retreats = [localDink, longHaulLob];
 export const localDinkEs: Retreat = {
   ...localDink,
   href: "/es/vacaciones-pickleball-barcelona",
-  audience: "Para jugadores de España y Europa",
+  audience: "Ideal para jugadores de España y Europa",
   duration: "5 días · de viernes a martes",
   summary:
     "Un fin de semana largo de pickleball junto al Mediterráneo. Llegas el viernes, entrenas con entrenadores titulados, te mides con los locales en un torneo y vuelves a casa el martes.",
@@ -131,7 +131,7 @@ export const localDinkEs: Retreat = {
 export const longHaulLobEs: Retreat = {
   ...longHaulLob,
   href: "/es/viaje-pickleball-barcelona",
-  audience: "Para jugadores que viajan desde América",
+  audience: "Ideal para jugadores que viajan desde América",
   duration: "9 días · 8 noches",
   summary:
     "Nuestro viaje de pickleball estrella en Barcelona. Seis días de pista, la Barcelona de Gaudí, la Tarragona romana, Montserrat, la tierra del cava y flamenco, todo desde una base en primera línea de la Costa Daurada.",
@@ -164,7 +164,7 @@ export const retreatsEs = [localDinkEs, longHaulLobEs];
 export const localDinkFr: Retreat = {
   ...localDink,
   href: "/fr/vacances-pickleball-barcelone",
-  audience: "Pour les joueurs de France et d’Europe",
+  audience: "Idéal pour les joueurs de France et d’Europe",
   duration: "5 jours · du vendredi au mardi",
   summary:
     "Un long week-end de pickleball au bord de la Méditerranée. Arrivée le vendredi, entraînement avec des coachs diplômés, tournoi face aux joueurs locaux et retour le mardi.",
@@ -194,7 +194,7 @@ export const localDinkFr: Retreat = {
 export const longHaulLobFr: Retreat = {
   ...longHaulLob,
   href: "/fr/voyage-pickleball-barcelone",
-  audience: "Pour les joueurs venant du Canada et d’Amérique du Nord",
+  audience: "Idéal pour les joueurs venant du Canada et d’Amérique du Nord",
   duration: "9 jours · 8 nuits",
   summary:
     "Notre voyage pickleball phare à Barcelone. Six jours sur le terrain, la Barcelone de Gaudí, Tarragone la romaine, Montserrat, le pays du cava et le flamenco, depuis un hôtel les pieds dans l’eau sur la Costa Daurada.",
@@ -227,7 +227,7 @@ export const retreatsFr = [localDinkFr, longHaulLobFr];
 export const localDinkDe: Retreat = {
   ...localDink,
   href: "/de/pickleball-urlaub-barcelona",
-  audience: "Für Spieler aus Deutschland, Österreich, der Schweiz und Europa",
+  audience: "Ideal für Spieler aus Deutschland, Österreich, der Schweiz und Europa",
   duration: "5 Tage · Freitag bis Dienstag",
   summary:
     "Ein langes Pickleball-Wochenende am Mittelmeer. Freitag anreisen, mit zertifizierten Trainern spielen, im Turnier gegen Einheimische antreten und am Dienstag nach Hause fliegen.",
@@ -257,7 +257,7 @@ export const localDinkDe: Retreat = {
 export const longHaulLobDe: Retreat = {
   ...longHaulLob,
   href: "/de/pickleball-reise-barcelona",
-  audience: "Für alle mit weiter Anreise oder mehr Zeit",
+  audience: "Ideal für alle mit weiter Anreise oder mehr Zeit",
   duration: "9 Tage · 8 Nächte",
   summary:
     "Unsere große Barcelona-Pickleball-Reise. Sechs Tage auf dem Court, Gaudís Barcelona, das römische Tarragona, Montserrat, die Cava-Region und Flamenco, alles von einem Strandhotel an der Costa Daurada aus.",
