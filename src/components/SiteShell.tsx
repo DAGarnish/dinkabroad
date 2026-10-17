@@ -18,7 +18,7 @@ const manrope = Manrope({
   subsets: ["latin"],
 });
 
-// The <html> document shared by the English, Spanish, French and German root layouts.
+// The <html> document shared by the English, Spanish, French, German and Dutch root layouts.
 export function SiteShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   return (
     <html lang={language(lang).htmlLang} className={`${fraunces.variable} ${manrope.variable} antialiased`}>

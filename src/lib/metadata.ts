@@ -7,6 +7,7 @@ const ogAlt: Record<Site, string> = {
   es: "Retiros de pickleball en la costa de Barcelona: puesta de sol sobre las palmeras de la playa de Coma-ruga",
   fr: "Séjours de pickleball sur la côte de Barcelone : coucher de soleil sur les palmiers de la plage de Coma-ruga",
   de: "Pickleball-Reisen an der Küste von Barcelona: Sonnenuntergang über den Palmen am Strand von Coma-ruga",
+  nl: "Pickleballreizen aan de kust van Barcelona: zonsondergang boven de palmbomen op het strand van Coma-ruga",
 };
 
 // Shared social-share image (public/og-image.jpg). Set explicitly on every page:

@@ -286,6 +286,69 @@ export const longHaulLobDe: Retreat = {
 
 export const retreatsDe = [localDinkDe, longHaulLobDe];
 
+// Dutch site (nl-NL).
+export const localDinkNl: Retreat = {
+  ...localDink,
+  href: "/nl/pickleball-vakantie-barcelona",
+  audience: "Ideaal voor spelers uit Nederland, België en de rest van Europa",
+  duration: "5 dagen · vrijdag tot dinsdag",
+  summary:
+    "Een lang pickleballweekend aan de Middellandse Zee. Vrijdag vlieg je erheen, je traint met gecertificeerde coaches, neemt het in een toernooi op tegen de locals en dinsdag vlieg je weer naar huis.",
+  imageAlt: "Palmbomen op het zandstrand van Coma-ruga onder een strakblauwe lucht",
+  prices: [
+    {
+      label: "Twinkamer",
+      amount: 1100,
+      currency: "EUR",
+      note: "per persoon, in een gedeelde twin-kamer. Vluchten niet inbegrepen.",
+    },
+    {
+      label: "Eenpersoonskamer",
+      amount: 1700,
+      currency: "EUR",
+      note: "per persoon, eigen kamer. Vluchten niet inbegrepen.",
+    },
+  ],
+  highlights: [
+    "Max. 20 spelers",
+    "3 × 90 minuten training",
+    "Gezellig toernooi met de locals",
+    "4★-hotel aan het strand",
+  ],
+};
+
+export const longHaulLobNl: Retreat = {
+  ...longHaulLob,
+  href: "/nl/pickleball-reis-barcelona",
+  audience: "Ideaal voor spelers die van verder weg komen",
+  duration: "9 dagen · 8 nachten",
+  summary:
+    "Onze grote pickleballreis naar Barcelona. Zes dagen op de baan, het Barcelona van Gaudí, het Romeinse Tarragona, Montserrat, de cavastreek en flamenco, allemaal vanuit een strandhotel aan de Costa Daurada.",
+  imageAlt: "De torens van Gaudí’s Sagrada Família in Barcelona in het avondlicht",
+  prices: [
+    {
+      label: "Tweepersoonskamer",
+      amount: 3500,
+      currency: "EUR",
+      note: "per persoon, met twee reizigers op een kamer. Vluchten niet inbegrepen.",
+    },
+    {
+      label: "Eenpersoonskamer",
+      amount: 4100,
+      currency: "EUR",
+      note: "per persoon, eigen kamer. Vluchten niet inbegrepen.",
+    },
+  ],
+  highlights: [
+    "6 dagen pickleball",
+    "4 begeleide excursies",
+    "Tweetalige reisleiding",
+    "Flamenco & afscheidsfeest",
+  ],
+};
+
+export const retreatsNl = [localDinkNl, longHaulLobNl];
+
 const priceLocale = { EUR: "en-IE", GBP: "en-GB", USD: "en-US" } as const;
 
 export function formatPrice(price: Pick<Price, "amount" | "currency">, locale?: string) {

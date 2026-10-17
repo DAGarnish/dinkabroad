@@ -43,6 +43,11 @@ const replies = {
     failed: "Leider ist beim Senden ein Fehler aufgetreten. Bitte versuchen Sie es in ein paar Minuten erneut.",
     thanks: (name: string) => `Danke, ${name}! Wir melden uns innerhalb von 24 Stunden persönlich bei Ihnen.`,
   },
+  nl: {
+    invalid: "Vul je voornaam en een geldig e-mailadres in.",
+    failed: "Sorry, er ging iets mis bij het versturen van je gegevens. Probeer het over een paar minuten opnieuw.",
+    thanks: (name: string) => `Bedankt, ${name}! We nemen binnen 24 uur persoonlijk contact met je op.`,
+  },
 };
 
 export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Promise<EnquiryState> {
@@ -50,7 +55,7 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
   if (formData.get("company")) return { status: "success" };
 
   const lang = formData.get("lang");
-  const site = lang === "es" || lang === "fr" || lang === "de" ? lang : "en";
+  const site = lang === "es" || lang === "fr" || lang === "de" || lang === "nl" ? lang : "en";
   const reply = replies[site];
 
   const data = Object.fromEntries(

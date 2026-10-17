@@ -7,11 +7,11 @@ export function Header({ lang }: { lang: Lang }) {
   const t = ui(lang);
   return (
     <header className="absolute inset-x-0 top-0 z-30 text-cream">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-5 sm:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 sm:px-8">
         <Link href={t.home} aria-label={t.homeAria} className="rounded-sm">
           <Logo />
         </Link>
-        <nav aria-label="Main" className="hidden items-center gap-8 text-sm font-medium lg:flex">
+        <nav aria-label="Main" className="hidden items-center gap-4 text-sm font-medium whitespace-nowrap lg:flex xl:gap-8">
           {t.nav.map((item) => (
             <Link
               key={item.href}
