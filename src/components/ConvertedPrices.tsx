@@ -19,22 +19,25 @@ function money(amount: number, code: Currency, locale: string) {
 
 /**
  * A small line under a price with its value in the other two of EUR / GBP / USD,
- * e.g. "≈ €4,093 · £3,461 · rates Oct 16".
+ * e.g. "≈ €4,093 · £3,461 · rates Oct 16". When the price above is shown converted
+ * into `shown`, the line lists the original price exactly plus the remaining currency.
  */
 export async function ConvertedPrices({
   amount,
   currency,
   lang,
+  shown = currency,
   className = "",
 }: {
   amount: number;
   currency: Currency;
   lang: Lang;
+  shown?: Currency;
   className?: string;
 }) {
   const { rates, updated } = await getFxRates(currency);
   const t = ui(lang).fx;
-  const others = currencies.filter((c) => c.code !== currency);
+  const others = currencies.filter((c) => c.code !== shown);
   const date = updated
     ? new Date(updated).toLocaleDateString(t.dateLocale, { day: "numeric", month: "short", timeZone: "UTC" })
     : null;
@@ -43,7 +46,7 @@ export async function ConvertedPrices({
     <span className={`block font-sans text-xs font-normal tracking-normal ${className}`}>
       ≈{" "}
       {others
-        .map((c) => money(amount * rates[c.code], c.code, language(lang).numberLocale ?? c.locale))
+        .map((c) => money(c.code === currency ? amount : amount * rates[c.code], c.code, language(lang).numberLocale ?? c.locale))
         .join(" · ")}
       <span className="opacity-75"> · {date ? `${t.rates} ${date}` : t.approx}</span>
     </span>

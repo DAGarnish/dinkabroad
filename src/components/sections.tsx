@@ -3,7 +3,8 @@ import Link from "next/link";
 import bay from "@/assets/images/coma-ruga-bay.jpg";
 import seafront from "@/assets/images/coma-ruga-seafront.jpg";
 import { type Lang, type RetreatChoice, language, ui } from "@/lib/i18n";
-import { type Price, type Retreat, formatPrice } from "@/lib/retreats";
+import { type Currency, getFxRates } from "@/lib/fx";
+import { type Retreat, formatPrice } from "@/lib/retreats";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
@@ -148,10 +149,13 @@ export function PricingSection({
   );
 }
 
-// `price` overrides the retreat's own "from" price, e.g. to show euros on the English homepage.
-export function RetreatCard({ retreat, lang, price }: { retreat: Retreat; lang: Lang; price?: Price }) {
+// `currency` shows the "from" price converted at today's rate, e.g. euros on the English homepage.
+export async function RetreatCard({ retreat, lang, currency }: { retreat: Retreat; lang: Lang; currency?: Currency }) {
   const t = ui(lang).card;
-  const from = price ?? retreat.prices[0];
+  const from = retreat.prices[0];
+  const shown = currency ?? from.currency;
+  const rate = shown === from.currency ? 1 : (await getFxRates(from.currency)).rates[shown];
+  const display = { amount: Math.round(from.amount * rate), currency: shown };
   return (
     <Link
       href={retreat.href}
@@ -184,9 +188,15 @@ export function RetreatCard({ retreat, lang, price }: { retreat: Retreat; lang: 
         <div className="mt-8 flex items-end justify-between gap-4 border-t border-white/20 pt-6">
           <p>
             <span className="block text-xs tracking-widest text-cream/70 uppercase">{t.from}</span>
-            <span className="font-display text-4xl">{formatPrice(from, priceLocale(lang))}</span>
+            <span className="font-display text-4xl">{formatPrice(display, priceLocale(lang))}</span>
             <span className="ml-1 text-sm text-cream/70">{t.pp}</span>
-            <ConvertedPrices amount={from.amount} currency={from.currency} lang={lang} className="mt-1 text-cream/60" />
+            <ConvertedPrices
+              amount={from.amount}
+              currency={from.currency}
+              shown={shown}
+              lang={lang}
+              className="mt-1 text-cream/60"
+            />
           </p>
           <span className="rounded-full bg-cream px-5 py-3 text-sm font-semibold text-ink transition group-hover:bg-ball">
             {t.explore}
