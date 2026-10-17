@@ -64,7 +64,7 @@ export const longHaulLob: Retreat = {
   slug: "long-haul-lob",
   href: "/pickleball-vacation-barcelona",
   name: "Long-Haul Lob",
-  audience: "Ideal for players traveling from the USA & Canada",
+  audience: "Ideal for players traveling from further afield",
   duration: "9 days · 8 nights",
   durationIso: "P9D",
   days: 9,
@@ -131,7 +131,7 @@ export const localDinkEs: Retreat = {
 export const longHaulLobEs: Retreat = {
   ...longHaulLob,
   href: "/es/viaje-pickleball-barcelona",
-  audience: "Ideal para jugadores que viajan desde América",
+  audience: "Ideal para jugadores que vienen de más lejos",
   duration: "9 días · 8 noches",
   summary:
     "Nuestro viaje de pickleball estrella en Barcelona. Seis días de pista, la Barcelona de Gaudí, la Tarragona romana, Montserrat, la tierra del cava y flamenco, todo desde una base en primera línea de la Costa Daurada.",
@@ -194,7 +194,7 @@ export const localDinkFr: Retreat = {
 export const longHaulLobFr: Retreat = {
   ...longHaulLob,
   href: "/fr/voyage-pickleball-barcelone",
-  audience: "Idéal pour les joueurs venant du Canada et d’Amérique du Nord",
+  audience: "Idéal pour les joueurs venant de plus loin",
   duration: "9 jours · 8 nuits",
   summary:
     "Notre voyage pickleball phare à Barcelone. Six jours sur le terrain, la Barcelone de Gaudí, Tarragone la romaine, Montserrat, le pays du cava et le flamenco, depuis un hôtel les pieds dans l’eau sur la Costa Daurada.",
@@ -257,7 +257,7 @@ export const localDinkDe: Retreat = {
 export const longHaulLobDe: Retreat = {
   ...longHaulLob,
   href: "/de/pickleball-reise-barcelona",
-  audience: "Ideal für alle mit weiter Anreise oder mehr Zeit",
+  audience: "Ideal für Spieler mit weiter Anreise",
   duration: "9 Tage · 8 Nächte",
   summary:
     "Unsere große Barcelona-Pickleball-Reise. Sechs Tage auf dem Court, Gaudís Barcelona, das römische Tarragona, Montserrat, die Cava-Region und Flamenco, alles von einem Strandhotel an der Costa Daurada aus.",
