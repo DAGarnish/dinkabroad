@@ -67,8 +67,7 @@ const faqs: FaqItem[] = [
   },
 ];
 
-// The English homepage. `page.tsx` serves it with euro prices; `proxy.ts` sends
-// visitors from the USA to `home-usd/page.tsx`, which serves it with dollar prices.
+// The English homepage. Served by `page.tsx` in euros, and in pounds or dollars to UK and US visitors (see proxy.ts).
 export function Home({ currency }: { currency: Currency }) {
   return (
     <>

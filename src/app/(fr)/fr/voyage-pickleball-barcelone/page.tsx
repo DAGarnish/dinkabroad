@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Voyage pickleball à Barcelone : 9 jours de pickleball et de culture",
   description:
-    "Un voyage pickleball de 9 jours à Barcelone : 6 jours de jeu, la Barcelone de Gaudí, Montserrat, Tarragone, le pays du cava et le flamenco depuis un hôtel 4★ en bord de mer. À partir de 3 950 €.",
+    "Un voyage pickleball de 9 jours à Barcelone : 6 jours de jeu, la Barcelone de Gaudí, Montserrat, Tarragone, le pays du cava et le flamenco depuis un hôtel 4★ en bord de mer. À partir de 3 500 €.",
   path: longHaulLobFr.href,
   siteLang: "fr",
 });

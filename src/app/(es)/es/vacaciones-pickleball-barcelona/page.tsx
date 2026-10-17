@@ -17,9 +17,9 @@ import { localDinkEs } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Vacaciones de pickleball en Barcelona: retiro de 5 días desde 1050 €",
+  title: "Vacaciones de pickleball en Barcelona: retiro de 5 días desde 1100 €",
   description:
-    "Vacaciones de pickleball de 5 días en la costa de Barcelona. Entrenamientos, un torneo amistoso, hotel 4★ en primera línea, comidas y traslados. Desde 1050 € por persona.",
+    "Vacaciones de pickleball de 5 días en la costa de Barcelona. Entrenamientos, un torneo amistoso, hotel 4★ en primera línea, comidas y traslados. Desde 1100 € por persona.",
   path: localDinkEs.href,
   siteLang: "es",
 });
@@ -99,7 +99,7 @@ const faqs: FaqItem[] = [
   {
     question: "¿Puedo venir solo?",
     answer:
-      "Sí, y mucha gente lo hace. El grupo tiene un máximo de 20 jugadores, así que harás amigos enseguida dentro y fuera de la pista. ¿Prefieres habitación propia? La habitación individual cuesta 1650 € por persona.",
+      "Sí, y mucha gente lo hace. El grupo tiene un máximo de 20 jugadores, así que harás amigos enseguida dentro y fuera de la pista. ¿Prefieres habitación propia? La habitación individual cuesta 1700 € por persona.",
   },
   {
     question: "¿Están incluidos los vuelos?",

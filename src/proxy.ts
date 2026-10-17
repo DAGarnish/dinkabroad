@@ -1,16 +1,30 @@
 import { type NextRequest, NextResponse } from "next/server";
 
-// Visitors from the USA see the English homepage with prices in dollars instead of euros.
-// Vercel sets the visitor's country on every request.
+// The English pages show prices in pounds to UK visitors and in dollars to US visitors
+// (everyone else sees euros). Vercel sets the visitor's country on every request.
+const currencyByCountry: Record<string, string> = { GB: "gbp", US: "usd" };
+
 export function proxy(request: NextRequest) {
-  if (request.nextUrl.pathname === "/home-usd") {
-    return NextResponse.redirect(new URL("/", request.url), 308);
+  const { pathname } = request.nextUrl;
+
+  // The currency versions are internal; send direct visits to the real address.
+  const internal = pathname.match(/^\/(gbp|usd)(\/.*)?$/);
+  if (internal) {
+    return NextResponse.redirect(new URL(internal[2] ?? "/", request.url), 308);
   }
-  if (request.headers.get("x-vercel-ip-country") === "US") {
-    return NextResponse.rewrite(new URL("/home-usd", request.url));
+
+  const currency = currencyByCountry[request.headers.get("x-vercel-ip-country") ?? ""];
+  if (currency) {
+    return NextResponse.rewrite(new URL(`/${currency}${pathname === "/" ? "" : pathname}`, request.url));
   }
 }
 
 export const config = {
-  matcher: ["/", "/home-usd"],
+  matcher: [
+    "/",
+    "/pickleball-holiday-barcelona",
+    "/pickleball-vacation-barcelona",
+    "/gbp/:path*",
+    "/usd/:path*",
+  ],
 };

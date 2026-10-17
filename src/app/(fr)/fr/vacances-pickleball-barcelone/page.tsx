@@ -17,9 +17,9 @@ import { localDinkFr } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Vacances pickleball à Barcelone : séjour de 5 jours dès 1 050 €",
+  title: "Vacances pickleball à Barcelone : séjour de 5 jours dès 1 100 €",
   description:
-    "Des vacances de pickleball de 5 jours sur la côte de Barcelone : coaching, tournoi amical, hôtel 4★ en bord de mer, déjeuners et transferts. À partir de 1 050 € par personne.",
+    "Des vacances de pickleball de 5 jours sur la côte de Barcelone : coaching, tournoi amical, hôtel 4★ en bord de mer, déjeuners et transferts. À partir de 1 100 € par personne.",
   path: localDinkFr.href,
   siteLang: "fr",
 });
@@ -104,7 +104,7 @@ const faqs: FaqItem[] = [
   {
     question: "Puis-je venir seul ?",
     answer:
-      "Oui, et beaucoup le font. Le groupe est limité à 20 joueurs, vous vous ferez vite des amis sur le terrain comme en dehors. Vous préférez votre propre chambre ? La chambre individuelle est à 1 650 € par personne.",
+      "Oui, et beaucoup le font. Le groupe est limité à 20 joueurs, vous vous ferez vite des amis sur le terrain comme en dehors. Vous préférez votre propre chambre ? La chambre individuelle est à 1 700 € par personne.",
   },
   {
     question: "Les vols sont-ils inclus ?",

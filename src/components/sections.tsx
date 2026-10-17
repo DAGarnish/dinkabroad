@@ -3,7 +3,7 @@ import Link from "next/link";
 import bay from "@/assets/images/coma-ruga-bay.jpg";
 import seafront from "@/assets/images/coma-ruga-seafront.jpg";
 import { type Lang, type RetreatChoice, language, ui } from "@/lib/i18n";
-import { type Currency, getFxRates } from "@/lib/fx";
+import { type Currency, convertPrice } from "@/lib/fx";
 import { type Retreat, formatPrice } from "@/lib/retreats";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
@@ -11,9 +11,10 @@ import { Check, Container, Eyebrow, SectionHeading } from "./ui";
 
 const priceLocale = (lang: Lang) => language(lang).numberLocale;
 
-export function PageHero({
+export async function PageHero({
   retreat,
   lang,
+  currency,
   eyebrow,
   title,
   intro,
@@ -21,6 +22,7 @@ export function PageHero({
 }: {
   retreat: Retreat;
   lang: Lang;
+  currency?: Currency;
   eyebrow: string;
   title: React.ReactNode;
   intro: string;
@@ -28,6 +30,7 @@ export function PageHero({
 }) {
   const t = ui(lang);
   const from = retreat.prices[0];
+  const shown = await convertPrice(from, currency ?? from.currency);
   return (
     <section className="relative isolate overflow-hidden text-cream">
       <Image
@@ -69,8 +72,14 @@ export function PageHero({
           <p className="text-xs font-semibold tracking-[0.2em] text-terracotta uppercase">{retreat.name}</p>
           <p className="mt-2 text-sm text-stone">{retreat.duration}</p>
           <p className="mt-6 text-xs tracking-widest text-stone uppercase">{t.hero.completeFrom}</p>
-          <p className="font-display text-6xl tracking-tight">{formatPrice(from, priceLocale(lang))}</p>
-          <ConvertedPrices amount={from.amount} currency={from.currency} lang={lang} className="mt-1 text-stone" />
+          <p className="font-display text-6xl tracking-tight">{formatPrice(shown, priceLocale(lang))}</p>
+          <ConvertedPrices
+            amount={from.amount}
+            currency={from.currency}
+            shown={shown.currency}
+            lang={lang}
+            className="mt-1 text-stone"
+          />
           <p className="mt-3 text-sm text-stone">{from.note}</p>
           <Link
             href="#enquire"
@@ -87,33 +96,39 @@ export function PageHero({
   );
 }
 
-export function PricingSection({
+export async function PricingSection({
   retreat,
   lang,
+  currency,
   included,
   notIncluded,
   terms,
 }: {
   retreat: Retreat;
   lang: Lang;
+  currency?: Currency;
   included: string[];
   notIncluded: string;
   terms?: string[];
 }) {
   const t = ui(lang).pricing;
+  const prices = await Promise.all(
+    retreat.prices.map(async (price) => ({ price, shown: await convertPrice(price, currency ?? price.currency) })),
+  );
   return (
     <section id="pricing" className="scroll-mt-10 bg-sand py-24 sm:py-32">
       <Container className="grid gap-14 lg:grid-cols-[1fr_1.3fr]">
         <div>
           <SectionHeading eyebrow={t.eyebrow} title={t.title} />
           <div className="mt-10 space-y-4">
-            {retreat.prices.map((price) => (
+            {prices.map(({ price, shown }) => (
               <div key={price.label} className="rounded-3xl bg-ink p-8 text-cream shadow-xl">
                 <p className="text-xs font-semibold tracking-[0.2em] text-ball uppercase">{price.label}</p>
-                <p className="mt-3 font-display text-6xl tracking-tight">{formatPrice(price, priceLocale(lang))}</p>
+                <p className="mt-3 font-display text-6xl tracking-tight">{formatPrice(shown, priceLocale(lang))}</p>
                 <ConvertedPrices
                   amount={price.amount}
                   currency={price.currency}
+                  shown={shown.currency}
                   lang={lang}
                   className="mt-1 text-cream/60"
                 />
@@ -149,13 +164,11 @@ export function PricingSection({
   );
 }
 
-// `currency` shows the "from" price converted at today's rate, e.g. euros on the English homepage.
+// `currency` shows the euro price converted at today's rate, e.g. pounds for UK visitors.
 export async function RetreatCard({ retreat, lang, currency }: { retreat: Retreat; lang: Lang; currency?: Currency }) {
   const t = ui(lang).card;
   const from = retreat.prices[0];
-  const shown = currency ?? from.currency;
-  const rate = shown === from.currency ? 1 : (await getFxRates(from.currency)).rates[shown];
-  const display = { amount: Math.round(from.amount * rate), currency: shown };
+  const shown = await convertPrice(from, currency ?? from.currency);
   return (
     <Link
       href={retreat.href}
@@ -188,12 +201,12 @@ export async function RetreatCard({ retreat, lang, currency }: { retreat: Retrea
         <div className="mt-8 flex items-end justify-between gap-4 border-t border-white/20 pt-6">
           <p>
             <span className="block text-xs tracking-widest text-cream/70 uppercase">{t.from}</span>
-            <span className="font-display text-4xl">{formatPrice(display, priceLocale(lang))}</span>
+            <span className="font-display text-4xl">{formatPrice(shown, priceLocale(lang))}</span>
             <span className="ml-1 text-sm text-cream/70">{t.pp}</span>
             <ConvertedPrices
               amount={from.amount}
               currency={from.currency}
-              shown={shown}
+              shown={shown.currency}
               lang={lang}
               className="mt-1 text-cream/60"
             />

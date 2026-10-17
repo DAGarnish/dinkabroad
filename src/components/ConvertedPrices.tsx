@@ -19,8 +19,9 @@ function money(amount: number, code: Currency, locale: string) {
 
 /**
  * A small line under a price with its value in the other two of EUR / GBP / USD,
- * e.g. "≈ €4,093 · £3,461 · rates Oct 16". When the price above is shown converted
- * into `shown`, the line lists the original price exactly plus the remaining currency.
+ * e.g. "≈ £928 · ≈ $1,237 · rates 17 Oct". When the price above is shown converted
+ * into `shown`, the line lists the set euro price exactly, the remaining currency,
+ * and a note that the converted price moves with the exchange rate.
  */
 export async function ConvertedPrices({
   amount,
@@ -44,11 +45,17 @@ export async function ConvertedPrices({
 
   return (
     <span className={`block font-sans text-xs font-normal tracking-normal ${className}`}>
-      ≈{" "}
       {others
-        .map((c) => money(c.code === currency ? amount : amount * rates[c.code], c.code, language(lang).numberLocale ?? c.locale))
+        .map((c) => {
+          const locale = language(lang).numberLocale ?? c.locale;
+          // The set price is exact; only converted amounts are approximate.
+          return c.code === currency
+            ? money(amount, c.code, locale)
+            : `≈ ${money(amount * rates[c.code], c.code, locale)}`;
+        })
         .join(" · ")}
       <span className="opacity-75"> · {date ? `${t.rates} ${date}` : t.approx}</span>
+      {shown !== currency && <span className="block opacity-75">{t.converted}</span>}
     </span>
   );
 }

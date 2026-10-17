@@ -31,3 +31,10 @@ export async function getFxRates(base: Currency): Promise<FxRates> {
   ) as Record<Currency, number>;
   return { rates, updated: null };
 }
+
+// A price converted into another currency at the latest rate, rounded to whole units.
+export async function convertPrice(price: { amount: number; currency: Currency }, to: Currency) {
+  if (to === price.currency) return price;
+  const { rates } = await getFxRates(price.currency);
+  return { amount: Math.round(price.amount * rates[to]), currency: to };
+}

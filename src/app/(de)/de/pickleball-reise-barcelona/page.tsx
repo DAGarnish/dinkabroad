@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleball-Reise Barcelona: 9 Tage Pickleball und Kultur",
   description:
-    "Eine 9-tägige Pickleball-Reise nach Barcelona: 6 Tage Pickleball, Gaudís Barcelona, Montserrat, Tarragona, die Cava-Region und Flamenco von einem 4★-Strandhotel aus. Ab 3.950 €.",
+    "Eine 9-tägige Pickleball-Reise nach Barcelona: 6 Tage Pickleball, Gaudís Barcelona, Montserrat, Tarragona, die Cava-Region und Flamenco von einem 4★-Strandhotel aus. Ab 3.500 €.",
   path: longHaulLobDe.href,
   siteLang: "de",
 });

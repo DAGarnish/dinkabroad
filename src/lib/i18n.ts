@@ -71,7 +71,12 @@ const en = {
     cta: "Yes, send me all the info",
   },
   card: { from: "From", pp: "p.p.", explore: "Explore the trip →" },
-  fx: { rates: "rates", approx: "approx. rates", dateLocale: "en-GB" },
+  fx: {
+    rates: "rates",
+    approx: "approx. rates",
+    converted: "Prices are set in euros, so this price changes with the exchange rate.",
+    dateLocale: "en-GB",
+  },
   comaRuga: {
     imageAlt: "The bay at Coma-ruga with calm turquoise water and the town behind the beach",
     gettingHere: "Getting here",
@@ -191,7 +196,12 @@ const es: Ui = {
     cta: "Sí, quiero toda la información",
   },
   card: { from: "Desde", pp: "p.p.", explore: "Ver el viaje →" },
-  fx: { rates: "cambio del", approx: "cambio aproximado", dateLocale: "es-ES" },
+  fx: {
+    rates: "cambio del",
+    approx: "cambio aproximado",
+    converted: "Los precios se fijan en euros, así que este precio varía con el tipo de cambio.",
+    dateLocale: "es-ES",
+  },
   comaRuga: {
     imageAlt: "La bahía de Coma-ruga con el agua turquesa en calma y el pueblo detrás de la playa",
     gettingHere: "Cómo llegar",
@@ -299,7 +309,12 @@ const fr: Ui = {
     cta: "Oui, envoyez-moi toutes les infos",
   },
   card: { from: "À partir de", pp: "/pers.", explore: "Découvrir le séjour →" },
-  fx: { rates: "taux du", approx: "taux approximatifs", dateLocale: "fr-FR" },
+  fx: {
+    rates: "taux du",
+    approx: "taux approximatifs",
+    converted: "Les prix sont fixés en euros : ce montant varie donc avec le taux de change.",
+    dateLocale: "fr-FR",
+  },
   comaRuga: {
     imageAlt: "La baie de Coma-ruga, son eau turquoise et calme et la ville derrière la plage",
     gettingHere: "Comment venir",
@@ -407,7 +422,12 @@ const de: Ui = {
     cta: "Ja, schicken Sie mir alle Infos",
   },
   card: { from: "Ab", pp: "p. P.", explore: "Zur Reise →" },
-  fx: { rates: "Kurs vom", approx: "ungefährer Kurs", dateLocale: "de-DE" },
+  fx: {
+    rates: "Kurs vom",
+    approx: "ungefährer Kurs",
+    converted: "Die Preise werden in Euro festgelegt, daher ändert sich dieser Betrag mit dem Wechselkurs.",
+    dateLocale: "de-DE",
+  },
   comaRuga: {
     imageAlt: "Die Bucht von Coma-ruga mit ruhigem, türkisfarbenem Wasser und dem Ort hinter dem Strand",
     gettingHere: "Anreise",

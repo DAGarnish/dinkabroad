@@ -17,9 +17,9 @@ import { localDinkDe } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Pickleball-Urlaub Barcelona: 5-tägige Pickleball-Reise ab 1.050 €",
+  title: "Pickleball-Urlaub Barcelona: 5-tägige Pickleball-Reise ab 1.100 €",
   description:
-    "5 Tage Pickleball-Urlaub an der Küste von Barcelona: Training, lockeres Turnier, 4★-Hotel direkt am Strand, Mittagessen und Transfers. Ab 1.050 € pro Person.",
+    "5 Tage Pickleball-Urlaub an der Küste von Barcelona: Training, lockeres Turnier, 4★-Hotel direkt am Strand, Mittagessen und Transfers. Ab 1.100 € pro Person.",
   path: localDinkDe.href,
   siteLang: "de",
 });
@@ -104,7 +104,7 @@ const faqs: FaqItem[] = [
   {
     question: "Kann ich allein kommen?",
     answer:
-      "Ja, das machen viele. Die Gruppe ist auf 20 Spieler begrenzt, Sie finden also schnell Anschluss, auf und neben dem Court. Lieber ein eigenes Zimmer? Das Einzelzimmer kostet 1.650 € pro Person.",
+      "Ja, das machen viele. Die Gruppe ist auf 20 Spieler begrenzt, Sie finden also schnell Anschluss, auf und neben dem Court. Lieber ein eigenes Zimmer? Das Einzelzimmer kostet 1.700 € pro Person.",
   },
   {
     question: "Sind die Flüge inklusive?",

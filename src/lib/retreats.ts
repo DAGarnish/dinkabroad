@@ -41,14 +41,14 @@ export const localDink: Retreat = {
   prices: [
     {
       label: "Twin room",
-      amount: 890,
-      currency: "GBP",
+      amount: 1100,
+      currency: "EUR",
       note: "per person, sharing a twin room. Flights not included.",
     },
     {
       label: "Single room",
-      amount: 1390,
-      currency: "GBP",
+      amount: 1700,
+      currency: "EUR",
       note: "per person, private room. Flights not included.",
     },
   ],
@@ -76,14 +76,14 @@ export const longHaulLob: Retreat = {
   prices: [
     {
       label: "Double room",
-      amount: 4590,
-      currency: "USD",
+      amount: 3500,
+      currency: "EUR",
       note: "per person, two travelers sharing. Airfare not included.",
     },
     {
       label: "Single room",
-      amount: 5290,
-      currency: "USD",
+      amount: 4100,
+      currency: "EUR",
       note: "per person, private room. Airfare not included.",
     },
   ],
@@ -97,7 +97,7 @@ export const longHaulLob: Retreat = {
 
 export const retreats = [localDink, longHaulLob];
 
-// Spanish site (es-ES). Prices are in euros for the Spanish-speaking market.
+// Spanish site (es-ES). All prices are set in euros; other currencies are converted from them.
 export const localDinkEs: Retreat = {
   ...localDink,
   href: "/es/vacaciones-pickleball-barcelona",
@@ -109,13 +109,13 @@ export const localDinkEs: Retreat = {
   prices: [
     {
       label: "Habitación twin",
-      amount: 1050,
+      amount: 1100,
       currency: "EUR",
       note: "por persona, en habitación twin compartida. Vuelos no incluidos.",
     },
     {
       label: "Habitación individual",
-      amount: 1650,
+      amount: 1700,
       currency: "EUR",
       note: "por persona, habitación individual. Vuelos no incluidos.",
     },
@@ -139,13 +139,13 @@ export const longHaulLobEs: Retreat = {
   prices: [
     {
       label: "Habitación doble",
-      amount: 3950,
+      amount: 3500,
       currency: "EUR",
       note: "por persona, dos viajeros compartiendo. Vuelos no incluidos.",
     },
     {
       label: "Habitación individual",
-      amount: 4950,
+      amount: 4100,
       currency: "EUR",
       note: "por persona, habitación individual. Vuelos no incluidos.",
     },
@@ -160,7 +160,7 @@ export const longHaulLobEs: Retreat = {
 
 export const retreatsEs = [localDinkEs, longHaulLobEs];
 
-// French site (fr-FR). Same euro prices as the Spanish site.
+// French site (fr-FR).
 export const localDinkFr: Retreat = {
   ...localDink,
   href: "/fr/vacances-pickleball-barcelone",
@@ -172,13 +172,13 @@ export const localDinkFr: Retreat = {
   prices: [
     {
       label: "Chambre twin",
-      amount: 1050,
+      amount: 1100,
       currency: "EUR",
       note: "par personne, en chambre twin partagée. Vols non inclus.",
     },
     {
       label: "Chambre individuelle",
-      amount: 1650,
+      amount: 1700,
       currency: "EUR",
       note: "par personne, chambre individuelle. Vols non inclus.",
     },
@@ -202,13 +202,13 @@ export const longHaulLobFr: Retreat = {
   prices: [
     {
       label: "Chambre double",
-      amount: 3950,
+      amount: 3500,
       currency: "EUR",
       note: "par personne, deux voyageurs partageant la chambre. Vols non inclus.",
     },
     {
       label: "Chambre individuelle",
-      amount: 4950,
+      amount: 4100,
       currency: "EUR",
       note: "par personne, chambre individuelle. Vols non inclus.",
     },
@@ -223,7 +223,7 @@ export const longHaulLobFr: Retreat = {
 
 export const retreatsFr = [localDinkFr, longHaulLobFr];
 
-// German site (de-DE). Same euro prices as the Spanish and French sites.
+// German site (de-DE).
 export const localDinkDe: Retreat = {
   ...localDink,
   href: "/de/pickleball-urlaub-barcelona",
@@ -235,13 +235,13 @@ export const localDinkDe: Retreat = {
   prices: [
     {
       label: "Zweibettzimmer",
-      amount: 1050,
+      amount: 1100,
       currency: "EUR",
       note: "pro Person im geteilten Zweibettzimmer. Flüge nicht inklusive.",
     },
     {
       label: "Einzelzimmer",
-      amount: 1650,
+      amount: 1700,
       currency: "EUR",
       note: "pro Person im Einzelzimmer. Flüge nicht inklusive.",
     },
@@ -265,13 +265,13 @@ export const longHaulLobDe: Retreat = {
   prices: [
     {
       label: "Doppelzimmer",
-      amount: 3950,
+      amount: 3500,
       currency: "EUR",
       note: "pro Person bei zwei Reisenden im Zimmer. Flüge nicht inklusive.",
     },
     {
       label: "Einzelzimmer",
-      amount: 4950,
+      amount: 4100,
       currency: "EUR",
       note: "pro Person im Einzelzimmer. Flüge nicht inklusive.",
     },
