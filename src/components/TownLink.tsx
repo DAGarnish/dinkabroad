@@ -1,10 +1,17 @@
 import type { ReactNode } from "react";
 import { type Lang, siteOf } from "@/lib/i18n";
 
-// Official tourism sites for the afternoon trip ideas. Only Sitges has a page per language.
+// Tarragona's Roman amphitheatre on Spain's official tourism site (no Dutch version, so NL gets English).
+const amphitheatre: Record<string, string> = {
+  es: "https://www.spain.info/es/lugares-interes/anfiteatro-romano/",
+  fr: "https://www.spain.info/fr/curiosites/amphitheatre-romain/",
+  de: "https://www.spain.info/de/highlights/roemisches-anfitheater/",
+};
+
+// Tourism pages for the afternoon trip ideas. Vilanova's site has no language versions.
 const towns = {
   sitges: (site: string) => `https://www.sitgesanytime.com/${site}/`,
-  tarragona: () => "https://www.tarragonaturisme.cat/",
+  tarragona: (site: string) => amphitheatre[site] ?? "https://www.spain.info/en/places-of-interest/roman-amphitheatre/",
   vilanova: () => "https://www.vilanovaturisme.cat/",
 };
 
