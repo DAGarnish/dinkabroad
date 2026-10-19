@@ -21,7 +21,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const vacationMetadata = pageMetadata({
   title: "Barcelona Pickleball Vacation: 9-Day Pickleball Trip from the USA",
   description:
-    "A 9-day Barcelona pickleball vacation for American players: pickleball by the sea, then Gaudí's Barcelona, Montserrat, cava country and flamenco, with optional tours to Tarragona and Sitges. From €3,500.",
+    "A 9-day Barcelona pickleball vacation for American players: pickleball by the sea, then Gaudí's Barcelona, Montserrat, cava country and flamenco, with optional tours to Tarragona and Sitges. From €2,999.",
   path: longHaulLob.href,
   locale: "en_US",
 });

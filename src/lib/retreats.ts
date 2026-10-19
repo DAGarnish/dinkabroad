@@ -76,7 +76,7 @@ export const longHaulLob: Retreat = {
   prices: [
     {
       label: "Double room",
-      amount: 3500,
+      amount: 2999,
       currency: "EUR",
       note: "per person, two travelers sharing. Airfare not included.",
     },
@@ -139,7 +139,7 @@ export const longHaulLobEs: Retreat = {
   prices: [
     {
       label: "Habitación doble",
-      amount: 3500,
+      amount: 2999,
       currency: "EUR",
       note: "por persona, dos viajeros compartiendo. Vuelos no incluidos.",
     },
@@ -202,7 +202,7 @@ export const longHaulLobFr: Retreat = {
   prices: [
     {
       label: "Chambre double",
-      amount: 3500,
+      amount: 2999,
       currency: "EUR",
       note: "par personne, deux voyageurs partageant la chambre. Vols non inclus.",
     },
@@ -265,7 +265,7 @@ export const longHaulLobDe: Retreat = {
   prices: [
     {
       label: "Doppelzimmer",
-      amount: 3500,
+      amount: 2999,
       currency: "EUR",
       note: "pro Person bei zwei Reisenden im Zimmer. Flüge nicht inklusive.",
     },
@@ -328,7 +328,7 @@ export const longHaulLobNl: Retreat = {
   prices: [
     {
       label: "Tweepersoonskamer",
-      amount: 3500,
+      amount: 2999,
       currency: "EUR",
       note: "per persoon, met twee reizigers op een kamer. Vluchten niet inbegrepen.",
     },

@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Viaje de pickleball a Barcelona: 9 días de pickleball y cultura",
   description:
-    "Un viaje de pickleball de 9 días en Barcelona: pickleball junto al mar y después la Barcelona de Gaudí, Montserrat, la tierra del cava y flamenco, con excursiones opcionales a Tarragona y Sitges. Desde 3500 €.",
+    "Un viaje de pickleball de 9 días en Barcelona: pickleball junto al mar y después la Barcelona de Gaudí, Montserrat, la tierra del cava y flamenco, con excursiones opcionales a Tarragona y Sitges. Desde 2999 €.",
   path: longHaulLobEs.href,
   siteLang: "es",
 });

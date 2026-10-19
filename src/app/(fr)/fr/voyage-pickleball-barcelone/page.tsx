@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Voyage pickleball à Barcelone : 9 jours de pickleball et de culture",
   description:
-    "Un voyage pickleball de 9 jours en Catalogne : du pickleball au bord de la mer, puis la Barcelone de Gaudí, Montserrat, le pays du cava et le flamenco, avec des excursions en option à Tarragone et Sitges. À partir de 3 500 €.",
+    "Un voyage pickleball de 9 jours en Catalogne : du pickleball au bord de la mer, puis la Barcelone de Gaudí, Montserrat, le pays du cava et le flamenco, avec des excursions en option à Tarragone et Sitges. À partir de 2 999 €.",
   path: longHaulLobFr.href,
   siteLang: "fr",
 });

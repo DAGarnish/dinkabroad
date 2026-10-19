@@ -6,8 +6,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 const seasonMonths = new Set([2, 3, 4, 5, 8, 9, 10]);
 const doubleTapMs = 350;
 
-// Departures that can no longer be chosen. Every 2026 date is sold out.
-const isFullyBooked = (date: string) => date < "2027-01-01";
+// Departures that can no longer be chosen: every 2026 date, plus sold-out 2027 Fridays.
+const soldOut = new Set(["2027-03-12", "2027-03-26"]);
+const isFullyBooked = (date: string) => date < "2027-01-01" || soldOut.has(date);
 
 // Every season Friday from tomorrow to a year ahead, as UTC dates so server and browser agree.
 function seasonFridays() {
