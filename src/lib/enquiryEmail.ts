@@ -24,6 +24,7 @@ export type Enquiry = {
   retreat: string;
   level: string;
   travellers: string;
+  startDates: string;
   message: string;
 };
 
@@ -89,6 +90,7 @@ export function enquiryEmailHtml(data: Enquiry) {
                 ${row("Retreat", e.retreat)}
                 ${row("Level", e.level)}
                 ${row("Travellers", e.travellers)}
+                ${row("Start dates", e.startDates.replace(/\n/g, "<br>"))}
               </table>
             </td>
           </tr>

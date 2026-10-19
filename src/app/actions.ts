@@ -18,6 +18,7 @@ const fields = [
   "retreat",
   "level",
   "travellers",
+  "startDates",
   "message",
 ] as const;
 
@@ -71,9 +72,9 @@ export async function submitEnquiry(_prev: EnquiryState, formData: FormData): Pr
   try {
     const sql = neon(process.env.DATABASE_URL!);
     await sql`
-      INSERT INTO enquiries (first_name, last_name, email, phone_code, phone, retreat, level, travellers, message)
+      INSERT INTO enquiries (first_name, last_name, email, phone_code, phone, retreat, level, travellers, start_dates, message)
       VALUES (${data.firstName}, ${data.lastName}, ${data.email}, ${data.phoneCode}, ${data.phone},
-              ${data.retreat}, ${data.level}, ${data.travellers}, ${data.message})
+              ${data.retreat}, ${data.level}, ${data.travellers}, ${data.startDates}, ${data.message})
     `;
   } catch (err) {
     console.error("[enquiry] database insert failed", err, lines);

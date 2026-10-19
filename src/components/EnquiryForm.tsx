@@ -3,6 +3,7 @@
 import { useActionState, useEffect, useState } from "react";
 import { submitEnquiry, type EnquiryState } from "@/app/actions";
 import { type Lang, type RetreatChoice, ui } from "@/lib/i18n";
+import { StartDatePicker } from "./StartDatePicker";
 
 type Props = {
   lang: Lang;
@@ -124,6 +125,16 @@ export function EnquiryForm({ lang, defaultRetreat = "", defaultPhoneCode = "+44
             ))}
           </select>
         </label>
+        <StartDatePicker
+          locale={ui(lang).fx.dateLocale}
+          labels={{
+            label: t.startDates,
+            help: t.startDatesHelp,
+            any: t.startDatesAny,
+            preferred: t.startDatesPreferred,
+            clear: t.startDatesClear,
+          }}
+        />
         <label className="block sm:col-span-2">
           <span className="sr-only">{t.anythingElse}</span>
           <textarea name="message" rows={3} placeholder={t.message} className={input} />

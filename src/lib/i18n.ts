@@ -119,6 +119,8 @@ const en = {
   enquiry: {
     eyebrow: "Limited spots · max 16 players",
     bullets: ["Full programme, dates and pricing", "Personal reply within 24 hours", "No commitment, no spam"],
+    whatsapp: "Prefer to chat? Message us on WhatsApp",
+    whatsappMessage: "Hi Dink Abroad! I'd like to know more about your pickleball trips.",
   },
   form: {
     firstName: "First name",
@@ -143,6 +145,11 @@ const en = {
     thanksFallback: "Thanks, we'll be in touch.",
     inbox: "Keep an eye on your inbox (and your spam folder, just in case).",
     toast: "Your enquiry has been sent. We'll reply soon!",
+    startDates: "Preferred start dates (optional)",
+    startDatesHelp: "Every trip starts on a Friday. Tap every date that works for you, and double-tap your favourites in order of preference.",
+    startDatesAny: "Works for me",
+    startDatesPreferred: "Preference",
+    startDatesClear: "Clear dates",
   },
 };
 
@@ -245,6 +252,8 @@ const es: Ui = {
   enquiry: {
     eyebrow: "Plazas limitadas · máx. 16 jugadores",
     bullets: ["Programa completo, fechas y precios", "Respuesta personal en 24 horas", "Sin compromiso y sin spam"],
+    whatsapp: "¿Prefieres hablar? Escríbenos por WhatsApp",
+    whatsappMessage: "¡Hola, Dink Abroad! Me gustaría saber más sobre vuestros viajes de pickleball.",
   },
   form: {
     firstName: "Nombre",
@@ -269,6 +278,11 @@ const es: Ui = {
     thanksFallback: "Gracias, nos pondremos en contacto.",
     inbox: "Revisa tu bandeja de entrada (y la carpeta de spam, por si acaso).",
     toast: "Hemos recibido tu solicitud. ¡Te responderemos pronto!",
+    startDates: "Fechas de inicio preferidas (opcional)",
+    startDatesHelp: "Todos los viajes empiezan en viernes. Toca cada fecha que te venga bien y toca dos veces tus favoritas por orden de preferencia.",
+    startDatesAny: "Me viene bien",
+    startDatesPreferred: "Preferencia",
+    startDatesClear: "Borrar fechas",
   },
 };
 
@@ -359,6 +373,8 @@ const fr: Ui = {
   enquiry: {
     eyebrow: "Places limitées · 16 joueurs max.",
     bullets: ["Programme complet, dates et tarifs", "Réponse personnelle sous 24 heures", "Sans engagement, sans spam"],
+    whatsapp: "Envie d’échanger ? Écrivez-nous sur WhatsApp",
+    whatsappMessage: "Bonjour Dink Abroad ! J’aimerais en savoir plus sur vos séjours pickleball.",
   },
   form: {
     firstName: "Prénom",
@@ -383,6 +399,11 @@ const fr: Ui = {
     thanksFallback: "Merci, nous revenons vers vous très vite.",
     inbox: "Surveillez votre boîte de réception (et vos spams, au cas où).",
     toast: "Votre demande a bien été envoyée. Nous vous répondons très vite !",
+    startDates: "Dates de départ souhaitées (facultatif)",
+    startDatesHelp: "Chaque séjour commence un vendredi. Touchez chaque date qui vous convient, puis touchez deux fois vos préférées par ordre de préférence.",
+    startDatesAny: "Me convient",
+    startDatesPreferred: "Préférence",
+    startDatesClear: "Effacer les dates",
   },
 };
 
@@ -473,6 +494,8 @@ const de: Ui = {
   enquiry: {
     eyebrow: "Begrenzte Plätze · max. 16 Spieler",
     bullets: ["Komplettes Programm, Termine und Preise", "Persönliche Antwort innerhalb von 24 Stunden", "Unverbindlich und ohne Spam"],
+    whatsapp: "Lieber chatten? Schreiben Sie uns auf WhatsApp",
+    whatsappMessage: "Hallo Dink Abroad! Ich möchte gern mehr über Ihre Pickleball-Reisen erfahren.",
   },
   form: {
     firstName: "Vorname",
@@ -497,6 +520,11 @@ const de: Ui = {
     thanksFallback: "Danke, wir melden uns bei Ihnen.",
     inbox: "Behalten Sie Ihr Postfach im Blick (und sicherheitshalber auch den Spam-Ordner).",
     toast: "Ihre Anfrage wurde gesendet. Wir melden uns bald!",
+    startDates: "Gewünschte Starttermine (optional)",
+    startDatesHelp: "Jede Reise beginnt an einem Freitag. Tippen Sie alle Termine an, die für Sie passen, und tippen Sie Ihre Favoriten in der gewünschten Reihenfolge doppelt an.",
+    startDatesAny: "Passt mir",
+    startDatesPreferred: "Favorit",
+    startDatesClear: "Termine löschen",
   },
 };
 
@@ -587,6 +615,8 @@ const nl: Ui = {
   enquiry: {
     eyebrow: "Beperkt aantal plekken · max. 16 spelers",
     bullets: ["Volledig programma, data en prijzen", "Persoonlijk antwoord binnen 24 uur", "Vrijblijvend en zonder spam"],
+    whatsapp: "Liever chatten? Stuur ons een bericht op WhatsApp",
+    whatsappMessage: "Hoi Dink Abroad! Ik wil graag meer weten over jullie pickleballreizen.",
   },
   form: {
     firstName: "Voornaam",
@@ -611,6 +641,11 @@ const nl: Ui = {
     thanksFallback: "Bedankt, we nemen contact met je op.",
     inbox: "Houd je inbox in de gaten (en voor de zekerheid ook je spammap).",
     toast: "Je aanvraag is verzonden. We reageren snel!",
+    startDates: "Gewenste startdata (optioneel)",
+    startDatesHelp: "Elke reis begint op een vrijdag. Tik op elke datum die je uitkomt en dubbeltik je favorieten in volgorde van voorkeur.",
+    startDatesAny: "Komt me uit",
+    startDatesPreferred: "Voorkeur",
+    startDatesClear: "Data wissen",
   },
 };
 

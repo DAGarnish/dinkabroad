@@ -9,6 +9,7 @@ import { hotel } from "@/lib/site";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
 import { ExternalLink, linkTowns } from "./TownLink";
+import { WhatsAppButton } from "./WhatsAppButton";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
 
 const priceLocale = (lang: Lang) => language(lang).numberLocale;
@@ -354,6 +355,7 @@ export function EnquirySection({
               </li>
             ))}
           </ul>
+          <WhatsAppButton label={t.whatsapp} message={t.whatsappMessage} />
         </div>
         <EnquiryForm lang={lang} defaultRetreat={defaultRetreat} defaultPhoneCode={defaultPhoneCode} />
       </Container>
