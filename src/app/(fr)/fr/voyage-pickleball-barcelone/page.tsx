@@ -209,7 +209,7 @@ export default function VoyagePickleballPage() {
             intro="Du pickleball au bord de la mer chaque matin du vendredi au mardi, puis Barcelone et ses trésors jusqu’au samedi."
           />
           <div className="mt-12 max-w-3xl pl-4">
-            <Itinerary days={days} />
+            <Itinerary days={days} lang="fr" />
           </div>
           <p className="mt-10 text-sm text-stone">
             * L’ordre et les horaires des activités peuvent être ajustés pour offrir la meilleure expérience.

@@ -208,7 +208,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
             intro="Pickleball by the sea every morning from Friday to Tuesday, then Barcelona and its sights until Saturday."
           />
           <div className="mt-12 max-w-3xl pl-4">
-            <Itinerary days={days} />
+            <Itinerary days={days} lang="en-US" />
           </div>
           <p className="mt-10 text-sm text-stone">
             * The order and timing of activities may be adjusted for the best experience.

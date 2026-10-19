@@ -32,3 +32,18 @@ export function ExternalLink({ href, children }: { href: string; children: React
     </a>
   );
 }
+
+const townNames = /(Sitges|Tarragona|Tarragone|Vilanova i la Geltrú)/;
+
+// Turns the town names in a plain string into TownLinks, so itinerary text can stay a string for the schema.
+export function linkTowns(text: string, lang: Lang) {
+  return text.split(townNames).map((part, i) => {
+    if (i % 2 === 0) return part;
+    const town = part === "Sitges" ? "sitges" : part.startsWith("Tarragon") ? "tarragona" : "vilanova";
+    return (
+      <TownLink key={i} town={town} lang={lang}>
+        {part}
+      </TownLink>
+    );
+  });
+}

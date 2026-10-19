@@ -204,7 +204,7 @@ export default function ViajePickleballPage() {
             intro="Pickleball junto al mar todas las mañanas de viernes a martes, y después Barcelona y sus rincones hasta el sábado."
           />
           <div className="mt-12 max-w-3xl pl-4">
-            <Itinerary days={days} />
+            <Itinerary days={days} lang="es" />
           </div>
           <p className="mt-10 text-sm text-stone">
             * El orden y los horarios de las actividades pueden ajustarse para ofrecer la mejor experiencia.

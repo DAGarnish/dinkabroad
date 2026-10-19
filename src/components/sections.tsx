@@ -8,7 +8,7 @@ import { type Retreat, formatPrice } from "@/lib/retreats";
 import { hotel } from "@/lib/site";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
-import { ExternalLink } from "./TownLink";
+import { ExternalLink, linkTowns } from "./TownLink";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
 
 const priceLocale = (lang: Lang) => language(lang).numberLocale;
@@ -377,7 +377,8 @@ export function Included({ items, note }: { items: string[]; note?: string }) {
   );
 }
 
-export function Itinerary({ days }: { days: { label: string; title: string; text: string }[] }) {
+// With `lang`, town names in the text link to their tourism pages.
+export function Itinerary({ days, lang }: { days: { label: string; title: string; text: string }[]; lang?: Lang }) {
   return (
     <ol className="relative space-y-10 border-l border-line pl-10">
       {days.map((day, i) => (
@@ -387,7 +388,7 @@ export function Itinerary({ days }: { days: { label: string; title: string; text
           </span>
           <p className="text-xs font-semibold tracking-[0.2em] text-terracotta uppercase">{day.label}</p>
           <h3 className="mt-1 font-display text-2xl">{day.title}</h3>
-          <p className="mt-2 max-w-2xl leading-relaxed text-stone">{day.text}</p>
+          <p className="mt-2 max-w-2xl leading-relaxed text-stone">{lang ? linkTowns(day.text, lang) : day.text}</p>
         </li>
       ))}
     </ol>

@@ -209,7 +209,7 @@ export default function PickleballReisPage() {
             intro="Van vrijdag tot dinsdag elke ochtend pickleball aan zee, daarna tot zaterdag Barcelona en zijn bezienswaardigheden."
           />
           <div className="mt-12 max-w-3xl pl-4">
-            <Itinerary days={days} />
+            <Itinerary days={days} lang="nl" />
           </div>
           <p className="mt-10 text-sm text-stone">
             * Volgorde en tijden van de activiteiten kunnen worden aangepast voor de beste ervaring.
