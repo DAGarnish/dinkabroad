@@ -35,17 +35,17 @@ const days = [
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous, entre la plage, la piscine ou notre excursion en option à Sitges.",
+    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous, entre la plage, la piscine ou une sortie détendue à Sitges avec votre hôte.",
   },
   {
     label: "Jour 3 · Dimanche",
-    title: "Coaching et excursion en option à Tarragone",
-    text: "Deuxième séance de coaching et matchs contre différents adversaires. L’après-midi, rejoignez notre visite guidée en option de Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
+    title: "Coaching et après-midi à Tarragone",
+    text: "Deuxième séance de coaching et matchs contre différents adversaires. L’après-midi, si le cœur vous en dit, partez avec votre hôte pour une sortie détendue à Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
   },
   {
     label: "Jour 4 · Lundi",
     title: "Jour de tournoi",
-    text: "Un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. L’après-midi, détendez-vous à la plage ou rejoignez notre excursion en option à Reus, ville natale de Gaudí et capitale du vermouth catalan.",
+    text: "Un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. L’après-midi, détendez-vous à la plage ou partez avec votre hôte à Reus, ville natale de Gaudí et capitale du vermouth catalan.",
   },
   {
     label: "Jour 5 · Mardi",
@@ -75,6 +75,7 @@ const days = [
 ];
 
 const included = [
+  "Réception de bienvenue",
   "4 nuits dans un hôtel 4★ en bord de mer à Coma-ruga",
   "4 nuits dans un hôtel 4★ équivalent à Barcelone",
   "2 séances de coaching de 90 minutes avec des coachs diplômés (en anglais et en espagnol)",
@@ -83,13 +84,13 @@ const included = [
   "Petit-déjeuner buffet tous les matins",
   "4 repas de groupe soigneusement choisis",
   "Autocar privé de luxe pour les excursions et le trajet vers Barcelone",
+  "3 sorties détendues et facultatives l’après-midi à Sitges, Tarragone et Reus avec un hôte Dink Abroad",
   "Dégustation de vins et de cava dans le Penedès",
   "Visites guidées de la Sagrada Família et du Park Güell",
   "Excursion au monastère de Montserrat",
   "Guides locaux professionnels (en anglais ou en espagnol)",
   "Accompagnateur bilingue anglais-espagnol pendant tout le séjour",
   "Concert au Palau de la Música Catalana",
-  "Réception de bienvenue",
   "Dîner et fête d’adieu « Hasta luego »",
   "Transferts aller-retour depuis l’aéroport de Barcelone-El Prat",
 ];
@@ -164,7 +165,7 @@ export default function VoyagePickleballPage() {
           </>
         }
         intro="Neuf jours inoubliables en Catalogne. D’abord du pickleball au bord de la mer sur la Costa Daurada, puis cap sur Barcelone pour les chefs-d’œuvre de Gaudí, Montserrat et un concert au Palau de la Música Catalana, avec une dégustation de cava en chemin."
-        facts={["2 séances de coaching + tournoi", "3 excursions guidées", "Séjour en anglais et espagnol", "4 nuits plage + 4 nuits Barcelone"]}
+        facts={["Tout Local Dink +", "3 excursions guidées", "Séjour en anglais et espagnol", "4 nuits plage + 4 nuits Barcelone"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -180,9 +181,9 @@ export default function VoyagePickleballPage() {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Amphithéâtre romain de Tarragone au bord de la Méditerranée", name: "Tarragone", text: "Excursion en option : ruines romaines face à la mer" },
+              { img: tarragona, alt: "Amphithéâtre romain de Tarragone au bord de la Méditerranée", name: "Tarragone", text: "Sortie accompagnée : ruines romaines face à la mer" },
               { img: penedes, alt: "Vignobles vallonnés de la région viticole du Penedès", name: "Penedès", text: "Dégustation de vins et de cava" },
-              { img: sitges, alt: "La plage et l’église de Sitges par une journée ensoleillée", name: "Sitges", text: "Excursion en option : la ville balnéaire des artistes" },
+              { img: sitges, alt: "La plage et l’église de Sitges par une journée ensoleillée", name: "Sitges", text: "Sortie accompagnée : la ville balnéaire des artistes" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -222,7 +223,7 @@ export default function VoyagePickleballPage() {
         retreat={longHaulLobFr}
         lang="fr"
         included={included}
-        notIncluded="vols, excursions en option à Sitges, Tarragone et Reus, pourboires, dépenses personnelles et repas autres que le petit-déjeuner quotidien et les 4 repas de groupe inclus."
+        notIncluded="vols, billets de train et entrées lors des sorties à Sitges, Tarragone et Reus, pourboires, dépenses personnelles et repas autres que le petit-déjeuner quotidien et les 4 repas de groupe inclus."
         terms={[
           "Acompte : 20 % pour réserver votre place, déduit du prix total du voyage.",
           "Solde : à régler 60 jours avant la date de départ.",

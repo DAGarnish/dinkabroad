@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import sunset from "@/assets/images/coma-ruga-sunset.jpg";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
   {
     question: "¿Qué retiro es para mí?",
     answer:
-      "Local Dink son unas vacaciones de pickleball de 5 días (de viernes a martes), pensadas para jugadores de España y Europa. Long-Haul Lob es un viaje de 9 días para quienes vienen desde América, con el mismo pickleball junto al mar de viernes a martes y después cuatro noches en Barcelona, con visitas guiadas a las obras de Gaudí, Montserrat y el Penedès, además de excursiones opcionales a Tarragona, Sitges y Reus.",
+      "Local Dink son unas vacaciones de pickleball de 5 días (de viernes a martes), pensadas para jugadores de España y Europa. Long-Haul Lob es un viaje de 9 días para quienes vienen desde América, con el mismo pickleball junto al mar de viernes a martes y después cuatro noches en Barcelona, con visitas guiadas a las obras de Gaudí, Montserrat y el Penedès, además de salidas tranquilas con anfitrión a Tarragona, Sitges y Reus.",
   },
   {
     question: "¿Qué nivel necesito?",
@@ -179,7 +179,8 @@ export default function InicioPage() {
           <div className="relative">
             <Image
               src={courts}
-              alt="Pistas de pickleball al aire libre con superficie azul y redes bajo un cielo soleado"
+              alt="Cuatro pistas de pickleball al aire libre, rojas y grises, en nuestro club de Coma-ruga bajo un cielo azul"
+              title="Nuestras pistas de pickleball en Coma-ruga"
               placeholder="blur"
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import sunset from "@/assets/images/coma-ruga-sunset.jpg";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
@@ -53,7 +53,7 @@ const faqs: FaqItem[] = [
   {
     question: "Quel séjour est fait pour moi ?",
     answer:
-      "Local Dink, ce sont 5 jours de vacances pickleball (du vendredi au mardi), pensés pour les joueurs de France et d’Europe. Long-Haul Lob est un voyage de 9 jours pour ceux qui viennent d’Amérique du Nord, avec le même pickleball au bord de la mer du vendredi au mardi, puis quatre nuits à Barcelone et des visites guidées des sites de Gaudí, de Montserrat et du Penedès, ainsi que des excursions en option à Tarragone, Sitges et Reus.",
+      "Local Dink, ce sont 5 jours de vacances pickleball (du vendredi au mardi), pensés pour les joueurs de France et d’Europe. Long-Haul Lob est un voyage de 9 jours pour ceux qui viennent d’Amérique du Nord, avec le même pickleball au bord de la mer du vendredi au mardi, puis quatre nuits à Barcelone et des visites guidées des sites de Gaudí, de Montserrat et du Penedès, ainsi que des sorties détendues et accompagnées à Tarragone, Sitges et Reus.",
   },
   {
     question: "Quel niveau faut-il avoir ?",
@@ -184,7 +184,8 @@ export default function AccueilPage() {
           <div className="relative">
             <Image
               src={courts}
-              alt="Terrains de pickleball extérieurs aux surfaces bleues sous un ciel ensoleillé"
+              alt="Quatre terrains de pickleball extérieurs rouges et gris dans notre club de Coma-ruga, sous un ciel bleu"
+              title="Nos terrains de pickleball à Coma-ruga"
               placeholder="blur"
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"

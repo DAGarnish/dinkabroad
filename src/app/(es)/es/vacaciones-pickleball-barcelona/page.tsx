@@ -1,5 +1,5 @@
 import Image from "next/image";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-club-coma-ruga-aerial.jpg";
 import sitges from "@/assets/images/sitges.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
@@ -59,7 +59,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="es">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="es">Tarragona</TownLink> y{" "}
-        <TownLink town="reus" lang="es">Reus</TownLink> están a un corto trayecto en tren, fáciles de visitar por tu cuenta.
+        <TownLink town="reus" lang="es">Reus</TownLink> están a un corto trayecto en tren. Un anfitrión de Dink Abroad te acompaña, te enseña sus rincones favoritos y luego paseas a tu aire.
       </>
     ),
   },
@@ -74,17 +74,17 @@ const days = [
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa o un corto trayecto en tren hasta Sitges.",
+    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: quédate en la playa o súbete al tren hasta Sitges con tu anfitrión.",
   },
   {
     label: "Día 3 · Domingo",
     title: "A la práctica",
-    text: "Segunda sesión de entrenamiento y después muchos partidos contra rivales distintos para afianzar lo aprendido. Por la tarde, la Tarragona romana está a un corto trayecto en tren.",
+    text: "Segunda sesión de entrenamiento y después muchos partidos contra rivales distintos para afianzar lo aprendido. Por la tarde, una escapada tranquila a la Tarragona romana con tu anfitrión.",
   },
   {
     label: "Día 4 · Lunes",
     title: "Día de torneo",
-    text: "Pon a prueba lo aprendido en un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Pasa la última tarde en Reus o en la playa.",
+    text: "Pon a prueba lo aprendido en un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Pasa la última tarde en Reus con tu anfitrión, o en la playa.",
   },
   {
     label: "Día 5 · Martes",
@@ -100,6 +100,7 @@ const included = [
   "1 torneo amistoso con compañeros de viaje y jugadores locales",
   "Juego libre en las pistas",
   "Grupo reducido de máximo 16 jugadores",
+  "3 salidas de tarde tranquilas a Sitges, Tarragona y Reus, con un anfitrión del equipo de Dink Abroad",
   "Atención personal del equipo de Dink Abroad",
 ];
 
@@ -122,7 +123,12 @@ const faqs: FaqItem[] = [
   {
     question: "¿Qué incluye y qué no?",
     answer:
-      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 2 sesiones de entrenamiento, un torneo y juego libre. No incluye: vuelos, traslados al aeropuerto, comidas, cenas, bebidas ni seguro de viaje.",
+      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 2 sesiones de entrenamiento, un torneo, juego libre y 3 salidas de tarde con anfitrión. No incluye: vuelos, traslados al aeropuerto, comidas, cenas, bebidas, billetes de tren y entradas en las salidas, ni seguro de viaje.",
+  },
+  {
+    question: "¿Las salidas de la tarde son visitas guiadas?",
+    answer:
+      "No exactamente, y esa es la gracia. Alguien del equipo de Dink Abroad va con el grupo, se asegura de que todos cojan el tren correcto, te enseña sus rincones favoritos y el mejor sitio para tomar algo, y luego te deja pasear a tu aire. Todas las salidas son opcionales: si prefieres quedarte en la playa, perfecto. Los billetes de tren, las entradas y la comida se pagan allí y no están incluidos.",
   },
   {
     question: "¿Cómo y cuándo se paga?",
@@ -205,7 +211,8 @@ export default function VacacionesPickleballPage() {
           <div className="space-y-6 lg:pt-20">
             <Image
               src={courts}
-              alt="Pistas de pickleball al aire libre con las redes listas para jugar"
+              alt="Vista aérea de nuestras cuatro pistas de pickleball en Coma-ruga, con el club, la piscina y la playa mediterránea al fondo"
+              title="Nuestro club de pickleball en Coma-ruga desde el aire"
               placeholder="blur"
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
@@ -218,9 +225,9 @@ export default function VacacionesPickleballPage() {
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
             <p className="text-sm text-stone">
-              Ideas para la tarde: <TownLink town="sitges" lang="es">Sitges</TownLink>,{" "}
+              Salidas de tarde: <TownLink town="sitges" lang="es">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="es">Tarragona</TownLink> y{" "}
-              <TownLink town="reus" lang="es">Reus</TownLink> están a un corto trayecto en tren, fáciles de visitar por tu cuenta.
+              <TownLink town="reus" lang="es">Reus</TownLink> están a un corto trayecto en tren, con un anfitrión de Dink Abroad que te enseña lo mejor.
             </p>
           </div>
         </Container>

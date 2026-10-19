@@ -57,6 +57,7 @@ export const localDink: Retreat = {
     "2 × 90-minute coaching sessions",
     "Fun tournament with the locals",
     "Beachfront 4★ hotel",
+    "3 hosted afternoon outings",
   ],
 };
 
@@ -88,10 +89,12 @@ export const longHaulLob: Retreat = {
     },
   ],
   highlights: [
-    "2 coaching sessions + tournament",
+    "Everything in Local Dink +",
+    "4 nights in Barcelona",
     "3 guided day trips",
     "Bilingual tour director",
     "Palau de la Música concert & farewell fiesta",
+    "Airport transfers",
   ],
 };
 
@@ -125,6 +128,7 @@ export const localDinkEs: Retreat = {
     "2 sesiones de entrenamiento de 90 minutos",
     "Torneo amistoso con los locales",
     "Hotel 4★ en primera línea",
+    "3 salidas de tarde con anfitrión",
   ],
 };
 
@@ -151,10 +155,12 @@ export const longHaulLobEs: Retreat = {
     },
   ],
   highlights: [
-    "2 entrenamientos + torneo",
+    "Todo lo de Local Dink +",
+    "4 noches en Barcelona",
     "3 excursiones guiadas",
     "Guía bilingüe",
     "Concierto en el Palau y fiesta de despedida",
+    "Traslados al aeropuerto",
   ],
 };
 
@@ -188,6 +194,7 @@ export const localDinkFr: Retreat = {
     "2 séances de coaching de 90 min",
     "Tournoi amical avec les locaux",
     "Hôtel 4★ en bord de mer",
+    "3 sorties accompagnées l’après-midi",
   ],
 };
 
@@ -214,10 +221,12 @@ export const longHaulLobFr: Retreat = {
     },
   ],
   highlights: [
-    "2 séances de coaching + tournoi",
+    "Tout Local Dink +",
+    "4 nuits à Barcelone",
     "3 excursions guidées",
     "Accompagnateur bilingue",
     "Concert au Palau et fête d’adieu",
+    "Transferts aéroport",
   ],
 };
 
@@ -251,6 +260,7 @@ export const localDinkDe: Retreat = {
     "2 × 90 Minuten Training",
     "Lockeres Turnier mit Einheimischen",
     "4★-Hotel direkt am Strand",
+    "3 begleitete Nachmittagsausflüge",
   ],
 };
 
@@ -277,10 +287,12 @@ export const longHaulLobDe: Retreat = {
     },
   ],
   highlights: [
-    "2 Trainingseinheiten + Turnier",
+    "Alles aus Local Dink +",
+    "4 Nächte in Barcelona",
     "3 geführte Ausflüge",
     "Zweisprachige Reiseleitung",
     "Palau-Konzert & Abschiedsfiesta",
+    "Flughafentransfers",
   ],
 };
 
@@ -314,6 +326,7 @@ export const localDinkNl: Retreat = {
     "2 × 90 minuten training",
     "Gezellig toernooi met de locals",
     "4★-hotel aan het strand",
+    "3 middaguitstapjes met een host",
   ],
 };
 
@@ -340,10 +353,12 @@ export const longHaulLobNl: Retreat = {
     },
   ],
   highlights: [
-    "2 trainingen + toernooi",
+    "Alles van Local Dink +",
+    "4 nachten in Barcelona",
     "3 begeleide excursies",
     "Tweetalige reisleiding",
     "Palau-concert & afscheidsfeest",
+    "Vliegveldtransfers",
   ],
 };
 

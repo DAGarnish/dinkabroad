@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import sunset from "@/assets/images/coma-ruga-sunset.jpg";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
@@ -53,7 +53,7 @@ const faqs: FaqItem[] = [
   {
     question: "Welche Reise passt zu mir?",
     answer:
-      "Local Dink ist ein 5-tägiger Pickleball-Urlaub (Freitag bis Dienstag) für Spieler aus Deutschland, Österreich, der Schweiz und ganz Europa. Long-Haul Lob ist eine 9-tägige Reise mit demselben Pickleball am Meer von Freitag bis Dienstag, danach vier Nächte in Barcelona mit Führungen zu Gaudís Sehenswürdigkeiten, nach Montserrat und ins Penedès, dazu optionale Ausflüge nach Tarragona, Sitges und Reus.",
+      "Local Dink ist ein 5-tägiger Pickleball-Urlaub (Freitag bis Dienstag) für Spieler aus Deutschland, Österreich, der Schweiz und ganz Europa. Long-Haul Lob ist eine 9-tägige Reise mit demselben Pickleball am Meer von Freitag bis Dienstag, danach vier Nächte in Barcelona mit Führungen zu Gaudís Sehenswürdigkeiten, nach Montserrat und ins Penedès, dazu entspannte, begleitete Nachmittagsausflüge nach Tarragona, Sitges und Reus.",
   },
   {
     question: "Welches Spielniveau brauche ich?",
@@ -183,7 +183,8 @@ export default function StartseitePage() {
           <div className="relative">
             <Image
               src={courts}
-              alt="Pickleball-Plätze im Freien mit blauen Spielflächen und Netzen bei Sonnenschein"
+              alt="Vier rot-graue Pickleball-Plätze im Freien in unserem Club in Coma-ruga unter blauem Himmel"
+              title="Unsere Pickleball-Plätze in Coma-ruga"
               placeholder="blur"
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"

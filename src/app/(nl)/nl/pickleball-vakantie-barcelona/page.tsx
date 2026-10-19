@@ -1,5 +1,5 @@
 import Image from "next/image";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-club-coma-ruga-aerial.jpg";
 import sitges from "@/assets/images/sitges.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
@@ -59,7 +59,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
-        <TownLink town="reus" lang="nl">Reus</TownLink> liggen allemaal op een kort treinritje, makkelijk op eigen houtje te ontdekken.
+        <TownLink town="reus" lang="nl">Reus</TownLink> liggen allemaal op een kort treinritje. Een host van Dink Abroad gaat mee, laat je de leukste plekjes zien en daarna ga je lekker je eigen gang.
       </>
     ),
   },
@@ -74,17 +74,17 @@ const days = [
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand of een kort treinritje naar Sitges.",
+    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: blijf op het strand of pak met je host de trein naar Sitges.",
   },
   {
     label: "Dag 3 · Zondag",
     title: "In de praktijk",
-    text: "De tweede training, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten. ’s Middags ligt het Romeinse Tarragona op een kort treinritje.",
+    text: "De tweede training, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten. ’s Middags ga je met je host relaxed naar het Romeinse Tarragona.",
   },
   {
     label: "Dag 4 · Maandag",
     title: "Toernooidag",
-    text: "Laat zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. Je laatste middag breng je door in Reus of op het strand.",
+    text: "Laat zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. Je laatste middag breng je met je host door in Reus, of op het strand.",
   },
   {
     label: "Dag 5 · Dinsdag",
@@ -100,6 +100,7 @@ const included = [
   "1 gezellig toernooi met medereizigers en locals",
   "Vrij spel op de banen",
   "Kleine groep van max. 16 spelers",
+  "3 relaxte middaguitstapjes naar Sitges, Tarragona en Reus, met een host van het Dink Abroad-team",
   "Persoonlijke begeleiding door het Dink Abroad-team",
 ];
 
@@ -127,7 +128,12 @@ const faqs: FaqItem[] = [
   {
     question: "Wat is wel en niet inbegrepen?",
     answer:
-      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 2 trainingen, een toernooi en vrij spel. Niet inbegrepen: vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes en reisverzekering.",
+      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 2 trainingen, een toernooi, vrij spel en 3 middaguitstapjes met een host. Niet inbegrepen: vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes, treinkaartjes en entreegelden tijdens de uitstapjes, en reisverzekering.",
+  },
+  {
+    question: "Zijn de middaguitstapjes rondleidingen?",
+    answer:
+      "Niet helemaal, en dat is juist de bedoeling. Iemand van het Dink Abroad-team gaat mee, zorgt dat iedereen de juiste trein neemt, laat je de leukste plekjes en het beste terras zien en laat je daarna in je eigen tempo rondkijken. Alle uitstapjes zijn optioneel: blijf je liever op het strand, prima. Treinkaartjes, entreegelden en eten betaal je ter plekke; die zijn niet inbegrepen.",
   },
   {
     question: "Hoe en wanneer betaal ik?",
@@ -210,7 +216,8 @@ export default function PickleballVakantiePage() {
           <div className="space-y-6 lg:pt-20">
             <Image
               src={courts}
-              alt="Pickleballbanen in de buitenlucht met speelklare netten"
+              alt="Luchtfoto van onze vier pickleballbanen in Coma-ruga, met het clubhuis, het zwembad en het Middellandse Zeestrand op de achtergrond"
+              title="Onze pickleballclub in Coma-ruga vanuit de lucht"
               placeholder="blur"
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
@@ -223,9 +230,9 @@ export default function PickleballVakantiePage() {
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
             <p className="text-sm text-stone">
-              Ideeën voor de middag: <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
+              Middaguitstapjes: <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
-              <TownLink town="reus" lang="nl">Reus</TownLink> liggen op een kort treinritje, makkelijk op eigen houtje te bezoeken.
+              <TownLink town="reus" lang="nl">Reus</TownLink> liggen op een kort treinritje, met een host van Dink Abroad die je de leukste plekjes laat zien.
             </p>
           </div>
         </Container>

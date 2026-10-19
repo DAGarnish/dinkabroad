@@ -36,17 +36,17 @@ const days = [
   {
     label: "Day 2 · Saturday",
     title: "Coaching & open play",
-    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach, the pool or our optional tour to Sitges.",
+    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach, the pool or a relaxed outing to Sitges with your host.",
   },
   {
     label: "Day 3 · Sunday",
-    title: "Coaching & optional Tarragona tour",
-    text: "Coaching session number two and match play against different opponents. In the afternoon, join our optional guided tour of Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
+    title: "Coaching & an afternoon in Tarragona",
+    text: "Coaching session number two and match play against different opponents. In the afternoon, there's the option of a relaxed outing with your host to Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
   },
   {
     label: "Day 4 · Monday",
     title: "Tournament day",
-    text: "A fun, competitive tournament with your fellow travelers and local players. In the afternoon, relax on the beach or join our optional tour to Reus, Gaudí’s birthplace and the home of Catalan vermouth.",
+    text: "A fun, competitive tournament with your fellow travelers and local players. In the afternoon, relax on the beach or join your host for an outing to Reus, Gaudí’s birthplace and the home of Catalan vermouth.",
   },
   {
     label: "Day 5 · Tuesday",
@@ -76,6 +76,7 @@ const days = [
 ];
 
 const included = [
+  "“Bienvenidos” welcome reception",
   "4 nights in a beachfront 4★ hotel in Coma-ruga",
   "4 nights in an equivalent 4★ hotel in Barcelona",
   "2 × 90-minute coaching sessions with certified coaches",
@@ -84,13 +85,13 @@ const included = [
   "Buffet breakfast every morning",
   "4 carefully selected group meals",
   "Private deluxe motor coach for day trips and the move to Barcelona",
+  "3 optional, relaxed afternoon outings to Sitges, Tarragona and Reus with a Dink Abroad host",
   "Penedès wine & cava tasting",
   "Guided tours of the Sagrada Família and Park Güell",
   "Day trip to Montserrat Monastery",
   "Professional local guides on every excursion",
   "Bilingual tour director throughout",
   "Concert at the Palau de la Música Catalana",
-  "“Bienvenidos” welcome reception",
   "“Hasta Luego Fiesta” farewell dinner and party",
   "Airport transfers to and from Barcelona–El Prat",
 ];
@@ -163,7 +164,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
           </>
         }
         intro="Nine unforgettable days in Catalonia. Start with pickleball by the sea on the Golden Coast, then move up the coast to Barcelona for Gaudí's masterpieces, Montserrat and a concert at the Palau de la Música Catalana, with a cava tasting along the way."
-        facts={["2 coaching sessions + tournament", "3 guided day trips", "Bilingual tour director", "4 nights beach + 4 nights Barcelona"]}
+        facts={["Everything in Local Dink +", "3 guided day trips", "Bilingual tour director", "4 nights beach + 4 nights Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -179,9 +180,9 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Roman amphitheater of Tarragona beside the Mediterranean", name: "Tarragona", text: "Optional tour: Roman ruins by the sea" },
+              { img: tarragona, alt: "Roman amphitheater of Tarragona beside the Mediterranean", name: "Tarragona", text: "Hosted outing: Roman ruins by the sea" },
               { img: penedes, alt: "Rolling vineyards in the Penedès wine region", name: "Penedès", text: "Wine & cava tasting" },
-              { img: sitges, alt: "The beach and church of Sitges on a sunny day", name: "Sitges", text: "Optional tour: artists' seaside town" },
+              { img: sitges, alt: "The beach and church of Sitges on a sunny day", name: "Sitges", text: "Hosted outing: artists' seaside town" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -222,7 +223,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
         lang="en-US"
         currency={currency}
         included={included}
-        notIncluded="airfare, optional tours to Sitges, Tarragona and Reus, tips, personal expenses, and meals other than daily breakfast and the 4 included group meals."
+        notIncluded="airfare, train tickets and entry fees on the afternoon outings to Sitges, Tarragona and Reus, tips, personal expenses, and meals other than daily breakfast and the 4 included group meals."
         terms={[
           "Deposit: 20% reserves your place and is applied to the total trip price.",
           "Final payment: the balance is due 60 days before the trip start date.",

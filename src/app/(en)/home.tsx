@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import sunset from "@/assets/images/coma-ruga-sunset.jpg";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
   {
     question: "Which retreat is right for me?",
     answer:
-      "Local Dink is a 5-day pickleball holiday (Friday to Tuesday) built for players flying in from the UK and Europe. Long-Haul Lob is a 9-day pickleball vacation for travellers from the USA and Canada, with the same Friday-to-Tuesday pickleball by the sea, then four nights in Barcelona with guided visits to Gaudí's sights, Montserrat and the Penedès, plus optional tours to Tarragona, Sitges and Reus.",
+      "Local Dink is a 5-day pickleball holiday (Friday to Tuesday) built for players flying in from the UK and Europe. Long-Haul Lob is a 9-day pickleball vacation for travellers from the USA and Canada, with the same Friday-to-Tuesday pickleball by the sea, then four nights in Barcelona with guided visits to Gaudí's sights, Montserrat and the Penedès, plus relaxed hosted outings to Tarragona, Sitges and Reus.",
   },
   {
     question: "What level do I need to be?",
@@ -135,7 +135,7 @@ export function Home({ currency }: { currency: Currency }) {
               href="#enquire"
               className="rounded-full border border-cream/40 px-7 py-4 font-semibold backdrop-blur transition hover:bg-cream/10"
             >
-              Get all the info free
+              Connect with us
             </Link>
           </div>
           <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/20 pt-8 text-sm sm:grid-cols-4">
@@ -179,7 +179,8 @@ export function Home({ currency }: { currency: Currency }) {
           <div className="relative">
             <Image
               src={courts}
-              alt="Outdoor pickleball courts with blue playing surfaces and nets under a sunny sky"
+              alt="Four red and grey outdoor pickleball courts at our club in Coma-ruga, Spain, under a clear blue sky"
+              title="Our pickleball courts in Coma-ruga"
               placeholder="blur"
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"

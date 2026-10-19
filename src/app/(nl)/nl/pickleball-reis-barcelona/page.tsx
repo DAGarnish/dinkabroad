@@ -35,17 +35,17 @@ const days = [
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand, het zwembad of onze optionele excursie naar Sitges.",
+    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand, het zwembad of een relaxt uitstapje naar Sitges met je host.",
   },
   {
     label: "Dag 3 · Zondag",
-    title: "Training & optionele excursie naar Tarragona",
-    text: "De tweede training en wedstrijden tegen steeds andere tegenstanders. ’s Middags kun je mee op onze optionele excursie met gids naar Tarragona, UNESCO-werelderfgoed, waar het Romeinse amfitheater uitkijkt over de Middellandse Zee.",
+    title: "Training & middag in Tarragona",
+    text: "De tweede training en wedstrijden tegen steeds andere tegenstanders. ’s Middags kun je met je host relaxed naar Tarragona, UNESCO-werelderfgoed, waar het Romeinse amfitheater uitkijkt over de Middellandse Zee.",
   },
   {
     label: "Dag 4 · Maandag",
     title: "Toernooidag",
-    text: "Een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. ’s Middags relax je op het strand of ga je mee op onze optionele excursie naar Reus, de geboorteplaats van Gaudí en de hoofdstad van de Catalaanse vermout.",
+    text: "Een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. ’s Middags relax je op het strand of ga je met je host naar Reus, de geboorteplaats van Gaudí en de hoofdstad van de Catalaanse vermout.",
   },
   {
     label: "Dag 5 · Dinsdag",
@@ -75,6 +75,7 @@ const days = [
 ];
 
 const included = [
+  "Welkomstborrel",
   "4 nachten in een 4★-hotel aan het strand in Coma-ruga",
   "4 nachten in een vergelijkbaar 4★-hotel in Barcelona",
   "2 × 90 minuten training met gecertificeerde coaches (in het Engels en Spaans)",
@@ -83,13 +84,13 @@ const included = [
   "Elke ochtend een ontbijtbuffet",
   "4 zorgvuldig gekozen groepsmaaltijden",
   "Luxe privétouringcar voor de excursies en de rit naar Barcelona",
+  "3 optionele, relaxte middaguitstapjes naar Sitges, Tarragona en Reus, met een host van het Dink Abroad-team",
   "Wijn- en cavaproeverij in de Penedès",
   "Rondleidingen door de Sagrada Família en Park Güell",
   "Excursie naar het klooster van Montserrat",
   "Professionele lokale gidsen (in het Engels of Spaans)",
   "Tweetalige reisleiding (Engels-Spaans) tijdens de hele reis",
   "Concert in het Palau de la Música Catalana",
-  "Welkomstborrel",
   "Afscheidsdiner en ‘Hasta luego’-feest",
   "Transfers van en naar het vliegveld Barcelona-El Prat",
 ];
@@ -164,7 +165,7 @@ export default function PickleballReisPage() {
           </>
         }
         intro="Negen onvergetelijke dagen in Catalonië. Je begint met pickleball aan zee aan de Costa Daurada en reist daarna langs de kust naar Barcelona voor de meesterwerken van Gaudí, Montserrat en een concert in het Palau de la Música Catalana, met onderweg een cavaproeverij."
-        facts={["2 trainingen + toernooi", "3 begeleide excursies", "Reis in het Engels & Spaans", "4 nachten strand + 4 nachten Barcelona"]}
+        facts={["Alles van Local Dink +", "3 begeleide excursies", "Reis in het Engels & Spaans", "4 nachten strand + 4 nachten Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -180,9 +181,9 @@ export default function PickleballReisPage() {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Romeins amfitheater van Tarragona aan de Middellandse Zee", name: "Tarragona", text: "Optionele excursie: Romeinse ruïnes aan zee" },
+              { img: tarragona, alt: "Romeins amfitheater van Tarragona aan de Middellandse Zee", name: "Tarragona", text: "Uitstapje met host: Romeinse ruïnes aan zee" },
               { img: penedes, alt: "Glooiende wijngaarden in de wijnstreek Penedès", name: "Penedès", text: "Wijn- & cavaproeverij" },
-              { img: sitges, alt: "Strand en kerk van Sitges op een zonnige dag", name: "Sitges", text: "Optionele excursie: het kustplaatsje van de kunstenaars" },
+              { img: sitges, alt: "Strand en kerk van Sitges op een zonnige dag", name: "Sitges", text: "Uitstapje met host: het kustplaatsje van de kunstenaars" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -222,7 +223,7 @@ export default function PickleballReisPage() {
         retreat={longHaulLobNl}
         lang="nl"
         included={included}
-        notIncluded="vluchten, optionele excursies naar Sitges, Tarragona en Reus, fooien, persoonlijke uitgaven en maaltijden buiten het dagelijkse ontbijt en de 4 inbegrepen groepsmaaltijden."
+        notIncluded="vluchten, treinkaartjes en entreegelden tijdens de uitstapjes naar Sitges, Tarragona en Reus, fooien, persoonlijke uitgaven en maaltijden buiten het dagelijkse ontbijt en de 4 inbegrepen groepsmaaltijden."
         terms={[
           "Aanbetaling: 20% legt je plek vast en wordt verrekend met de reissom.",
           "Restbetaling: 60 dagen voor vertrek.",

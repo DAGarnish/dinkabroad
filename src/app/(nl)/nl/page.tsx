@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import sunset from "@/assets/images/coma-ruga-sunset.jpg";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
@@ -53,7 +53,7 @@ const faqs: FaqItem[] = [
   {
     question: "Welke reis past bij mij?",
     answer:
-      "Local Dink is een pickleballvakantie van 5 dagen (vrijdag tot dinsdag) voor spelers uit Nederland, België en de rest van Europa. Long-Haul Lob is een reis van 9 dagen met hetzelfde pickleballprogramma aan zee van vrijdag tot dinsdag, en daarna vier nachten in Barcelona met begeleide bezoeken aan Gaudí, Montserrat en de Penedès, plus optionele excursies naar Tarragona, Sitges en Reus.",
+      "Local Dink is een pickleballvakantie van 5 dagen (vrijdag tot dinsdag) voor spelers uit Nederland, België en de rest van Europa. Long-Haul Lob is een reis van 9 dagen met hetzelfde pickleballprogramma aan zee van vrijdag tot dinsdag, en daarna vier nachten in Barcelona met begeleide bezoeken aan Gaudí, Montserrat en de Penedès, plus relaxte middaguitstapjes met een host naar Tarragona, Sitges en Reus.",
   },
   {
     question: "Welk niveau heb ik nodig?",
@@ -182,7 +182,8 @@ export default function NlHomePage() {
           <div className="relative">
             <Image
               src={courts}
-              alt="Pickleballbanen in de buitenlucht met blauwe speelvlakken en netten in de zon"
+              alt="Vier rood-grijze pickleballbanen in de buitenlucht bij onze club in Coma-ruga onder een strakblauwe lucht"
+              title="Onze pickleballbanen in Coma-ruga"
               placeholder="blur"
               sizes="(min-width: 1024px) 45vw, 100vw"
               className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-xl"

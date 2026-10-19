@@ -35,17 +35,17 @@ const days = [
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand, Pool oder unser optionaler Ausflug nach Sitges.",
+    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand, Pool oder ein entspannter Ausflug nach Sitges in Begleitung.",
   },
   {
     label: "Tag 3 · Sonntag",
-    title: "Training & optionaler Ausflug nach Tarragona",
-    text: "Die zweite Trainingseinheit und Matches gegen wechselnde Gegner. Am Nachmittag können Sie an unserer optionalen Führung durch Tarragona teilnehmen, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
+    title: "Training & Nachmittag in Tarragona",
+    text: "Die zweite Trainingseinheit und Matches gegen wechselnde Gegner. Wer möchte, fährt am Nachmittag in Begleitung ganz entspannt nach Tarragona, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
   },
   {
     label: "Tag 4 · Montag",
     title: "Turniertag",
-    text: "Ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Am Nachmittag entspannen Sie am Strand oder kommen mit auf unseren optionalen Ausflug nach Reus, Gaudís Geburtsstadt und Heimat des katalanischen Wermuts.",
+    text: "Ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Am Nachmittag entspannen Sie am Strand oder fahren in Begleitung nach Reus, Gaudís Geburtsstadt und Heimat des katalanischen Wermuts.",
   },
   {
     label: "Tag 5 · Dienstag",
@@ -75,6 +75,7 @@ const days = [
 ];
 
 const included = [
+  "Willkommensempfang",
   "4 Nächte in einem 4★-Hotel direkt am Strand in Coma-ruga",
   "4 Nächte in einem gleichwertigen 4★-Hotel in Barcelona",
   "2 × 90 Minuten Training mit zertifizierten Trainern (auf Englisch und Spanisch)",
@@ -83,13 +84,13 @@ const included = [
   "Frühstücksbuffet jeden Morgen",
   "4 sorgfältig ausgewählte Gruppenessen",
   "Privater Luxusreisebus für die Ausflüge und die Fahrt nach Barcelona",
+  "3 freiwillige, entspannte Nachmittagsausflüge nach Sitges, Tarragona und Reus, begleitet vom Dink-Abroad-Team",
   "Wein- und Cava-Verkostung im Penedès",
   "Führungen durch die Sagrada Família und den Park Güell",
   "Ausflug zum Kloster Montserrat",
   "Professionelle örtliche Guides (auf Englisch oder Spanisch)",
   "Zweisprachige Reiseleitung (Englisch-Spanisch) während der ganzen Reise",
   "Konzert im Palau de la Música Catalana",
-  "Willkommensempfang",
   "Abschiedsessen und „Hasta luego“-Fiesta",
   "Flughafentransfers ab/bis Barcelona-El Prat",
 ];
@@ -164,7 +165,7 @@ export default function PickleballReisePage() {
           </>
         }
         intro="Neun unvergessliche Tage in Katalonien. Zuerst Pickleball am Meer an der Costa Daurada, dann die Küste hinauf nach Barcelona für Gaudís Meisterwerke, Montserrat und ein Konzert im Palau de la Música Catalana, mit einer Cava-Verkostung unterwegs."
-        facts={["2 Trainingseinheiten + Turnier", "3 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
+        facts={["Alles aus Local Dink +", "3 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -180,9 +181,9 @@ export default function PickleballReisePage() {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Römisches Amphitheater von Tarragona am Mittelmeer", name: "Tarragona", text: "Optionaler Ausflug: römische Ruinen am Meer" },
+              { img: tarragona, alt: "Römisches Amphitheater von Tarragona am Mittelmeer", name: "Tarragona", text: "Begleiteter Ausflug: römische Ruinen am Meer" },
               { img: penedes, alt: "Hügelige Weinberge in der Weinregion Penedès", name: "Penedès", text: "Wein- & Cava-Verkostung" },
-              { img: sitges, alt: "Strand und Kirche von Sitges an einem sonnigen Tag", name: "Sitges", text: "Optionaler Ausflug: der Küstenort der Künstler" },
+              { img: sitges, alt: "Strand und Kirche von Sitges an einem sonnigen Tag", name: "Sitges", text: "Begleiteter Ausflug: der Küstenort der Künstler" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -222,7 +223,7 @@ export default function PickleballReisePage() {
         retreat={longHaulLobDe}
         lang="de"
         included={included}
-        notIncluded="Flüge, optionale Ausflüge nach Sitges, Tarragona und Reus, Trinkgelder, persönliche Ausgaben und Mahlzeiten außer dem täglichen Frühstück und den 4 inklusiven Gruppenessen."
+        notIncluded="Flüge, Zugtickets und Eintritte bei den Nachmittagsausflügen nach Sitges, Tarragona und Reus, Trinkgelder, persönliche Ausgaben und Mahlzeiten außer dem täglichen Frühstück und den 4 inklusiven Gruppenessen."
         terms={[
           "Anzahlung: 20 % sichern Ihren Platz und werden auf den Reisepreis angerechnet.",
           "Restzahlung: fällig 60 Tage vor Reisebeginn.",

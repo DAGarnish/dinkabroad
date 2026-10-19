@@ -61,7 +61,7 @@ const en = {
   switcherAria: "Language",
   hero: {
     completeFrom: "Complete package from",
-    cta: "Get all the info free",
+    cta: "Connect with us",
     seeIncluded: "See what’s included",
   },
   pricing: {
@@ -195,7 +195,7 @@ const es: Ui = {
   switcherAria: "Idioma",
   hero: {
     completeFrom: "Paquete completo desde",
-    cta: "Recibe toda la información gratis",
+    cta: "Contacta con nosotros",
     seeIncluded: "Ver qué incluye",
   },
   pricing: {
@@ -317,7 +317,7 @@ const fr: Ui = {
   },
   hero: {
     completeFrom: "Forfait complet à partir de",
-    cta: "Recevez toutes les infos gratuitement",
+    cta: "Contactez-nous",
     seeIncluded: "Voir ce qui est inclus",
   },
   pricing: {
@@ -439,7 +439,7 @@ const de: Ui = {
   },
   hero: {
     completeFrom: "Komplettpaket ab",
-    cta: "Kostenlos alle Infos erhalten",
+    cta: "Kontaktieren Sie uns",
     seeIncluded: "Leistungen ansehen",
   },
   pricing: {
@@ -561,7 +561,7 @@ const nl: Ui = {
   },
   hero: {
     completeFrom: "Compleet pakket vanaf",
-    cta: "Ontvang gratis alle info",
+    cta: "Neem contact met ons op",
     seeIncluded: "Bekijk wat inbegrepen is",
   },
   pricing: {

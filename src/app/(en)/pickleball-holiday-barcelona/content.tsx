@@ -1,5 +1,5 @@
 import Image from "next/image";
-import courts from "@/assets/images/pickleball-courts.jpg";
+import courts from "@/assets/images/pickleball-club-coma-ruga-aerial.jpg";
 import sitges from "@/assets/images/sitges.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
@@ -54,12 +54,12 @@ const reasons = [
     text: "Personal attention from the coaches and plenty of new playing partners. Perfect if you're coming solo.",
   },
   {
-    title: "Easy afternoon trips",
+    title: "Relaxed afternoon outings",
     text: (
       <>
         <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
-        <TownLink town="reus" lang="en-GB">Reus</TownLink> are all short train rides away, easy to explore on your own.
+        <TownLink town="reus" lang="en-GB">Reus</TownLink> are all short train rides away. A Dink Abroad host comes along to show you around, then you're free to wander.
       </>
     ),
   },
@@ -74,17 +74,17 @@ const days = [
   {
     label: "Day 2 · Saturday",
     title: "Coaching & open play",
-    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach or a short train ride to Sitges.",
+    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: stay on the beach, or hop on the train to Sitges with your host.",
   },
   {
     label: "Day 3 · Sunday",
     title: "Put it into practice",
-    text: "Coaching session number two, then plenty of match play against different opponents to lock in what you've learned. In the afternoon, Roman Tarragona is a short train ride away.",
+    text: "Coaching session number two, then plenty of match play against different opponents to lock in what you've learned. In the afternoon, join your host for a relaxed trip to Roman Tarragona.",
   },
   {
     label: "Day 4 · Monday",
     title: "Tournament day",
-    text: "Test your skills in a fun, competitive tournament with your fellow travellers and local players. Spend your last afternoon in Reus or on the beach.",
+    text: "Test your skills in a fun, competitive tournament with your fellow travellers and local players. Spend your last afternoon in Reus with your host, or on the beach.",
   },
   {
     label: "Day 5 · Tuesday",
@@ -100,6 +100,7 @@ const included = [
   "1 fun tournament with fellow travellers and locals",
   "Free play on the courts",
   "Small group of max 16 players",
+  "3 relaxed afternoon outings to Sitges, Tarragona and Reus, hosted by the Dink Abroad team",
   "Personal support from the Dink Abroad team",
 ];
 
@@ -122,7 +123,12 @@ const faqsWith = (singlePrice: string): FaqItem[] => [
   {
     question: "What is and isn't included?",
     answer:
-      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 2 coaching sessions, a tournament and free play. Not included: flights, airport transfers, lunches, dinners, drinks and travel insurance.",
+      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 2 coaching sessions, a tournament, free play and 3 hosted afternoon outings. Not included: flights, airport transfers, lunches, dinners, drinks, train tickets and entry fees on the outings, and travel insurance.",
+  },
+  {
+    question: "Are the afternoon trips guided tours?",
+    answer:
+      "Not quite, and that's the point. One of the Dink Abroad team comes along, makes sure everyone gets on the right train, shows you their favourite spots and the best place for a drink, then lets you wander at your own pace. Every outing is optional, so if you'd rather stay on the beach, that's fine too. Train tickets, entry fees and food are paid locally and aren't included.",
   },
   {
     question: "How and when do I pay?",
@@ -208,7 +214,8 @@ export async function LocalDink({ currency }: { currency: Currency }) {
           <div className="space-y-6 lg:pt-20">
             <Image
               src={courts}
-              alt="Outdoor pickleball courts with nets ready for play"
+              alt="Aerial view of our four pickleball courts in Coma-ruga, with the clubhouse, pool and the Mediterranean beach behind"
+              title="Our pickleball club in Coma-ruga from the air"
               placeholder="blur"
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
@@ -221,9 +228,9 @@ export async function LocalDink({ currency }: { currency: Currency }) {
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
             <p className="text-sm text-stone">
-              Afternoon trip ideas: <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
+              Afternoon outings: <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
-              <TownLink town="reus" lang="en-GB">Reus</TownLink> are short train rides away, easy to visit on your own.
+              <TownLink town="reus" lang="en-GB">Reus</TownLink> are short train rides away, with a Dink Abroad host to show you around.
             </p>
           </div>
         </Container>
