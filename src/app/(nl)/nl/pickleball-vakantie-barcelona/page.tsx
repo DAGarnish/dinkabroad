@@ -19,7 +19,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleballvakantie Barcelona: 5-daagse pickleballreis vanaf € 1.100",
   description:
-    "5 dagen pickleballvakantie aan de kust van Barcelona: training, een gezellig toernooi, een 4★-hotel aan het strand, lunches en transfers. Vanaf € 1.100 per persoon.",
+    "5 dagen pickleballvakantie aan de kust van Barcelona: training in de ochtend, een gezellig toernooi en een 4★-hotel aan het strand met ontbijt. Vanaf € 1.100 per persoon.",
   path: localDinkNl.href,
   siteLang: "nl",
 });
@@ -35,58 +35,57 @@ const reasons = [
   },
   {
     title: "4★-hotel aan het strand",
-    text: "Vier nachten in het Estival Maramar, direct aan het strand van Coma-ruga, met een zwembad op het dak en een spa.",
+    text: "Vier nachten in het Estival Maramar, direct aan het strand van Coma-ruga, met elke dag ontbijt, een infinity pool en een spa.",
   },
   {
-    title: "Ontbijt, lunch & transfers",
-    text: "Elke dag ontbijt, vier uitgebreide Spaanse lunches en transfers van en naar het vliegveld: alles is geregeld.",
+    title: "’s Ochtends op de baan",
+    text: "Spelen en trainen doe je altijd ’s ochtends, dus de middagen zijn vrij om de kust te ontdekken of te relaxen op het strand of bij de infinity pool.",
   },
   {
-    title: "Kleine groep, max. 20",
+    title: "Kleine groep, max. 16",
     text: "Persoonlijke aandacht van de coaches en veel nieuwe speelpartners. Ideaal als je alleen reist.",
   },
   {
-    title: "Vrije tijd om te ontdekken",
-    text: "De middagen zijn van jou: strand, spa of een uitstapje langs de kust naar Sitges of Barcelona.",
+    title: "Uitstapjes in de middag",
+    text: "Sitges, Tarragona en Vilanova i la Geltrú liggen allemaal op een kort treinritje langs de kust.",
   },
 ];
 
 const days = [
   {
     label: "Dag 1 · Vrijdag",
-    title: "Aankomst & eerste training",
-    text: "We halen je op van het vliegveld van Barcelona en brengen je naar het hotel aan het strand. Na een gezamenlijke lunch ga je meteen de baan op voor de eerste training van 90 minuten.",
+    title: "Aankomst",
+    text: "Reis naar Coma-ruga, een uur met de trein langs de kust vanaf Barcelona. Inchecken, afkoelen in de infinity pool en kennismaken met de groep.",
   },
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "De tweede training van 90 minuten, gevolgd door vrij spel. ’s Middags heb je de keuze: een optionele excursie, meer tijd op de baan of gewoon relaxen bij het zwembad op het dak.",
+    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand, de infinity pool of een kort treinritje naar Sitges.",
   },
   {
     label: "Dag 3 · Zondag",
     title: "In de praktijk",
-    text: "De derde training in de ochtend, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten.",
+    text: "De tweede training in de ochtend, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten. ’s Middags ligt het Romeinse Tarragona op een kort treinritje.",
   },
   {
     label: "Dag 4 · Maandag",
-    title: "Toernooidag",
-    text: "Laat zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. De perfecte afsluiter van je tijd op de baan.",
+    title: "Laatste training & toernooi",
+    text: "Je derde training, daarna laat je zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. Je laatste middag breng je door in Vilanova i la Geltrú of op het strand.",
   },
   {
     label: "Dag 5 · Dinsdag",
     title: "Hasta pronto",
-    text: "Een laatste ontbijt aan zee, afscheid van nieuwe vrienden en de transfer terug naar het vliegveld.",
+    text: "Een laatste ontbijt aan zee, afscheid van nieuwe vrienden en de reis naar huis.",
   },
 ];
 
 const included = [
   "4 nachten in het 4★-hotel Estival Maramar aan het strand (twin- of eenpersoonskamer)",
-  "Elke dag ontbijt en 4 uitgebreide Spaanse lunches",
+  "Elke dag ontbijt",
   "3 × 90 minuten training met gecertificeerde coaches (in het Engels en Spaans)",
   "1 gezellig toernooi met medereizigers en locals",
   "Vrij spel op de banen",
-  "Transfers van en naar het vliegveld van Barcelona",
-  "Kleine groep van max. 20 spelers",
+  "Kleine groep van max. 16 spelers",
   "Persoonlijke begeleiding door het Dink Abroad-team",
 ];
 
@@ -104,17 +103,17 @@ const faqs: FaqItem[] = [
   {
     question: "Kan ik alleen komen?",
     answer:
-      "Ja, en veel mensen doen dat. De groep is beperkt tot 20 spelers, dus je maakt snel vrienden, op en naast de baan. Liever een eigen kamer? Een eenpersoonskamer kost € 1.700 per persoon.",
+      "Ja, en veel mensen doen dat. De groep is beperkt tot 16 spelers, dus je maakt snel vrienden, op en naast de baan. Liever een eigen kamer? Een eenpersoonskamer kost € 1.500 per persoon.",
   },
   {
     question: "Zijn de vluchten inbegrepen?",
     answer:
-      "Vluchten zijn niet inbegrepen, dus je kunt vertrekken vanaf elk vliegveld in Nederland, België of de rest van Europa. Land op vrijdag op Barcelona-El Prat en vlieg op dinsdag terug; de transfers van en naar het vliegveld zijn inbegrepen.",
+      "Vluchten zijn niet inbegrepen, dus je kunt vertrekken vanaf elk vliegveld in Nederland, België of de rest van Europa. Land op vrijdag in Barcelona en vlieg op dinsdag terug. Transfers van en naar het vliegveld zijn niet inbegrepen, maar Coma-ruga is makkelijk te bereiken met de trein langs de kust, en we helpen je de reis te plannen.",
   },
   {
     question: "Wat is wel en niet inbegrepen?",
     answer:
-      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 4 lunches, 3 trainingen, een toernooi, vrij spel en transfers van en naar het vliegveld. Niet inbegrepen: vluchten, diners, drankjes, reisverzekering en optionele excursies.",
+      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 3 trainingen, een toernooi en vrij spel. Niet inbegrepen: vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes, reisverzekering en optionele excursies.",
   },
   {
     question: "Hoe en wanneer betaal ik?",
@@ -136,7 +135,7 @@ export default function PickleballVakantiePage() {
           "@graph": [
             tripSchema(localDinkNl, {
               description:
-                "5 dagen pickleballvakantie aan de kust van Barcelona met training in het Engels en Spaans, een toernooi, een 4-sterrenhotel aan het strand, lunches en transfers van en naar het vliegveld.",
+                "5 dagen pickleballvakantie aan de kust van Barcelona met training in het Engels en Spaans, een toernooi en een 4-sterrenhotel aan het strand met ontbijt.",
               touristType: "Pickleballspelers uit Nederland, België en de rest van Europa",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -160,7 +159,7 @@ export default function PickleballVakantiePage() {
           </>
         }
         intro="Het ultieme pickleballweekend voor spelers uit Nederland, België en de rest van Europa. Vrijdag tot dinsdag aan de Costa Daurada: gecertificeerde coaches, een toernooi tegen de locals en een 4★-hotel aan het strand. Jij hoeft alleen nog te spelen."
-        facts={["Max. 20 deelnemers", "4★-hotel aan het strand", "Training in het Engels & Spaans", "Transfers inbegrepen"]}
+        facts={["Max. 16 deelnemers", "4★-hotel aan het strand", "Training in het Engels & Spaans", "’s Ochtends op de baan"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -188,7 +187,7 @@ export default function PickleballVakantiePage() {
             <SectionHeading
               eyebrow="Het programma"
               title="Vrijdag tot dinsdag, perfect in balans"
-              intro="Vijf dagen met training, wedstrijden, een toernooi en echte ontspanning aan de Middellandse Zee."
+              intro="’s Ochtends training, wedstrijden en een toernooi. ’s Middags echte ontspanning aan de Middellandse Zee."
             />
             <div className="mt-12 pl-4">
               <Itinerary days={days} />
@@ -209,7 +208,7 @@ export default function PickleballVakantiePage() {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Optioneel middaguitje: Sitges ligt een stukje verderop langs de kust.</p>
+            <p className="text-sm text-stone">Ideeën voor de middag: Sitges, Tarragona en Vilanova i la Geltrú liggen op een kort treinritje langs de kust.</p>
           </div>
         </Container>
       </section>
@@ -218,11 +217,11 @@ export default function PickleballVakantiePage() {
         retreat={localDinkNl}
         lang="nl"
         included={included}
-        notIncluded="vluchten, diners, drankjes, reisverzekering en optionele excursies."
+        notIncluded="vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes, reisverzekering en optionele excursies."
         terms={[
           "Alle prijzen in euro (EUR). Bedragen in ponden en dollars zijn indicaties tegen de actuele wisselkoers.",
           "Training in het Engels en Spaans.",
-          "Max. 20 spelers per reis.",
+          "Max. 16 spelers per reis.",
         ]}
       />
 

@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const holidayMetadata = pageMetadata({
   title: "Pickleball Holiday Barcelona: 5-Day Pickleball Retreat from €1,100",
   description:
-    "A 5-day pickleball holiday on the Barcelona coast for UK & European players. Coaching, a fun tournament, a beachfront 4★ hotel, lunches and transfers. From €1,100 p.p.",
+    "A 5-day pickleball holiday on the Barcelona coast for UK & European players. Morning coaching, a fun tournament and a beachfront 4★ hotel with breakfast. From €1,100 p.p.",
   path: localDink.href,
 });
 
@@ -35,58 +35,57 @@ const reasons = [
   },
   {
     title: "Beachfront 4★ hotel",
-    text: "Four nights at the Estival Maramar, right on Coma-ruga beach, with a rooftop pool and spa.",
+    text: "Four nights at the Estival Maramar, right on Coma-ruga beach, with breakfast every day, an infinity pool and spa.",
   },
   {
-    title: "Breakfast, lunch & transfers",
-    text: "Daily breakfast, four generous Spanish lunches and return airport transfers are all taken care of.",
+    title: "Mornings on court",
+    text: "Play and coaching are always in the morning, leaving your afternoons free to explore the coast or relax on the beach or by the infinity pool.",
   },
   {
-    title: "Small group, max 20",
+    title: "Small group, max 16",
     text: "Personal attention from the coaches and plenty of new playing partners. Perfect if you're coming solo.",
   },
   {
-    title: "Free time to explore",
-    text: "Afternoons are yours: the beach, the spa, or a hop up the coast to Sitges or Barcelona.",
+    title: "Easy afternoon trips",
+    text: "Sitges, Tarragona and Vilanova i la Geltrú are all short train rides along the coast.",
   },
 ];
 
 const days = [
   {
     label: "Day 1 · Friday",
-    title: "Arrival & first session",
-    text: "We collect you from Barcelona airport and bring you to the hotel on the beach. After lunch together, it's straight onto court for your first 90-minute coaching session.",
+    title: "Arrival",
+    text: "Make your way to Coma-ruga, about an hour along the coast by train from Barcelona. Check in, cool off in the infinity pool and meet the group.",
   },
   {
     label: "Day 2 · Saturday",
     title: "Coaching & free play",
-    text: "A second 90-minute coaching session, followed by open play. In the afternoon, choose between an optional excursion, more time on court or simply relaxing by the rooftop pool.",
+    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach, the infinity pool or a short train ride to Sitges.",
   },
   {
     label: "Day 3 · Sunday",
     title: "Put it into practice",
-    text: "Morning coaching session number three, then plenty of match play against different opponents to lock in what you've learned.",
+    text: "Morning coaching session number two, then plenty of match play against different opponents to lock in what you've learned. In the afternoon, Roman Tarragona is a short train ride away.",
   },
   {
     label: "Day 4 · Monday",
-    title: "Tournament day",
-    text: "Test your skills in a fun, competitive tournament with your fellow travellers and local players. The perfect way to finish your time on court together.",
+    title: "Final session & tournament",
+    text: "Your third coaching session, then test your skills in a fun, competitive tournament with your fellow travellers and local players. Spend your last afternoon in Vilanova i la Geltrú or on the beach.",
   },
   {
     label: "Day 5 · Tuesday",
     title: "Hasta pronto",
-    text: "A final breakfast by the sea, goodbyes to new friends and your transfer back to the airport.",
+    text: "A final breakfast by the sea, goodbyes to new friends and the journey home.",
   },
 ];
 
 const included = [
   "4 nights at the beachfront 4★ Estival Maramar (twin or single room)",
-  "Daily breakfast and 4 generous Spanish lunches",
+  "Daily breakfast",
   "3 × 90-minute coaching sessions with certified coaches",
   "1 fun tournament with fellow travellers and locals",
   "Free play on the courts",
-  "Return airport transfers from Barcelona",
-  "Small group of max 20 players",
+  "Small group of max 16 players",
   "Personal support from the Dink Abroad team",
 ];
 
@@ -99,17 +98,17 @@ const faqsWith = (singlePrice: string): FaqItem[] => [
   {
     question: "Can I come alone?",
     answer:
-      `Yes, and lots of people do. The group is capped at 20 players, so you'll quickly make friends on and off the court. Prefer your own room? Single rooms are ${singlePrice} per person.`,
+      `Yes, and lots of people do. The group is capped at 16 players, so you'll quickly make friends on and off the court. Prefer your own room? Single rooms are ${singlePrice} per person.`,
   },
   {
     question: "Are flights included?",
     answer:
-      "Flights aren't included, so you can fly from whichever UK or European airport suits you. Fly into Barcelona El Prat on Friday and out on Tuesday; return airport transfers are included.",
+      "Flights aren't included, so you can fly from whichever UK or European airport suits you. Fly into Barcelona El Prat on Friday and out on Tuesday. Airport transfers aren't included, but Coma-ruga is easy to reach by train along the coast, and we'll help you plan the journey.",
   },
   {
     question: "What is and isn't included?",
     answer:
-      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 4 lunches, 3 coaching sessions, a tournament, free play and airport transfers. Not included: flights, dinners, drinks, travel insurance and optional excursions.",
+      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 3 coaching sessions, a tournament and free play. Not included: flights, airport transfers, lunches, dinners, drinks, travel insurance and optional excursions.",
   },
   {
     question: "How and when do I pay?",
@@ -133,7 +132,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
           "@graph": [
             tripSchema(localDink, {
               description:
-                "A 5-day pickleball holiday on the Barcelona coast with coaching, a tournament, a beachfront 4-star hotel, lunches and airport transfers.",
+                "A 5-day pickleball holiday on the Barcelona coast with morning coaching, a tournament and a beachfront 4-star hotel with breakfast.",
               touristType: "Pickleball players from the UK and Europe",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -158,7 +157,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
           </>
         }
         intro="The ultimate pickleball long weekend for players from the UK and Europe. Friday to Tuesday on the Costa Daurada: certified coaches, a tournament with the locals and a beachfront 4★ hotel. All you do is play."
-        facts={["Max 20 participants", "Beachfront 4★ hotel", "Certified coaches", "Transfers included"]}
+        facts={["Max 16 participants", "Beachfront 4★ hotel", "Certified coaches", "Mornings on court"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -186,7 +185,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
             <SectionHeading
               eyebrow="The programme"
               title="Friday to Tuesday, perfectly balanced"
-              intro="Five days split between coaching, match play, a tournament and real downtime by the Mediterranean."
+              intro="Mornings of coaching, match play and a tournament. Afternoons of real downtime by the Mediterranean."
             />
             <div className="mt-12 pl-4">
               <Itinerary days={days} />
@@ -207,7 +206,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Optional afternoon trip: Sitges is just along the coast.</p>
+            <p className="text-sm text-stone">Afternoon trip ideas: Sitges, Tarragona and Vilanova i la Geltrú are short train rides along the coast.</p>
           </div>
         </Container>
       </section>
@@ -217,10 +216,10 @@ export async function LocalDink({ currency }: { currency: Currency }) {
         lang="en-GB"
         currency={currency}
         included={included}
-        notIncluded="flights, dinners, drinks, travel insurance and optional excursions."
+        notIncluded="flights, airport transfers, lunches, dinners, drinks, travel insurance and optional excursions."
         terms={[
           "Prices are set in euros (EUR). Pound and dollar amounts are converted at the latest exchange rate, so they change with it.",
-          "Limited to 20 players per retreat.",
+          "Limited to 16 players per retreat.",
         ]}
       />
 

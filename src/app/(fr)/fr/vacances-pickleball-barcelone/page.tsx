@@ -19,7 +19,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Vacances pickleball à Barcelone : séjour de 5 jours dès 1 100 €",
   description:
-    "Des vacances de pickleball de 5 jours sur la côte de Barcelone : coaching, tournoi amical, hôtel 4★ en bord de mer, déjeuners et transferts. À partir de 1 100 € par personne.",
+    "Des vacances de pickleball de 5 jours sur la côte de Barcelone : coaching le matin, tournoi amical et hôtel 4★ en bord de mer avec petit-déjeuner. À partir de 1 100 € par personne.",
   path: localDinkFr.href,
   siteLang: "fr",
 });
@@ -35,58 +35,57 @@ const reasons = [
   },
   {
     title: "Hôtel 4★ en bord de mer",
-    text: "Quatre nuits à l’Estival Maramar, directement sur la plage de Coma-ruga, avec piscine sur le toit et spa.",
+    text: "Quatre nuits à l’Estival Maramar, directement sur la plage de Coma-ruga, avec petit-déjeuner tous les jours, piscine à débordement et spa.",
   },
   {
-    title: "Petit-déjeuner, déjeuner et transferts",
-    text: "Petit-déjeuner tous les jours, quatre généreux déjeuners espagnols et transferts aller-retour depuis l’aéroport : tout est prévu.",
+    title: "Le matin sur le terrain",
+    text: "Le jeu et le coaching ont toujours lieu le matin : vos après-midi sont libres pour explorer la côte ou vous détendre sur la plage ou au bord de la piscine à débordement.",
   },
   {
-    title: "Petit groupe, 20 max.",
+    title: "Petit groupe, 16 max.",
     text: "Une vraie attention de la part des coachs et plein de nouveaux partenaires de jeu. Idéal si vous venez seul.",
   },
   {
-    title: "Du temps libre pour explorer",
-    text: "Les après-midi sont à vous : la plage, le spa ou une escapade le long de la côte jusqu’à Sitges ou Barcelone.",
+    title: "Escapades l’après-midi",
+    text: "Sitges, Tarragone et Vilanova i la Geltrú sont à quelques minutes de train le long de la côte.",
   },
 ];
 
 const days = [
   {
     label: "Jour 1 · Vendredi",
-    title: "Arrivée et première séance",
-    text: "Nous venons vous chercher à l’aéroport de Barcelone et vous conduisons à l’hôtel, sur la plage. Après un déjeuner ensemble, direction le terrain pour votre première séance de coaching de 90 minutes.",
+    title: "Arrivée",
+    text: "Rejoignez Coma-ruga, à une heure de Barcelone en train le long de la côte. Installation, une baignade dans la piscine à débordement et rencontre avec le groupe.",
   },
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Deuxième séance de 90 minutes, puis jeu libre. L’après-midi, au choix : une excursion optionnelle, encore du pickleball ou simplement la détente au bord de la piscine sur le toit.",
+    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous : la plage, la piscine à débordement ou un court trajet en train jusqu’à Sitges.",
   },
   {
     label: "Jour 3 · Dimanche",
     title: "Place à la pratique",
-    text: "Troisième séance de coaching le matin, puis de nombreux matchs contre différents adversaires pour ancrer ce que vous avez appris.",
+    text: "Deuxième séance de coaching le matin, puis de nombreux matchs contre différents adversaires pour ancrer ce que vous avez appris. L’après-midi, Tarragone la romaine est à un court trajet en train.",
   },
   {
     label: "Jour 4 · Lundi",
-    title: "Jour de tournoi",
-    text: "Mettez vos progrès à l’épreuve lors d’un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. La meilleure façon de conclure votre séjour sur le terrain.",
+    title: "Dernière séance et tournoi",
+    text: "Votre troisième séance de coaching, puis mettez vos progrès à l’épreuve lors d’un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. Passez le dernier après-midi à Vilanova i la Geltrú ou à la plage.",
   },
   {
     label: "Jour 5 · Mardi",
     title: "Hasta pronto",
-    text: "Un dernier petit-déjeuner face à la mer, des au revoir à vos nouveaux amis et le transfert retour vers l’aéroport.",
+    text: "Un dernier petit-déjeuner face à la mer, des au revoir à vos nouveaux amis et le retour à la maison.",
   },
 ];
 
 const included = [
   "4 nuits à l’Estival Maramar 4★, en bord de mer (chambre twin ou individuelle)",
-  "Petit-déjeuner tous les jours et 4 généreux déjeuners espagnols",
+  "Petit-déjeuner tous les jours",
   "3 séances de coaching de 90 minutes avec des coachs diplômés (en anglais et en espagnol)",
   "1 tournoi amical avec les autres voyageurs et des joueurs locaux",
   "Jeu libre sur les terrains",
-  "Transferts aller-retour depuis l’aéroport de Barcelone",
-  "Petit groupe de 20 joueurs maximum",
+  "Petit groupe de 16 joueurs maximum",
   "Accompagnement personnalisé de l’équipe Dink Abroad",
 ];
 
@@ -104,17 +103,17 @@ const faqs: FaqItem[] = [
   {
     question: "Puis-je venir seul ?",
     answer:
-      "Oui, et beaucoup le font. Le groupe est limité à 20 joueurs, vous vous ferez vite des amis sur le terrain comme en dehors. Vous préférez votre propre chambre ? La chambre individuelle est à 1 700 € par personne.",
+      "Oui, et beaucoup le font. Le groupe est limité à 16 joueurs, vous vous ferez vite des amis sur le terrain comme en dehors. Vous préférez votre propre chambre ? La chambre individuelle est à 1 500 € par personne.",
   },
   {
     question: "Les vols sont-ils inclus ?",
     answer:
-      "Les vols ne sont pas inclus, vous pouvez donc partir de l’aéroport qui vous convient en France ou en Europe. Arrivez à Barcelone-El Prat le vendredi et repartez le mardi ; les transferts aller-retour sont inclus.",
+      "Les vols ne sont pas inclus, vous pouvez donc partir de l’aéroport qui vous convient en France ou en Europe. Arrivez à Barcelone le vendredi et repartez le mardi. Les transferts aéroport ne sont pas inclus, mais Coma-ruga se rejoint facilement en train le long de la côte, et nous vous aidons à préparer le trajet.",
   },
   {
     question: "Qu’est-ce qui est inclus ou non ?",
     answer:
-      "Inclus : 4 nuits en chambre twin ou individuelle, petit-déjeuner tous les jours, 4 déjeuners, 3 séances de coaching, un tournoi, le jeu libre et les transferts aéroport. Non inclus : vols, dîners, boissons, assurance voyage et excursions optionnelles.",
+      "Inclus : 4 nuits en chambre twin ou individuelle, petit-déjeuner tous les jours, 3 séances de coaching, un tournoi et le jeu libre. Non inclus : vols, transferts aéroport, déjeuners, dîners, boissons, assurance voyage et excursions optionnelles.",
   },
   {
     question: "Comment et quand payer ?",
@@ -136,7 +135,7 @@ export default function VacancesPickleballPage() {
           "@graph": [
             tripSchema(localDinkFr, {
               description:
-                "Des vacances de pickleball de 5 jours sur la côte de Barcelone avec coaching en anglais et en espagnol, un tournoi, un hôtel 4 étoiles en bord de mer, les déjeuners et les transferts aéroport.",
+                "Des vacances de pickleball de 5 jours sur la côte de Barcelone avec coaching en anglais et en espagnol, un tournoi et un hôtel 4 étoiles en bord de mer avec petit-déjeuner.",
               touristType: "Joueurs de pickleball de France et d’Europe",
               itinerary: days.map((d) => ({ name: `${d.label} : ${d.title}`, description: d.text })),
             }),
@@ -160,7 +159,7 @@ export default function VacancesPickleballPage() {
           </>
         }
         intro="Le long week-end pickleball idéal pour les joueurs de France et d’Europe. Du vendredi au mardi sur la Costa Daurada : des coachs diplômés, un tournoi face aux locaux et un hôtel 4★ en bord de mer. Vous n’avez plus qu’à jouer."
-        facts={["20 participants max.", "Hôtel 4★ en bord de mer", "Coaching en anglais et espagnol", "Transferts inclus"]}
+        facts={["16 participants max.", "Hôtel 4★ en bord de mer", "Coaching en anglais et espagnol", "Le matin sur le terrain"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -188,7 +187,7 @@ export default function VacancesPickleballPage() {
             <SectionHeading
               eyebrow="Le programme"
               title="Du vendredi au mardi, parfaitement équilibré"
-              intro="Cinq jours entre coaching, matchs, tournoi et vraie détente au bord de la Méditerranée."
+              intro="Le matin, coaching, matchs et tournoi. L’après-midi, vraie détente au bord de la Méditerranée."
             />
             <div className="mt-12 pl-4">
               <Itinerary days={days} />
@@ -209,7 +208,7 @@ export default function VacancesPickleballPage() {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Excursion optionnelle l’après-midi : Sitges est juste à côté, le long de la côte.</p>
+            <p className="text-sm text-stone">Idées pour l’après-midi : Sitges, Tarragone et Vilanova i la Geltrú sont à un court trajet en train le long de la côte.</p>
           </div>
         </Container>
       </section>
@@ -218,11 +217,11 @@ export default function VacancesPickleballPage() {
         retreat={localDinkFr}
         lang="fr"
         included={included}
-        notIncluded="vols, dîners, boissons, assurance voyage et excursions optionnelles."
+        notIncluded="vols, transferts aéroport, déjeuners, dîners, boissons, assurance voyage et excursions optionnelles."
         terms={[
           "Tous les prix sont en euros (EUR). Les montants en livres et en dollars sont indicatifs, au dernier taux de change.",
           "Coaching en anglais et en espagnol.",
-          "20 joueurs maximum par séjour.",
+          "16 joueurs maximum par séjour.",
         ]}
       />
 

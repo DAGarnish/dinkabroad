@@ -68,7 +68,7 @@ const faqs: FaqItem[] = [
   {
     question: "Sind die Flüge inklusive?",
     answer:
-      "Nein. Flüge sind nicht inklusive, damit Sie von dort anreisen können, wo es für Sie am besten passt. Die Flughafentransfers in Barcelona sind inklusive.",
+      "Nein. Flüge sind nicht inklusive, damit Sie von dort anreisen können, wo es für Sie am besten passt. Beim Long-Haul Lob sind Flughafentransfers inklusive. Für den Local Dink erreichen Sie Coma-ruga ganz einfach mit dem Zug entlang der Küste von Barcelona.",
   },
 ];
 

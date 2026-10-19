@@ -68,7 +68,7 @@ const faqs: FaqItem[] = [
   {
     question: "Zijn de vluchten inbegrepen?",
     answer:
-      "Nee. Vluchten zijn niet inbegrepen, zodat je kunt vertrekken van waar het jou het beste uitkomt. De transfers vanaf het vliegveld van Barcelona zijn wel inbegrepen.",
+      "Nee. Vluchten zijn niet inbegrepen, zodat je kunt vertrekken van waar het jou het beste uitkomt. Bij de Long-Haul Lob zijn transfers van en naar het vliegveld inbegrepen. Voor de Local Dink bereik je Coma-ruga makkelijk met de trein langs de kust vanaf Barcelona.",
   },
 ];
 

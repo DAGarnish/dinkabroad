@@ -19,7 +19,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Vacaciones de pickleball en Barcelona: retiro de 5 días desde 1100 €",
   description:
-    "Vacaciones de pickleball de 5 días en la costa de Barcelona. Entrenamientos, un torneo amistoso, hotel 4★ en primera línea, comidas y traslados. Desde 1100 € por persona.",
+    "Vacaciones de pickleball de 5 días en la costa de Barcelona. Entrenamientos por la mañana, un torneo amistoso y hotel 4★ en primera línea con desayuno. Desde 1100 € por persona.",
   path: localDinkEs.href,
   siteLang: "es",
 });
@@ -35,58 +35,57 @@ const reasons = [
   },
   {
     title: "Hotel 4★ en primera línea",
-    text: "Cuatro noches en el Estival Maramar, en plena playa de Coma-ruga, con piscina en la azotea y spa.",
+    text: "Cuatro noches en el Estival Maramar, en plena playa de Coma-ruga, con desayuno diario, piscina infinita y spa.",
   },
   {
-    title: "Desayuno, comida y traslados",
-    text: "Desayuno diario, cuatro comidas españolas abundantes y traslados de ida y vuelta al aeropuerto. Todo resuelto.",
+    title: "Mañanas en la pista",
+    text: "Los entrenamientos y el juego son siempre por la mañana, así que las tardes quedan libres para explorar la costa o relajarte en la playa o en la piscina infinita.",
   },
   {
-    title: "Grupo reducido, máx. 20",
+    title: "Grupo reducido, máx. 16",
     text: "Atención personal de los entrenadores y muchos compañeros de juego nuevos. Perfecto si vienes solo.",
   },
   {
-    title: "Tiempo libre para explorar",
-    text: "Las tardes son tuyas: la playa, el spa o una escapada por la costa a Sitges o Barcelona.",
+    title: "Excursiones por la tarde",
+    text: "Sitges, Tarragona y Vilanova i la Geltrú están a un corto trayecto en tren por la costa.",
   },
 ];
 
 const days = [
   {
     label: "Día 1 · Viernes",
-    title: "Llegada y primera sesión",
-    text: "Te recogemos en el aeropuerto de Barcelona y te llevamos al hotel, en la playa. Después de comer juntos, directos a la pista para tu primera sesión de entrenamiento de 90 minutos.",
+    title: "Llegada",
+    text: "Llega a Coma-ruga, a una hora de Barcelona en tren por la costa. Te instalas, te das un baño en la piscina infinita y conoces al grupo.",
   },
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Segunda sesión de 90 minutos, seguida de juego libre. Por la tarde, elige entre una excursión opcional, más tiempo en la pista o simplemente relajarte en la piscina de la azotea.",
+    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa, la piscina infinita o un corto trayecto en tren hasta Sitges.",
   },
   {
     label: "Día 3 · Domingo",
     title: "A la práctica",
-    text: "Tercera sesión de entrenamiento por la mañana y después muchos partidos contra rivales distintos para afianzar lo aprendido.",
+    text: "Segunda sesión de entrenamiento por la mañana y después muchos partidos contra rivales distintos para afianzar lo aprendido. Por la tarde, la Tarragona romana está a un corto trayecto en tren.",
   },
   {
     label: "Día 4 · Lunes",
-    title: "Día de torneo",
-    text: "Pon a prueba lo aprendido en un torneo divertido y competido con tus compañeros de viaje y jugadores locales. La mejor forma de cerrar tus días en la pista.",
+    title: "Última sesión y torneo",
+    text: "Tu tercera sesión de entrenamiento y después pon a prueba lo aprendido en un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Pasa la última tarde en Vilanova i la Geltrú o en la playa.",
   },
   {
     label: "Día 5 · Martes",
     title: "Hasta pronto",
-    text: "Último desayuno frente al mar, despedida de tus nuevos amigos y traslado de vuelta al aeropuerto.",
+    text: "Último desayuno frente al mar, despedida de tus nuevos amigos y vuelta a casa.",
   },
 ];
 
 const included = [
   "4 noches en el Estival Maramar 4★, en primera línea (habitación twin o individual)",
-  "Desayuno diario y 4 comidas españolas abundantes",
+  "Desayuno diario",
   "3 sesiones de entrenamiento de 90 minutos con entrenadores titulados",
   "1 torneo amistoso con compañeros de viaje y jugadores locales",
   "Juego libre en las pistas",
-  "Traslados de ida y vuelta al aeropuerto de Barcelona",
-  "Grupo reducido de máximo 20 jugadores",
+  "Grupo reducido de máximo 16 jugadores",
   "Atención personal del equipo de Dink Abroad",
 ];
 
@@ -99,17 +98,17 @@ const faqs: FaqItem[] = [
   {
     question: "¿Puedo venir solo?",
     answer:
-      "Sí, y mucha gente lo hace. El grupo tiene un máximo de 20 jugadores, así que harás amigos enseguida dentro y fuera de la pista. ¿Prefieres habitación propia? La habitación individual cuesta 1700 € por persona.",
+      "Sí, y mucha gente lo hace. El grupo tiene un máximo de 16 jugadores, así que harás amigos enseguida dentro y fuera de la pista. ¿Prefieres habitación propia? La habitación individual cuesta 1500 € por persona.",
   },
   {
     question: "¿Están incluidos los vuelos?",
     answer:
-      "Los vuelos no están incluidos, así que puedes venir desde donde mejor te venga. Llega al aeropuerto de Barcelona-El Prat el viernes y vuelve el martes; los traslados de ida y vuelta al aeropuerto están incluidos.",
+      "Los vuelos no están incluidos, así que puedes venir desde donde mejor te venga. Llega a Barcelona el viernes y vuelve el martes. Los traslados al aeropuerto no están incluidos, pero a Coma-ruga se llega fácilmente en tren por la costa y te ayudamos a planificar el trayecto.",
   },
   {
     question: "¿Qué incluye y qué no?",
     answer:
-      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 4 comidas, 3 sesiones de entrenamiento, un torneo, juego libre y traslados al aeropuerto. No incluye: vuelos, cenas, bebidas, seguro de viaje ni excursiones opcionales.",
+      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 3 sesiones de entrenamiento, un torneo y juego libre. No incluye: vuelos, traslados al aeropuerto, comidas, cenas, bebidas, seguro de viaje ni excursiones opcionales.",
   },
   {
     question: "¿Cómo y cuándo se paga?",
@@ -131,7 +130,7 @@ export default function VacacionesPickleballPage() {
           "@graph": [
             tripSchema(localDinkEs, {
               description:
-                "Vacaciones de pickleball de 5 días en la costa de Barcelona con entrenamientos, un torneo, hotel 4 estrellas en primera línea, comidas y traslados al aeropuerto.",
+                "Vacaciones de pickleball de 5 días en la costa de Barcelona con entrenamientos por la mañana, un torneo y hotel 4 estrellas en primera línea con desayuno.",
               touristType: "Jugadores de pickleball de España y Europa",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -155,7 +154,7 @@ export default function VacacionesPickleballPage() {
           </>
         }
         intro="La escapada de pickleball definitiva para jugadores de España y Europa. De viernes a martes en la Costa Daurada: entrenadores titulados, un torneo con los locales y un hotel 4★ en primera línea. Tú solo tienes que jugar."
-        facts={["Máx. 20 participantes", "Hotel 4★ en primera línea", "Entrenadores titulados", "Traslados incluidos"]}
+        facts={["Máx. 16 participantes", "Hotel 4★ en primera línea", "Entrenadores titulados", "Mañanas en la pista"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -183,7 +182,7 @@ export default function VacacionesPickleballPage() {
             <SectionHeading
               eyebrow="El programa"
               title="De viernes a martes, en su justa medida"
-              intro="Cinco días entre entrenamientos, partidos, un torneo y descanso de verdad junto al Mediterráneo."
+              intro="Mañanas de entrenamientos, partidos y un torneo. Tardes de descanso de verdad junto al Mediterráneo."
             />
             <div className="mt-12 pl-4">
               <Itinerary days={days} />
@@ -204,7 +203,7 @@ export default function VacacionesPickleballPage() {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Excursión opcional por la tarde: Sitges está aquí al lado, por la costa.</p>
+            <p className="text-sm text-stone">Ideas para la tarde: Sitges, Tarragona y Vilanova i la Geltrú están a un corto trayecto en tren por la costa.</p>
           </div>
         </Container>
       </section>
@@ -213,10 +212,10 @@ export default function VacacionesPickleballPage() {
         retreat={localDinkEs}
         lang="es"
         included={included}
-        notIncluded="vuelos, cenas, bebidas, seguro de viaje y excursiones opcionales."
+        notIncluded="vuelos, traslados al aeropuerto, comidas, cenas, bebidas, seguro de viaje y excursiones opcionales."
         terms={[
           "Todos los precios están en euros (EUR). Los importes en libras y dólares son aproximados, al tipo de cambio más reciente.",
-          "Máximo 20 jugadores por retiro.",
+          "Máximo 16 jugadores por retiro.",
         ]}
       />
 

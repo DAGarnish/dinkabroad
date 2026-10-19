@@ -68,7 +68,7 @@ const faqs: FaqItem[] = [
   {
     question: "Les vols sont-ils inclus ?",
     answer:
-      "Non. Les vols ne sont pas inclus, pour que vous puissiez partir d’où vous voulez. Les transferts depuis l’aéroport de Barcelone sont inclus.",
+      "Non. Les vols ne sont pas inclus, pour que vous puissiez partir d’où vous voulez. Les transferts aéroport sont inclus dans le Long-Haul Lob. Pour le Local Dink, Coma-ruga se rejoint facilement en train le long de la côte depuis Barcelone.",
   },
 ];
 

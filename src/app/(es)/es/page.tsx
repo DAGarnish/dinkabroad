@@ -63,7 +63,7 @@ const faqs: FaqItem[] = [
   {
     question: "¿Están incluidos los vuelos?",
     answer:
-      "No. Los vuelos no están incluidos, así que puedes viajar desde donde mejor te venga. Los traslados desde el aeropuerto de Barcelona sí están incluidos.",
+      "No. Los vuelos no están incluidos, así que puedes viajar desde donde mejor te venga. Los traslados al aeropuerto están incluidos en el Long-Haul Lob. Para el Local Dink, a Coma-ruga se llega fácilmente en tren por la costa desde Barcelona.",
   },
 ];
 

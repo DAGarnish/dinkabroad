@@ -63,7 +63,7 @@ const faqs: FaqItem[] = [
   {
     question: "Are flights included?",
     answer:
-      "No. Flights are not included so you can travel from wherever suits you best. Airport transfers from Barcelona are included.",
+      "No. Flights are not included so you can travel from wherever suits you best. Airport transfers are included on the Long-Haul Lob. For the Local Dink, Coma-ruga is an easy train ride along the coast from Barcelona.",
   },
 ];
 

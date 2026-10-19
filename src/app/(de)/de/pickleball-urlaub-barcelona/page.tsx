@@ -19,7 +19,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleball-Urlaub Barcelona: 5-tägige Pickleball-Reise ab 1.100 €",
   description:
-    "5 Tage Pickleball-Urlaub an der Küste von Barcelona: Training, lockeres Turnier, 4★-Hotel direkt am Strand, Mittagessen und Transfers. Ab 1.100 € pro Person.",
+    "5 Tage Pickleball-Urlaub an der Küste von Barcelona: Training am Vormittag, lockeres Turnier und 4★-Hotel direkt am Strand mit Frühstück. Ab 1.100 € pro Person.",
   path: localDinkDe.href,
   siteLang: "de",
 });
@@ -35,58 +35,57 @@ const reasons = [
   },
   {
     title: "4★-Hotel direkt am Strand",
-    text: "Vier Nächte im Estival Maramar, direkt am Strand von Coma-ruga, mit Pool auf dem Dach und Spa.",
+    text: "Vier Nächte im Estival Maramar, direkt am Strand von Coma-ruga, mit täglichem Frühstück, Infinity-Pool und Spa.",
   },
   {
-    title: "Frühstück, Mittagessen & Transfers",
-    text: "Tägliches Frühstück, vier großzügige spanische Mittagessen und Flughafentransfers hin und zurück: Alles ist organisiert.",
+    title: "Vormittags auf dem Court",
+    text: "Gespielt und trainiert wird immer am Vormittag. So bleiben die Nachmittage frei, um die Küste zu entdecken oder am Strand oder Infinity-Pool zu entspannen.",
   },
   {
-    title: "Kleine Gruppe, max. 20",
+    title: "Kleine Gruppe, max. 16",
     text: "Persönliche Betreuung durch die Trainer und viele neue Spielpartner. Ideal, wenn Sie allein reisen.",
   },
   {
-    title: "Freizeit zum Entdecken",
-    text: "Die Nachmittage gehören Ihnen: Strand, Spa oder ein Abstecher entlang der Küste nach Sitges oder Barcelona.",
+    title: "Ausflüge am Nachmittag",
+    text: "Sitges, Tarragona und Vilanova i la Geltrú sind nur eine kurze Zugfahrt die Küste entlang.",
   },
 ];
 
 const days = [
   {
     label: "Tag 1 · Freitag",
-    title: "Ankunft & erste Einheit",
-    text: "Wir holen Sie am Flughafen Barcelona ab und bringen Sie ins Hotel am Strand. Nach dem gemeinsamen Mittagessen geht es direkt auf den Court zur ersten 90-minütigen Trainingseinheit.",
+    title: "Ankunft",
+    text: "Reisen Sie nach Coma-ruga, eine Stunde mit dem Zug die Küste entlang von Barcelona. Einchecken, im Infinity-Pool abkühlen und die Gruppe kennenlernen.",
   },
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Die zweite 90-minütige Einheit, danach freies Spiel. Am Nachmittag haben Sie die Wahl: optionaler Ausflug, mehr Zeit auf dem Court oder einfach entspannen am Pool auf dem Dach.",
+    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand, Infinity-Pool oder eine kurze Zugfahrt nach Sitges.",
   },
   {
     label: "Tag 3 · Sonntag",
     title: "Ab in die Praxis",
-    text: "Die dritte Trainingseinheit am Vormittag, danach viele Matches gegen wechselnde Gegner, um das Gelernte zu festigen.",
+    text: "Die zweite Trainingseinheit am Vormittag, danach viele Matches gegen wechselnde Gegner, um das Gelernte zu festigen. Am Nachmittag ist das römische Tarragona nur eine kurze Zugfahrt entfernt.",
   },
   {
     label: "Tag 4 · Montag",
-    title: "Turniertag",
-    text: "Stellen Sie Ihr Können in einem lockeren, aber umkämpften Turnier mit Mitreisenden und Spielern aus der Region unter Beweis. Der perfekte Abschluss Ihrer Zeit auf dem Court.",
+    title: "Letzte Einheit & Turnier",
+    text: "Ihre dritte Trainingseinheit, danach stellen Sie Ihr Können in einem lockeren, aber umkämpften Turnier mit Mitreisenden und Spielern aus der Region unter Beweis. Den letzten Nachmittag verbringen Sie in Vilanova i la Geltrú oder am Strand.",
   },
   {
     label: "Tag 5 · Dienstag",
     title: "Hasta pronto",
-    text: "Ein letztes Frühstück am Meer, Abschied von neuen Freunden und Transfer zurück zum Flughafen.",
+    text: "Ein letztes Frühstück am Meer, Abschied von neuen Freunden und Heimreise.",
   },
 ];
 
 const included = [
   "4 Nächte im 4★-Hotel Estival Maramar direkt am Strand (Zweibett- oder Einzelzimmer)",
-  "Tägliches Frühstück und 4 großzügige spanische Mittagessen",
+  "Tägliches Frühstück",
   "3 × 90 Minuten Training mit zertifizierten Trainern (auf Englisch und Spanisch)",
   "1 lockeres Turnier mit Mitreisenden und Einheimischen",
   "Freies Spiel auf den Courts",
-  "Flughafentransfers in Barcelona, hin und zurück",
-  "Kleine Gruppe mit max. 20 Spielern",
+  "Kleine Gruppe mit max. 16 Spielern",
   "Persönliche Betreuung durch das Dink-Abroad-Team",
 ];
 
@@ -104,17 +103,17 @@ const faqs: FaqItem[] = [
   {
     question: "Kann ich allein kommen?",
     answer:
-      "Ja, das machen viele. Die Gruppe ist auf 20 Spieler begrenzt, Sie finden also schnell Anschluss, auf und neben dem Court. Lieber ein eigenes Zimmer? Das Einzelzimmer kostet 1.700 € pro Person.",
+      "Ja, das machen viele. Die Gruppe ist auf 16 Spieler begrenzt, Sie finden also schnell Anschluss, auf und neben dem Court. Lieber ein eigenes Zimmer? Das Einzelzimmer kostet 1.500 € pro Person.",
   },
   {
     question: "Sind die Flüge inklusive?",
     answer:
-      "Flüge sind nicht inklusive, Sie können also von jedem Flughafen in Deutschland, Österreich, der Schweiz oder Europa anreisen. Landen Sie am Freitag in Barcelona-El Prat und fliegen Sie am Dienstag zurück; die Flughafentransfers sind inklusive.",
+      "Flüge sind nicht inklusive, Sie können also von jedem Flughafen in Deutschland, Österreich, der Schweiz oder Europa anreisen. Landen Sie am Freitag in Barcelona und fliegen Sie am Dienstag zurück. Flughafentransfers sind nicht inklusive, aber Coma-ruga ist mit dem Zug entlang der Küste leicht zu erreichen, und wir helfen Ihnen bei der Planung.",
   },
   {
     question: "Was ist inklusive und was nicht?",
     answer:
-      "Inklusive: 4 Nächte im Zweibett- oder Einzelzimmer, tägliches Frühstück, 4 Mittagessen, 3 Trainingseinheiten, ein Turnier, freies Spiel und Flughafentransfers. Nicht inklusive: Flüge, Abendessen, Getränke, Reiseversicherung und optionale Ausflüge.",
+      "Inklusive: 4 Nächte im Zweibett- oder Einzelzimmer, tägliches Frühstück, 3 Trainingseinheiten, ein Turnier und freies Spiel. Nicht inklusive: Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke, Reiseversicherung und optionale Ausflüge.",
   },
   {
     question: "Wie und wann bezahle ich?",
@@ -136,7 +135,7 @@ export default function PickleballUrlaubPage() {
           "@graph": [
             tripSchema(localDinkDe, {
               description:
-                "5 Tage Pickleball-Urlaub an der Küste von Barcelona mit Training auf Englisch und Spanisch, einem Turnier, einem 4-Sterne-Strandhotel, Mittagessen und Flughafentransfers.",
+                "5 Tage Pickleball-Urlaub an der Küste von Barcelona mit Training auf Englisch und Spanisch, einem Turnier und einem 4-Sterne-Strandhotel mit Frühstück.",
               touristType: "Pickleball-Spieler aus Deutschland, Österreich, der Schweiz und Europa",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -160,7 +159,7 @@ export default function PickleballUrlaubPage() {
           </>
         }
         intro="Das ultimative Pickleball-Wochenende für Spieler aus Deutschland, Österreich, der Schweiz und ganz Europa. Freitag bis Dienstag an der Costa Daurada: zertifizierte Trainer, ein Turnier gegen Einheimische und ein 4★-Hotel direkt am Strand. Sie müssen nur noch spielen."
-        facts={["Max. 20 Teilnehmer", "4★-Hotel direkt am Strand", "Training auf Englisch & Spanisch", "Transfers inklusive"]}
+        facts={["Max. 16 Teilnehmer", "4★-Hotel direkt am Strand", "Training auf Englisch & Spanisch", "Vormittags auf dem Court"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -188,7 +187,7 @@ export default function PickleballUrlaubPage() {
             <SectionHeading
               eyebrow="Das Programm"
               title="Freitag bis Dienstag, perfekt ausbalanciert"
-              intro="Fünf Tage zwischen Training, Matches, Turnier und echter Erholung am Mittelmeer."
+              intro="Vormittags Training, Matches und ein Turnier. Nachmittags echte Erholung am Mittelmeer."
             />
             <div className="mt-12 pl-4">
               <Itinerary days={days} />
@@ -209,7 +208,7 @@ export default function PickleballUrlaubPage() {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Optionaler Nachmittagsausflug: Sitges liegt gleich die Küste entlang.</p>
+            <p className="text-sm text-stone">Ideen für den Nachmittag: Sitges, Tarragona und Vilanova i la Geltrú sind nur eine kurze Zugfahrt die Küste entlang.</p>
           </div>
         </Container>
       </section>
@@ -218,11 +217,11 @@ export default function PickleballUrlaubPage() {
         retreat={localDinkDe}
         lang="de"
         included={included}
-        notIncluded="Flüge, Abendessen, Getränke, Reiseversicherung und optionale Ausflüge."
+        notIncluded="Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke, Reiseversicherung und optionale Ausflüge."
         terms={[
           "Alle Preise in Euro (EUR). Beträge in Pfund und Dollar sind Richtwerte zum aktuellen Wechselkurs.",
           "Training auf Englisch und Spanisch.",
-          "Max. 20 Spieler pro Reise.",
+          "Max. 16 Spieler pro Reise.",
         ]}
       />
 
