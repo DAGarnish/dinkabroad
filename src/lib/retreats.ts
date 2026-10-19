@@ -58,6 +58,7 @@ export const localDink: Retreat = {
     "Fun tournament with the locals",
     "Luxurious beachfront 4★ hotel",
     "3 hosted afternoon outings",
+    "Open play pickleball every day",
   ],
 };
 
@@ -129,6 +130,7 @@ export const localDinkEs: Retreat = {
     "Torneo amistoso con los locales",
     "Hotel 4★ de lujo en primera línea",
     "3 salidas de tarde con anfitrión",
+    "Juego libre todos los días",
   ],
 };
 
@@ -195,6 +197,7 @@ export const localDinkFr: Retreat = {
     "Tournoi amical avec les locaux",
     "Hôtel 4★ de luxe en bord de mer",
     "3 sorties accompagnées l’après-midi",
+    "Jeu libre tous les jours",
   ],
 };
 
@@ -261,6 +264,7 @@ export const localDinkDe: Retreat = {
     "Lockeres Turnier mit Einheimischen",
     "Luxuriöses 4★-Hotel direkt am Strand",
     "3 begleitete Nachmittagsausflüge",
+    "Jeden Tag freies Spiel",
   ],
 };
 
@@ -327,6 +331,7 @@ export const localDinkNl: Retreat = {
     "Gezellig toernooi met de locals",
     "Luxe 4★-hotel aan het strand",
     "3 middaguitstapjes met een host",
+    "Elke dag vrij spel",
   ],
 };
 
