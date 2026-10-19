@@ -9,9 +9,14 @@ const towns = {
 };
 
 export function TownLink({ town, lang, children }: { town: keyof typeof towns; lang: Lang; children: ReactNode }) {
+  return <ExternalLink href={towns[town](siteOf(lang))}>{children}</ExternalLink>;
+}
+
+// An underlined link that opens in a new tab.
+export function ExternalLink({ href, children }: { href: string; children: ReactNode }) {
   return (
     <a
-      href={towns[town](siteOf(lang))}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className="underline decoration-terracotta/50 underline-offset-2 transition hover:text-terracotta"

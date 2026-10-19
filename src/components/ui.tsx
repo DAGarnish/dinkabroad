@@ -14,12 +14,14 @@ export function SectionHeading({
   intro,
   align = "left",
   invert = false,
+  children,
 }: {
   eyebrow?: string;
   title: ReactNode;
   intro?: ReactNode;
   align?: "left" | "center";
   invert?: boolean;
+  children?: ReactNode;
 }) {
   return (
     <div className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl"}>
@@ -28,6 +30,7 @@ export function SectionHeading({
       {intro && (
         <p className={`mt-5 text-lg leading-relaxed text-pretty ${invert ? "text-cream/75" : "text-stone"}`}>{intro}</p>
       )}
+      {children}
     </div>
   );
 }

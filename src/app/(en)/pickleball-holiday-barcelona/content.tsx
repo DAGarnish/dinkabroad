@@ -11,12 +11,13 @@ import {
   PageHero,
   PricingSection,
 } from "@/components/sections";
-import { TownLink } from "@/components/TownLink";
+import { ExternalLink, TownLink } from "@/components/TownLink";
 import { Container, SectionHeading } from "@/components/ui";
 import { type Currency, convertPrice } from "@/lib/fx";
 import { pageMetadata } from "@/lib/metadata";
 import { formatPrice, localDink } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
+import { hotel } from "@/lib/site";
 
 export const holidayMetadata = pageMetadata({
   title: "Pickleball Holiday Barcelona: 5-Day Pickleball Retreat from €1,100",
@@ -36,7 +37,12 @@ const reasons = [
   },
   {
     title: "Beachfront 4★ hotel",
-    text: "Four nights at the Estival Maramar, right on Coma-ruga beach, with breakfast every day, an infinity pool and spa.",
+    text: (
+      <>
+        Four nights at the <ExternalLink href={hotel.url}>Estival Maramar</ExternalLink>
+        , on the luxury end of 4-star and right on Coma-ruga beach, with breakfast every day, an infinity pool and spa.
+      </>
+    ),
   },
   {
     title: "Mornings on court",

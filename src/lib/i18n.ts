@@ -106,6 +106,7 @@ const en = {
     intro:
       "A modern, beautifully kept hotel on the seafront at Coma-ruga, on the luxury end of 4-star, rated “Superb” by more than 900 guests on Booking.com. After a morning on court, the rooftop pool is calling.",
     imageAlt: "Hotels and palm trees along the seafront at Coma-ruga beach",
+    website: "Visit the hotel’s website",
     features: [
       ["Right on the beach", "Step straight from the hotel onto the sand of Coma-ruga beach."],
       ["Rooftop pool", "An adults-only rooftop pool and lounge with views over the Mediterranean."],
@@ -231,6 +232,7 @@ const es: Ui = {
     intro:
       "Un hotel moderno y muy cuidado en el paseo marítimo de Coma-ruga, de la gama más alta de los 4 estrellas, valorado como «Fantástico» por más de 900 huéspedes en Booking.com. Después de una mañana en la pista, la piscina de la azotea te espera.",
     imageAlt: "Hoteles y palmeras en el paseo marítimo de la playa de Coma-ruga",
+    website: "Visita la web del hotel",
     features: [
       ["En la misma playa", "Sales del hotel directamente a la arena de la playa de Coma-ruga."],
       ["Piscina en la azotea", "Piscina y zona chill-out solo para adultos con vistas al Mediterráneo."],
@@ -344,6 +346,7 @@ const fr: Ui = {
     intro:
       "Un hôtel moderne et soigné sur le front de mer de Coma-ruga, dans le haut de gamme des 4 étoiles, noté « Superbe » par plus de 900 clients sur Booking.com. Après une matinée sur le terrain, la piscine sur le toit vous attend.",
     imageAlt: "Hôtels et palmiers sur le front de mer de la plage de Coma-ruga",
+    website: "Voir le site de l’hôtel",
     features: [
       ["Sur la plage", "Vous sortez de l’hôtel directement sur le sable de la plage de Coma-ruga."],
       ["Piscine sur le toit", "Une piscine et un lounge réservés aux adultes, avec vue sur la Méditerranée."],
@@ -457,6 +460,7 @@ const de: Ui = {
     intro:
       "Ein modernes, top gepflegtes Hotel an der Strandpromenade von Coma-ruga, am luxuriösen Ende der 4-Sterne-Kategorie und von über 900 Gästen auf Booking.com mit „Hervorragend“ bewertet. Nach einem Vormittag auf dem Court wartet der Pool auf dem Dach.",
     imageAlt: "Hotels und Palmen an der Strandpromenade von Coma-ruga",
+    website: "Zur Website des Hotels",
     features: [
       ["Direkt am Strand", "Vom Hotel geht es direkt auf den Sand des Strandes von Coma-ruga."],
       ["Pool auf dem Dach", "Pool und Lounge nur für Erwachsene mit Blick aufs Mittelmeer."],
@@ -570,6 +574,7 @@ const nl: Ui = {
     intro:
       "Een modern, prachtig onderhouden hotel aan de boulevard van Coma-ruga, aan de luxe kant van de 4 sterren en door meer dan 900 gasten op Booking.com beoordeeld met ‘Uitstekend’. Na een ochtend op de baan wacht het zwembad op het dak.",
     imageAlt: "Hotels en palmbomen aan de boulevard van het strand van Coma-ruga",
+    website: "Bekijk de website van het hotel",
     features: [
       ["Direct aan het strand", "Vanuit het hotel loop je zo het zand van het strand van Coma-ruga op."],
       ["Zwembad op het dak", "Een zwembad en lounge op het dak, alleen voor volwassenen, met uitzicht op de Middellandse Zee."],

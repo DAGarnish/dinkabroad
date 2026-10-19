@@ -5,8 +5,10 @@ import seafront from "@/assets/images/coma-ruga-seafront.jpg";
 import { type Lang, type RetreatChoice, language, ui } from "@/lib/i18n";
 import { type Currency, convertPrice } from "@/lib/fx";
 import { type Retreat, formatPrice } from "@/lib/retreats";
+import { hotel } from "@/lib/site";
 import { ConvertedPrices } from "./ConvertedPrices";
 import { EnquiryForm } from "./EnquiryForm";
+import { ExternalLink } from "./TownLink";
 import { Check, Container, Eyebrow, SectionHeading } from "./ui";
 
 const priceLocale = (lang: Lang) => language(lang).numberLocale;
@@ -293,7 +295,11 @@ export function HotelSection({ lang }: { lang: Lang }) {
               </>
             }
             intro={t.intro}
-          />
+          >
+            <p className="mt-6 text-sm font-semibold">
+              <ExternalLink href={hotel.url}>{t.website} ↗</ExternalLink>
+            </p>
+          </SectionHeading>
           <Image
             src={seafront}
             alt={t.imageAlt}

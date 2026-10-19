@@ -11,11 +11,12 @@ import {
   PageHero,
   PricingSection,
 } from "@/components/sections";
-import { TownLink } from "@/components/TownLink";
+import { ExternalLink, TownLink } from "@/components/TownLink";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 import { localDinkFr } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
+import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Vacances pickleball à Barcelone : séjour de 5 jours dès 1 100 €",
@@ -36,7 +37,12 @@ const reasons = [
   },
   {
     title: "Hôtel 4★ en bord de mer",
-    text: "Quatre nuits à l’Estival Maramar, directement sur la plage de Coma-ruga, avec petit-déjeuner tous les jours, piscine à débordement et spa.",
+    text: (
+      <>
+        Quatre nuits à l’<ExternalLink href={hotel.url}>Estival Maramar</ExternalLink>
+        , dans le haut de gamme des 4 étoiles, directement sur la plage de Coma-ruga, avec petit-déjeuner tous les jours, piscine à débordement et spa.
+      </>
+    ),
   },
   {
     title: "Le matin sur le terrain",

@@ -11,11 +11,12 @@ import {
   PageHero,
   PricingSection,
 } from "@/components/sections";
-import { TownLink } from "@/components/TownLink";
+import { ExternalLink, TownLink } from "@/components/TownLink";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 import { localDinkDe } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
+import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Pickleball-Urlaub Barcelona: 5-tägige Pickleball-Reise ab 1.100 €",
@@ -36,7 +37,12 @@ const reasons = [
   },
   {
     title: "4★-Hotel direkt am Strand",
-    text: "Vier Nächte im Estival Maramar, direkt am Strand von Coma-ruga, mit täglichem Frühstück, Infinity-Pool und Spa.",
+    text: (
+      <>
+        Vier Nächte im <ExternalLink href={hotel.url}>Estival Maramar</ExternalLink>
+        , am luxuriösen Ende der 4-Sterne-Kategorie und direkt am Strand von Coma-ruga, mit täglichem Frühstück, Infinity-Pool und Spa.
+      </>
+    ),
   },
   {
     title: "Vormittags auf dem Court",

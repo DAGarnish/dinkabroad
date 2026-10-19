@@ -9,7 +9,7 @@ export const site = {
 
 export const hotel = {
   name: "Estival Maramar",
-  url: "https://estival-maramar-coma-ruga.bookstaygo.com/",
+  url: "https://www.estivalgroup.com/estival-maramar-comarruga.html",
   street: "Avenida Brisamar, 44-50",
   postcode: "43880",
   locality: "Coma-ruga, El Vendrell",

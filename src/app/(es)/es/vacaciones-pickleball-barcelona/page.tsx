@@ -11,11 +11,12 @@ import {
   PageHero,
   PricingSection,
 } from "@/components/sections";
-import { TownLink } from "@/components/TownLink";
+import { ExternalLink, TownLink } from "@/components/TownLink";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 import { localDinkEs } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
+import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
   title: "Vacaciones de pickleball en Barcelona: retiro de 5 días desde 1100 €",
@@ -36,7 +37,12 @@ const reasons = [
   },
   {
     title: "Hotel 4★ en primera línea",
-    text: "Cuatro noches en el Estival Maramar, en plena playa de Coma-ruga, con desayuno diario, piscina infinita y spa.",
+    text: (
+      <>
+        Cuatro noches en el <ExternalLink href={hotel.url}>Estival Maramar</ExternalLink>
+        , de la gama más alta de los 4 estrellas y en plena playa de Coma-ruga, con desayuno diario, piscina infinita y spa.
+      </>
+    ),
   },
   {
     title: "Mañanas en la pista",
