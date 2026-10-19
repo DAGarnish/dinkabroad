@@ -29,7 +29,7 @@ export const metadata = pageMetadata({
 const reasons = [
   {
     title: "Entrenadores titulados",
-    text: "Tres sesiones de 90 minutos con entrenadores titulados, por niveles, para que cada jugador se supere con el apoyo adecuado.",
+    text: "Dos sesiones de 90 minutos con entrenadores titulados, por niveles, para que cada jugador se supere con el apoyo adecuado.",
   },
   {
     title: "Un torneo amistoso",
@@ -46,7 +46,7 @@ const reasons = [
   },
   {
     title: "Mañanas en la pista",
-    text: "Los entrenamientos y el juego son siempre por la mañana, así que las tardes quedan libres para explorar la costa o relajarte en la playa o en la piscina infinita.",
+    text: "Los entrenamientos y el torneo son siempre por la mañana, así que las tardes quedan libres para explorar la costa o relajarte en la playa o en la piscina infinita.",
   },
   {
     title: "Grupo reducido, máx. 16",
@@ -67,18 +67,18 @@ const reasons = [
 const days = [
   {
     label: "Día 1 · Viernes",
-    title: "Llegada y primera sesión",
-    text: "Llega a Coma-ruga, a una hora de Barcelona en tren por la costa. Te instalas, sales a la pista para tu primera sesión de entrenamiento de 90 minutos y después te das un baño en la piscina infinita y conoces al grupo.",
+    title: "Llegada y calentamiento",
+    text: "Llega a Coma-ruga, a una hora de Barcelona en tren por la costa. Te instalas, te das un baño en la piscina infinita y conoces al grupo, con juego libre en las pistas por la tarde para calentar.",
   },
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Tu segunda sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa o un corto trayecto en tren hasta Sitges.",
+    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa o un corto trayecto en tren hasta Sitges.",
   },
   {
     label: "Día 3 · Domingo",
     title: "A la práctica",
-    text: "Tercera sesión de entrenamiento y después muchos partidos contra rivales distintos para afianzar lo aprendido. Por la tarde, la Tarragona romana está a un corto trayecto en tren.",
+    text: "Segunda sesión de entrenamiento y después muchos partidos contra rivales distintos para afianzar lo aprendido. Por la tarde, la Tarragona romana está a un corto trayecto en tren.",
   },
   {
     label: "Día 4 · Lunes",
@@ -95,7 +95,7 @@ const days = [
 const included = [
   "4 noches en el Estival Maramar 4★, en primera línea (habitación twin o individual)",
   "Desayuno diario",
-  "3 sesiones de entrenamiento de 90 minutos con entrenadores titulados",
+  "2 sesiones de entrenamiento de 90 minutos con entrenadores titulados",
   "1 torneo amistoso con compañeros de viaje y jugadores locales",
   "Juego libre en las pistas",
   "Grupo reducido de máximo 16 jugadores",
@@ -121,7 +121,7 @@ const faqs: FaqItem[] = [
   {
     question: "¿Qué incluye y qué no?",
     answer:
-      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 3 sesiones de entrenamiento, un torneo y juego libre. No incluye: vuelos, traslados al aeropuerto, comidas, cenas, bebidas ni seguro de viaje.",
+      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 2 sesiones de entrenamiento, un torneo y juego libre. No incluye: vuelos, traslados al aeropuerto, comidas, cenas, bebidas ni seguro de viaje.",
   },
   {
     question: "¿Cómo y cuándo se paga?",

@@ -28,18 +28,18 @@ export const metadata = pageMetadata({
 const days = [
   {
     label: "Día 1 · Viernes",
-    title: "¡Bienvenidos!",
-    text: "Traslado privado desde el aeropuerto de Barcelona-El Prat a nuestro hotel en primera línea de Coma-ruga. Te instalas y sales a la pista para tu primera sesión de entrenamiento de 90 minutos; después te unes al grupo para la recepción de bienvenida.",
+    title: "Llegada y calentamiento",
+    text: "Traslado privado desde el aeropuerto de Barcelona-El Prat a nuestro hotel en primera línea de Coma-ruga. Te instalas y calientas con juego libre por la tarde; después te unes al grupo para la recepción de bienvenida.",
   },
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Tu segunda sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa, la piscina o nuestra excursión opcional a Sitges.",
+    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa, la piscina o nuestra excursión opcional a Sitges.",
   },
   {
     label: "Día 3 · Domingo",
     title: "Entrenamiento y excursión opcional a Tarragona",
-    text: "Tercera sesión de entrenamiento y partidos contra rivales distintos. Por la tarde, apúntate a nuestra excursión guiada opcional a Tarragona, ciudad Patrimonio de la Humanidad cuyo anfiteatro romano mira directamente al Mediterráneo.",
+    text: "Segunda sesión de entrenamiento y partidos contra rivales distintos. Por la tarde, apúntate a nuestra excursión guiada opcional a Tarragona, ciudad Patrimonio de la Humanidad cuyo anfiteatro romano mira directamente al Mediterráneo.",
   },
   {
     label: "Día 4 · Lunes",
@@ -76,7 +76,7 @@ const days = [
 const included = [
   "4 noches en un hotel 4★ en primera línea de playa en Coma-ruga",
   "4 noches en un hotel 4★ equivalente en Barcelona",
-  "3 sesiones de entrenamiento de 90 minutos con entrenadores titulados",
+  "2 sesiones de entrenamiento de 90 minutos con entrenadores titulados",
   "Juego libre y un torneo amistoso con jugadores locales",
   "Fruta fresca y agua fría en las pistas",
   "Desayuno bufé todas las mañanas",
@@ -158,7 +158,7 @@ export default function ViajePickleballPage() {
           </>
         }
         intro="Nueve días inolvidables en Cataluña. Empieza con pickleball junto al mar en la Costa Daurada y sube después por la costa hasta Barcelona para ver las obras maestras de Gaudí, Montserrat y una noche de flamenco, con una cata de cava por el camino."
-        facts={["3 entrenamientos + torneo", "3 excursiones guiadas", "Guía bilingüe", "4 noches en la playa + 4 en Barcelona"]}
+        facts={["2 entrenamientos + torneo", "3 excursiones guiadas", "Guía bilingüe", "4 noches en la playa + 4 en Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">

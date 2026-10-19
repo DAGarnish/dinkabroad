@@ -29,7 +29,7 @@ export const holidayMetadata = pageMetadata({
 const reasons = [
   {
     title: "Coaching with certified pros",
-    text: "Three 90-minute sessions with certified coaches, grouped by level so every player is stretched and supported.",
+    text: "Two 90-minute sessions with certified coaches, grouped by level so every player is stretched and supported.",
   },
   {
     title: "One fun tournament",
@@ -46,7 +46,7 @@ const reasons = [
   },
   {
     title: "Mornings on court",
-    text: "Play and coaching are always in the morning, leaving your afternoons free to explore the coast or relax on the beach or by the infinity pool.",
+    text: "Coaching and the tournament are always in the morning, leaving your afternoons free to explore the coast or relax on the beach or by the infinity pool.",
   },
   {
     title: "Small group, max 16",
@@ -67,18 +67,18 @@ const reasons = [
 const days = [
   {
     label: "Day 1 · Friday",
-    title: "Arrival & first session",
-    text: "Make your way to Coma-ruga, about an hour along the coast by train from Barcelona. Check in, head onto court for your first 90-minute coaching session, then cool off in the infinity pool and meet the group.",
+    title: "Arrival & warm-up",
+    text: "Make your way to Coma-ruga, about an hour along the coast by train from Barcelona. Check in, cool off in the infinity pool and meet the group, with open play on the courts in the afternoon to warm up.",
   },
   {
     label: "Day 2 · Saturday",
     title: "Coaching & open play",
-    text: "Your second 90-minute coaching session, followed by open play. The afternoon is yours: the beach or a short train ride to Sitges.",
+    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach or a short train ride to Sitges.",
   },
   {
     label: "Day 3 · Sunday",
     title: "Put it into practice",
-    text: "Coaching session number three, then plenty of match play against different opponents to lock in what you've learned. In the afternoon, Roman Tarragona is a short train ride away.",
+    text: "Coaching session number two, then plenty of match play against different opponents to lock in what you've learned. In the afternoon, Roman Tarragona is a short train ride away.",
   },
   {
     label: "Day 4 · Monday",
@@ -95,7 +95,7 @@ const days = [
 const included = [
   "4 nights at the beachfront 4★ Estival Maramar (twin or single room)",
   "Daily breakfast",
-  "3 × 90-minute coaching sessions with certified coaches",
+  "2 × 90-minute coaching sessions with certified coaches",
   "1 fun tournament with fellow travellers and locals",
   "Free play on the courts",
   "Small group of max 16 players",
@@ -121,7 +121,7 @@ const faqsWith = (singlePrice: string): FaqItem[] => [
   {
     question: "What is and isn't included?",
     answer:
-      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 3 coaching sessions, a tournament and free play. Not included: flights, airport transfers, lunches, dinners, drinks and travel insurance.",
+      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 2 coaching sessions, a tournament and free play. Not included: flights, airport transfers, lunches, dinners, drinks and travel insurance.",
   },
   {
     question: "How and when do I pay?",

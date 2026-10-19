@@ -29,7 +29,7 @@ export const metadata = pageMetadata({
 const reasons = [
   {
     title: "Gecertificeerde coaches",
-    text: "Drie trainingen van 90 minuten met gecertificeerde coaches, op niveau ingedeeld zodat iedereen uitgedaagd wordt en vooruitgaat. De training is in het Engels en Spaans.",
+    text: "Twee trainingen van 90 minuten met gecertificeerde coaches, op niveau ingedeeld zodat iedereen uitgedaagd wordt en vooruitgaat. De training is in het Engels en Spaans.",
   },
   {
     title: "Een gezellig toernooi",
@@ -46,7 +46,7 @@ const reasons = [
   },
   {
     title: "’s Ochtends op de baan",
-    text: "Spelen en trainen doe je altijd ’s ochtends, dus de middagen zijn vrij om de kust te ontdekken of te relaxen op het strand of bij de infinity pool.",
+    text: "De trainingen en het toernooi zijn altijd ’s ochtends, dus de middagen zijn vrij om de kust te ontdekken of te relaxen op het strand of bij de infinity pool.",
   },
   {
     title: "Kleine groep, max. 16",
@@ -67,18 +67,18 @@ const reasons = [
 const days = [
   {
     label: "Dag 1 · Vrijdag",
-    title: "Aankomst & eerste training",
-    text: "Reis naar Coma-ruga, een uur met de trein langs de kust vanaf Barcelona. Inchecken, de baan op voor je eerste training van 90 minuten, daarna afkoelen in de infinity pool en kennismaken met de groep.",
+    title: "Aankomst & warming-up",
+    text: "Reis naar Coma-ruga, een uur met de trein langs de kust vanaf Barcelona. Inchecken, afkoelen in de infinity pool en kennismaken met de groep, met ’s middags vrij spel op de banen om op te warmen.",
   },
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "Je tweede training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand of een kort treinritje naar Sitges.",
+    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand of een kort treinritje naar Sitges.",
   },
   {
     label: "Dag 3 · Zondag",
     title: "In de praktijk",
-    text: "De derde training, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten. ’s Middags ligt het Romeinse Tarragona op een kort treinritje.",
+    text: "De tweede training, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten. ’s Middags ligt het Romeinse Tarragona op een kort treinritje.",
   },
   {
     label: "Dag 4 · Maandag",
@@ -95,7 +95,7 @@ const days = [
 const included = [
   "4 nachten in het 4★-hotel Estival Maramar aan het strand (twin- of eenpersoonskamer)",
   "Elke dag ontbijt",
-  "3 × 90 minuten training met gecertificeerde coaches (in het Engels en Spaans)",
+  "2 × 90 minuten training met gecertificeerde coaches (in het Engels en Spaans)",
   "1 gezellig toernooi met medereizigers en locals",
   "Vrij spel op de banen",
   "Kleine groep van max. 16 spelers",
@@ -126,7 +126,7 @@ const faqs: FaqItem[] = [
   {
     question: "Wat is wel en niet inbegrepen?",
     answer:
-      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 3 trainingen, een toernooi en vrij spel. Niet inbegrepen: vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes en reisverzekering.",
+      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 2 trainingen, een toernooi en vrij spel. Niet inbegrepen: vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes en reisverzekering.",
   },
   {
     question: "Hoe en wanneer betaal ik?",

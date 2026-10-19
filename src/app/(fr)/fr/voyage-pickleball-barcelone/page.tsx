@@ -28,18 +28,18 @@ export const metadata = pageMetadata({
 const days = [
   {
     label: "Jour 1 · Vendredi",
-    title: "¡Bienvenidos!",
-    text: "Transfert privé de l’aéroport de Barcelone-El Prat à notre hôtel en bord de mer à Coma-ruga. Installation et première séance de coaching de 90 minutes sur le terrain, puis réception de bienvenue avec le groupe.",
+    title: "Arrivée et échauffement",
+    text: "Transfert privé de l’aéroport de Barcelone-El Prat à notre hôtel en bord de mer à Coma-ruga. Installation et échauffement avec du jeu libre l’après-midi, puis réception de bienvenue avec le groupe.",
   },
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Votre deuxième séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous, entre la plage, la piscine ou notre excursion en option à Sitges.",
+    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous, entre la plage, la piscine ou notre excursion en option à Sitges.",
   },
   {
     label: "Jour 3 · Dimanche",
     title: "Coaching et excursion en option à Tarragone",
-    text: "Troisième séance de coaching et matchs contre différents adversaires. L’après-midi, rejoignez notre visite guidée en option de Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
+    text: "Deuxième séance de coaching et matchs contre différents adversaires. L’après-midi, rejoignez notre visite guidée en option de Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
   },
   {
     label: "Jour 4 · Lundi",
@@ -76,7 +76,7 @@ const days = [
 const included = [
   "4 nuits dans un hôtel 4★ en bord de mer à Coma-ruga",
   "4 nuits dans un hôtel 4★ équivalent à Barcelone",
-  "3 séances de coaching de 90 minutes avec des coachs diplômés (en anglais et en espagnol)",
+  "2 séances de coaching de 90 minutes avec des coachs diplômés (en anglais et en espagnol)",
   "Jeu libre et tournoi amical avec des joueurs locaux",
   "Fruits frais et eau fraîche sur les terrains",
   "Petit-déjeuner buffet tous les matins",
@@ -163,7 +163,7 @@ export default function VoyagePickleballPage() {
           </>
         }
         intro="Neuf jours inoubliables en Catalogne. D’abord du pickleball au bord de la mer sur la Costa Daurada, puis cap sur Barcelone pour les chefs-d’œuvre de Gaudí, Montserrat et une soirée flamenco, avec une dégustation de cava en chemin."
-        facts={["3 séances de coaching + tournoi", "3 excursions guidées", "Séjour en anglais et espagnol", "4 nuits plage + 4 nuits Barcelone"]}
+        facts={["2 séances de coaching + tournoi", "3 excursions guidées", "Séjour en anglais et espagnol", "4 nuits plage + 4 nuits Barcelone"]}
       />
 
       <section className="py-24 sm:py-32">

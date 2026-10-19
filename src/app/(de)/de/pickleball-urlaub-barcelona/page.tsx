@@ -29,7 +29,7 @@ export const metadata = pageMetadata({
 const reasons = [
   {
     title: "Zertifizierte Trainer",
-    text: "Drei 90-minütige Einheiten mit zertifizierten Trainern, nach Niveau eingeteilt, damit jeder gefordert und gefördert wird. Trainiert wird auf Englisch und Spanisch.",
+    text: "Zwei 90-minütige Einheiten mit zertifizierten Trainern, nach Niveau eingeteilt, damit jeder gefordert und gefördert wird. Trainiert wird auf Englisch und Spanisch.",
   },
   {
     title: "Ein lockeres Turnier",
@@ -46,7 +46,7 @@ const reasons = [
   },
   {
     title: "Vormittags auf dem Court",
-    text: "Gespielt und trainiert wird immer am Vormittag. So bleiben die Nachmittage frei, um die Küste zu entdecken oder am Strand oder Infinity-Pool zu entspannen.",
+    text: "Training und Turnier finden immer am Vormittag statt. So bleiben die Nachmittage frei, um die Küste zu entdecken oder am Strand oder Infinity-Pool zu entspannen.",
   },
   {
     title: "Kleine Gruppe, max. 16",
@@ -67,18 +67,18 @@ const reasons = [
 const days = [
   {
     label: "Tag 1 · Freitag",
-    title: "Ankunft & erste Einheit",
-    text: "Reisen Sie nach Coma-ruga, eine Stunde mit dem Zug die Küste entlang von Barcelona. Einchecken, auf den Court zur ersten 90-minütigen Trainingseinheit, dann im Infinity-Pool abkühlen und die Gruppe kennenlernen.",
+    title: "Ankunft & Aufwärmen",
+    text: "Reisen Sie nach Coma-ruga, eine Stunde mit dem Zug die Küste entlang von Barcelona. Einchecken, im Infinity-Pool abkühlen und die Gruppe kennenlernen, mit freiem Spiel auf den Courts am Nachmittag zum Aufwärmen.",
   },
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Ihre zweite 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand oder eine kurze Zugfahrt nach Sitges.",
+    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand oder eine kurze Zugfahrt nach Sitges.",
   },
   {
     label: "Tag 3 · Sonntag",
     title: "Ab in die Praxis",
-    text: "Die dritte Trainingseinheit, danach viele Matches gegen wechselnde Gegner, um das Gelernte zu festigen. Am Nachmittag ist das römische Tarragona nur eine kurze Zugfahrt entfernt.",
+    text: "Die zweite Trainingseinheit, danach viele Matches gegen wechselnde Gegner, um das Gelernte zu festigen. Am Nachmittag ist das römische Tarragona nur eine kurze Zugfahrt entfernt.",
   },
   {
     label: "Tag 4 · Montag",
@@ -95,7 +95,7 @@ const days = [
 const included = [
   "4 Nächte im 4★-Hotel Estival Maramar direkt am Strand (Zweibett- oder Einzelzimmer)",
   "Tägliches Frühstück",
-  "3 × 90 Minuten Training mit zertifizierten Trainern (auf Englisch und Spanisch)",
+  "2 × 90 Minuten Training mit zertifizierten Trainern (auf Englisch und Spanisch)",
   "1 lockeres Turnier mit Mitreisenden und Einheimischen",
   "Freies Spiel auf den Courts",
   "Kleine Gruppe mit max. 16 Spielern",
@@ -126,7 +126,7 @@ const faqs: FaqItem[] = [
   {
     question: "Was ist inklusive und was nicht?",
     answer:
-      "Inklusive: 4 Nächte im Zweibett- oder Einzelzimmer, tägliches Frühstück, 3 Trainingseinheiten, ein Turnier und freies Spiel. Nicht inklusive: Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke und Reiseversicherung.",
+      "Inklusive: 4 Nächte im Zweibett- oder Einzelzimmer, tägliches Frühstück, 2 Trainingseinheiten, ein Turnier und freies Spiel. Nicht inklusive: Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke und Reiseversicherung.",
   },
   {
     question: "Wie und wann bezahle ich?",

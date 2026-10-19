@@ -29,7 +29,7 @@ export const metadata = pageMetadata({
 const reasons = [
   {
     title: "Des coachs diplômés",
-    text: "Trois séances de 90 minutes avec des coachs diplômés, par niveau, pour que chacun progresse. Les séances se déroulent en anglais et en espagnol.",
+    text: "Deux séances de 90 minutes avec des coachs diplômés, par niveau, pour que chacun progresse. Les séances se déroulent en anglais et en espagnol.",
   },
   {
     title: "Un tournoi amical",
@@ -46,7 +46,7 @@ const reasons = [
   },
   {
     title: "Le matin sur le terrain",
-    text: "Le jeu et le coaching ont toujours lieu le matin : vos après-midi sont libres pour explorer la côte ou vous détendre sur la plage ou au bord de la piscine à débordement.",
+    text: "Le coaching et le tournoi ont toujours lieu le matin : vos après-midi sont libres pour explorer la côte ou vous détendre sur la plage ou au bord de la piscine à débordement.",
   },
   {
     title: "Petit groupe, 16 max.",
@@ -67,18 +67,18 @@ const reasons = [
 const days = [
   {
     label: "Jour 1 · Vendredi",
-    title: "Arrivée et première séance",
-    text: "Rejoignez Coma-ruga, à une heure de Barcelone en train le long de la côte. Installation, première séance de coaching de 90 minutes sur le terrain, puis une baignade dans la piscine à débordement et rencontre avec le groupe.",
+    title: "Arrivée et échauffement",
+    text: "Rejoignez Coma-ruga, à une heure de Barcelone en train le long de la côte. Installation, baignade dans la piscine à débordement et rencontre avec le groupe, avec du jeu libre sur les terrains l’après-midi pour vous échauffer.",
   },
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Votre deuxième séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous : la plage ou un court trajet en train jusqu’à Sitges.",
+    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous : la plage ou un court trajet en train jusqu’à Sitges.",
   },
   {
     label: "Jour 3 · Dimanche",
     title: "Place à la pratique",
-    text: "Troisième séance de coaching, puis de nombreux matchs contre différents adversaires pour ancrer ce que vous avez appris. L’après-midi, Tarragone la romaine est à un court trajet en train.",
+    text: "Deuxième séance de coaching, puis de nombreux matchs contre différents adversaires pour ancrer ce que vous avez appris. L’après-midi, Tarragone la romaine est à un court trajet en train.",
   },
   {
     label: "Jour 4 · Lundi",
@@ -95,7 +95,7 @@ const days = [
 const included = [
   "4 nuits à l’Estival Maramar 4★, en bord de mer (chambre twin ou individuelle)",
   "Petit-déjeuner tous les jours",
-  "3 séances de coaching de 90 minutes avec des coachs diplômés (en anglais et en espagnol)",
+  "2 séances de coaching de 90 minutes avec des coachs diplômés (en anglais et en espagnol)",
   "1 tournoi amical avec les autres voyageurs et des joueurs locaux",
   "Jeu libre sur les terrains",
   "Petit groupe de 16 joueurs maximum",
@@ -126,7 +126,7 @@ const faqs: FaqItem[] = [
   {
     question: "Qu’est-ce qui est inclus ou non ?",
     answer:
-      "Inclus : 4 nuits en chambre twin ou individuelle, petit-déjeuner tous les jours, 3 séances de coaching, un tournoi et le jeu libre. Non inclus : vols, transferts aéroport, déjeuners, dîners, boissons et assurance voyage.",
+      "Inclus : 4 nuits en chambre twin ou individuelle, petit-déjeuner tous les jours, 2 séances de coaching, un tournoi et le jeu libre. Non inclus : vols, transferts aéroport, déjeuners, dîners, boissons et assurance voyage.",
   },
   {
     question: "Comment et quand payer ?",

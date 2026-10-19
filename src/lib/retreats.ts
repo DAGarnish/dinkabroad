@@ -54,7 +54,7 @@ export const localDink: Retreat = {
   ],
   highlights: [
     "Max 16 players",
-    "3 × 90-minute coaching sessions",
+    "2 × 90-minute coaching sessions",
     "Fun tournament with the locals",
     "Beachfront 4★ hotel",
   ],
@@ -88,7 +88,7 @@ export const longHaulLob: Retreat = {
     },
   ],
   highlights: [
-    "3 coaching sessions + tournament",
+    "2 coaching sessions + tournament",
     "3 guided day trips",
     "Bilingual tour director",
     "Flamenco & farewell fiesta",
@@ -122,7 +122,7 @@ export const localDinkEs: Retreat = {
   ],
   highlights: [
     "Máx. 16 jugadores",
-    "3 sesiones de entrenamiento de 90 minutos",
+    "2 sesiones de entrenamiento de 90 minutos",
     "Torneo amistoso con los locales",
     "Hotel 4★ en primera línea",
   ],
@@ -151,7 +151,7 @@ export const longHaulLobEs: Retreat = {
     },
   ],
   highlights: [
-    "3 entrenamientos + torneo",
+    "2 entrenamientos + torneo",
     "3 excursiones guiadas",
     "Guía bilingüe",
     "Flamenco y fiesta de despedida",
@@ -185,7 +185,7 @@ export const localDinkFr: Retreat = {
   ],
   highlights: [
     "16 joueurs max.",
-    "3 séances de coaching de 90 min",
+    "2 séances de coaching de 90 min",
     "Tournoi amical avec les locaux",
     "Hôtel 4★ en bord de mer",
   ],
@@ -214,7 +214,7 @@ export const longHaulLobFr: Retreat = {
     },
   ],
   highlights: [
-    "3 séances de coaching + tournoi",
+    "2 séances de coaching + tournoi",
     "3 excursions guidées",
     "Accompagnateur bilingue",
     "Flamenco et fête d’adieu",
@@ -248,7 +248,7 @@ export const localDinkDe: Retreat = {
   ],
   highlights: [
     "Max. 16 Spieler",
-    "3 × 90 Minuten Training",
+    "2 × 90 Minuten Training",
     "Lockeres Turnier mit Einheimischen",
     "4★-Hotel direkt am Strand",
   ],
@@ -277,7 +277,7 @@ export const longHaulLobDe: Retreat = {
     },
   ],
   highlights: [
-    "3 Trainingseinheiten + Turnier",
+    "2 Trainingseinheiten + Turnier",
     "3 geführte Ausflüge",
     "Zweisprachige Reiseleitung",
     "Flamenco & Abschiedsfiesta",
@@ -311,7 +311,7 @@ export const localDinkNl: Retreat = {
   ],
   highlights: [
     "Max. 16 spelers",
-    "3 × 90 minuten training",
+    "2 × 90 minuten training",
     "Gezellig toernooi met de locals",
     "4★-hotel aan het strand",
   ],
@@ -340,7 +340,7 @@ export const longHaulLobNl: Retreat = {
     },
   ],
   highlights: [
-    "3 trainingen + toernooi",
+    "2 trainingen + toernooi",
     "3 begeleide excursies",
     "Tweetalige reisleiding",
     "Flamenco & afscheidsfeest",

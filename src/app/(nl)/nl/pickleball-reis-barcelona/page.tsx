@@ -28,18 +28,18 @@ export const metadata = pageMetadata({
 const days = [
   {
     label: "Dag 1 · Vrijdag",
-    title: "¡Bienvenidos!",
-    text: "Privétransfer van het vliegveld Barcelona-El Prat naar ons hotel aan het strand in Coma-ruga. Inchecken en de baan op voor je eerste training van 90 minuten, daarna door naar de welkomstborrel met de groep.",
+    title: "Aankomst & warming-up",
+    text: "Privétransfer van het vliegveld Barcelona-El Prat naar ons hotel aan het strand in Coma-ruga. Inchecken en ’s middags opwarmen met vrij spel, daarna door naar de welkomstborrel met de groep.",
   },
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "Je tweede training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand, het zwembad of onze optionele excursie naar Sitges.",
+    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand, het zwembad of onze optionele excursie naar Sitges.",
   },
   {
     label: "Dag 3 · Zondag",
     title: "Training & optionele excursie naar Tarragona",
-    text: "De derde training en wedstrijden tegen steeds andere tegenstanders. ’s Middags kun je mee op onze optionele excursie met gids naar Tarragona, UNESCO-werelderfgoed, waar het Romeinse amfitheater uitkijkt over de Middellandse Zee.",
+    text: "De tweede training en wedstrijden tegen steeds andere tegenstanders. ’s Middags kun je mee op onze optionele excursie met gids naar Tarragona, UNESCO-werelderfgoed, waar het Romeinse amfitheater uitkijkt over de Middellandse Zee.",
   },
   {
     label: "Dag 4 · Maandag",
@@ -76,7 +76,7 @@ const days = [
 const included = [
   "4 nachten in een 4★-hotel aan het strand in Coma-ruga",
   "4 nachten in een vergelijkbaar 4★-hotel in Barcelona",
-  "3 × 90 minuten training met gecertificeerde coaches (in het Engels en Spaans)",
+  "2 × 90 minuten training met gecertificeerde coaches (in het Engels en Spaans)",
   "Vrij spel en een gezellig toernooi met spelers uit de buurt",
   "Vers fruit en koud water op de banen",
   "Elke ochtend een ontbijtbuffet",
@@ -163,7 +163,7 @@ export default function PickleballReisPage() {
           </>
         }
         intro="Negen onvergetelijke dagen in Catalonië. Je begint met pickleball aan zee aan de Costa Daurada en reist daarna langs de kust naar Barcelona voor de meesterwerken van Gaudí, Montserrat en een flamenco-avond, met onderweg een cavaproeverij."
-        facts={["3 trainingen + toernooi", "3 begeleide excursies", "Reis in het Engels & Spaans", "4 nachten strand + 4 nachten Barcelona"]}
+        facts={["2 trainingen + toernooi", "3 begeleide excursies", "Reis in het Engels & Spaans", "4 nachten strand + 4 nachten Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">

@@ -28,18 +28,18 @@ export const metadata = pageMetadata({
 const days = [
   {
     label: "Tag 1 · Freitag",
-    title: "¡Bienvenidos!",
-    text: "Privattransfer vom Flughafen Barcelona-El Prat zu unserem Strandhotel in Coma-ruga. Einchecken und auf den Court zur ersten 90-minütigen Trainingseinheit, dann zum Willkommensempfang mit der Gruppe.",
+    title: "Ankunft & Aufwärmen",
+    text: "Privattransfer vom Flughafen Barcelona-El Prat zu unserem Strandhotel in Coma-ruga. Einchecken und am Nachmittag beim freien Spiel aufwärmen, dann zum Willkommensempfang mit der Gruppe.",
   },
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Ihre zweite 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand, Pool oder unser optionaler Ausflug nach Sitges.",
+    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand, Pool oder unser optionaler Ausflug nach Sitges.",
   },
   {
     label: "Tag 3 · Sonntag",
     title: "Training & optionaler Ausflug nach Tarragona",
-    text: "Die dritte Trainingseinheit und Matches gegen wechselnde Gegner. Am Nachmittag können Sie an unserer optionalen Führung durch Tarragona teilnehmen, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
+    text: "Die zweite Trainingseinheit und Matches gegen wechselnde Gegner. Am Nachmittag können Sie an unserer optionalen Führung durch Tarragona teilnehmen, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
   },
   {
     label: "Tag 4 · Montag",
@@ -76,7 +76,7 @@ const days = [
 const included = [
   "4 Nächte in einem 4★-Hotel direkt am Strand in Coma-ruga",
   "4 Nächte in einem gleichwertigen 4★-Hotel in Barcelona",
-  "3 × 90 Minuten Training mit zertifizierten Trainern (auf Englisch und Spanisch)",
+  "2 × 90 Minuten Training mit zertifizierten Trainern (auf Englisch und Spanisch)",
   "Freies Spiel und ein lockeres Turnier mit Einheimischen",
   "Frisches Obst und kaltes Wasser auf den Courts",
   "Frühstücksbuffet jeden Morgen",
@@ -163,7 +163,7 @@ export default function PickleballReisePage() {
           </>
         }
         intro="Neun unvergessliche Tage in Katalonien. Zuerst Pickleball am Meer an der Costa Daurada, dann die Küste hinauf nach Barcelona für Gaudís Meisterwerke, Montserrat und einen Flamenco-Abend, mit einer Cava-Verkostung unterwegs."
-        facts={["3 Trainingseinheiten + Turnier", "3 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
+        facts={["2 Trainingseinheiten + Turnier", "3 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">

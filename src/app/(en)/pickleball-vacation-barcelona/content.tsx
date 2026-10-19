@@ -29,18 +29,18 @@ export const vacationMetadata = pageMetadata({
 const days = [
   {
     label: "Day 1 · Friday",
-    title: "¡Bienvenidos!",
-    text: "Private transfer from Barcelona–El Prat airport to our beachfront hotel in Coma-ruga. Check in and head onto court for your first 90-minute coaching session, then join the group for a warm “Bienvenidos” welcome reception.",
+    title: "Arrival & warm-up",
+    text: "Private transfer from Barcelona–El Prat airport to our beachfront hotel in Coma-ruga. Check in and warm up with open play in the afternoon, then join the group for a warm “Bienvenidos” welcome reception.",
   },
   {
     label: "Day 2 · Saturday",
     title: "Coaching & open play",
-    text: "Your second 90-minute coaching session, followed by open play. The afternoon is yours: the beach, the pool or our optional tour to Sitges.",
+    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach, the pool or our optional tour to Sitges.",
   },
   {
     label: "Day 3 · Sunday",
     title: "Coaching & optional Tarragona tour",
-    text: "Coaching session number three and match play against different opponents. In the afternoon, join our optional guided tour of Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
+    text: "Coaching session number two and match play against different opponents. In the afternoon, join our optional guided tour of Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
   },
   {
     label: "Day 4 · Monday",
@@ -77,7 +77,7 @@ const days = [
 const included = [
   "4 nights in a beachfront 4★ hotel in Coma-ruga",
   "4 nights in an equivalent 4★ hotel in Barcelona",
-  "3 × 90-minute coaching sessions with certified coaches",
+  "2 × 90-minute coaching sessions with certified coaches",
   "Open play and a fun tournament with local players",
   "Fresh fruit and cold water at the courts",
   "Buffet breakfast every morning",
@@ -162,7 +162,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
           </>
         }
         intro="Nine unforgettable days in Catalonia. Start with pickleball by the sea on the Golden Coast, then move up the coast to Barcelona for Gaudí's masterpieces, Montserrat and a night of flamenco, with a cava tasting along the way."
-        facts={["3 coaching sessions + tournament", "3 guided day trips", "Bilingual tour director", "4 nights beach + 4 nights Barcelona"]}
+        facts={["2 coaching sessions + tournament", "3 guided day trips", "Bilingual tour director", "4 nights beach + 4 nights Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
