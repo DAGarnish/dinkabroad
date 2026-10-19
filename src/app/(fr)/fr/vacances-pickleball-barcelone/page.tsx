@@ -116,7 +116,7 @@ const faqs: FaqItem[] = [
   {
     question: "Puis-je venir seul ?",
     answer:
-      "Oui, et beaucoup le font. Le groupe est limité à 16 joueurs, vous vous ferez vite des amis sur le terrain comme en dehors. Vous préférez votre propre chambre ? La chambre individuelle est à 1 500 € par personne.",
+      "Oui, et beaucoup le font. Le groupe est limité à 16 joueurs, vous vous ferez vite des amis sur le terrain comme en dehors. Vous préférez votre propre chambre ? La chambre individuelle est à 1 399 € par personne.",
   },
   {
     question: "Les vols sont-ils inclus ?",

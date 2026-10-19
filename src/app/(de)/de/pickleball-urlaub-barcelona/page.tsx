@@ -116,7 +116,7 @@ const faqs: FaqItem[] = [
   {
     question: "Kann ich allein kommen?",
     answer:
-      "Ja, das machen viele. Die Gruppe ist auf 16 Spieler begrenzt, Sie finden also schnell Anschluss, auf und neben dem Court. Lieber ein eigenes Zimmer? Das Einzelzimmer kostet 1.500 € pro Person.",
+      "Ja, das machen viele. Die Gruppe ist auf 16 Spieler begrenzt, Sie finden also schnell Anschluss, auf und neben dem Court. Lieber ein eigenes Zimmer? Das Einzelzimmer kostet 1.399 € pro Person.",
   },
   {
     question: "Sind die Flüge inklusive?",

@@ -116,7 +116,7 @@ const faqs: FaqItem[] = [
   {
     question: "Kan ik alleen komen?",
     answer:
-      "Ja, en veel mensen doen dat. De groep is beperkt tot 16 spelers, dus je maakt snel vrienden, op en naast de baan. Liever een eigen kamer? Een eenpersoonskamer kost € 1.500 per persoon.",
+      "Ja, en veel mensen doen dat. De groep is beperkt tot 16 spelers, dus je maakt snel vrienden, op en naast de baan. Liever een eigen kamer? Een eenpersoonskamer kost € 1.399 per persoon.",
   },
   {
     question: "Zijn de vluchten inbegrepen?",

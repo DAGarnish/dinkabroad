@@ -47,7 +47,7 @@ export const localDink: Retreat = {
     },
     {
       label: "Single room",
-      amount: 1500,
+      amount: 1399,
       currency: "EUR",
       note: "per person, private room. Flights not included.",
     },
@@ -82,7 +82,7 @@ export const longHaulLob: Retreat = {
     },
     {
       label: "Single room",
-      amount: 4100,
+      amount: 3899,
       currency: "EUR",
       note: "per person, private room. Airfare not included.",
     },
@@ -115,7 +115,7 @@ export const localDinkEs: Retreat = {
     },
     {
       label: "Habitación individual",
-      amount: 1500,
+      amount: 1399,
       currency: "EUR",
       note: "por persona, habitación individual. Vuelos no incluidos.",
     },
@@ -145,7 +145,7 @@ export const longHaulLobEs: Retreat = {
     },
     {
       label: "Habitación individual",
-      amount: 4100,
+      amount: 3899,
       currency: "EUR",
       note: "por persona, habitación individual. Vuelos no incluidos.",
     },
@@ -178,7 +178,7 @@ export const localDinkFr: Retreat = {
     },
     {
       label: "Chambre individuelle",
-      amount: 1500,
+      amount: 1399,
       currency: "EUR",
       note: "par personne, chambre individuelle. Vols non inclus.",
     },
@@ -208,7 +208,7 @@ export const longHaulLobFr: Retreat = {
     },
     {
       label: "Chambre individuelle",
-      amount: 4100,
+      amount: 3899,
       currency: "EUR",
       note: "par personne, chambre individuelle. Vols non inclus.",
     },
@@ -241,7 +241,7 @@ export const localDinkDe: Retreat = {
     },
     {
       label: "Einzelzimmer",
-      amount: 1500,
+      amount: 1399,
       currency: "EUR",
       note: "pro Person im Einzelzimmer. Flüge nicht inklusive.",
     },
@@ -271,7 +271,7 @@ export const longHaulLobDe: Retreat = {
     },
     {
       label: "Einzelzimmer",
-      amount: 4100,
+      amount: 3899,
       currency: "EUR",
       note: "pro Person im Einzelzimmer. Flüge nicht inklusive.",
     },
@@ -304,7 +304,7 @@ export const localDinkNl: Retreat = {
     },
     {
       label: "Eenpersoonskamer",
-      amount: 1500,
+      amount: 1399,
       currency: "EUR",
       note: "per persoon, eigen kamer. Vluchten niet inbegrepen.",
     },
@@ -334,7 +334,7 @@ export const longHaulLobNl: Retreat = {
     },
     {
       label: "Eenpersoonskamer",
-      amount: 4100,
+      amount: 3899,
       currency: "EUR",
       note: "per persoon, eigen kamer. Vluchten niet inbegrepen.",
     },

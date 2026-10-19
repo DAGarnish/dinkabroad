@@ -111,7 +111,7 @@ const faqs: FaqItem[] = [
   {
     question: "¿Puedo venir solo?",
     answer:
-      "Sí, y mucha gente lo hace. El grupo tiene un máximo de 16 jugadores, así que harás amigos enseguida dentro y fuera de la pista. ¿Prefieres habitación propia? La habitación individual cuesta 1500 € por persona.",
+      "Sí, y mucha gente lo hace. El grupo tiene un máximo de 16 jugadores, así que harás amigos enseguida dentro y fuera de la pista. ¿Prefieres habitación propia? La habitación individual cuesta 1399 € por persona.",
   },
   {
     question: "¿Están incluidos los vuelos?",
