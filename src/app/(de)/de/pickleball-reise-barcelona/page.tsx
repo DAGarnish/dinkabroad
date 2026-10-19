@@ -64,8 +64,8 @@ const days = [
   },
   {
     label: "Tag 8 · Freitag",
-    title: "Freier Tag & Abschiedsfiesta",
-    text: "Ein freier Tag, um Barcelona in Ihrem eigenen Tempo zu entdecken. Am Abend treffen wir uns zum Abschiedsessen und zur „Hasta luego“-Fiesta.",
+    title: "Pickleball in der Stadt & Abschiedsfiesta",
+    text: "Am Vormittag optionales freies Spiel in der Stadt, danach ein freier Nachmittag, um Barcelona in Ihrem eigenen Tempo zu entdecken. Am Abend treffen wir uns zum Abschiedsessen und zur „Hasta luego“-Fiesta.",
   },
   {
     label: "Tag 9 · Samstag",

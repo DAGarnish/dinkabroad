@@ -64,8 +64,8 @@ const days = [
   },
   {
     label: "Día 8 · Viernes",
-    title: "Día libre y fiesta de despedida",
-    text: "Un día libre para descubrir Barcelona a tu ritmo. Por la noche nos reunimos para la cena y fiesta de despedida «Hasta luego».",
+    title: "Pickleball en la ciudad y fiesta de despedida",
+    text: "Por la mañana, juego libre opcional de pickleball en la ciudad; después, una tarde libre para descubrir Barcelona a tu ritmo. Por la noche nos reunimos para la cena y fiesta de despedida «Hasta luego».",
   },
   {
     label: "Día 9 · Sábado",

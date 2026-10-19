@@ -64,8 +64,8 @@ const days = [
   },
   {
     label: "Jour 8 · Vendredi",
-    title: "Journée libre et fête d’adieu",
-    text: "Une journée libre pour découvrir Barcelone à votre rythme. Le soir, nous nous retrouvons pour le dîner et la fête d’adieu « Hasta luego ».",
+    title: "Pickleball en ville et fête d’adieu",
+    text: "Le matin, jeu libre de pickleball en option en ville, puis un après-midi libre pour découvrir Barcelone à votre rythme. Le soir, nous nous retrouvons pour le dîner et la fête d’adieu « Hasta luego ».",
   },
   {
     label: "Jour 9 · Samedi",

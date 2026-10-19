@@ -16,7 +16,7 @@ const credits = [
   ["Sitges in summer", "Mike McBey", "CC BY 2.0", "https://commons.wikimedia.org/wiki/File:Sitges_in_summer_-_51602633539.jpg"],
   ["Sagrada Família", "Jopparn", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Sagrada_Fam%C3%ADlia_2010.JPG"],
   ["Tarragona amphitheatre", "Ad Meskens", "CC BY-SA 4.0", "https://commons.wikimedia.org/wiki/File:Tarragona_amphitheatre_01.jpg"],
-  ["Penedès vineyards", "Angela Llop", "CC BY-SA 2.0", "https://commons.wikimedia.org/wiki/File:Paisatge_del_Penedes,_Primavera..jpg"],
+  ["Penedès vineyards", "Angela Llop", "CC BY-SA 2.0", "https://commons.wikimedia.org/wiki/File:Vinyes_de_Tardor,_Pontons,_Alt_Pened%C3%A8s_-_51621982488.jpg"],
 ];
 
 export default function PhotoCredits() {

@@ -64,8 +64,8 @@ const days = [
   },
   {
     label: "Dag 8 · Vrijdag",
-    title: "Vrije dag & afscheidsfeest",
-    text: "Een vrije dag om Barcelona op je eigen tempo te ontdekken. ’s Avonds komen we samen voor het afscheidsdiner en het ‘Hasta luego’-feest.",
+    title: "Pickleball in de stad & afscheidsfeest",
+    text: "’s Ochtends optioneel vrij spel in de stad, daarna een vrije middag om Barcelona op je eigen tempo te ontdekken. ’s Avonds komen we samen voor het afscheidsdiner en het ‘Hasta luego’-feest.",
   },
   {
     label: "Dag 9 · Zaterdag",
