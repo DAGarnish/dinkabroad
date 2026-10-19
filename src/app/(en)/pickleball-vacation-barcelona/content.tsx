@@ -21,7 +21,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const vacationMetadata = pageMetadata({
   title: "Barcelona Pickleball Vacation: 9-Day Pickleball Trip from the USA",
   description:
-    "A 9-day Barcelona pickleball vacation for American players: pickleball by the sea, then Gaudí's Barcelona, Montserrat, cava country and flamenco, with optional tours to Tarragona and Sitges. From €2,999.",
+    "A 9-day Barcelona pickleball vacation for American players: pickleball by the sea, then Gaudí's Barcelona, Montserrat, cava country and a concert at the Palau de la Música Catalana, with optional tours to Tarragona and Sitges. From €2,999.",
   path: longHaulLob.href,
   locale: "en_US",
 });
@@ -59,8 +59,8 @@ const days = [
   },
   {
     label: "Day 7 · Thursday",
-    title: "Montserrat & flamenco",
-    text: "A day trip into the jagged mountains of Montserrat to visit the Benedictine monastery, home of the revered Black Madonna, with breathtaking views across Catalonia. Back in Barcelona, an evening of fiery flamenco with reserved seats.",
+    title: "Montserrat & Palau de la Música",
+    text: "A day trip into the jagged mountains of Montserrat to visit the Benedictine monastery, home of the revered Black Madonna, with breathtaking views across Catalonia. Back in Barcelona, an evening concert with reserved seats at the Palau de la Música Catalana, the city's dazzling Modernista concert hall and a UNESCO World Heritage site.",
   },
   {
     label: "Day 8 · Friday",
@@ -88,7 +88,7 @@ const included = [
   "Day trip to Montserrat Monastery",
   "Professional local guides on every excursion",
   "Bilingual tour director throughout",
-  "Flamenco performance",
+  "Concert at the Palau de la Música Catalana",
   "“Bienvenidos” welcome reception",
   "“Hasta Luego Fiesta” farewell dinner and party",
   "Airport transfers to and from Barcelona–El Prat",
@@ -161,7 +161,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
             The ultimate pickleball vacation in <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Nine unforgettable days in Catalonia. Start with pickleball by the sea on the Golden Coast, then move up the coast to Barcelona for Gaudí's masterpieces, Montserrat and a night of flamenco, with a cava tasting along the way."
+        intro="Nine unforgettable days in Catalonia. Start with pickleball by the sea on the Golden Coast, then move up the coast to Barcelona for Gaudí's masterpieces, Montserrat and a concert at the Palau de la Música Catalana, with a cava tasting along the way."
         facts={["2 coaching sessions + tournament", "3 guided day trips", "Bilingual tour director", "4 nights beach + 4 nights Barcelona"]}
       />
 

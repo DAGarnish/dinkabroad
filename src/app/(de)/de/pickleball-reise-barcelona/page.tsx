@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleball-Reise Barcelona: 9 Tage Pickleball und Kultur",
   description:
-    "Eine 9-tägige Pickleball-Reise nach Barcelona: Pickleball am Meer, danach Gaudís Barcelona, Montserrat, die Cava-Region und Flamenco, mit optionalen Ausflügen nach Tarragona und Sitges. Ab 2.999 €.",
+    "Eine 9-tägige Pickleball-Reise nach Barcelona: Pickleball am Meer, danach Gaudís Barcelona, Montserrat, die Cava-Region und ein Konzert im Palau de la Música Catalana, mit optionalen Ausflügen nach Tarragona und Sitges. Ab 2.999 €.",
   path: longHaulLobDe.href,
   siteLang: "de",
 });
@@ -58,8 +58,8 @@ const days = [
   },
   {
     label: "Tag 7 · Donnerstag",
-    title: "Montserrat & Flamenco",
-    text: "Ein Ausflug in die zerklüfteten Berge von Montserrat zum Benediktinerkloster mit der Schwarzen Madonna und atemberaubendem Blick über Katalonien. Zurück in Barcelona erwartet Sie ein Abend voller Flamenco mit reservierten Plätzen.",
+    title: "Montserrat & Palau de la Música",
+    text: "Ein Ausflug in die zerklüfteten Berge von Montserrat zum Benediktinerkloster mit der Schwarzen Madonna und atemberaubendem Blick über Katalonien. Zurück in Barcelona erwartet Sie ein Konzert mit reservierten Plätzen im Palau de la Música Catalana, dem prachtvollen Jugendstil-Konzertsaal und UNESCO-Welterbe.",
   },
   {
     label: "Tag 8 · Freitag",
@@ -87,7 +87,7 @@ const included = [
   "Ausflug zum Kloster Montserrat",
   "Professionelle örtliche Guides (auf Englisch oder Spanisch)",
   "Zweisprachige Reiseleitung (Englisch-Spanisch) während der ganzen Reise",
-  "Flamenco-Vorstellung",
+  "Konzert im Palau de la Música Catalana",
   "Willkommensempfang",
   "Abschiedsessen und „Hasta luego“-Fiesta",
   "Flughafentransfers ab/bis Barcelona-El Prat",
@@ -162,7 +162,7 @@ export default function PickleballReisePage() {
             Die ultimative Pickleball-Reise nach <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Neun unvergessliche Tage in Katalonien. Zuerst Pickleball am Meer an der Costa Daurada, dann die Küste hinauf nach Barcelona für Gaudís Meisterwerke, Montserrat und einen Flamenco-Abend, mit einer Cava-Verkostung unterwegs."
+        intro="Neun unvergessliche Tage in Katalonien. Zuerst Pickleball am Meer an der Costa Daurada, dann die Küste hinauf nach Barcelona für Gaudís Meisterwerke, Montserrat und ein Konzert im Palau de la Música Catalana, mit einer Cava-Verkostung unterwegs."
         facts={["2 Trainingseinheiten + Turnier", "3 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
       />
 

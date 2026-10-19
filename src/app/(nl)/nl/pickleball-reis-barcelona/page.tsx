@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleballreis Barcelona: 9 dagen pickleball en cultuur",
   description:
-    "Een 9-daagse pickleballreis naar Barcelona: eerst pickleball aan zee, daarna het Barcelona van Gaudí, Montserrat, de cavastreek en flamenco, met optionele excursies naar Tarragona en Sitges. Vanaf € 2.999.",
+    "Een 9-daagse pickleballreis naar Barcelona: eerst pickleball aan zee, daarna het Barcelona van Gaudí, Montserrat, de cavastreek en een concert in het Palau de la Música Catalana, met optionele excursies naar Tarragona en Sitges. Vanaf € 2.999.",
   path: longHaulLobNl.href,
   siteLang: "nl",
 });
@@ -58,8 +58,8 @@ const days = [
   },
   {
     label: "Dag 7 · Donderdag",
-    title: "Montserrat & flamenco",
-    text: "Een dagtocht naar de grillige bergen van Montserrat en het benedictijnenklooster met de Zwarte Madonna, met een adembenemend uitzicht over Catalonië. Terug in Barcelona wacht een avond vol flamenco met gereserveerde plaatsen.",
+    title: "Montserrat & Palau de la Música",
+    text: "Een dagtocht naar de grillige bergen van Montserrat en het benedictijnenklooster met de Zwarte Madonna, met een adembenemend uitzicht over Catalonië. Terug in Barcelona wacht een concert met gereserveerde plaatsen in het Palau de la Música Catalana, de schitterende modernistische concertzaal en UNESCO-werelderfgoed.",
   },
   {
     label: "Dag 8 · Vrijdag",
@@ -87,7 +87,7 @@ const included = [
   "Excursie naar het klooster van Montserrat",
   "Professionele lokale gidsen (in het Engels of Spaans)",
   "Tweetalige reisleiding (Engels-Spaans) tijdens de hele reis",
-  "Flamencovoorstelling",
+  "Concert in het Palau de la Música Catalana",
   "Welkomstborrel",
   "Afscheidsdiner en ‘Hasta luego’-feest",
   "Transfers van en naar het vliegveld Barcelona-El Prat",
@@ -162,7 +162,7 @@ export default function PickleballReisPage() {
             De ultieme pickleballreis naar <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Negen onvergetelijke dagen in Catalonië. Je begint met pickleball aan zee aan de Costa Daurada en reist daarna langs de kust naar Barcelona voor de meesterwerken van Gaudí, Montserrat en een flamenco-avond, met onderweg een cavaproeverij."
+        intro="Negen onvergetelijke dagen in Catalonië. Je begint met pickleball aan zee aan de Costa Daurada en reist daarna langs de kust naar Barcelona voor de meesterwerken van Gaudí, Montserrat en een concert in het Palau de la Música Catalana, met onderweg een cavaproeverij."
         facts={["2 trainingen + toernooi", "3 begeleide excursies", "Reis in het Engels & Spaans", "4 nachten strand + 4 nachten Barcelona"]}
       />
 

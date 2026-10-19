@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Viaje de pickleball a Barcelona: 9 días de pickleball y cultura",
   description:
-    "Un viaje de pickleball de 9 días en Barcelona: pickleball junto al mar y después la Barcelona de Gaudí, Montserrat, la tierra del cava y flamenco, con excursiones opcionales a Tarragona y Sitges. Desde 2999 €.",
+    "Un viaje de pickleball de 9 días en Barcelona: pickleball junto al mar y después la Barcelona de Gaudí, Montserrat, la tierra del cava y un concierto en el Palau de la Música Catalana, con excursiones opcionales a Tarragona y Sitges. Desde 2999 €.",
   path: longHaulLobEs.href,
   siteLang: "es",
 });
@@ -58,8 +58,8 @@ const days = [
   },
   {
     label: "Día 7 · Jueves",
-    title: "Montserrat y flamenco",
-    text: "Excursión a las montañas de Montserrat para visitar el monasterio benedictino, hogar de la Moreneta, con vistas espectaculares sobre Cataluña. De vuelta en Barcelona, una noche de flamenco con asientos reservados.",
+    title: "Montserrat y Palau de la Música",
+    text: "Excursión a las montañas de Montserrat para visitar el monasterio benedictino, hogar de la Moreneta, con vistas espectaculares sobre Cataluña. De vuelta en Barcelona, un concierto con asientos reservados en el Palau de la Música Catalana, la deslumbrante sala modernista declarada Patrimonio de la Humanidad por la UNESCO.",
   },
   {
     label: "Día 8 · Viernes",
@@ -87,7 +87,7 @@ const included = [
   "Excursión al monasterio de Montserrat",
   "Guías locales profesionales en todas las excursiones",
   "Guía acompañante bilingüe durante todo el viaje",
-  "Espectáculo de flamenco",
+  "Concierto en el Palau de la Música Catalana",
   "Recepción de bienvenida",
   "Cena y fiesta de despedida «Hasta luego»",
   "Traslados de ida y vuelta al aeropuerto de Barcelona-El Prat",
@@ -157,7 +157,7 @@ export default function ViajePickleballPage() {
             El viaje de pickleball definitivo en <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Nueve días inolvidables en Cataluña. Empieza con pickleball junto al mar en la Costa Daurada y sube después por la costa hasta Barcelona para ver las obras maestras de Gaudí, Montserrat y una noche de flamenco, con una cata de cava por el camino."
+        intro="Nueve días inolvidables en Cataluña. Empieza con pickleball junto al mar en la Costa Daurada y sube después por la costa hasta Barcelona para ver las obras maestras de Gaudí, Montserrat y un concierto en el Palau de la Música Catalana, con una cata de cava por el camino."
         facts={["2 entrenamientos + torneo", "3 excursiones guiadas", "Guía bilingüe", "4 noches en la playa + 4 en Barcelona"]}
       />
 
