@@ -45,7 +45,7 @@ const days = [
   {
     label: "Tag 4 · Montag",
     title: "Turniertag",
-    text: "Ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Am Nachmittag entspannen Sie am Strand oder kommen mit auf unseren optionalen Ausflug nach Vilanova i la Geltrú.",
+    text: "Ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Am Nachmittag entspannen Sie am Strand oder kommen mit auf unseren optionalen Ausflug nach Reus, Gaudís Geburtsstadt und Heimat des katalanischen Wermuts.",
   },
   {
     label: "Tag 5 · Dienstag",
@@ -222,7 +222,7 @@ export default function PickleballReisePage() {
         retreat={longHaulLobDe}
         lang="de"
         included={included}
-        notIncluded="Flüge, optionale Ausflüge nach Sitges, Tarragona und Vilanova i la Geltrú, Trinkgelder, persönliche Ausgaben und Mahlzeiten außer dem täglichen Frühstück und den 4 inklusiven Gruppenessen."
+        notIncluded="Flüge, optionale Ausflüge nach Sitges, Tarragona und Reus, Trinkgelder, persönliche Ausgaben und Mahlzeiten außer dem täglichen Frühstück und den 4 inklusiven Gruppenessen."
         terms={[
           "Anzahlung: 20 % sichern Ihren Platz und werden auf den Reisepreis angerechnet.",
           "Restzahlung: fällig 60 Tage vor Reisebeginn.",

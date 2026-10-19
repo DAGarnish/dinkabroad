@@ -45,7 +45,7 @@ const days = [
   {
     label: "Dag 4 · Maandag",
     title: "Toernooidag",
-    text: "Een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. ’s Middags relax je op het strand of ga je mee op onze optionele excursie naar Vilanova i la Geltrú.",
+    text: "Een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. ’s Middags relax je op het strand of ga je mee op onze optionele excursie naar Reus, de geboorteplaats van Gaudí en de hoofdstad van de Catalaanse vermout.",
   },
   {
     label: "Dag 5 · Dinsdag",
@@ -222,7 +222,7 @@ export default function PickleballReisPage() {
         retreat={longHaulLobNl}
         lang="nl"
         included={included}
-        notIncluded="vluchten, optionele excursies naar Sitges, Tarragona en Vilanova i la Geltrú, fooien, persoonlijke uitgaven en maaltijden buiten het dagelijkse ontbijt en de 4 inbegrepen groepsmaaltijden."
+        notIncluded="vluchten, optionele excursies naar Sitges, Tarragona en Reus, fooien, persoonlijke uitgaven en maaltijden buiten het dagelijkse ontbijt en de 4 inbegrepen groepsmaaltijden."
         terms={[
           "Aanbetaling: 20% legt je plek vast en wordt verrekend met de reissom.",
           "Restbetaling: 60 dagen voor vertrek.",

@@ -8,11 +8,11 @@ const amphitheatre: Record<string, string> = {
   de: "https://www.spain.info/de/highlights/roemisches-anfitheater/",
 };
 
-// Tourism pages for the afternoon trip ideas. Vilanova's site has no language versions.
+// Tourism pages for the afternoon trip ideas. Reus has no Dutch version, so NL gets English.
 const towns = {
   sitges: (site: string) => `https://www.sitgesanytime.com/${site}/`,
   tarragona: (site: string) => amphitheatre[site] ?? "https://www.spain.info/en/places-of-interest/roman-amphitheatre/",
-  vilanova: () => "https://www.vilanovaturisme.cat/",
+  reus: (site: string) => `https://www.reusturisme.cat/${site === "nl" ? "en" : site}`,
 };
 
 export function TownLink({ town, lang, children }: { town: keyof typeof towns; lang: Lang; children: ReactNode }) {
@@ -33,13 +33,13 @@ export function ExternalLink({ href, children }: { href: string; children: React
   );
 }
 
-const townNames = /(Sitges|Tarragona|Tarragone|Vilanova i la Geltrú)/;
+const townNames = /(Sitges|Tarragona|Tarragone|Reus)/;
 
 // Turns the town names in a plain string into TownLinks, so itinerary text can stay a string for the schema.
 export function linkTowns(text: string, lang: Lang) {
   return text.split(townNames).map((part, i) => {
     if (i % 2 === 0) return part;
-    const town = part === "Sitges" ? "sitges" : part.startsWith("Tarragon") ? "tarragona" : "vilanova";
+    const town = part === "Sitges" ? "sitges" : part.startsWith("Tarragon") ? "tarragona" : "reus";
     return (
       <TownLink key={i} town={town} lang={lang}>
         {part}

@@ -59,7 +59,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
-        <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are all short train rides along the coast, easy to explore on your own.
+        <TownLink town="reus" lang="en-GB">Reus</TownLink> are all short train rides away, easy to explore on your own.
       </>
     ),
   },
@@ -84,7 +84,7 @@ const days = [
   {
     label: "Day 4 · Monday",
     title: "Tournament day",
-    text: "Test your skills in a fun, competitive tournament with your fellow travellers and local players. Spend your last afternoon in Vilanova i la Geltrú or on the beach.",
+    text: "Test your skills in a fun, competitive tournament with your fellow travellers and local players. Spend your last afternoon in Reus or on the beach.",
   },
   {
     label: "Day 5 · Tuesday",
@@ -223,7 +223,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
             <p className="text-sm text-stone">
               Afternoon trip ideas: <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
-              <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are short train rides along the coast, easy to visit on your own.
+              <TownLink town="reus" lang="en-GB">Reus</TownLink> are short train rides away, easy to visit on your own.
             </p>
           </div>
         </Container>

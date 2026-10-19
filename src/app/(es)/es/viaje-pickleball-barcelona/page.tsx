@@ -45,7 +45,7 @@ const days = [
   {
     label: "Día 4 · Lunes",
     title: "Día de torneo",
-    text: "Un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Por la tarde, relájate en la playa o apúntate a nuestra excursión opcional a Vilanova i la Geltrú.",
+    text: "Un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Por la tarde, relájate en la playa o apúntate a nuestra excursión opcional a Reus, cuna de Gaudí y capital del vermut.",
   },
   {
     label: "Día 5 · Martes",
@@ -217,7 +217,7 @@ export default function ViajePickleballPage() {
         retreat={longHaulLobEs}
         lang="es"
         included={included}
-        notIncluded="vuelos, excursiones opcionales a Sitges, Tarragona y Vilanova i la Geltrú, propinas, gastos personales y las comidas aparte del desayuno diario y las 4 comidas en grupo incluidas."
+        notIncluded="vuelos, excursiones opcionales a Sitges, Tarragona y Reus, propinas, gastos personales y las comidas aparte del desayuno diario y las 4 comidas en grupo incluidas."
         terms={[
           "Depósito: el 20 % te reserva la plaza y se descuenta del precio total del viaje.",
           "Pago final: el resto se abona 60 días antes de la fecha de salida.",

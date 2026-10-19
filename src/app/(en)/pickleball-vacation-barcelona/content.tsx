@@ -46,7 +46,7 @@ const days = [
   {
     label: "Day 4 · Monday",
     title: "Tournament day",
-    text: "A fun, competitive tournament with your fellow travelers and local players. In the afternoon, relax on the beach or join our optional tour to Vilanova i la Geltrú.",
+    text: "A fun, competitive tournament with your fellow travelers and local players. In the afternoon, relax on the beach or join our optional tour to Reus, Gaudí’s birthplace and the home of Catalan vermouth.",
   },
   {
     label: "Day 5 · Tuesday",
@@ -222,7 +222,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
         lang="en-US"
         currency={currency}
         included={included}
-        notIncluded="airfare, optional tours to Sitges, Tarragona and Vilanova i la Geltrú, tips, personal expenses, and meals other than daily breakfast and the 4 included group meals."
+        notIncluded="airfare, optional tours to Sitges, Tarragona and Reus, tips, personal expenses, and meals other than daily breakfast and the 4 included group meals."
         terms={[
           "Deposit: 20% reserves your place and is applied to the total trip price.",
           "Final payment: the balance is due 60 days before the trip start date.",

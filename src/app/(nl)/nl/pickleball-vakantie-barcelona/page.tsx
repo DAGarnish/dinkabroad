@@ -59,7 +59,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
-        <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen allemaal op een kort treinritje langs de kust, makkelijk op eigen houtje te ontdekken.
+        <TownLink town="reus" lang="nl">Reus</TownLink> liggen allemaal op een kort treinritje, makkelijk op eigen houtje te ontdekken.
       </>
     ),
   },
@@ -84,7 +84,7 @@ const days = [
   {
     label: "Dag 4 · Maandag",
     title: "Toernooidag",
-    text: "Laat zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. Je laatste middag breng je door in Vilanova i la Geltrú of op het strand.",
+    text: "Laat zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. Je laatste middag breng je door in Reus of op het strand.",
   },
   {
     label: "Dag 5 · Dinsdag",
@@ -225,7 +225,7 @@ export default function PickleballVakantiePage() {
             <p className="text-sm text-stone">
               Ideeën voor de middag: <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
-              <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen op een kort treinritje langs de kust, makkelijk op eigen houtje te bezoeken.
+              <TownLink town="reus" lang="nl">Reus</TownLink> liggen op een kort treinritje, makkelijk op eigen houtje te bezoeken.
             </p>
           </div>
         </Container>
