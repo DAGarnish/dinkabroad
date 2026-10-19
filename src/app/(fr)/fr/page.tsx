@@ -53,7 +53,7 @@ const faqs: FaqItem[] = [
   {
     question: "Quel séjour est fait pour moi ?",
     answer:
-      "Local Dink, ce sont 5 jours de vacances pickleball (du vendredi au mardi), pensés pour les joueurs de France et d’Europe. Long-Haul Lob est un voyage de 9 jours pour ceux qui viennent d’Amérique du Nord, avec six jours de pickleball et des excursions guidées à Barcelone, Montserrat, Tarragone, dans le Penedès et à Sitges.",
+      "Local Dink, ce sont 5 jours de vacances pickleball (du vendredi au mardi), pensés pour les joueurs de France et d’Europe. Long-Haul Lob est un voyage de 9 jours pour ceux qui viennent d’Amérique du Nord, avec le même pickleball au bord de la mer du vendredi au mardi, puis quatre nuits à Barcelone et des visites guidées des sites de Gaudí, de Montserrat, de Tarragone et du Penedès.",
   },
   {
     question: "Quel niveau faut-il avoir ?",

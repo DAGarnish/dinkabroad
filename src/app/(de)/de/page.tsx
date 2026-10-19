@@ -53,7 +53,7 @@ const faqs: FaqItem[] = [
   {
     question: "Welche Reise passt zu mir?",
     answer:
-      "Local Dink ist ein 5-tägiger Pickleball-Urlaub (Freitag bis Dienstag) für Spieler aus Deutschland, Österreich, der Schweiz und ganz Europa. Long-Haul Lob ist eine 9-tägige Reise mit sechs Tagen Pickleball und geführten Ausflügen nach Barcelona, Montserrat, Tarragona, ins Penedès und nach Sitges.",
+      "Local Dink ist ein 5-tägiger Pickleball-Urlaub (Freitag bis Dienstag) für Spieler aus Deutschland, Österreich, der Schweiz und ganz Europa. Long-Haul Lob ist eine 9-tägige Reise mit demselben Pickleball am Meer von Freitag bis Dienstag, danach vier Nächte in Barcelona mit Führungen zu Gaudís Sehenswürdigkeiten, nach Montserrat, Tarragona und ins Penedès.",
   },
   {
     question: "Welches Spielniveau brauche ich?",

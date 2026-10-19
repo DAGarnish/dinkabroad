@@ -20,71 +20,72 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Voyage pickleball à Barcelone : 9 jours de pickleball et de culture",
   description:
-    "Un voyage pickleball de 9 jours à Barcelone : 6 jours de jeu, la Barcelone de Gaudí, Montserrat, Tarragone, le pays du cava et le flamenco depuis un hôtel 4★ en bord de mer. À partir de 3 500 €.",
+    "Un voyage pickleball de 9 jours en Catalogne : du pickleball au bord de la mer, puis la Barcelone de Gaudí, Montserrat, Tarragone, le pays du cava et le flamenco. À partir de 3 500 €.",
   path: longHaulLobFr.href,
   siteLang: "fr",
 });
 
 const days = [
   {
-    label: "Jour 1",
+    label: "Jour 1 · Vendredi",
     title: "¡Bienvenidos!",
-    text: "Transfert privé de l’aéroport de Barcelone-El Prat à notre hôtel en bord de mer à Coma-ruga. Installation, un après-midi de pickleball pour se dégourdir les jambes, puis réception de bienvenue avec le groupe.",
+    text: "Transfert privé de l’aéroport de Barcelone-El Prat à notre hôtel en bord de mer à Coma-ruga. Installation, une baignade dans la piscine à débordement, puis réception de bienvenue avec le groupe.",
   },
   {
-    label: "Jour 2",
+    label: "Jour 2 · Samedi",
+    title: "Coaching et jeu libre",
+    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. Le pickleball a toujours lieu le matin : l’après-midi est à vous, entre la plage, la piscine ou un court trajet en train jusqu’à Sitges.",
+  },
+  {
+    label: "Jour 3 · Dimanche",
     title: "Pickleball et Tarragone la romaine",
-    text: "Une matinée de coaching et de jeu, puis un après-midi guidé à Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
+    text: "Deuxième séance de coaching et matchs contre différents adversaires, puis un après-midi guidé à Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
   },
   {
-    label: "Jour 3",
+    label: "Jour 4 · Lundi",
+    title: "Dernière séance et tournoi",
+    text: "Votre troisième séance de coaching, puis un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. Profitez d’un dernier après-midi à la plage avant de quitter la côte.",
+  },
+  {
+    label: "Jour 5 · Mardi",
+    title: "Cap sur Barcelone",
+    text: "Notre autocar privé remonte la côte vers Barcelone, avec une halte dans le Penedès pour une visite guidée des vignes et une dégustation de vins et de cava dans un domaine de charme. Installation dans notre hôtel 4★ à Barcelone, votre base pour la suite du voyage.",
+  },
+  {
+    label: "Jour 6 · Mercredi",
     title: "La Barcelone de Gaudí",
-    text: "Une journée complète à Barcelone en autocar privé. Visites guidées de l’impressionnante Sagrada Família et du coloré Park Güell, puis balade dans le quartier gothique, sur les Ramblas et au célèbre marché de la Boqueria.",
+    text: "Une journée complète pour découvrir Barcelone. Visites guidées de l’impressionnante Sagrada Família et du coloré Park Güell, puis balade dans le quartier gothique, sur les Ramblas et au célèbre marché de la Boqueria.",
   },
   {
-    label: "Jour 4",
-    title: "Pickleball et Montserrat",
-    text: "Pickleball le matin, puis direction les montagnes déchiquetées de Montserrat pour visiter le monastère bénédictin, qui abrite la Vierge noire, avec des vues à couper le souffle sur la Catalogne.",
+    label: "Jour 7 · Jeudi",
+    title: "Montserrat et flamenco",
+    text: "Excursion dans les montagnes déchiquetées de Montserrat pour visiter le monastère bénédictin, qui abrite la Vierge noire, avec des vues à couper le souffle sur la Catalogne. De retour à Barcelone, une soirée de flamenco avec places réservées.",
   },
   {
-    label: "Jour 5",
-    title: "Jouez avec les locaux",
-    text: "Le pickleball explose en Espagne. La séance du jour vous met sur le terrain avec des joueurs locaux, suivie d’un après-midi libre pour la plage, la piscine sur le toit ou le spa de l’hôtel.",
+    label: "Jour 8 · Vendredi",
+    title: "Journée libre et fête d’adieu",
+    text: "Une journée libre pour découvrir Barcelone à votre rythme. Le soir, nous nous retrouvons pour le dîner et la fête d’adieu « Hasta luego ».",
   },
   {
-    label: "Jour 6",
-    title: "Le pays du cava et Sitges",
-    text: "Un court trajet en autocar jusqu’au Penedès pour une visite des vignes et une dégustation de vins et de cava dans un domaine de charme. Puis Sitges, la ville blanche en bord de mer chère aux artistes.",
-  },
-  {
-    label: "Jour 7",
-    title: "Pickleball et flamenco",
-    text: "Une matinée sur le terrain, un après-midi libre et une soirée de flamenco avec places réservées : guitares, chant passionné et martèlement des danseurs.",
-  },
-  {
-    label: "Jour 8",
-    title: "Dernier match et fête d’adieu",
-    text: "La dernière séance se termine par un tournoi amical. Le soir, nous nous retrouvons pour le dîner et la fête d’adieu « Hasta luego ».",
-  },
-  {
-    label: "Jour 9",
+    label: "Jour 9 · Samedi",
     title: "Hasta luego",
-    text: "Petit-déjeuner à l’hôtel et transfert vers Barcelone-El Prat pour votre vol retour. À la prochaine, les amis !",
+    text: "Petit-déjeuner à l’hôtel et court transfert vers Barcelone-El Prat pour votre vol retour. À la prochaine, les amis !",
   },
 ];
 
 const included = [
-  "8 nuits dans un hôtel 4★ en bord de mer",
-  "6 jours de pickleball en plein air : coaching, jeu organisé et matchs avec des joueurs locaux (en anglais et en espagnol)",
+  "4 nuits dans un hôtel 4★ en bord de mer à Coma-ruga",
+  "4 nuits dans un hôtel 4★ équivalent à Barcelone",
+  "3 séances de coaching de 90 minutes avec des coachs diplômés (en anglais et en espagnol)",
+  "Jeu libre et tournoi amical avec des joueurs locaux",
   "Fruits frais et eau fraîche sur les terrains",
-  "Transport aller-retour vers les terrains",
   "Petit-déjeuner buffet tous les matins",
   "4 repas de groupe soigneusement choisis",
-  "Autocar privé de luxe pour les excursions",
+  "Autocar privé de luxe pour les excursions et le trajet vers Barcelone",
+  "Visite guidée de Tarragone la romaine",
+  "Dégustation de vins et de cava dans le Penedès",
   "Visites guidées de la Sagrada Família et du Park Güell",
   "Excursion au monastère de Montserrat",
-  "Visite guidée de Tarragone la romaine",
-  "Dégustation de vins et de cava dans le Penedès et visite de Sitges",
   "Guides locaux professionnels (en anglais ou en espagnol)",
   "Accompagnateur bilingue anglais-espagnol pendant tout le séjour",
   "Spectacle de flamenco",
@@ -124,6 +125,11 @@ const faqs: FaqItem[] = [
     answer:
       "Un acompte de 20 % vous réserve votre place et est déduit du prix total du voyage. Le solde est à régler 60 jours avant la date de départ. Tous les prix sont en euros.",
   },
+  {
+    question: "Où logeons-nous ?",
+    answer:
+      "Dans deux hôtels. Les quatre premières nuits à l’Estival Maramar, un hôtel 4★ en bord de mer à Coma-ruga, où nous jouons. Le jour 5, notre autocar privé vous emmène, vous et vos bagages, vers un hôtel 4★ équivalent à Barcelone pour les quatre dernières nuits consacrées aux visites.",
+  },
 ];
 
 export default function VoyagePickleballPage() {
@@ -134,7 +140,7 @@ export default function VoyagePickleballPage() {
           "@graph": [
             tripSchema(longHaulLobFr, {
               description:
-                "Un voyage pickleball de 9 jours sur la côte de Barcelone avec 6 jours de jeu et des excursions guidées à Barcelone, Montserrat, Tarragone, dans le Penedès et à Sitges. Séjour en anglais et en espagnol.",
+                "Un voyage pickleball de 9 jours en Catalogne : coaching et tournoi sur la côte de Barcelone, puis quatre nuits à Barcelone, avec visites guidées de la Sagrada Família, du Park Güell, de Montserrat, de Tarragone et du Penedès. Séjour en anglais et en espagnol.",
               touristType: "Joueurs de pickleball venant du Canada et d’Amérique du Nord",
               itinerary: days.map((d) => ({ name: `${d.label} : ${d.title}`, description: d.text })),
             }),
@@ -157,8 +163,8 @@ export default function VoyagePickleballPage() {
             Le voyage pickleball ultime à <em className="font-normal">Barcelone</em>
           </>
         }
-        intro="Neuf jours inoubliables sur la côte méditerranéenne, près de Barcelone. Six jours de pickleball avec des joueurs locaux, les chefs-d’œuvre de Gaudí, Montserrat, Tarragone la romaine, le pays du cava et une soirée flamenco, depuis un hôtel 4★ en bord de mer."
-        facts={["6 jours de pickleball", "4 excursions guidées", "Séjour en anglais et espagnol", "8 nuits, 4★ en bord de mer"]}
+        intro="Neuf jours inoubliables en Catalogne. D’abord du pickleball au bord de la mer sur la Costa Daurada, puis cap sur Barcelone pour les chefs-d’œuvre de Gaudí, Montserrat et une soirée flamenco, avec Tarragone la romaine et le pays du cava en chemin."
+        facts={["3 séances de coaching + tournoi", "4 excursions guidées", "Séjour en anglais et espagnol", "4 nuits plage + 4 nuits Barcelone"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -170,7 +176,7 @@ export default function VoyagePickleballPage() {
                 Le pickleball au bord de la mer. Le meilleur de la <em className="font-normal">Catalogne</em>.
               </>
             }
-            intro="Notre camp de base est Coma-ruga, sur la Costa Daurada. De là, notre autocar privé nous emmène découvrir le meilleur de la Catalogne, avec retour à la plage chaque soir."
+            intro="Nous commençons à Coma-ruga, sur la Costa Daurada, avec quatre nuits de pickleball au bord de la mer. Le mardi, nous remontons la côte jusqu’à un hôtel 4★ à Barcelone pour découvrir la ville."
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
@@ -201,7 +207,7 @@ export default function VoyagePickleballPage() {
           <SectionHeading
             eyebrow="Itinéraire"
             title="Neuf jours, au rythme parfait"
-            intro="Du pickleball six jours sur neuf, des excursions guidées et beaucoup de temps pour se détendre entre les deux."
+            intro="Du pickleball au bord de la mer chaque matin du vendredi au mardi, puis Barcelone et ses trésors jusqu’au samedi."
           />
           <div className="mt-12 max-w-3xl pl-4">
             <Itinerary days={days} />

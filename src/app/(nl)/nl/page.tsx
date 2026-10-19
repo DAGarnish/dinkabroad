@@ -53,7 +53,7 @@ const faqs: FaqItem[] = [
   {
     question: "Welke reis past bij mij?",
     answer:
-      "Local Dink is een pickleballvakantie van 5 dagen (vrijdag tot dinsdag) voor spelers uit Nederland, België en de rest van Europa. Long-Haul Lob is een reis van 9 dagen met zes dagen pickleball en begeleide excursies naar Barcelona, Montserrat, Tarragona, de Penedès en Sitges.",
+      "Local Dink is een pickleballvakantie van 5 dagen (vrijdag tot dinsdag) voor spelers uit Nederland, België en de rest van Europa. Long-Haul Lob is een reis van 9 dagen met hetzelfde pickleballprogramma aan zee van vrijdag tot dinsdag, en daarna vier nachten in Barcelona met begeleide bezoeken aan Gaudí, Montserrat, Tarragona en de Penedès.",
   },
   {
     question: "Welk niveau heb ik nodig?",

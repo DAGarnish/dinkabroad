@@ -20,71 +20,72 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleball-Reise Barcelona: 9 Tage Pickleball und Kultur",
   description:
-    "Eine 9-tägige Pickleball-Reise nach Barcelona: 6 Tage Pickleball, Gaudís Barcelona, Montserrat, Tarragona, die Cava-Region und Flamenco von einem 4★-Strandhotel aus. Ab 3.500 €.",
+    "Eine 9-tägige Pickleball-Reise nach Barcelona: Pickleball am Meer, danach Gaudís Barcelona, Montserrat, Tarragona, die Cava-Region und Flamenco. Ab 3.500 €.",
   path: longHaulLobDe.href,
   siteLang: "de",
 });
 
 const days = [
   {
-    label: "Tag 1",
+    label: "Tag 1 · Freitag",
     title: "¡Bienvenidos!",
-    text: "Privattransfer vom Flughafen Barcelona-El Prat zu unserem Strandhotel in Coma-ruga. Ankommen, die Beine bei einem Nachmittag Pickleball lockern und dann zum Willkommensempfang mit der Gruppe.",
+    text: "Privattransfer vom Flughafen Barcelona-El Prat zu unserem Strandhotel in Coma-ruga. Ankommen, im Infinity-Pool abkühlen und dann zum Willkommensempfang mit der Gruppe.",
   },
   {
-    label: "Tag 2",
+    label: "Tag 2 · Samstag",
+    title: "Training & freies Spiel",
+    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Pickleball findet immer am Vormittag statt, der Nachmittag gehört also Ihnen: Strand, Pool oder eine kurze Zugfahrt nach Sitges.",
+  },
+  {
+    label: "Tag 3 · Sonntag",
     title: "Pickleball & das römische Tarragona",
-    text: "Ein Vormittag mit Training und Spiel, danach ein geführter Nachmittag in Tarragona, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
+    text: "Die zweite Trainingseinheit und Matches gegen wechselnde Gegner, danach ein geführter Nachmittag in Tarragona, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
   },
   {
-    label: "Tag 3",
+    label: "Tag 4 · Montag",
+    title: "Letzte Einheit & Turnier",
+    text: "Ihre dritte Trainingseinheit, danach ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Genießen Sie einen letzten Nachmittag am Strand, bevor wir die Küste verlassen.",
+  },
+  {
+    label: "Tag 5 · Dienstag",
+    title: "Die Küste hinauf nach Barcelona",
+    text: "Unser Privatbus fährt nach Barcelona, mit einem Halt im Penedès für eine Weinbergführung mit Wein- und Cava-Verkostung auf einem kleinen Weingut. Dann checken Sie in unserem 4★-Hotel in Barcelona ein, Ihrem Standort für den Rest der Reise.",
+  },
+  {
+    label: "Tag 6 · Mittwoch",
     title: "Gaudís Barcelona",
-    text: "Ein ganzer Tag in Barcelona im Privatbus. Führungen durch die beeindruckende Sagrada Família und den farbenfrohen Park Güell, danach ein Bummel durch das Gotische Viertel, über die Ramblas und den berühmten Markt La Boqueria.",
+    text: "Ein ganzer Tag in Barcelona. Führungen durch die beeindruckende Sagrada Família und den farbenfrohen Park Güell, danach ein Bummel durch das Gotische Viertel, über die Ramblas und den berühmten Markt La Boqueria.",
   },
   {
-    label: "Tag 4",
-    title: "Pickleball & Montserrat",
-    text: "Pickleball am Vormittag, dann hinauf in die zerklüfteten Berge von Montserrat zum Benediktinerkloster mit der Schwarzen Madonna und atemberaubendem Blick über Katalonien.",
+    label: "Tag 7 · Donnerstag",
+    title: "Montserrat & Flamenco",
+    text: "Ein Ausflug in die zerklüfteten Berge von Montserrat zum Benediktinerkloster mit der Schwarzen Madonna und atemberaubendem Blick über Katalonien. Zurück in Barcelona erwartet Sie ein Abend voller Flamenco mit reservierten Plätzen.",
   },
   {
-    label: "Tag 5",
-    title: "Spielen mit Einheimischen",
-    text: "Pickleball boomt in Spanien. Heute stehen Sie mit Spielern aus der Region auf dem Court, danach ist der Nachmittag frei für Strand, Dachpool oder das Hotel-Spa.",
+    label: "Tag 8 · Freitag",
+    title: "Freier Tag & Abschiedsfiesta",
+    text: "Ein freier Tag, um Barcelona in Ihrem eigenen Tempo zu entdecken. Am Abend treffen wir uns zum Abschiedsessen und zur „Hasta luego“-Fiesta.",
   },
   {
-    label: "Tag 6",
-    title: "Cava-Region & Sitges",
-    text: "Eine kurze Busfahrt ins Penedès zur Weinbergführung mit Wein- und Cava-Verkostung auf einem kleinen Weingut. Anschließend nach Sitges, dem weißen Küstenort, den Künstler seit jeher lieben.",
-  },
-  {
-    label: "Tag 7",
-    title: "Pickleball & Flamenco",
-    text: "Ein Vormittag auf dem Court, ein freier Nachmittag und ein Abend voller Flamenco mit reservierten Plätzen: Gitarren, leidenschaftlicher Gesang und das rhythmische Stampfen der Tänzer.",
-  },
-  {
-    label: "Tag 8",
-    title: "Letztes Match & Abschiedsfiesta",
-    text: "Die letzte Einheit endet mit einem lockeren Turnier. Am Abend treffen wir uns zum Abschiedsessen und zur „Hasta luego“-Fiesta.",
-  },
-  {
-    label: "Tag 9",
+    label: "Tag 9 · Samstag",
     title: "Hasta luego",
-    text: "Frühstück im Hotel und Transfer zum Flughafen Barcelona-El Prat für Ihren Heimflug. Bis zum nächsten Mal, amigos!",
+    text: "Frühstück im Hotel und ein kurzer Transfer zum Flughafen Barcelona-El Prat für Ihren Heimflug. Bis zum nächsten Mal, amigos!",
   },
 ];
 
 const included = [
-  "8 Nächte in einem 4★-Hotel direkt am Strand",
-  "6 Tage Pickleball im Freien: Training, organisiertes Spiel und Matches mit Einheimischen (auf Englisch und Spanisch)",
+  "4 Nächte in einem 4★-Hotel direkt am Strand in Coma-ruga",
+  "4 Nächte in einem gleichwertigen 4★-Hotel in Barcelona",
+  "3 × 90 Minuten Training mit zertifizierten Trainern (auf Englisch und Spanisch)",
+  "Freies Spiel und ein lockeres Turnier mit Einheimischen",
   "Frisches Obst und kaltes Wasser auf den Courts",
-  "Transport zu den Courts und zurück",
   "Frühstücksbuffet jeden Morgen",
   "4 sorgfältig ausgewählte Gruppenessen",
-  "Privater Luxusreisebus für die Ausflüge",
+  "Privater Luxusreisebus für die Ausflüge und die Fahrt nach Barcelona",
+  "Führung durch das römische Tarragona",
+  "Wein- und Cava-Verkostung im Penedès",
   "Führungen durch die Sagrada Família und den Park Güell",
   "Ausflug zum Kloster Montserrat",
-  "Führung durch das römische Tarragona",
-  "Wein- und Cava-Verkostung im Penedès und Besuch in Sitges",
   "Professionelle örtliche Guides (auf Englisch oder Spanisch)",
   "Zweisprachige Reiseleitung (Englisch-Spanisch) während der ganzen Reise",
   "Flamenco-Vorstellung",
@@ -124,6 +125,11 @@ const faqs: FaqItem[] = [
     answer:
       "Eine Anzahlung von 20 % sichert Ihren Platz und wird auf den Reisepreis angerechnet. Der Restbetrag ist 60 Tage vor Reisebeginn fällig. Alle Preise in Euro.",
   },
+  {
+    question: "Wo übernachten wir?",
+    answer:
+      "In zwei Hotels. Die ersten vier Nächte verbringen Sie im Estival Maramar, einem 4★-Hotel direkt am Strand von Coma-ruga, wo wir spielen. An Tag 5 bringt unser Privatbus Sie und Ihr Gepäck die Küste hinauf in ein gleichwertiges 4★-Hotel in Barcelona für die letzten vier Nächte mit Sightseeing.",
+  },
 ];
 
 export default function PickleballReisePage() {
@@ -134,7 +140,7 @@ export default function PickleballReisePage() {
           "@graph": [
             tripSchema(longHaulLobDe, {
               description:
-                "Eine 9-tägige Pickleball-Reise an der Küste von Barcelona mit 6 Tagen Pickleball und geführten Ausflügen nach Barcelona, Montserrat, Tarragona, ins Penedès und nach Sitges. Reise auf Englisch und Spanisch.",
+                "Eine 9-tägige Pickleball-Reise durch Katalonien: Training und ein Turnier an der Küste von Barcelona, danach vier Nächte in Barcelona mit Führungen zur Sagrada Família, zum Park Güell, nach Montserrat, Tarragona und ins Penedès. Reise auf Englisch und Spanisch.",
               touristType: "Pickleball-Spieler mit weiter Anreise oder mehr Zeit",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -157,8 +163,8 @@ export default function PickleballReisePage() {
             Die ultimative Pickleball-Reise nach <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Neun unvergessliche Tage an der Mittelmeerküste bei Barcelona. Sechs Tage Pickleball mit Einheimischen, Gaudís Meisterwerke, Montserrat, das römische Tarragona, die Cava-Region und ein Flamenco-Abend, alles von einem 4★-Hotel direkt am Strand aus."
-        facts={["6 Tage Pickleball", "4 geführte Ausflüge", "Reise auf Englisch & Spanisch", "8 Nächte, 4★ am Strand"]}
+        intro="Neun unvergessliche Tage in Katalonien. Zuerst Pickleball am Meer an der Costa Daurada, dann die Küste hinauf nach Barcelona für Gaudís Meisterwerke, Montserrat und einen Flamenco-Abend, mit dem römischen Tarragona und der Cava-Region unterwegs."
+        facts={["3 Trainingseinheiten + Turnier", "4 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -170,7 +176,7 @@ export default function PickleballReisePage() {
                 Pickleball am Meer. Das Beste von <em className="font-normal">Katalonien</em>.
               </>
             }
-            intro="Unser Basislager ist Coma-ruga an der Costa Daurada. Von dort bringt uns unser Privatbus zu den Höhepunkten Kataloniens, und abends geht es immer zurück an den Strand."
+            intro="Wir starten in Coma-ruga an der Costa Daurada mit vier Nächten Pickleball am Meer. Am Dienstag geht es die Küste hinauf in ein 4★-Hotel in Barcelona für die Sehenswürdigkeiten der Stadt."
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
@@ -201,7 +207,7 @@ export default function PickleballReisePage() {
           <SectionHeading
             eyebrow="Reiseverlauf"
             title="Neun Tage, perfekt getaktet"
-            intro="An sechs Tagen steht Pickleball auf dem Programm, dazu geführte Ausflüge und viel Zeit zum Entspannen."
+            intro="Von Freitag bis Dienstag jeden Vormittag Pickleball am Meer, danach Barcelona und seine Sehenswürdigkeiten bis Samstag."
           />
           <div className="mt-12 max-w-3xl pl-4">
             <Itinerary days={days} />
