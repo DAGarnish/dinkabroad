@@ -19,9 +19,9 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Pickleballvakantie Barcelona: 5-daagse pickleballreis vanaf € 1.100",
+  title: "Pickleballvakantie Barcelona: 5-daagse pickleballreis vanaf € 999",
   description:
-    "5 dagen pickleballvakantie aan de kust van Barcelona: training in de ochtend, een gezellig toernooi en een 4★-hotel aan het strand met ontbijt. Vanaf € 1.100 per persoon.",
+    "5 dagen pickleballvakantie aan de kust van Barcelona: training in de ochtend, een gezellig toernooi en een 4★-hotel aan het strand met ontbijt. Vanaf € 999 per persoon.",
   path: localDinkNl.href,
   siteLang: "nl",
 });

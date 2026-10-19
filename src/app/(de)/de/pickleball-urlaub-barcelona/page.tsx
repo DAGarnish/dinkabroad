@@ -19,9 +19,9 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Pickleball-Urlaub Barcelona: 5-tägige Pickleball-Reise ab 1.100 €",
+  title: "Pickleball-Urlaub Barcelona: 5-tägige Pickleball-Reise ab 999 €",
   description:
-    "5 Tage Pickleball-Urlaub an der Küste von Barcelona: Training am Vormittag, lockeres Turnier und 4★-Hotel direkt am Strand mit Frühstück. Ab 1.100 € pro Person.",
+    "5 Tage Pickleball-Urlaub an der Küste von Barcelona: Training am Vormittag, lockeres Turnier und 4★-Hotel direkt am Strand mit Frühstück. Ab 999 € pro Person.",
   path: localDinkDe.href,
   siteLang: "de",
 });

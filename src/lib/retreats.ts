@@ -41,7 +41,7 @@ export const localDink: Retreat = {
   prices: [
     {
       label: "Twin room",
-      amount: 1100,
+      amount: 999,
       currency: "EUR",
       note: "per person, sharing a twin room. Flights not included.",
     },
@@ -109,7 +109,7 @@ export const localDinkEs: Retreat = {
   prices: [
     {
       label: "Habitación twin",
-      amount: 1100,
+      amount: 999,
       currency: "EUR",
       note: "por persona, en habitación twin compartida. Vuelos no incluidos.",
     },
@@ -172,7 +172,7 @@ export const localDinkFr: Retreat = {
   prices: [
     {
       label: "Chambre twin",
-      amount: 1100,
+      amount: 999,
       currency: "EUR",
       note: "par personne, en chambre twin partagée. Vols non inclus.",
     },
@@ -235,7 +235,7 @@ export const localDinkDe: Retreat = {
   prices: [
     {
       label: "Zweibettzimmer",
-      amount: 1100,
+      amount: 999,
       currency: "EUR",
       note: "pro Person im geteilten Zweibettzimmer. Flüge nicht inklusive.",
     },
@@ -298,7 +298,7 @@ export const localDinkNl: Retreat = {
   prices: [
     {
       label: "Twinkamer",
-      amount: 1100,
+      amount: 999,
       currency: "EUR",
       note: "per persoon, in een gedeelde twin-kamer. Vluchten niet inbegrepen.",
     },

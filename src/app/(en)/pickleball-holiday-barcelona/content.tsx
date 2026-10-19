@@ -20,9 +20,9 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 import { hotel } from "@/lib/site";
 
 export const holidayMetadata = pageMetadata({
-  title: "Pickleball Holiday Barcelona: 5-Day Pickleball Retreat from €1,100",
+  title: "Pickleball Holiday Barcelona: 5-Day Pickleball Retreat from €999",
   description:
-    "A 5-day pickleball holiday on the Barcelona coast for UK & European players. Morning coaching, a fun tournament and a beachfront 4★ hotel with breakfast. From €1,100 p.p.",
+    "A 5-day pickleball holiday on the Barcelona coast for UK & European players. Morning coaching, a fun tournament and a beachfront 4★ hotel with breakfast. From €999 p.p.",
   path: localDink.href,
 });
 
