@@ -60,7 +60,7 @@ const days = [
   {
     label: "Day 2 · Saturday",
     title: "Coaching & free play",
-    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach, the infinity pool or a short train ride to Sitges.",
+    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach or a short train ride to Sitges.",
   },
   {
     label: "Day 3 · Sunday",

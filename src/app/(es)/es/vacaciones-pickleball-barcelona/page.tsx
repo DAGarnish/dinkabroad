@@ -60,7 +60,7 @@ const days = [
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa, la piscina infinita o un corto trayecto en tren hasta Sitges.",
+    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa o un corto trayecto en tren hasta Sitges.",
   },
   {
     label: "Día 3 · Domingo",

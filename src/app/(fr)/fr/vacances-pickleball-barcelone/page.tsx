@@ -60,7 +60,7 @@ const days = [
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous : la plage, la piscine à débordement ou un court trajet en train jusqu’à Sitges.",
+    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous : la plage ou un court trajet en train jusqu’à Sitges.",
   },
   {
     label: "Jour 3 · Dimanche",

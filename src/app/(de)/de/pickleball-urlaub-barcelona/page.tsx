@@ -60,7 +60,7 @@ const days = [
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand, Infinity-Pool oder eine kurze Zugfahrt nach Sitges.",
+    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand oder eine kurze Zugfahrt nach Sitges.",
   },
   {
     label: "Tag 3 · Sonntag",

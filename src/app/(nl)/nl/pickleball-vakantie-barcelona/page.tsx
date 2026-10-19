@@ -60,7 +60,7 @@ const days = [
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand, de infinity pool of een kort treinritje naar Sitges.",
+    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand of een kort treinritje naar Sitges.",
   },
   {
     label: "Dag 3 · Zondag",
