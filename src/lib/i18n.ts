@@ -116,7 +116,7 @@ const en = {
     ],
   },
   enquiry: {
-    eyebrow: "Limited spots · max 20 players",
+    eyebrow: "Limited spots · max 16 players",
     bullets: ["Full programme, dates and pricing", "Personal reply within 24 hours", "No commitment, no spam"],
   },
   form: {
@@ -241,7 +241,7 @@ const es: Ui = {
     ],
   },
   enquiry: {
-    eyebrow: "Plazas limitadas · máx. 20 jugadores",
+    eyebrow: "Plazas limitadas · máx. 16 jugadores",
     bullets: ["Programa completo, fechas y precios", "Respuesta personal en 24 horas", "Sin compromiso y sin spam"],
   },
   form: {
@@ -354,7 +354,7 @@ const fr: Ui = {
     ],
   },
   enquiry: {
-    eyebrow: "Places limitées · 20 joueurs max.",
+    eyebrow: "Places limitées · 16 joueurs max.",
     bullets: ["Programme complet, dates et tarifs", "Réponse personnelle sous 24 heures", "Sans engagement, sans spam"],
   },
   form: {
@@ -467,7 +467,7 @@ const de: Ui = {
     ],
   },
   enquiry: {
-    eyebrow: "Begrenzte Plätze · max. 20 Spieler",
+    eyebrow: "Begrenzte Plätze · max. 16 Spieler",
     bullets: ["Komplettes Programm, Termine und Preise", "Persönliche Antwort innerhalb von 24 Stunden", "Unverbindlich und ohne Spam"],
   },
   form: {
@@ -580,7 +580,7 @@ const nl: Ui = {
     ],
   },
   enquiry: {
-    eyebrow: "Beperkt aantal plekken · max. 20 spelers",
+    eyebrow: "Beperkt aantal plekken · max. 16 spelers",
     bullets: ["Volledig programma, data en prijzen", "Persoonlijk antwoord binnen 24 uur", "Vrijblijvend en zonder spam"],
   },
   form: {

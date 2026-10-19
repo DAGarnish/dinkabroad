@@ -15,7 +15,7 @@ import { absoluteUrl } from "@/lib/site";
 export const homeMetadata = pageMetadata({
   title: "Pickleball Retreats Barcelona | Pickleball Holidays & Vacations | Dink Abroad",
   description:
-    "Pickleball retreats and holidays on the Barcelona coast. Coaching, tournaments and a beachfront 4★ hotel in Coma-ruga, one hour by train from Barcelona. Max 20 players.",
+    "Pickleball retreats and holidays on the Barcelona coast. Coaching, tournaments and a beachfront 4★ hotel in Coma-ruga, one hour by train from Barcelona. Max 16 players.",
   path: "/",
   absoluteTitle: true,
 });
@@ -27,7 +27,7 @@ const pillars = [
   },
   {
     title: "Small groups, big welcome",
-    text: "Never more than 20 players, so you get real attention on court. Coming solo? You'll have new playing partners by lunchtime.",
+    text: "Never more than 16 players, so you get real attention on court. Coming solo? You'll have new playing partners by lunchtime.",
   },
   {
     title: "Play the locals",
@@ -58,7 +58,7 @@ const faqs: FaqItem[] = [
   {
     question: "Can I come on my own?",
     answer:
-      "Absolutely. Many guests travel solo. With a maximum of 20 players, the group gels quickly on and off the court.",
+      "Absolutely. Many guests travel solo. With a maximum of 16 players, the group gels quickly on and off the court.",
   },
   {
     question: "Are flights included?",
@@ -140,7 +140,7 @@ export function Home({ currency }: { currency: Currency }) {
           </div>
           <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/20 pt-8 text-sm sm:grid-cols-4">
             {[
-              ["Max 20", "players per retreat"],
+              ["Max 16", "players per retreat"],
               ["4★", "beachfront hotel"],
               ["1 hr", "by train from Barcelona"],
               ["Certified", "coaches"],

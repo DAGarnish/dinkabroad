@@ -14,7 +14,7 @@ import { absoluteUrl } from "@/lib/site";
 export const metadata = pageMetadata({
   title: "Pickleball-Reisen Barcelona | Pickleball-Urlaub in Spanien | Dink Abroad",
   description:
-    "Pickleball-Reisen und Pickleball-Urlaub an der Küste von Barcelona. Training, Turniere und ein 4★-Strandhotel in Coma-ruga, eine Stunde mit dem Zug von Barcelona. Max. 20 Spieler.",
+    "Pickleball-Reisen und Pickleball-Urlaub an der Küste von Barcelona. Training, Turniere und ein 4★-Strandhotel in Coma-ruga, eine Stunde mit dem Zug von Barcelona. Max. 16 Spieler.",
   path: "/de",
   absoluteTitle: true,
   siteLang: "de",
@@ -27,7 +27,7 @@ const pillars = [
   },
   {
     title: "Kleine Gruppen, großes Willkommen",
-    text: "Nie mehr als 20 Spieler, damit Sie auf dem Court echte Aufmerksamkeit bekommen. Allein unterwegs? Bis zum Mittagessen haben Sie neue Spielpartner.",
+    text: "Nie mehr als 16 Spieler, damit Sie auf dem Court echte Aufmerksamkeit bekommen. Allein unterwegs? Bis zum Mittagessen haben Sie neue Spielpartner.",
   },
   {
     title: "Gegen Einheimische spielen",
@@ -63,7 +63,7 @@ const faqs: FaqItem[] = [
   {
     question: "Kann ich allein kommen?",
     answer:
-      "Auf jeden Fall. Viele Gäste reisen allein. Bei maximal 20 Spielern wächst die Gruppe auf und neben dem Court schnell zusammen.",
+      "Auf jeden Fall. Viele Gäste reisen allein. Bei maximal 16 Spielern wächst die Gruppe auf und neben dem Court schnell zusammen.",
   },
   {
     question: "Sind die Flüge inklusive?",
@@ -144,7 +144,7 @@ export default function StartseitePage() {
           </div>
           <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/20 pt-8 text-sm sm:grid-cols-4">
             {[
-              ["Max. 20", "Spieler pro Reise"],
+              ["Max. 16", "Spieler pro Reise"],
               ["4★", "Hotel direkt am Strand"],
               ["1 Std.", "mit dem Zug von Barcelona"],
               ["EN · ES", "Training auf Englisch & Spanisch"],

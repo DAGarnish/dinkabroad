@@ -221,6 +221,7 @@ export default function PickleballReisPage() {
           "Aanbetaling: 20% legt je plek vast en wordt verrekend met de reissom.",
           "Restbetaling: 60 dagen voor vertrek.",
           "Alle prijzen in euro (EUR). Bedragen in ponden en dollars zijn indicaties tegen de actuele wisselkoers.",
+          "Max. 16 reizigers per reis.",
           "Reis in het Engels en Spaans.",
         ]}
       />

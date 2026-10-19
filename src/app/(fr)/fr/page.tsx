@@ -14,7 +14,7 @@ import { absoluteUrl } from "@/lib/site";
 export const metadata = pageMetadata({
   title: "Séjours pickleball à Barcelone | Vacances pickleball | Dink Abroad",
   description:
-    "Séjours et vacances de pickleball sur la côte de Barcelone. Coaching, tournois et hôtel 4★ en bord de mer à Coma-ruga, à une heure de Barcelone en train. 20 joueurs max.",
+    "Séjours et vacances de pickleball sur la côte de Barcelone. Coaching, tournois et hôtel 4★ en bord de mer à Coma-ruga, à une heure de Barcelone en train. 16 joueurs max.",
   path: "/fr",
   absoluteTitle: true,
   siteLang: "fr",
@@ -27,7 +27,7 @@ const pillars = [
   },
   {
     title: "Petit groupe, grand accueil",
-    text: "Jamais plus de 20 joueurs, pour une vraie attention sur le terrain. Vous venez seul ? Vous aurez des partenaires de jeu avant le déjeuner.",
+    text: "Jamais plus de 16 joueurs, pour une vraie attention sur le terrain. Vous venez seul ? Vous aurez des partenaires de jeu avant le déjeuner.",
   },
   {
     title: "Affrontez les locaux",
@@ -63,7 +63,7 @@ const faqs: FaqItem[] = [
   {
     question: "Puis-je venir seul ?",
     answer:
-      "Bien sûr. Beaucoup de participants viennent seuls. Avec 20 joueurs maximum, le groupe se soude vite, sur le terrain comme en dehors.",
+      "Bien sûr. Beaucoup de participants viennent seuls. Avec 16 joueurs maximum, le groupe se soude vite, sur le terrain comme en dehors.",
   },
   {
     question: "Les vols sont-ils inclus ?",
@@ -144,7 +144,7 @@ export default function AccueilPage() {
           </div>
           <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/20 pt-8 text-sm sm:grid-cols-4">
             {[
-              ["20 max.", "joueurs par séjour"],
+              ["16 max.", "joueurs par séjour"],
               ["4★", "hôtel en bord de mer"],
               ["1 h", "en train depuis Barcelone"],
               ["EN · ES", "coaching en anglais et espagnol"],

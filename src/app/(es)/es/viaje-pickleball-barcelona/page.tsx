@@ -221,6 +221,7 @@ export default function ViajePickleballPage() {
           "Depósito: el 20 % te reserva la plaza y se descuenta del precio total del viaje.",
           "Pago final: el resto se abona 60 días antes de la fecha de salida.",
           "Todos los precios están en euros (EUR). Los importes en libras y dólares son aproximados, al tipo de cambio más reciente.",
+          "Máximo 16 viajeros por viaje.",
         ]}
       />
 

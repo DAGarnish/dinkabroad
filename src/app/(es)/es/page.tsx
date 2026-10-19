@@ -14,7 +14,7 @@ import { absoluteUrl } from "@/lib/site";
 export const metadata = pageMetadata({
   title: "Retiros de pickleball en Barcelona | Vacaciones de pickleball | Dink Abroad",
   description:
-    "Retiros y vacaciones de pickleball en la costa de Barcelona. Entrenamientos, torneos y un hotel 4★ en primera línea en Coma-ruga, a una hora de Barcelona en tren. Máx. 20 jugadores.",
+    "Retiros y vacaciones de pickleball en la costa de Barcelona. Entrenamientos, torneos y un hotel 4★ en primera línea en Coma-ruga, a una hora de Barcelona en tren. Máx. 16 jugadores.",
   path: "/es",
   absoluteTitle: true,
   siteLang: "es",
@@ -27,7 +27,7 @@ const pillars = [
   },
   {
     title: "Grupos pequeños, gran ambiente",
-    text: "Nunca más de 20 jugadores, para que tengas atención de verdad en la pista. ¿Vienes solo? A la hora de comer ya tendrás compañeros de juego.",
+    text: "Nunca más de 16 jugadores, para que tengas atención de verdad en la pista. ¿Vienes solo? A la hora de comer ya tendrás compañeros de juego.",
   },
   {
     title: "Juega con los locales",
@@ -58,7 +58,7 @@ const faqs: FaqItem[] = [
   {
     question: "¿Puedo venir solo?",
     answer:
-      "Por supuesto. Muchos participantes vienen solos. Con un máximo de 20 jugadores, el grupo se une enseguida dentro y fuera de la pista.",
+      "Por supuesto. Muchos participantes vienen solos. Con un máximo de 16 jugadores, el grupo se une enseguida dentro y fuera de la pista.",
   },
   {
     question: "¿Están incluidos los vuelos?",
@@ -139,7 +139,7 @@ export default function InicioPage() {
           </div>
           <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/20 pt-8 text-sm sm:grid-cols-4">
             {[
-              ["Máx. 20", "jugadores por retiro"],
+              ["Máx. 16", "jugadores por retiro"],
               ["4★", "hotel en primera línea"],
               ["1 h", "en tren desde Barcelona"],
               ["Entrenadores", "titulados"],

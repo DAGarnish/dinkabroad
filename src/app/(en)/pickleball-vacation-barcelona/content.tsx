@@ -226,6 +226,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
           "Deposit: 20% reserves your place and is applied to the total trip price.",
           "Final payment: the balance is due 60 days before the trip start date.",
           "Prices are set in euros (EUR). Dollar and pound amounts are converted at the latest exchange rate, so they change with it.",
+          "Limited to 16 travelers per trip.",
         ]}
       />
 

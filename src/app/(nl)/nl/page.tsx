@@ -14,7 +14,7 @@ import { absoluteUrl } from "@/lib/site";
 export const metadata = pageMetadata({
   title: "Pickleballreizen Barcelona | Pickleballvakantie in Spanje | Dink Abroad",
   description:
-    "Pickleballreizen en pickleballvakanties aan de kust van Barcelona. Training, toernooien en een 4★-strandhotel in Coma-ruga, een uur met de trein vanaf Barcelona. Max. 20 spelers.",
+    "Pickleballreizen en pickleballvakanties aan de kust van Barcelona. Training, toernooien en een 4★-strandhotel in Coma-ruga, een uur met de trein vanaf Barcelona. Max. 16 spelers.",
   path: "/nl",
   absoluteTitle: true,
   siteLang: "nl",
@@ -27,7 +27,7 @@ const pillars = [
   },
   {
     title: "Kleine groepen, warm welkom",
-    text: "Nooit meer dan 20 spelers, dus je krijgt echte aandacht op de baan. Kom je alleen? Voor de lunch heb je al nieuwe speelpartners.",
+    text: "Nooit meer dan 16 spelers, dus je krijgt echte aandacht op de baan. Kom je alleen? Voor de lunch heb je al nieuwe speelpartners.",
   },
   {
     title: "Spelen tegen de locals",
@@ -63,7 +63,7 @@ const faqs: FaqItem[] = [
   {
     question: "Kan ik alleen komen?",
     answer:
-      "Zeker. Veel gasten reizen alleen. Met maximaal 20 spelers groeit de groep snel naar elkaar toe, op en naast de baan.",
+      "Zeker. Veel gasten reizen alleen. Met maximaal 16 spelers groeit de groep snel naar elkaar toe, op en naast de baan.",
   },
   {
     question: "Zijn de vluchten inbegrepen?",
@@ -143,7 +143,7 @@ export default function NlHomePage() {
           </div>
           <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/20 pt-8 text-sm sm:grid-cols-4">
             {[
-              ["Max. 20", "spelers per reis"],
+              ["Max. 16", "spelers per reis"],
               ["4★", "hotel aan het strand"],
               ["1 uur", "met de trein vanaf Barcelona"],
               ["EN · ES", "training in het Engels & Spaans"],

@@ -221,6 +221,7 @@ export default function PickleballReisePage() {
           "Anzahlung: 20 % sichern Ihren Platz und werden auf den Reisepreis angerechnet.",
           "Restzahlung: fällig 60 Tage vor Reisebeginn.",
           "Alle Preise in Euro (EUR). Beträge in Pfund und Dollar sind Richtwerte zum aktuellen Wechselkurs.",
+          "Max. 16 Reisende pro Reise.",
           "Reise auf Englisch und Spanisch.",
         ]}
       />

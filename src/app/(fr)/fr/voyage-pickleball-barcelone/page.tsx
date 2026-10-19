@@ -221,6 +221,7 @@ export default function VoyagePickleballPage() {
           "Acompte : 20 % pour réserver votre place, déduit du prix total du voyage.",
           "Solde : à régler 60 jours avant la date de départ.",
           "Tous les prix sont en euros (EUR). Les montants en livres et en dollars sont indicatifs, au dernier taux de change.",
+          "16 voyageurs maximum par voyage.",
           "Séjour encadré en anglais et en espagnol.",
         ]}
       />
