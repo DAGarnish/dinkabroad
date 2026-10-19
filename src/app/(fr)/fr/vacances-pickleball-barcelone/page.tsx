@@ -11,6 +11,7 @@ import {
   PageHero,
   PricingSection,
 } from "@/components/sections";
+import { TownLink } from "@/components/TownLink";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 import { localDinkFr } from "@/lib/retreats";
@@ -47,7 +48,13 @@ const reasons = [
   },
   {
     title: "Escapades l’après-midi",
-    text: "Sitges, Tarragone et Vilanova i la Geltrú sont à quelques minutes de train le long de la côte.",
+    text: (
+      <>
+        <TownLink town="sitges" lang="fr">Sitges</TownLink>,{" "}
+        <TownLink town="tarragona" lang="fr">Tarragone</TownLink> et{" "}
+        <TownLink town="vilanova" lang="fr">Vilanova i la Geltrú</TownLink> sont à quelques minutes de train le long de la côte.
+      </>
+    ),
   },
 ];
 
@@ -208,7 +215,11 @@ export default function VacancesPickleballPage() {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Idées pour l’après-midi : Sitges, Tarragone et Vilanova i la Geltrú sont à un court trajet en train le long de la côte.</p>
+            <p className="text-sm text-stone">
+              Idées pour l’après-midi : <TownLink town="sitges" lang="fr">Sitges</TownLink>,{" "}
+              <TownLink town="tarragona" lang="fr">Tarragone</TownLink> et{" "}
+              <TownLink town="vilanova" lang="fr">Vilanova i la Geltrú</TownLink> sont à un court trajet en train le long de la côte.
+            </p>
           </div>
         </Container>
       </section>

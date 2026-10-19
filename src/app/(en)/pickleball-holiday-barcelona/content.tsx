@@ -11,6 +11,7 @@ import {
   PageHero,
   PricingSection,
 } from "@/components/sections";
+import { TownLink } from "@/components/TownLink";
 import { Container, SectionHeading } from "@/components/ui";
 import { type Currency, convertPrice } from "@/lib/fx";
 import { pageMetadata } from "@/lib/metadata";
@@ -47,7 +48,13 @@ const reasons = [
   },
   {
     title: "Easy afternoon trips",
-    text: "Sitges, Tarragona and Vilanova i la Geltrú are all short train rides along the coast.",
+    text: (
+      <>
+        <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
+        <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
+        <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are all short train rides along the coast.
+      </>
+    ),
   },
 ];
 
@@ -206,7 +213,11 @@ export async function LocalDink({ currency }: { currency: Currency }) {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Afternoon trip ideas: Sitges, Tarragona and Vilanova i la Geltrú are short train rides along the coast.</p>
+            <p className="text-sm text-stone">
+              Afternoon trip ideas: <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
+              <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
+              <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are short train rides along the coast.
+            </p>
           </div>
         </Container>
       </section>

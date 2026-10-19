@@ -11,6 +11,7 @@ import {
   PageHero,
   PricingSection,
 } from "@/components/sections";
+import { TownLink } from "@/components/TownLink";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 import { localDinkNl } from "@/lib/retreats";
@@ -47,7 +48,13 @@ const reasons = [
   },
   {
     title: "Uitstapjes in de middag",
-    text: "Sitges, Tarragona en Vilanova i la Geltrú liggen allemaal op een kort treinritje langs de kust.",
+    text: (
+      <>
+        <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
+        <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
+        <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen allemaal op een kort treinritje langs de kust.
+      </>
+    ),
   },
 ];
 
@@ -208,7 +215,11 @@ export default function PickleballVakantiePage() {
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lg"
             />
-            <p className="text-sm text-stone">Ideeën voor de middag: Sitges, Tarragona en Vilanova i la Geltrú liggen op een kort treinritje langs de kust.</p>
+            <p className="text-sm text-stone">
+              Ideeën voor de middag: <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
+              <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
+              <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen op een kort treinritje langs de kust.
+            </p>
           </div>
         </Container>
       </section>
