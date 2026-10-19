@@ -12,9 +12,9 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Séjours pickleball à Barcelone | Vacances pickleball | Dink Abroad",
+  title: "Stages de pickleball à Barcelone, Espagne | Dink Abroad",
   description:
-    "Séjours et vacances de pickleball sur la côte de Barcelone. Coaching, tournois et hôtel 4★ en bord de mer à Coma-ruga, à une heure de Barcelone en train. 16 joueurs max.",
+    "Stages et vacances de pickleball sur la côte de Barcelone, en Espagne. 16 joueurs max, coaching, tournoi et hôtel 4★ en bord de mer à Coma-ruga.",
   path: "/fr",
   absoluteTitle: true,
   siteLang: "fr",

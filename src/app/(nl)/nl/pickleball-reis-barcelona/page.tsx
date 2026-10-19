@@ -18,9 +18,10 @@ import { longHaulLobNl } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Pickleballreis Barcelona: 9 dagen pickleball en cultuur",
+  title: "Pickleballreis Barcelona: 9 dagen Spanje vanaf € 2.999",
+  absoluteTitle: true,
   description:
-    "Een 9-daagse pickleballreis naar Barcelona: eerst pickleball aan zee, daarna het Barcelona van Gaudí, Montserrat, de cavastreek en een concert in het Palau de la Música Catalana, met optionele excursies naar Tarragona en Sitges. Vanaf € 2.999.",
+    "Vanaf € 2.999: een 9-daagse pickleballreis naar Spanje. Training en een toernooi aan zee, daarna Gaudí, Montserrat en een concert in het Palau de la Música.",
   path: longHaulLobNl.href,
   siteLang: "nl",
 });

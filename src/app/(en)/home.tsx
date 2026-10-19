@@ -13,9 +13,9 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const homeMetadata = pageMetadata({
-  title: "Pickleball Retreats Barcelona | Pickleball Holidays & Vacations | Dink Abroad",
+  title: "Pickleball Holiday & Camps in Barcelona, Spain | Dink Abroad",
   description:
-    "Pickleball retreats and holidays on the Barcelona coast. Coaching, tournaments and a beachfront 4★ hotel in Coma-ruga, one hour by train from Barcelona. Max 16 players.",
+    "Pickleball holidays, camps and retreats on the Barcelona coast in Spain. Max 16 players, morning coaching, a tournament and a beachfront 4★ hotel.",
   path: "/",
   absoluteTitle: true,
 });

@@ -19,9 +19,10 @@ import { longHaulLob } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const vacationMetadata = pageMetadata({
-  title: "Barcelona Pickleball Vacation: 9-Day Pickleball Trip from the USA",
+  title: "Barcelona Pickleball Vacation in Spain: 9 Days from €2,999",
+  absoluteTitle: true,
   description:
-    "A 9-day Barcelona pickleball vacation for American players: pickleball by the sea, then Gaudí's Barcelona, Montserrat, cava country and a concert at the Palau de la Música Catalana, with optional tours to Tarragona and Sitges. From €2,999.",
+    "From €2,999: a 9-day pickleball vacation in Spain for US players. Coaching and a tournament by the sea, then Gaudí, Montserrat and the Palau de la Música.",
   path: longHaulLob.href,
   locale: "en_US",
 });

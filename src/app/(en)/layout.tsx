@@ -7,7 +7,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Pickleball Retreats Barcelona | Pickleball Holidays & Vacations | Dink Abroad",
+    default: "Pickleball Holiday & Camps in Barcelona, Spain | Dink Abroad",
     template: "%s | Dink Abroad",
   },
   description: site.description,

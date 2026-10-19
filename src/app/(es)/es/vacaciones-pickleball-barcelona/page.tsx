@@ -19,9 +19,10 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Vacaciones de pickleball en Barcelona: retiro de 5 días desde 999 €",
+  title: "Vacaciones de pickleball en Barcelona: 5 días desde 999 €",
+  absoluteTitle: true,
   description:
-    "Vacaciones de pickleball de 5 días en la costa de Barcelona. Entrenamientos por la mañana, un torneo amistoso y hotel 4★ en primera línea con desayuno. Desde 999 € por persona.",
+    "Campus de pickleball de 5 días cerca de Barcelona: entrenamientos, torneo, hotel 4★ en primera línea y excursiones a Sitges y Tarragona. Desde 999 €.",
   path: localDinkEs.href,
   siteLang: "es",
 });

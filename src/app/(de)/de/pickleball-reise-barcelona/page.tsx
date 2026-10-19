@@ -18,9 +18,10 @@ import { longHaulLobDe } from "@/lib/retreats";
 import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Pickleball-Reise Barcelona: 9 Tage Pickleball und Kultur",
+  title: "Pickleball-Reise Barcelona: 9 Tage Spanien ab 2.999 €",
+  absoluteTitle: true,
   description:
-    "Eine 9-tägige Pickleball-Reise nach Barcelona: Pickleball am Meer, danach Gaudís Barcelona, Montserrat, die Cava-Region und ein Konzert im Palau de la Música Catalana, mit optionalen Ausflügen nach Tarragona und Sitges. Ab 2.999 €.",
+    "Ab 2.999 €: 9 Tage Pickleball-Reise nach Spanien. Training und Turnier am Meer, danach Gaudí, Montserrat und ein Konzert im Palau de la Música Catalana.",
   path: longHaulLobDe.href,
   siteLang: "de",
 });

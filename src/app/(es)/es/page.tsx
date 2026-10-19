@@ -12,9 +12,9 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Retiros de pickleball en Barcelona | Vacaciones de pickleball | Dink Abroad",
+  title: "Vacaciones de pickleball en Barcelona, España | Dink Abroad",
   description:
-    "Retiros y vacaciones de pickleball en la costa de Barcelona. Entrenamientos, torneos y un hotel 4★ en primera línea en Coma-ruga, a una hora de Barcelona en tren. Máx. 16 jugadores.",
+    "Retiros, campus y vacaciones de pickleball en la costa de Barcelona. Máx. 16 jugadores, entrenamientos, torneo y hotel 4★ en primera línea de playa.",
   path: "/es",
   absoluteTitle: true,
   siteLang: "es",

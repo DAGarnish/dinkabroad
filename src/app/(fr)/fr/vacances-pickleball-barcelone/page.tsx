@@ -19,9 +19,10 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Vacances pickleball à Barcelone : séjour de 5 jours dès 999 €",
+  title: "Stage de pickleball à Barcelone : 5 jours dès 999 €",
+  absoluteTitle: true,
   description:
-    "Des vacances de pickleball de 5 jours sur la côte de Barcelone : coaching le matin, tournoi amical et hôtel 4★ en bord de mer avec petit-déjeuner. À partir de 999 € par personne.",
+    "Stage de pickleball de 5 jours près de Barcelone : coaching le matin, tournoi, hôtel 4★ en bord de mer et excursions à Sitges et Tarragone. Dès 999 €.",
   path: localDinkFr.href,
   siteLang: "fr",
 });
