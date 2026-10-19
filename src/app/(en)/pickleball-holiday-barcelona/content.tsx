@@ -67,28 +67,28 @@ const reasons = [
 const days = [
   {
     label: "Day 1 · Friday",
-    title: "Arrival",
-    text: "Make your way to Coma-ruga, about an hour along the coast by train from Barcelona. Check in, cool off in the infinity pool and meet the group.",
+    title: "Arrival & first session",
+    text: "Make your way to Coma-ruga, about an hour along the coast by train from Barcelona. Check in, head onto court for your first 90-minute coaching session, then cool off in the infinity pool and meet the group.",
   },
   {
     label: "Day 2 · Saturday",
-    title: "Coaching & free play",
-    text: "Your first 90-minute coaching session, followed by open play. The afternoon is yours: the beach or a short train ride to Sitges.",
+    title: "Coaching & open play",
+    text: "Your second 90-minute coaching session, followed by open play. The afternoon is yours: the beach or a short train ride to Sitges.",
   },
   {
     label: "Day 3 · Sunday",
     title: "Put it into practice",
-    text: "Morning coaching session number two, then plenty of match play against different opponents to lock in what you've learned. In the afternoon, Roman Tarragona is a short train ride away.",
+    text: "Coaching session number three, then plenty of match play against different opponents to lock in what you've learned. In the afternoon, Roman Tarragona is a short train ride away.",
   },
   {
     label: "Day 4 · Monday",
-    title: "Final session & tournament",
-    text: "Your third coaching session, then test your skills in a fun, competitive tournament with your fellow travellers and local players. Spend your last afternoon in Vilanova i la Geltrú or on the beach.",
+    title: "Tournament day",
+    text: "Test your skills in a fun, competitive tournament with your fellow travellers and local players. Spend your last afternoon in Vilanova i la Geltrú or on the beach.",
   },
   {
     label: "Day 5 · Tuesday",
-    title: "Hasta pronto",
-    text: "A final breakfast by the sea, goodbyes to new friends and the journey home.",
+    title: "Open play & hasta pronto",
+    text: "A final breakfast by the sea and optional open play before you head home. Goodbyes to new friends, and see you on court again soon.",
   },
 ];
 

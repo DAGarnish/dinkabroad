@@ -67,28 +67,28 @@ const reasons = [
 const days = [
   {
     label: "Jour 1 · Vendredi",
-    title: "Arrivée",
-    text: "Rejoignez Coma-ruga, à une heure de Barcelone en train le long de la côte. Installation, une baignade dans la piscine à débordement et rencontre avec le groupe.",
+    title: "Arrivée et première séance",
+    text: "Rejoignez Coma-ruga, à une heure de Barcelone en train le long de la côte. Installation, première séance de coaching de 90 minutes sur le terrain, puis une baignade dans la piscine à débordement et rencontre avec le groupe.",
   },
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous : la plage ou un court trajet en train jusqu’à Sitges.",
+    text: "Votre deuxième séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous : la plage ou un court trajet en train jusqu’à Sitges.",
   },
   {
     label: "Jour 3 · Dimanche",
     title: "Place à la pratique",
-    text: "Deuxième séance de coaching le matin, puis de nombreux matchs contre différents adversaires pour ancrer ce que vous avez appris. L’après-midi, Tarragone la romaine est à un court trajet en train.",
+    text: "Troisième séance de coaching, puis de nombreux matchs contre différents adversaires pour ancrer ce que vous avez appris. L’après-midi, Tarragone la romaine est à un court trajet en train.",
   },
   {
     label: "Jour 4 · Lundi",
-    title: "Dernière séance et tournoi",
-    text: "Votre troisième séance de coaching, puis mettez vos progrès à l’épreuve lors d’un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. Passez le dernier après-midi à Vilanova i la Geltrú ou à la plage.",
+    title: "Jour de tournoi",
+    text: "Mettez vos progrès à l’épreuve lors d’un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. Passez le dernier après-midi à Vilanova i la Geltrú ou à la plage.",
   },
   {
     label: "Jour 5 · Mardi",
-    title: "Hasta pronto",
-    text: "Un dernier petit-déjeuner face à la mer, des au revoir à vos nouveaux amis et le retour à la maison.",
+    title: "Jeu libre et hasta pronto",
+    text: "Un dernier petit-déjeuner face à la mer et du jeu libre en option avant le retour à la maison. Au revoir à vos nouveaux amis, et à bientôt sur le terrain.",
   },
 ];
 

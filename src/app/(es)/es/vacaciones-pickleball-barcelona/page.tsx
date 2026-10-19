@@ -67,28 +67,28 @@ const reasons = [
 const days = [
   {
     label: "Día 1 · Viernes",
-    title: "Llegada",
-    text: "Llega a Coma-ruga, a una hora de Barcelona en tren por la costa. Te instalas, te das un baño en la piscina infinita y conoces al grupo.",
+    title: "Llegada y primera sesión",
+    text: "Llega a Coma-ruga, a una hora de Barcelona en tren por la costa. Te instalas, sales a la pista para tu primera sesión de entrenamiento de 90 minutos y después te das un baño en la piscina infinita y conoces al grupo.",
   },
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa o un corto trayecto en tren hasta Sitges.",
+    text: "Tu segunda sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa o un corto trayecto en tren hasta Sitges.",
   },
   {
     label: "Día 3 · Domingo",
     title: "A la práctica",
-    text: "Segunda sesión de entrenamiento por la mañana y después muchos partidos contra rivales distintos para afianzar lo aprendido. Por la tarde, la Tarragona romana está a un corto trayecto en tren.",
+    text: "Tercera sesión de entrenamiento y después muchos partidos contra rivales distintos para afianzar lo aprendido. Por la tarde, la Tarragona romana está a un corto trayecto en tren.",
   },
   {
     label: "Día 4 · Lunes",
-    title: "Última sesión y torneo",
-    text: "Tu tercera sesión de entrenamiento y después pon a prueba lo aprendido en un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Pasa la última tarde en Vilanova i la Geltrú o en la playa.",
+    title: "Día de torneo",
+    text: "Pon a prueba lo aprendido en un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Pasa la última tarde en Vilanova i la Geltrú o en la playa.",
   },
   {
     label: "Día 5 · Martes",
-    title: "Hasta pronto",
-    text: "Último desayuno frente al mar, despedida de tus nuevos amigos y vuelta a casa.",
+    title: "Juego libre y hasta pronto",
+    text: "Último desayuno frente al mar y juego libre opcional antes de volver a casa. Despedida de tus nuevos amigos, y nos vemos pronto en la pista.",
   },
 ];
 

@@ -29,27 +29,27 @@ const days = [
   {
     label: "Día 1 · Viernes",
     title: "¡Bienvenidos!",
-    text: "Traslado privado desde el aeropuerto de Barcelona-El Prat a nuestro hotel en primera línea de Coma-ruga. Te instalas, te refrescas en la piscina infinita y te unes al grupo para la recepción de bienvenida.",
+    text: "Traslado privado desde el aeropuerto de Barcelona-El Prat a nuestro hotel en primera línea de Coma-ruga. Te instalas y sales a la pista para tu primera sesión de entrenamiento de 90 minutos; después te unes al grupo para la recepción de bienvenida.",
   },
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. El pickleball es siempre por la mañana, así que la tarde es tuya: la playa, la piscina o nuestra excursión opcional a Sitges.",
+    text: "Tu segunda sesión de entrenamiento de 90 minutos, seguida de juego libre. La tarde es tuya: la playa, la piscina o nuestra excursión opcional a Sitges.",
   },
   {
     label: "Día 3 · Domingo",
     title: "Entrenamiento y excursión opcional a Tarragona",
-    text: "Segunda sesión de entrenamiento y partidos contra rivales distintos. Por la tarde, apúntate a nuestra excursión guiada opcional a Tarragona, ciudad Patrimonio de la Humanidad cuyo anfiteatro romano mira directamente al Mediterráneo.",
+    text: "Tercera sesión de entrenamiento y partidos contra rivales distintos. Por la tarde, apúntate a nuestra excursión guiada opcional a Tarragona, ciudad Patrimonio de la Humanidad cuyo anfiteatro romano mira directamente al Mediterráneo.",
   },
   {
     label: "Día 4 · Lunes",
-    title: "Última sesión y torneo",
-    text: "Tu tercera sesión de entrenamiento y después un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Por la tarde, relájate en la playa o apúntate a nuestra excursión opcional a Vilanova i la Geltrú.",
+    title: "Día de torneo",
+    text: "Un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Por la tarde, relájate en la playa o apúntate a nuestra excursión opcional a Vilanova i la Geltrú.",
   },
   {
     label: "Día 5 · Martes",
     title: "Costa arriba hasta Barcelona",
-    text: "Nuestro autocar privado pone rumbo a Barcelona con parada en el Penedès para visitar los viñedos y hacer una cata de vinos y cava en una bodega boutique. Después, te instalas en nuestro hotel 4★ de Barcelona, tu base para el resto del viaje.",
+    text: "Juego libre opcional por la mañana antes de dejar la costa. Después, nuestro autocar privado pone rumbo a Barcelona con parada en el Penedès para visitar los viñedos y hacer una cata de vinos y cava en una bodega boutique. Después, te instalas en nuestro hotel 4★ de Barcelona, tu base para el resto del viaje.",
   },
   {
     label: "Día 6 · Miércoles",

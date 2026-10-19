@@ -29,27 +29,27 @@ const days = [
   {
     label: "Tag 1 · Freitag",
     title: "¡Bienvenidos!",
-    text: "Privattransfer vom Flughafen Barcelona-El Prat zu unserem Strandhotel in Coma-ruga. Ankommen, im Infinity-Pool abkühlen und dann zum Willkommensempfang mit der Gruppe.",
+    text: "Privattransfer vom Flughafen Barcelona-El Prat zu unserem Strandhotel in Coma-ruga. Einchecken und auf den Court zur ersten 90-minütigen Trainingseinheit, dann zum Willkommensempfang mit der Gruppe.",
   },
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Pickleball findet immer am Vormittag statt, der Nachmittag gehört also Ihnen: Strand, Pool oder unser optionaler Ausflug nach Sitges.",
+    text: "Ihre zweite 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand, Pool oder unser optionaler Ausflug nach Sitges.",
   },
   {
     label: "Tag 3 · Sonntag",
     title: "Training & optionaler Ausflug nach Tarragona",
-    text: "Die zweite Trainingseinheit und Matches gegen wechselnde Gegner. Am Nachmittag können Sie an unserer optionalen Führung durch Tarragona teilnehmen, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
+    text: "Die dritte Trainingseinheit und Matches gegen wechselnde Gegner. Am Nachmittag können Sie an unserer optionalen Führung durch Tarragona teilnehmen, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
   },
   {
     label: "Tag 4 · Montag",
-    title: "Letzte Einheit & Turnier",
-    text: "Ihre dritte Trainingseinheit, danach ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Am Nachmittag entspannen Sie am Strand oder kommen mit auf unseren optionalen Ausflug nach Vilanova i la Geltrú.",
+    title: "Turniertag",
+    text: "Ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Am Nachmittag entspannen Sie am Strand oder kommen mit auf unseren optionalen Ausflug nach Vilanova i la Geltrú.",
   },
   {
     label: "Tag 5 · Dienstag",
     title: "Die Küste hinauf nach Barcelona",
-    text: "Unser Privatbus fährt nach Barcelona, mit einem Halt im Penedès für eine Weinbergführung mit Wein- und Cava-Verkostung auf einem kleinen Weingut. Dann checken Sie in unserem 4★-Hotel in Barcelona ein, Ihrem Standort für den Rest der Reise.",
+    text: "Am Vormittag optionales freies Spiel, bevor wir die Küste verlassen. Dann fährt unser Privatbus nach Barcelona, mit einem Halt im Penedès für eine Weinbergführung mit Wein- und Cava-Verkostung auf einem kleinen Weingut. Dann checken Sie in unserem 4★-Hotel in Barcelona ein, Ihrem Standort für den Rest der Reise.",
   },
   {
     label: "Tag 6 · Mittwoch",

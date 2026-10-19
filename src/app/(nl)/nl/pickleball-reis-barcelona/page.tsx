@@ -29,27 +29,27 @@ const days = [
   {
     label: "Dag 1 · Vrijdag",
     title: "¡Bienvenidos!",
-    text: "Privétransfer van het vliegveld Barcelona-El Prat naar ons hotel aan het strand in Coma-ruga. Even landen, afkoelen in de infinity pool en dan door naar de welkomstborrel met de groep.",
+    text: "Privétransfer van het vliegveld Barcelona-El Prat naar ons hotel aan het strand in Coma-ruga. Inchecken en de baan op voor je eerste training van 90 minuten, daarna door naar de welkomstborrel met de groep.",
   },
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. Pickleball is altijd ’s ochtends, dus de middag is van jou: het strand, het zwembad of onze optionele excursie naar Sitges.",
+    text: "Je tweede training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand, het zwembad of onze optionele excursie naar Sitges.",
   },
   {
     label: "Dag 3 · Zondag",
     title: "Training & optionele excursie naar Tarragona",
-    text: "De tweede training en wedstrijden tegen steeds andere tegenstanders. ’s Middags kun je mee op onze optionele excursie met gids naar Tarragona, UNESCO-werelderfgoed, waar het Romeinse amfitheater uitkijkt over de Middellandse Zee.",
+    text: "De derde training en wedstrijden tegen steeds andere tegenstanders. ’s Middags kun je mee op onze optionele excursie met gids naar Tarragona, UNESCO-werelderfgoed, waar het Romeinse amfitheater uitkijkt over de Middellandse Zee.",
   },
   {
     label: "Dag 4 · Maandag",
-    title: "Laatste training & toernooi",
-    text: "Je derde training, daarna een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. ’s Middags relax je op het strand of ga je mee op onze optionele excursie naar Vilanova i la Geltrú.",
+    title: "Toernooidag",
+    text: "Een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. ’s Middags relax je op het strand of ga je mee op onze optionele excursie naar Vilanova i la Geltrú.",
   },
   {
     label: "Dag 5 · Dinsdag",
     title: "Langs de kust naar Barcelona",
-    text: "Onze privébus rijdt naar Barcelona, met een tussenstop in de Penedès voor een rondleiding door de wijngaarden en een wijn- en cavaproeverij bij een kleine wijnmakerij. Daarna check je in bij ons 4★-hotel in Barcelona, je uitvalsbasis voor de rest van de reis.",
+    text: "’s Ochtends optioneel vrij spel voordat we de kust verlaten. Daarna rijdt onze privébus naar Barcelona, met een tussenstop in de Penedès voor een rondleiding door de wijngaarden en een wijn- en cavaproeverij bij een kleine wijnmakerij. Daarna check je in bij ons 4★-hotel in Barcelona, je uitvalsbasis voor de rest van de reis.",
   },
   {
     label: "Dag 6 · Woensdag",

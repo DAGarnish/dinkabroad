@@ -30,27 +30,27 @@ const days = [
   {
     label: "Day 1 · Friday",
     title: "¡Bienvenidos!",
-    text: "Private transfer from Barcelona–El Prat airport to our beachfront hotel in Coma-ruga. Settle in, cool off in the infinity pool, then join the group for a warm “Bienvenidos” welcome reception.",
+    text: "Private transfer from Barcelona–El Prat airport to our beachfront hotel in Coma-ruga. Check in and head onto court for your first 90-minute coaching session, then join the group for a warm “Bienvenidos” welcome reception.",
   },
   {
     label: "Day 2 · Saturday",
     title: "Coaching & open play",
-    text: "Your first 90-minute coaching session, followed by open play. Pickleball is always in the morning, so the afternoon is yours: the beach, the pool or our optional tour to Sitges.",
+    text: "Your second 90-minute coaching session, followed by open play. The afternoon is yours: the beach, the pool or our optional tour to Sitges.",
   },
   {
     label: "Day 3 · Sunday",
     title: "Coaching & optional Tarragona tour",
-    text: "Coaching session number two and match play against different opponents. In the afternoon, join our optional guided tour of Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
+    text: "Coaching session number three and match play against different opponents. In the afternoon, join our optional guided tour of Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
   },
   {
     label: "Day 4 · Monday",
-    title: "Final session & tournament",
-    text: "Your third coaching session, then a fun, competitive tournament with your fellow travelers and local players. In the afternoon, relax on the beach or join our optional tour to Vilanova i la Geltrú.",
+    title: "Tournament day",
+    text: "A fun, competitive tournament with your fellow travelers and local players. In the afternoon, relax on the beach or join our optional tour to Vilanova i la Geltrú.",
   },
   {
     label: "Day 5 · Tuesday",
     title: "Up the coast to Barcelona",
-    text: "Our private coach heads for Barcelona, stopping in the Penedès for a guided vineyard visit and a wine and cava tasting at a boutique estate. Then check in to our 4★ hotel in Barcelona, your base for the rest of the trip.",
+    text: "Optional open play in the morning before we leave the coast. Then our private coach heads for Barcelona, stopping in the Penedès for a guided vineyard visit and a wine and cava tasting at a boutique estate. Then check in to our 4★ hotel in Barcelona, your base for the rest of the trip.",
   },
   {
     label: "Day 6 · Wednesday",

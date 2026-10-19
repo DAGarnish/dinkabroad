@@ -67,28 +67,28 @@ const reasons = [
 const days = [
   {
     label: "Dag 1 · Vrijdag",
-    title: "Aankomst",
-    text: "Reis naar Coma-ruga, een uur met de trein langs de kust vanaf Barcelona. Inchecken, afkoelen in de infinity pool en kennismaken met de groep.",
+    title: "Aankomst & eerste training",
+    text: "Reis naar Coma-ruga, een uur met de trein langs de kust vanaf Barcelona. Inchecken, de baan op voor je eerste training van 90 minuten, daarna afkoelen in de infinity pool en kennismaken met de groep.",
   },
   {
     label: "Dag 2 · Zaterdag",
     title: "Training & vrij spel",
-    text: "Je eerste training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand of een kort treinritje naar Sitges.",
+    text: "Je tweede training van 90 minuten, gevolgd door vrij spel. De middag is van jou: het strand of een kort treinritje naar Sitges.",
   },
   {
     label: "Dag 3 · Zondag",
     title: "In de praktijk",
-    text: "De tweede training in de ochtend, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten. ’s Middags ligt het Romeinse Tarragona op een kort treinritje.",
+    text: "De derde training, daarna volop wedstrijden tegen steeds andere tegenstanders om het geleerde vast te zetten. ’s Middags ligt het Romeinse Tarragona op een kort treinritje.",
   },
   {
     label: "Dag 4 · Maandag",
-    title: "Laatste training & toernooi",
-    text: "Je derde training, daarna laat je zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. Je laatste middag breng je door in Vilanova i la Geltrú of op het strand.",
+    title: "Toernooidag",
+    text: "Laat zien wat je kunt in een gezellig maar fanatiek toernooi met medereizigers en spelers uit de buurt. Je laatste middag breng je door in Vilanova i la Geltrú of op het strand.",
   },
   {
     label: "Dag 5 · Dinsdag",
-    title: "Hasta pronto",
-    text: "Een laatste ontbijt aan zee, afscheid van nieuwe vrienden en de reis naar huis.",
+    title: "Vrij spel & hasta pronto",
+    text: "Een laatste ontbijt aan zee en optioneel vrij spel voordat je naar huis gaat. Afscheid van nieuwe vrienden, en tot snel op de baan.",
   },
 ];
 

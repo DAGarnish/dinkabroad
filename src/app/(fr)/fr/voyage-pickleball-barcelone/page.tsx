@@ -29,27 +29,27 @@ const days = [
   {
     label: "Jour 1 · Vendredi",
     title: "¡Bienvenidos!",
-    text: "Transfert privé de l’aéroport de Barcelone-El Prat à notre hôtel en bord de mer à Coma-ruga. Installation, une baignade dans la piscine à débordement, puis réception de bienvenue avec le groupe.",
+    text: "Transfert privé de l’aéroport de Barcelone-El Prat à notre hôtel en bord de mer à Coma-ruga. Installation et première séance de coaching de 90 minutes sur le terrain, puis réception de bienvenue avec le groupe.",
   },
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. Le pickleball a toujours lieu le matin : l’après-midi est à vous, entre la plage, la piscine ou notre excursion en option à Sitges.",
+    text: "Votre deuxième séance de coaching de 90 minutes, puis jeu libre. L’après-midi est à vous, entre la plage, la piscine ou notre excursion en option à Sitges.",
   },
   {
     label: "Jour 3 · Dimanche",
     title: "Coaching et excursion en option à Tarragone",
-    text: "Deuxième séance de coaching et matchs contre différents adversaires. L’après-midi, rejoignez notre visite guidée en option de Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
+    text: "Troisième séance de coaching et matchs contre différents adversaires. L’après-midi, rejoignez notre visite guidée en option de Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
   },
   {
     label: "Jour 4 · Lundi",
-    title: "Dernière séance et tournoi",
-    text: "Votre troisième séance de coaching, puis un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. L’après-midi, détendez-vous à la plage ou rejoignez notre excursion en option à Vilanova i la Geltrú.",
+    title: "Jour de tournoi",
+    text: "Un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. L’après-midi, détendez-vous à la plage ou rejoignez notre excursion en option à Vilanova i la Geltrú.",
   },
   {
     label: "Jour 5 · Mardi",
     title: "Cap sur Barcelone",
-    text: "Notre autocar privé remonte la côte vers Barcelone, avec une halte dans le Penedès pour une visite guidée des vignes et une dégustation de vins et de cava dans un domaine de charme. Installation dans notre hôtel 4★ à Barcelone, votre base pour la suite du voyage.",
+    text: "Jeu libre en option le matin avant de quitter la côte. Puis notre autocar privé remonte la côte vers Barcelone, avec une halte dans le Penedès pour une visite guidée des vignes et une dégustation de vins et de cava dans un domaine de charme. Installation dans notre hôtel 4★ à Barcelone, votre base pour la suite du voyage.",
   },
   {
     label: "Jour 6 · Mercredi",

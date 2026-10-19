@@ -67,28 +67,28 @@ const reasons = [
 const days = [
   {
     label: "Tag 1 · Freitag",
-    title: "Ankunft",
-    text: "Reisen Sie nach Coma-ruga, eine Stunde mit dem Zug die Küste entlang von Barcelona. Einchecken, im Infinity-Pool abkühlen und die Gruppe kennenlernen.",
+    title: "Ankunft & erste Einheit",
+    text: "Reisen Sie nach Coma-ruga, eine Stunde mit dem Zug die Küste entlang von Barcelona. Einchecken, auf den Court zur ersten 90-minütigen Trainingseinheit, dann im Infinity-Pool abkühlen und die Gruppe kennenlernen.",
   },
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand oder eine kurze Zugfahrt nach Sitges.",
+    text: "Ihre zweite 90-minütige Trainingseinheit, danach freies Spiel. Der Nachmittag gehört Ihnen: Strand oder eine kurze Zugfahrt nach Sitges.",
   },
   {
     label: "Tag 3 · Sonntag",
     title: "Ab in die Praxis",
-    text: "Die zweite Trainingseinheit am Vormittag, danach viele Matches gegen wechselnde Gegner, um das Gelernte zu festigen. Am Nachmittag ist das römische Tarragona nur eine kurze Zugfahrt entfernt.",
+    text: "Die dritte Trainingseinheit, danach viele Matches gegen wechselnde Gegner, um das Gelernte zu festigen. Am Nachmittag ist das römische Tarragona nur eine kurze Zugfahrt entfernt.",
   },
   {
     label: "Tag 4 · Montag",
-    title: "Letzte Einheit & Turnier",
-    text: "Ihre dritte Trainingseinheit, danach stellen Sie Ihr Können in einem lockeren, aber umkämpften Turnier mit Mitreisenden und Spielern aus der Region unter Beweis. Den letzten Nachmittag verbringen Sie in Vilanova i la Geltrú oder am Strand.",
+    title: "Turniertag",
+    text: "Stellen Sie Ihr Können in einem lockeren, aber umkämpften Turnier mit Mitreisenden und Spielern aus der Region unter Beweis. Den letzten Nachmittag verbringen Sie in Vilanova i la Geltrú oder am Strand.",
   },
   {
     label: "Tag 5 · Dienstag",
-    title: "Hasta pronto",
-    text: "Ein letztes Frühstück am Meer, Abschied von neuen Freunden und Heimreise.",
+    title: "Freies Spiel & hasta pronto",
+    text: "Ein letztes Frühstück am Meer und optionales freies Spiel vor der Heimreise. Abschied von neuen Freunden, bis bald wieder auf dem Court.",
   },
 ];
 
