@@ -56,7 +56,7 @@ export const localDink: Retreat = {
     "Max 16 players",
     "2 × 90-minute coaching sessions",
     "Fun tournament with the locals",
-    "Beachfront 4★ hotel",
+    "Luxurious beachfront 4★ hotel",
     "3 hosted afternoon outings",
   ],
 };
@@ -127,7 +127,7 @@ export const localDinkEs: Retreat = {
     "Máx. 16 jugadores",
     "2 sesiones de entrenamiento de 90 minutos",
     "Torneo amistoso con los locales",
-    "Hotel 4★ en primera línea",
+    "Hotel 4★ de lujo en primera línea",
     "3 salidas de tarde con anfitrión",
   ],
 };
@@ -193,7 +193,7 @@ export const localDinkFr: Retreat = {
     "16 joueurs max.",
     "2 séances de coaching de 90 min",
     "Tournoi amical avec les locaux",
-    "Hôtel 4★ en bord de mer",
+    "Hôtel 4★ de luxe en bord de mer",
     "3 sorties accompagnées l’après-midi",
   ],
 };
@@ -259,7 +259,7 @@ export const localDinkDe: Retreat = {
     "Max. 16 Spieler",
     "2 × 90 Minuten Training",
     "Lockeres Turnier mit Einheimischen",
-    "4★-Hotel direkt am Strand",
+    "Luxuriöses 4★-Hotel direkt am Strand",
     "3 begleitete Nachmittagsausflüge",
   ],
 };
@@ -325,7 +325,7 @@ export const localDinkNl: Retreat = {
     "Max. 16 spelers",
     "2 × 90 minuten training",
     "Gezellig toernooi met de locals",
-    "4★-hotel aan het strand",
+    "Luxe 4★-hotel aan het strand",
     "3 middaguitstapjes met een host",
   ],
 };

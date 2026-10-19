@@ -37,7 +37,7 @@ const reasons = [
     text: "Un tournoi convivial mais disputé, face à vos compagnons de voyage et à des joueurs catalans. Les souvenirs (et la fierté) sont garantis.",
   },
   {
-    title: "Hôtel 4★ en bord de mer",
+    title: "Hôtel 4★ de luxe en bord de mer",
     text: (
       <>
         Quatre nuits à l’<ExternalLink href={hotel.url}>Estival Maramar</ExternalLink>
@@ -179,7 +179,7 @@ export default function VacancesPickleballPage() {
           </>
         }
         intro="Le long week-end pickleball idéal pour les joueurs de France et d’Europe. Du vendredi au mardi sur la Costa Daurada : des coachs diplômés, un tournoi face aux locaux et un hôtel 4★ en bord de mer. Vous n’avez plus qu’à jouer."
-        facts={["16 participants max.", "Hôtel 4★ en bord de mer", "Coaching en anglais et espagnol", "Le matin sur le terrain"]}
+        facts={["16 participants max.", "Hôtel 4★ de luxe en bord de mer", "Coaching en anglais et espagnol", "Le matin sur le terrain"]}
       />
 
       <section className="py-24 sm:py-32">

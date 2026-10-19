@@ -37,7 +37,7 @@ const reasons = [
     text: "A friendly but competitive tournament against your fellow travellers and local Catalan players. Bragging rights guaranteed.",
   },
   {
-    title: "Beachfront 4★ hotel",
+    title: "Luxurious beachfront 4★ hotel",
     text: (
       <>
         Four nights at the <ExternalLink href={hotel.url}>Estival Maramar</ExternalLink>
@@ -177,7 +177,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
           </>
         }
         intro="The ultimate pickleball long weekend for players from the UK and Europe. Friday to Tuesday on the Costa Daurada: certified coaches, a tournament with the locals and a beachfront 4★ hotel. All you do is play."
-        facts={["Max 16 participants", "Beachfront 4★ hotel", "Certified coaches", "Mornings on court"]}
+        facts={["Max 16 participants", "Luxurious beachfront 4★ hotel", "Certified coaches", "Mornings on court"]}
       />
 
       <section className="py-24 sm:py-32">

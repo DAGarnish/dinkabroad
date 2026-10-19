@@ -37,7 +37,7 @@ const reasons = [
     text: "Een vriendschappelijk maar fanatiek toernooi tegen je medereizigers en Catalaanse spelers. Verhalen voor je club thuis gegarandeerd.",
   },
   {
-    title: "4★-hotel aan het strand",
+    title: "Luxe 4★-hotel aan het strand",
     text: (
       <>
         Vier nachten in het <ExternalLink href={hotel.url}>Estival Maramar</ExternalLink>
@@ -179,7 +179,7 @@ export default function PickleballVakantiePage() {
           </>
         }
         intro="Het ultieme pickleballweekend voor spelers uit Nederland, België en de rest van Europa. Vrijdag tot dinsdag aan de Costa Daurada: gecertificeerde coaches, een toernooi tegen de locals en een 4★-hotel aan het strand. Jij hoeft alleen nog te spelen."
-        facts={["Max. 16 deelnemers", "4★-hotel aan het strand", "Training in het Engels & Spaans", "’s Ochtends op de baan"]}
+        facts={["Max. 16 deelnemers", "Luxe 4★-hotel aan het strand", "Training in het Engels & Spaans", "’s Ochtends op de baan"]}
       />
 
       <section className="py-24 sm:py-32">
