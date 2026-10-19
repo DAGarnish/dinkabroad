@@ -58,7 +58,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
-        <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are all short train rides along the coast.
+        <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are all short train rides along the coast, easy to explore on your own.
       </>
     ),
   },
@@ -121,7 +121,7 @@ const faqsWith = (singlePrice: string): FaqItem[] => [
   {
     question: "What is and isn't included?",
     answer:
-      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 3 coaching sessions, a tournament and free play. Not included: flights, airport transfers, lunches, dinners, drinks, travel insurance and optional excursions.",
+      "Included: 4 nights' accommodation in a twin or single room, daily breakfast, 3 coaching sessions, a tournament and free play. Not included: flights, airport transfers, lunches, dinners, drinks and travel insurance.",
   },
   {
     question: "How and when do I pay?",
@@ -222,7 +222,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
             <p className="text-sm text-stone">
               Afternoon trip ideas: <TownLink town="sitges" lang="en-GB">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="en-GB">Tarragona</TownLink> and{" "}
-              <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are short train rides along the coast.
+              <TownLink town="vilanova" lang="en-GB">Vilanova i la Geltrú</TownLink> are short train rides along the coast, easy to visit on your own.
             </p>
           </div>
         </Container>
@@ -233,7 +233,7 @@ export async function LocalDink({ currency }: { currency: Currency }) {
         lang="en-GB"
         currency={currency}
         included={included}
-        notIncluded="flights, airport transfers, lunches, dinners, drinks, travel insurance and optional excursions."
+        notIncluded="flights, airport transfers, lunches, dinners, drinks and travel insurance."
         terms={[
           "Prices are set in euros (EUR). Pound and dollar amounts are converted at the latest exchange rate, so they change with it.",
           "Limited to 16 players per retreat.",

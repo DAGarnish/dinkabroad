@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Pickleball-Reise Barcelona: 9 Tage Pickleball und Kultur",
   description:
-    "Eine 9-tägige Pickleball-Reise nach Barcelona: Pickleball am Meer, danach Gaudís Barcelona, Montserrat, Tarragona, die Cava-Region und Flamenco. Ab 3.500 €.",
+    "Eine 9-tägige Pickleball-Reise nach Barcelona: Pickleball am Meer, danach Gaudís Barcelona, Montserrat, die Cava-Region und Flamenco, mit optionalen Ausflügen nach Tarragona und Sitges. Ab 3.500 €.",
   path: longHaulLobDe.href,
   siteLang: "de",
 });
@@ -34,17 +34,17 @@ const days = [
   {
     label: "Tag 2 · Samstag",
     title: "Training & freies Spiel",
-    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Pickleball findet immer am Vormittag statt, der Nachmittag gehört also Ihnen: Strand, Pool oder eine kurze Zugfahrt nach Sitges.",
+    text: "Ihre erste 90-minütige Trainingseinheit, danach freies Spiel. Pickleball findet immer am Vormittag statt, der Nachmittag gehört also Ihnen: Strand, Pool oder unser optionaler Ausflug nach Sitges.",
   },
   {
     label: "Tag 3 · Sonntag",
-    title: "Pickleball & das römische Tarragona",
-    text: "Die zweite Trainingseinheit und Matches gegen wechselnde Gegner, danach ein geführter Nachmittag in Tarragona, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
+    title: "Training & optionaler Ausflug nach Tarragona",
+    text: "Die zweite Trainingseinheit und Matches gegen wechselnde Gegner. Am Nachmittag können Sie an unserer optionalen Führung durch Tarragona teilnehmen, UNESCO-Weltkulturerbe, dessen römisches Amphitheater direkt aufs Mittelmeer blickt.",
   },
   {
     label: "Tag 4 · Montag",
     title: "Letzte Einheit & Turnier",
-    text: "Ihre dritte Trainingseinheit, danach ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Genießen Sie einen letzten Nachmittag am Strand, bevor wir die Küste verlassen.",
+    text: "Ihre dritte Trainingseinheit, danach ein lockeres, aber umkämpftes Turnier mit Mitreisenden und Spielern aus der Region. Am Nachmittag entspannen Sie am Strand oder kommen mit auf unseren optionalen Ausflug nach Vilanova i la Geltrú.",
   },
   {
     label: "Tag 5 · Dienstag",
@@ -82,7 +82,6 @@ const included = [
   "Frühstücksbuffet jeden Morgen",
   "4 sorgfältig ausgewählte Gruppenessen",
   "Privater Luxusreisebus für die Ausflüge und die Fahrt nach Barcelona",
-  "Führung durch das römische Tarragona",
   "Wein- und Cava-Verkostung im Penedès",
   "Führungen durch die Sagrada Família und den Park Güell",
   "Ausflug zum Kloster Montserrat",
@@ -140,7 +139,7 @@ export default function PickleballReisePage() {
           "@graph": [
             tripSchema(longHaulLobDe, {
               description:
-                "Eine 9-tägige Pickleball-Reise durch Katalonien: Training und ein Turnier an der Küste von Barcelona, danach vier Nächte in Barcelona mit Führungen zur Sagrada Família, zum Park Güell, nach Montserrat, Tarragona und ins Penedès. Reise auf Englisch und Spanisch.",
+                "Eine 9-tägige Pickleball-Reise durch Katalonien: Training und ein Turnier an der Küste von Barcelona, danach vier Nächte in Barcelona mit Führungen zur Sagrada Família, zum Park Güell, nach Montserrat und ins Penedès. Reise auf Englisch und Spanisch.",
               touristType: "Pickleball-Spieler mit weiter Anreise oder mehr Zeit",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -163,8 +162,8 @@ export default function PickleballReisePage() {
             Die ultimative Pickleball-Reise nach <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Neun unvergessliche Tage in Katalonien. Zuerst Pickleball am Meer an der Costa Daurada, dann die Küste hinauf nach Barcelona für Gaudís Meisterwerke, Montserrat und einen Flamenco-Abend, mit dem römischen Tarragona und der Cava-Region unterwegs."
-        facts={["3 Trainingseinheiten + Turnier", "4 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
+        intro="Neun unvergessliche Tage in Katalonien. Zuerst Pickleball am Meer an der Costa Daurada, dann die Küste hinauf nach Barcelona für Gaudís Meisterwerke, Montserrat und einen Flamenco-Abend, mit einer Cava-Verkostung unterwegs."
+        facts={["3 Trainingseinheiten + Turnier", "3 geführte Ausflüge", "Reise auf Englisch & Spanisch", "4 Nächte Strand + 4 Nächte Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -180,9 +179,9 @@ export default function PickleballReisePage() {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Römisches Amphitheater von Tarragona am Mittelmeer", name: "Tarragona", text: "Römische Ruinen am Meer" },
+              { img: tarragona, alt: "Römisches Amphitheater von Tarragona am Mittelmeer", name: "Tarragona", text: "Optionaler Ausflug: römische Ruinen am Meer" },
               { img: penedes, alt: "Hügelige Weinberge in der Weinregion Penedès", name: "Penedès", text: "Wein- & Cava-Verkostung" },
-              { img: sitges, alt: "Strand und Kirche von Sitges an einem sonnigen Tag", name: "Sitges", text: "Der Küstenort der Künstler" },
+              { img: sitges, alt: "Strand und Kirche von Sitges an einem sonnigen Tag", name: "Sitges", text: "Optionaler Ausflug: der Küstenort der Künstler" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -222,7 +221,7 @@ export default function PickleballReisePage() {
         retreat={longHaulLobDe}
         lang="de"
         included={included}
-        notIncluded="Flüge, Trinkgelder, persönliche Ausgaben und Mahlzeiten außer dem täglichen Frühstück und den 4 inklusiven Gruppenessen."
+        notIncluded="Flüge, optionale Ausflüge nach Sitges, Tarragona und Vilanova i la Geltrú, Trinkgelder, persönliche Ausgaben und Mahlzeiten außer dem täglichen Frühstück und den 4 inklusiven Gruppenessen."
         terms={[
           "Anzahlung: 20 % sichern Ihren Platz und werden auf den Reisepreis angerechnet.",
           "Restzahlung: fällig 60 Tage vor Reisebeginn.",

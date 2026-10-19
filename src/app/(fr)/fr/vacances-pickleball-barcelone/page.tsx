@@ -58,7 +58,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="fr">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="fr">Tarragone</TownLink> et{" "}
-        <TownLink town="vilanova" lang="fr">Vilanova i la Geltrú</TownLink> sont à quelques minutes de train le long de la côte.
+        <TownLink town="vilanova" lang="fr">Vilanova i la Geltrú</TownLink> sont à quelques minutes de train le long de la côte, faciles à découvrir par vous-même.
       </>
     ),
   },
@@ -126,7 +126,7 @@ const faqs: FaqItem[] = [
   {
     question: "Qu’est-ce qui est inclus ou non ?",
     answer:
-      "Inclus : 4 nuits en chambre twin ou individuelle, petit-déjeuner tous les jours, 3 séances de coaching, un tournoi et le jeu libre. Non inclus : vols, transferts aéroport, déjeuners, dîners, boissons, assurance voyage et excursions optionnelles.",
+      "Inclus : 4 nuits en chambre twin ou individuelle, petit-déjeuner tous les jours, 3 séances de coaching, un tournoi et le jeu libre. Non inclus : vols, transferts aéroport, déjeuners, dîners, boissons et assurance voyage.",
   },
   {
     question: "Comment et quand payer ?",
@@ -224,7 +224,7 @@ export default function VacancesPickleballPage() {
             <p className="text-sm text-stone">
               Idées pour l’après-midi : <TownLink town="sitges" lang="fr">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="fr">Tarragone</TownLink> et{" "}
-              <TownLink town="vilanova" lang="fr">Vilanova i la Geltrú</TownLink> sont à un court trajet en train le long de la côte.
+              <TownLink town="vilanova" lang="fr">Vilanova i la Geltrú</TownLink> sont à un court trajet en train le long de la côte, faciles à visiter par vous-même.
             </p>
           </div>
         </Container>
@@ -234,7 +234,7 @@ export default function VacancesPickleballPage() {
         retreat={localDinkFr}
         lang="fr"
         included={included}
-        notIncluded="vols, transferts aéroport, déjeuners, dîners, boissons, assurance voyage et excursions optionnelles."
+        notIncluded="vols, transferts aéroport, déjeuners, dîners, boissons et assurance voyage."
         terms={[
           "Tous les prix sont en euros (EUR). Les montants en livres et en dollars sont indicatifs, au dernier taux de change.",
           "Coaching en anglais et en espagnol.",

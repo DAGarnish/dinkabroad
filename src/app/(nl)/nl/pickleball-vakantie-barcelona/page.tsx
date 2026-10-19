@@ -58,7 +58,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
-        <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen allemaal op een kort treinritje langs de kust.
+        <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen allemaal op een kort treinritje langs de kust, makkelijk op eigen houtje te ontdekken.
       </>
     ),
   },
@@ -126,7 +126,7 @@ const faqs: FaqItem[] = [
   {
     question: "Wat is wel en niet inbegrepen?",
     answer:
-      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 3 trainingen, een toernooi en vrij spel. Niet inbegrepen: vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes, reisverzekering en optionele excursies.",
+      "Inbegrepen: 4 nachten in een twin- of eenpersoonskamer, elke dag ontbijt, 3 trainingen, een toernooi en vrij spel. Niet inbegrepen: vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes en reisverzekering.",
   },
   {
     question: "Hoe en wanneer betaal ik?",
@@ -224,7 +224,7 @@ export default function PickleballVakantiePage() {
             <p className="text-sm text-stone">
               Ideeën voor de middag: <TownLink town="sitges" lang="nl">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="nl">Tarragona</TownLink> en{" "}
-              <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen op een kort treinritje langs de kust.
+              <TownLink town="vilanova" lang="nl">Vilanova i la Geltrú</TownLink> liggen op een kort treinritje langs de kust, makkelijk op eigen houtje te bezoeken.
             </p>
           </div>
         </Container>
@@ -234,7 +234,7 @@ export default function PickleballVakantiePage() {
         retreat={localDinkNl}
         lang="nl"
         included={included}
-        notIncluded="vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes, reisverzekering en optionele excursies."
+        notIncluded="vluchten, transfers van en naar het vliegveld, lunches, diners, drankjes en reisverzekering."
         terms={[
           "Alle prijzen in euro (EUR). Bedragen in ponden en dollars zijn indicaties tegen de actuele wisselkoers.",
           "Training in het Engels en Spaans.",

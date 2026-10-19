@@ -70,7 +70,7 @@ export const longHaulLob: Retreat = {
   days: 9,
   nights: 8,
   summary:
-    "Our signature Barcelona pickleball vacation. Four nights of pickleball by the sea on the Golden Coast, then four nights in Barcelona for Gaudí, Montserrat and flamenco, with Roman Tarragona and cava country along the way.",
+    "Our signature Barcelona pickleball vacation. Four nights of pickleball by the sea on the Golden Coast, then four nights in Barcelona for Gaudí, Montserrat and flamenco, with a cava tasting along the way.",
   image: sagrada,
   imageAlt: "The spires of Gaudí's Sagrada Família in Barcelona at golden hour",
   prices: [
@@ -89,7 +89,7 @@ export const longHaulLob: Retreat = {
   ],
   highlights: [
     "3 coaching sessions + tournament",
-    "4 guided day trips",
+    "3 guided day trips",
     "Bilingual tour director",
     "Flamenco & farewell fiesta",
   ],
@@ -134,7 +134,7 @@ export const longHaulLobEs: Retreat = {
   audience: "Ideal para jugadores que vienen de más lejos",
   duration: "9 días · de viernes a sábado",
   summary:
-    "Nuestro viaje de pickleball estrella en Barcelona. Cuatro noches de pickleball junto al mar en la Costa Daurada y después cuatro noches en Barcelona para Gaudí, Montserrat y flamenco, con la Tarragona romana y la tierra del cava por el camino.",
+    "Nuestro viaje de pickleball estrella en Barcelona. Cuatro noches de pickleball junto al mar en la Costa Daurada y después cuatro noches en Barcelona para Gaudí, Montserrat y flamenco, con una cata de cava por el camino.",
   imageAlt: "Las torres de la Sagrada Família de Gaudí en Barcelona al atardecer",
   prices: [
     {
@@ -152,7 +152,7 @@ export const longHaulLobEs: Retreat = {
   ],
   highlights: [
     "3 entrenamientos + torneo",
-    "4 excursiones guiadas",
+    "3 excursiones guiadas",
     "Guía bilingüe",
     "Flamenco y fiesta de despedida",
   ],
@@ -197,7 +197,7 @@ export const longHaulLobFr: Retreat = {
   audience: "Idéal pour les joueurs venant de plus loin",
   duration: "9 jours · du vendredi au samedi",
   summary:
-    "Notre voyage pickleball phare à Barcelone. Quatre nuits de pickleball au bord de la mer sur la Costa Daurada, puis quatre nuits à Barcelone pour Gaudí, Montserrat et le flamenco, avec Tarragone la romaine et le pays du cava en chemin.",
+    "Notre voyage pickleball phare à Barcelone. Quatre nuits de pickleball au bord de la mer sur la Costa Daurada, puis quatre nuits à Barcelone pour Gaudí, Montserrat et le flamenco, avec une dégustation de cava en chemin.",
   imageAlt: "Les tours de la Sagrada Família de Gaudí à Barcelone au coucher du soleil",
   prices: [
     {
@@ -215,7 +215,7 @@ export const longHaulLobFr: Retreat = {
   ],
   highlights: [
     "3 séances de coaching + tournoi",
-    "4 excursions guidées",
+    "3 excursions guidées",
     "Accompagnateur bilingue",
     "Flamenco et fête d’adieu",
   ],
@@ -260,7 +260,7 @@ export const longHaulLobDe: Retreat = {
   audience: "Ideal für Spieler mit weiter Anreise",
   duration: "9 Tage · Freitag bis Samstag",
   summary:
-    "Unsere große Barcelona-Pickleball-Reise. Vier Nächte Pickleball am Meer an der Costa Daurada, dann vier Nächte in Barcelona für Gaudí, Montserrat und Flamenco, mit dem römischen Tarragona und der Cava-Region unterwegs.",
+    "Unsere große Barcelona-Pickleball-Reise. Vier Nächte Pickleball am Meer an der Costa Daurada, dann vier Nächte in Barcelona für Gaudí, Montserrat und Flamenco, mit einer Cava-Verkostung unterwegs.",
   imageAlt: "Die Türme von Gaudís Sagrada Família in Barcelona im Abendlicht",
   prices: [
     {
@@ -278,7 +278,7 @@ export const longHaulLobDe: Retreat = {
   ],
   highlights: [
     "3 Trainingseinheiten + Turnier",
-    "4 geführte Ausflüge",
+    "3 geführte Ausflüge",
     "Zweisprachige Reiseleitung",
     "Flamenco & Abschiedsfiesta",
   ],
@@ -323,7 +323,7 @@ export const longHaulLobNl: Retreat = {
   audience: "Ideaal voor spelers die van verder weg komen",
   duration: "9 dagen · vrijdag tot zaterdag",
   summary:
-    "Onze grote pickleballreis naar Barcelona. Vier nachten pickleball aan zee aan de Costa Daurada, daarna vier nachten in Barcelona voor Gaudí, Montserrat en flamenco, met het Romeinse Tarragona en de cavastreek onderweg.",
+    "Onze grote pickleballreis naar Barcelona. Vier nachten pickleball aan zee aan de Costa Daurada, daarna vier nachten in Barcelona voor Gaudí, Montserrat en flamenco, met onderweg een cavaproeverij.",
   imageAlt: "De torens van Gaudí’s Sagrada Família in Barcelona in het avondlicht",
   prices: [
     {
@@ -341,7 +341,7 @@ export const longHaulLobNl: Retreat = {
   ],
   highlights: [
     "3 trainingen + toernooi",
-    "4 begeleide excursies",
+    "3 begeleide excursies",
     "Tweetalige reisleiding",
     "Flamenco & afscheidsfeest",
   ],

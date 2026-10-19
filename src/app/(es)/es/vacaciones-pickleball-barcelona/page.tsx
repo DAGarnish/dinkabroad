@@ -58,7 +58,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="es">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="es">Tarragona</TownLink> y{" "}
-        <TownLink town="vilanova" lang="es">Vilanova i la Geltrú</TownLink> están a un corto trayecto en tren por la costa.
+        <TownLink town="vilanova" lang="es">Vilanova i la Geltrú</TownLink> están a un corto trayecto en tren por la costa, fáciles de visitar por tu cuenta.
       </>
     ),
   },
@@ -121,7 +121,7 @@ const faqs: FaqItem[] = [
   {
     question: "¿Qué incluye y qué no?",
     answer:
-      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 3 sesiones de entrenamiento, un torneo y juego libre. No incluye: vuelos, traslados al aeropuerto, comidas, cenas, bebidas, seguro de viaje ni excursiones opcionales.",
+      "Incluye: 4 noches de alojamiento en habitación twin o individual, desayuno diario, 3 sesiones de entrenamiento, un torneo y juego libre. No incluye: vuelos, traslados al aeropuerto, comidas, cenas, bebidas ni seguro de viaje.",
   },
   {
     question: "¿Cómo y cuándo se paga?",
@@ -219,7 +219,7 @@ export default function VacacionesPickleballPage() {
             <p className="text-sm text-stone">
               Ideas para la tarde: <TownLink town="sitges" lang="es">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="es">Tarragona</TownLink> y{" "}
-              <TownLink town="vilanova" lang="es">Vilanova i la Geltrú</TownLink> están a un corto trayecto en tren por la costa.
+              <TownLink town="vilanova" lang="es">Vilanova i la Geltrú</TownLink> están a un corto trayecto en tren por la costa, fáciles de visitar por tu cuenta.
             </p>
           </div>
         </Container>
@@ -229,7 +229,7 @@ export default function VacacionesPickleballPage() {
         retreat={localDinkEs}
         lang="es"
         included={included}
-        notIncluded="vuelos, traslados al aeropuerto, comidas, cenas, bebidas, seguro de viaje y excursiones opcionales."
+        notIncluded="vuelos, traslados al aeropuerto, comidas, cenas, bebidas y seguro de viaje."
         terms={[
           "Todos los precios están en euros (EUR). Los importes en libras y dólares son aproximados, al tipo de cambio más reciente.",
           "Máximo 16 jugadores por retiro.",

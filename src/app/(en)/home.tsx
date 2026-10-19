@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
   {
     question: "Which retreat is right for me?",
     answer:
-      "Local Dink is a 5-day pickleball holiday (Friday to Tuesday) built for players flying in from the UK and Europe. Long-Haul Lob is a 9-day pickleball vacation for travellers from the USA and Canada, with the same Friday-to-Tuesday pickleball by the sea, then four nights in Barcelona with guided visits to Gaudí's sights, Montserrat, Tarragona and the Penedès.",
+      "Local Dink is a 5-day pickleball holiday (Friday to Tuesday) built for players flying in from the UK and Europe. Long-Haul Lob is a 9-day pickleball vacation for travellers from the USA and Canada, with the same Friday-to-Tuesday pickleball by the sea, then four nights in Barcelona with guided visits to Gaudí's sights, Montserrat and the Penedès, plus optional tours to Tarragona, Sitges and Vilanova i la Geltrú.",
   },
   {
     question: "What level do I need to be?",

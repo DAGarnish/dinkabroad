@@ -21,7 +21,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const vacationMetadata = pageMetadata({
   title: "Barcelona Pickleball Vacation: 9-Day Pickleball Trip from the USA",
   description:
-    "A 9-day Barcelona pickleball vacation for American players: pickleball by the sea, then Gaudí's Barcelona, Montserrat, Tarragona, cava country and flamenco. From €3,500.",
+    "A 9-day Barcelona pickleball vacation for American players: pickleball by the sea, then Gaudí's Barcelona, Montserrat, cava country and flamenco, with optional tours to Tarragona and Sitges. From €3,500.",
   path: longHaulLob.href,
   locale: "en_US",
 });
@@ -35,17 +35,17 @@ const days = [
   {
     label: "Day 2 · Saturday",
     title: "Coaching & open play",
-    text: "Your first 90-minute coaching session, followed by open play. Pickleball is always in the morning, so the afternoon is yours: the beach, the pool or a short train ride to Sitges.",
+    text: "Your first 90-minute coaching session, followed by open play. Pickleball is always in the morning, so the afternoon is yours: the beach, the pool or our optional tour to Sitges.",
   },
   {
     label: "Day 3 · Sunday",
-    title: "Pickleball & Roman Tarragona",
-    text: "Coaching session number two and match play against different opponents, then a guided afternoon in Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
+    title: "Coaching & optional Tarragona tour",
+    text: "Coaching session number two and match play against different opponents. In the afternoon, join our optional guided tour of Tarragona, a UNESCO World Heritage city whose Roman amphitheater looks straight out over the Mediterranean.",
   },
   {
     label: "Day 4 · Monday",
     title: "Final session & tournament",
-    text: "Your third coaching session, then a fun, competitive tournament with your fellow travelers and local players. Enjoy a last afternoon on the beach before we leave the coast.",
+    text: "Your third coaching session, then a fun, competitive tournament with your fellow travelers and local players. In the afternoon, relax on the beach or join our optional tour to Vilanova i la Geltrú.",
   },
   {
     label: "Day 5 · Tuesday",
@@ -83,7 +83,6 @@ const included = [
   "Buffet breakfast every morning",
   "4 carefully selected group meals",
   "Private deluxe motor coach for day trips and the move to Barcelona",
-  "Guided visit to Roman Tarragona",
   "Penedès wine & cava tasting",
   "Guided tours of the Sagrada Família and Park Güell",
   "Day trip to Montserrat Monastery",
@@ -138,7 +137,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
           "@graph": [
             tripSchema(longHaulLob, {
               description:
-                "A 9-day pickleball vacation in Catalonia: coaching and a tournament on the Barcelona coast, then four nights in Barcelona, with guided visits to the Sagrada Família, Park Güell, Montserrat, Tarragona and the Penedès.",
+                "A 9-day pickleball vacation in Catalonia: coaching and a tournament on the Barcelona coast, then four nights in Barcelona, with guided visits to the Sagrada Família, Park Güell, Montserrat and the Penedès.",
               touristType: "Pickleball players from the USA and Canada",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -162,8 +161,8 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
             The ultimate pickleball vacation in <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Nine unforgettable days in Catalonia. Start with pickleball by the sea on the Golden Coast, then move up the coast to Barcelona for Gaudí's masterpieces, Montserrat and a night of flamenco, with Roman Tarragona and cava country along the way."
-        facts={["3 coaching sessions + tournament", "4 guided day trips", "Bilingual tour director", "4 nights beach + 4 nights Barcelona"]}
+        intro="Nine unforgettable days in Catalonia. Start with pickleball by the sea on the Golden Coast, then move up the coast to Barcelona for Gaudí's masterpieces, Montserrat and a night of flamenco, with a cava tasting along the way."
+        facts={["3 coaching sessions + tournament", "3 guided day trips", "Bilingual tour director", "4 nights beach + 4 nights Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -179,9 +178,9 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Roman amphitheater of Tarragona beside the Mediterranean", name: "Tarragona", text: "Roman ruins by the sea" },
+              { img: tarragona, alt: "Roman amphitheater of Tarragona beside the Mediterranean", name: "Tarragona", text: "Optional tour: Roman ruins by the sea" },
               { img: penedes, alt: "Rolling vineyards in the Penedès wine region", name: "Penedès", text: "Wine & cava tasting" },
-              { img: sitges, alt: "The beach and church of Sitges on a sunny day", name: "Sitges", text: "Artists' seaside town" },
+              { img: sitges, alt: "The beach and church of Sitges on a sunny day", name: "Sitges", text: "Optional tour: artists' seaside town" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -222,7 +221,7 @@ export function LongHaulLob({ currency }: { currency: Currency }) {
         lang="en-US"
         currency={currency}
         included={included}
-        notIncluded="airfare, tips, personal expenses, and meals other than daily breakfast and the 4 included group meals."
+        notIncluded="airfare, optional tours to Sitges, Tarragona and Vilanova i la Geltrú, tips, personal expenses, and meals other than daily breakfast and the 4 included group meals."
         terms={[
           "Deposit: 20% reserves your place and is applied to the total trip price.",
           "Final payment: the balance is due 60 days before the trip start date.",

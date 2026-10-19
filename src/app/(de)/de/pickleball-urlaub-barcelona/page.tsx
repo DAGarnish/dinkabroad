@@ -58,7 +58,7 @@ const reasons = [
       <>
         <TownLink town="sitges" lang="de">Sitges</TownLink>,{" "}
         <TownLink town="tarragona" lang="de">Tarragona</TownLink> und{" "}
-        <TownLink town="vilanova" lang="de">Vilanova i la Geltrú</TownLink> sind nur eine kurze Zugfahrt die Küste entlang.
+        <TownLink town="vilanova" lang="de">Vilanova i la Geltrú</TownLink> sind nur eine kurze Zugfahrt die Küste entlang, ganz einfach auf eigene Faust.
       </>
     ),
   },
@@ -126,7 +126,7 @@ const faqs: FaqItem[] = [
   {
     question: "Was ist inklusive und was nicht?",
     answer:
-      "Inklusive: 4 Nächte im Zweibett- oder Einzelzimmer, tägliches Frühstück, 3 Trainingseinheiten, ein Turnier und freies Spiel. Nicht inklusive: Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke, Reiseversicherung und optionale Ausflüge.",
+      "Inklusive: 4 Nächte im Zweibett- oder Einzelzimmer, tägliches Frühstück, 3 Trainingseinheiten, ein Turnier und freies Spiel. Nicht inklusive: Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke und Reiseversicherung.",
   },
   {
     question: "Wie und wann bezahle ich?",
@@ -224,7 +224,7 @@ export default function PickleballUrlaubPage() {
             <p className="text-sm text-stone">
               Ideen für den Nachmittag: <TownLink town="sitges" lang="de">Sitges</TownLink>,{" "}
               <TownLink town="tarragona" lang="de">Tarragona</TownLink> und{" "}
-              <TownLink town="vilanova" lang="de">Vilanova i la Geltrú</TownLink> sind nur eine kurze Zugfahrt die Küste entlang.
+              <TownLink town="vilanova" lang="de">Vilanova i la Geltrú</TownLink> sind nur eine kurze Zugfahrt die Küste entlang, ganz einfach auf eigene Faust.
             </p>
           </div>
         </Container>
@@ -234,7 +234,7 @@ export default function PickleballUrlaubPage() {
         retreat={localDinkDe}
         lang="de"
         included={included}
-        notIncluded="Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke, Reiseversicherung und optionale Ausflüge."
+        notIncluded="Flüge, Flughafentransfers, Mittag- und Abendessen, Getränke und Reiseversicherung."
         terms={[
           "Alle Preise in Euro (EUR). Beträge in Pfund und Dollar sind Richtwerte zum aktuellen Wechselkurs.",
           "Training auf Englisch und Spanisch.",

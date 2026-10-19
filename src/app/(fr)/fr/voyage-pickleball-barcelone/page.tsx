@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Voyage pickleball à Barcelone : 9 jours de pickleball et de culture",
   description:
-    "Un voyage pickleball de 9 jours en Catalogne : du pickleball au bord de la mer, puis la Barcelone de Gaudí, Montserrat, Tarragone, le pays du cava et le flamenco. À partir de 3 500 €.",
+    "Un voyage pickleball de 9 jours en Catalogne : du pickleball au bord de la mer, puis la Barcelone de Gaudí, Montserrat, le pays du cava et le flamenco, avec des excursions en option à Tarragone et Sitges. À partir de 3 500 €.",
   path: longHaulLobFr.href,
   siteLang: "fr",
 });
@@ -34,17 +34,17 @@ const days = [
   {
     label: "Jour 2 · Samedi",
     title: "Coaching et jeu libre",
-    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. Le pickleball a toujours lieu le matin : l’après-midi est à vous, entre la plage, la piscine ou un court trajet en train jusqu’à Sitges.",
+    text: "Votre première séance de coaching de 90 minutes, puis jeu libre. Le pickleball a toujours lieu le matin : l’après-midi est à vous, entre la plage, la piscine ou notre excursion en option à Sitges.",
   },
   {
     label: "Jour 3 · Dimanche",
-    title: "Pickleball et Tarragone la romaine",
-    text: "Deuxième séance de coaching et matchs contre différents adversaires, puis un après-midi guidé à Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
+    title: "Coaching et excursion en option à Tarragone",
+    text: "Deuxième séance de coaching et matchs contre différents adversaires. L’après-midi, rejoignez notre visite guidée en option de Tarragone, ville classée au patrimoine mondial dont l’amphithéâtre romain fait face à la Méditerranée.",
   },
   {
     label: "Jour 4 · Lundi",
     title: "Dernière séance et tournoi",
-    text: "Votre troisième séance de coaching, puis un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. Profitez d’un dernier après-midi à la plage avant de quitter la côte.",
+    text: "Votre troisième séance de coaching, puis un tournoi amical et disputé avec vos compagnons de voyage et des joueurs locaux. L’après-midi, détendez-vous à la plage ou rejoignez notre excursion en option à Vilanova i la Geltrú.",
   },
   {
     label: "Jour 5 · Mardi",
@@ -82,7 +82,6 @@ const included = [
   "Petit-déjeuner buffet tous les matins",
   "4 repas de groupe soigneusement choisis",
   "Autocar privé de luxe pour les excursions et le trajet vers Barcelone",
-  "Visite guidée de Tarragone la romaine",
   "Dégustation de vins et de cava dans le Penedès",
   "Visites guidées de la Sagrada Família et du Park Güell",
   "Excursion au monastère de Montserrat",
@@ -140,7 +139,7 @@ export default function VoyagePickleballPage() {
           "@graph": [
             tripSchema(longHaulLobFr, {
               description:
-                "Un voyage pickleball de 9 jours en Catalogne : coaching et tournoi sur la côte de Barcelone, puis quatre nuits à Barcelone, avec visites guidées de la Sagrada Família, du Park Güell, de Montserrat, de Tarragone et du Penedès. Séjour en anglais et en espagnol.",
+                "Un voyage pickleball de 9 jours en Catalogne : coaching et tournoi sur la côte de Barcelone, puis quatre nuits à Barcelone, avec visites guidées de la Sagrada Família, du Park Güell, de Montserrat et du Penedès. Séjour en anglais et en espagnol.",
               touristType: "Joueurs de pickleball venant du Canada et d’Amérique du Nord",
               itinerary: days.map((d) => ({ name: `${d.label} : ${d.title}`, description: d.text })),
             }),
@@ -163,8 +162,8 @@ export default function VoyagePickleballPage() {
             Le voyage pickleball ultime à <em className="font-normal">Barcelone</em>
           </>
         }
-        intro="Neuf jours inoubliables en Catalogne. D’abord du pickleball au bord de la mer sur la Costa Daurada, puis cap sur Barcelone pour les chefs-d’œuvre de Gaudí, Montserrat et une soirée flamenco, avec Tarragone la romaine et le pays du cava en chemin."
-        facts={["3 séances de coaching + tournoi", "4 excursions guidées", "Séjour en anglais et espagnol", "4 nuits plage + 4 nuits Barcelone"]}
+        intro="Neuf jours inoubliables en Catalogne. D’abord du pickleball au bord de la mer sur la Costa Daurada, puis cap sur Barcelone pour les chefs-d’œuvre de Gaudí, Montserrat et une soirée flamenco, avec une dégustation de cava en chemin."
+        facts={["3 séances de coaching + tournoi", "3 excursions guidées", "Séjour en anglais et espagnol", "4 nuits plage + 4 nuits Barcelone"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -180,9 +179,9 @@ export default function VoyagePickleballPage() {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Amphithéâtre romain de Tarragone au bord de la Méditerranée", name: "Tarragone", text: "Ruines romaines face à la mer" },
+              { img: tarragona, alt: "Amphithéâtre romain de Tarragone au bord de la Méditerranée", name: "Tarragone", text: "Excursion en option : ruines romaines face à la mer" },
               { img: penedes, alt: "Vignobles vallonnés de la région viticole du Penedès", name: "Penedès", text: "Dégustation de vins et de cava" },
-              { img: sitges, alt: "La plage et l’église de Sitges par une journée ensoleillée", name: "Sitges", text: "La ville balnéaire des artistes" },
+              { img: sitges, alt: "La plage et l’église de Sitges par une journée ensoleillée", name: "Sitges", text: "Excursion en option : la ville balnéaire des artistes" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -222,7 +221,7 @@ export default function VoyagePickleballPage() {
         retreat={longHaulLobFr}
         lang="fr"
         included={included}
-        notIncluded="vols, pourboires, dépenses personnelles et repas autres que le petit-déjeuner quotidien et les 4 repas de groupe inclus."
+        notIncluded="vols, excursions en option à Sitges, Tarragone et Vilanova i la Geltrú, pourboires, dépenses personnelles et repas autres que le petit-déjeuner quotidien et les 4 repas de groupe inclus."
         terms={[
           "Acompte : 20 % pour réserver votre place, déduit du prix total du voyage.",
           "Solde : à régler 60 jours avant la date de départ.",

@@ -20,7 +20,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 export const metadata = pageMetadata({
   title: "Viaje de pickleball a Barcelona: 9 días de pickleball y cultura",
   description:
-    "Un viaje de pickleball de 9 días en Barcelona: pickleball junto al mar y después la Barcelona de Gaudí, Montserrat, Tarragona, la tierra del cava y flamenco. Desde 3500 €.",
+    "Un viaje de pickleball de 9 días en Barcelona: pickleball junto al mar y después la Barcelona de Gaudí, Montserrat, la tierra del cava y flamenco, con excursiones opcionales a Tarragona y Sitges. Desde 3500 €.",
   path: longHaulLobEs.href,
   siteLang: "es",
 });
@@ -34,17 +34,17 @@ const days = [
   {
     label: "Día 2 · Sábado",
     title: "Entrenamiento y juego libre",
-    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. El pickleball es siempre por la mañana, así que la tarde es tuya: la playa, la piscina o un corto trayecto en tren hasta Sitges.",
+    text: "Tu primera sesión de entrenamiento de 90 minutos, seguida de juego libre. El pickleball es siempre por la mañana, así que la tarde es tuya: la playa, la piscina o nuestra excursión opcional a Sitges.",
   },
   {
     label: "Día 3 · Domingo",
-    title: "Pickleball y la Tarragona romana",
-    text: "Segunda sesión de entrenamiento y partidos contra rivales distintos, y por la tarde visita guiada a Tarragona, ciudad Patrimonio de la Humanidad cuyo anfiteatro romano mira directamente al Mediterráneo.",
+    title: "Entrenamiento y excursión opcional a Tarragona",
+    text: "Segunda sesión de entrenamiento y partidos contra rivales distintos. Por la tarde, apúntate a nuestra excursión guiada opcional a Tarragona, ciudad Patrimonio de la Humanidad cuyo anfiteatro romano mira directamente al Mediterráneo.",
   },
   {
     label: "Día 4 · Lunes",
     title: "Última sesión y torneo",
-    text: "Tu tercera sesión de entrenamiento y después un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Disfruta de una última tarde de playa antes de dejar la costa.",
+    text: "Tu tercera sesión de entrenamiento y después un torneo divertido y competido con tus compañeros de viaje y jugadores locales. Por la tarde, relájate en la playa o apúntate a nuestra excursión opcional a Vilanova i la Geltrú.",
   },
   {
     label: "Día 5 · Martes",
@@ -82,7 +82,6 @@ const included = [
   "Desayuno bufé todas las mañanas",
   "4 comidas en grupo cuidadosamente seleccionadas",
   "Autocar privado de lujo para las excursiones y el traslado a Barcelona",
-  "Visita guiada a la Tarragona romana",
   "Cata de vinos y cava en el Penedès",
   "Visitas guiadas a la Sagrada Família y al Park Güell",
   "Excursión al monasterio de Montserrat",
@@ -135,7 +134,7 @@ export default function ViajePickleballPage() {
           "@graph": [
             tripSchema(longHaulLobEs, {
               description:
-                "Un viaje de pickleball de 9 días en Cataluña: entrenamientos y un torneo en la costa de Barcelona y después cuatro noches en Barcelona, con visitas guiadas a la Sagrada Família, el Park Güell, Montserrat, Tarragona y el Penedès.",
+                "Un viaje de pickleball de 9 días en Cataluña: entrenamientos y un torneo en la costa de Barcelona y después cuatro noches en Barcelona, con visitas guiadas a la Sagrada Família, el Park Güell, Montserrat y el Penedès.",
               touristType: "Jugadores de pickleball que viajan desde América",
               itinerary: days.map((d) => ({ name: `${d.label}: ${d.title}`, description: d.text })),
             }),
@@ -158,8 +157,8 @@ export default function ViajePickleballPage() {
             El viaje de pickleball definitivo en <em className="font-normal">Barcelona</em>
           </>
         }
-        intro="Nueve días inolvidables en Cataluña. Empieza con pickleball junto al mar en la Costa Daurada y sube después por la costa hasta Barcelona para ver las obras maestras de Gaudí, Montserrat y una noche de flamenco, con la Tarragona romana y la tierra del cava por el camino."
-        facts={["3 entrenamientos + torneo", "4 excursiones guiadas", "Guía bilingüe", "4 noches en la playa + 4 en Barcelona"]}
+        intro="Nueve días inolvidables en Cataluña. Empieza con pickleball junto al mar en la Costa Daurada y sube después por la costa hasta Barcelona para ver las obras maestras de Gaudí, Montserrat y una noche de flamenco, con una cata de cava por el camino."
+        facts={["3 entrenamientos + torneo", "3 excursiones guiadas", "Guía bilingüe", "4 noches en la playa + 4 en Barcelona"]}
       />
 
       <section className="py-24 sm:py-32">
@@ -175,9 +174,9 @@ export default function ViajePickleballPage() {
           />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {[
-              { img: tarragona, alt: "Anfiteatro romano de Tarragona junto al Mediterráneo", name: "Tarragona", text: "Ruinas romanas junto al mar" },
+              { img: tarragona, alt: "Anfiteatro romano de Tarragona junto al Mediterráneo", name: "Tarragona", text: "Excursión opcional: ruinas romanas junto al mar" },
               { img: penedes, alt: "Viñedos ondulados en la región vinícola del Penedès", name: "Penedès", text: "Cata de vinos y cava" },
-              { img: sitges, alt: "La playa y la iglesia de Sitges en un día soleado", name: "Sitges", text: "El pueblo de los artistas" },
+              { img: sitges, alt: "La playa y la iglesia de Sitges en un día soleado", name: "Sitges", text: "Excursión opcional: el pueblo de los artistas" },
             ].map((p) => (
               <figure key={p.name} className="group relative overflow-hidden rounded-[2rem]">
                 <Image
@@ -217,7 +216,7 @@ export default function ViajePickleballPage() {
         retreat={longHaulLobEs}
         lang="es"
         included={included}
-        notIncluded="vuelos, propinas, gastos personales y las comidas aparte del desayuno diario y las 4 comidas en grupo incluidas."
+        notIncluded="vuelos, excursiones opcionales a Sitges, Tarragona y Vilanova i la Geltrú, propinas, gastos personales y las comidas aparte del desayuno diario y las 4 comidas en grupo incluidas."
         terms={[
           "Depósito: el 20 % te reserva la plaza y se descuenta del precio total del viaje.",
           "Pago final: el resto se abona 60 días antes de la fecha de salida.",
