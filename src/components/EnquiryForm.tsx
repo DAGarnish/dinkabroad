@@ -133,6 +133,7 @@ export function EnquiryForm({ lang, defaultRetreat = "", defaultPhoneCode = "+44
             any: t.startDatesAny,
             preferred: t.startDatesPreferred,
             clear: t.startDatesClear,
+            booked: t.startDatesBooked,
           }}
         />
         <label className="block sm:col-span-2">

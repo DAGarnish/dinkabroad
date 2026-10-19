@@ -6,6 +6,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 const seasonMonths = new Set([2, 3, 4, 5, 8, 9, 10]);
 const doubleTapMs = 350;
 
+// Departures that can no longer be chosen. Every 2026 date is sold out.
+const isFullyBooked = (date: string) => date < "2027-01-01";
+
 // Every season Friday from tomorrow to a year ahead, as UTC dates so server and browser agree.
 function seasonFridays() {
   const now = new Date();
@@ -22,7 +25,7 @@ function seasonFridays() {
 
 const iso = (d: Date) => d.toISOString().slice(0, 10);
 
-type Labels = { label: string; help: string; any: string; preferred: string; clear: string };
+type Labels = { label: string; help: string; any: string; preferred: string; clear: string; booked: string };
 
 /**
  * Tap a Friday to mark it as possible; double-tap to add it to the ranked favourites (1, 2, 3…).
@@ -90,21 +93,26 @@ export function StartDatePicker({ locale, labels }: { locale: string; labels: La
                 const date = iso(d);
                 const rank = ranked.indexOf(date) + 1;
                 const ok = possible.includes(date);
+                const booked = isFullyBooked(date);
                 return (
                   <button
                     key={date}
                     type="button"
                     onClick={() => tap(date)}
+                    disabled={booked}
+                    title={booked ? labels.booked : undefined}
                     aria-pressed={rank > 0 || ok}
                     aria-label={`${d.toLocaleDateString(locale, { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" })}${
-                      rank ? ` · ${labels.preferred} ${rank}` : ok ? ` · ${labels.any}` : ""
+                      booked ? ` · ${labels.booked}` : rank ? ` · ${labels.preferred} ${rank}` : ok ? ` · ${labels.any}` : ""
                     }`}
                     className={`relative min-w-11 touch-manipulation rounded-lg border px-2.5 py-1.5 text-sm font-medium transition select-none ${
-                      rank
-                        ? "border-terracotta bg-terracotta text-white"
-                        : ok
-                          ? "border-sea bg-sea text-white"
-                          : "border-line bg-white text-ink hover:border-sea"
+                      booked
+                        ? "cursor-not-allowed border-line bg-sand text-stone/60 line-through"
+                        : rank
+                          ? "border-terracotta bg-terracotta text-white"
+                          : ok
+                            ? "border-sea bg-sea text-white"
+                            : "border-line bg-white text-ink hover:border-sea"
                     }`}
                   >
                     {d.getUTCDate()}
@@ -127,6 +135,11 @@ export function StartDatePicker({ locale, labels }: { locale: string; labels: La
         <span className="flex items-center gap-1.5">
           <span className="size-3 rounded-sm bg-terracotta" /> {labels.preferred} 1, 2, 3…
         </span>
+        {fridays.some((d) => isFullyBooked(iso(d))) && (
+          <span className="flex items-center gap-1.5">
+            <span className="size-3 rounded-sm border border-line bg-sand" /> {labels.booked}
+          </span>
+        )}
         {(possible.length > 0 || ranked.length > 0) && (
           <button
             type="button"

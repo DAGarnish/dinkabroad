@@ -150,6 +150,7 @@ const en = {
     startDatesAny: "Works for me",
     startDatesPreferred: "Preference",
     startDatesClear: "Clear dates",
+    startDatesBooked: "Fully booked",
   },
 };
 
@@ -283,6 +284,7 @@ const es: Ui = {
     startDatesAny: "Me viene bien",
     startDatesPreferred: "Preferencia",
     startDatesClear: "Borrar fechas",
+    startDatesBooked: "Completo",
   },
 };
 
@@ -404,6 +406,7 @@ const fr: Ui = {
     startDatesAny: "Me convient",
     startDatesPreferred: "Préférence",
     startDatesClear: "Effacer les dates",
+    startDatesBooked: "Complet",
   },
 };
 
@@ -525,6 +528,7 @@ const de: Ui = {
     startDatesAny: "Passt mir",
     startDatesPreferred: "Favorit",
     startDatesClear: "Termine löschen",
+    startDatesBooked: "Ausgebucht",
   },
 };
 
@@ -646,6 +650,7 @@ const nl: Ui = {
     startDatesAny: "Komt me uit",
     startDatesPreferred: "Voorkeur",
     startDatesClear: "Data wissen",
+    startDatesBooked: "Volgeboekt",
   },
 };
 
