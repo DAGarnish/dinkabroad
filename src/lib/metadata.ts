@@ -3,11 +3,11 @@ import { type Site, counterpart, languages } from "./i18n";
 import { site } from "./site";
 
 const ogAlt: Record<Site, string> = {
-  en: "Pickleball retreats on the Barcelona coast: sunset over the palms at Coma-ruga beach",
-  es: "Retiros de pickleball en la costa de Barcelona: puesta de sol sobre las palmeras de la playa de Coma-ruga",
-  fr: "Séjours de pickleball sur la côte de Barcelone : coucher de soleil sur les palmiers de la plage de Coma-ruga",
-  de: "Pickleball-Reisen an der Küste von Barcelona: Sonnenuntergang über den Palmen am Strand von Coma-ruga",
-  nl: "Pickleballreizen aan de kust van Barcelona: zonsondergang boven de palmbomen op het strand van Coma-ruga",
+  en: "Pickleball retreats on the Barcelona coast: palm trees under a clear blue sky at Coma-ruga beach",
+  es: "Retiros de pickleball en la costa de Barcelona: palmeras bajo un cielo azul despejado en la playa de Coma-ruga",
+  fr: "Séjours de pickleball sur la côte de Barcelone : palmiers sous un ciel bleu limpide sur la plage de Coma-ruga",
+  de: "Pickleball-Reisen an der Küste von Barcelona: Palmen unter strahlend blauem Himmel am Strand von Coma-ruga",
+  nl: "Pickleballreizen aan de kust van Barcelona: palmbomen onder een strakblauwe lucht op het strand van Coma-ruga",
 };
 
 // Shared social-share image (public/og-image.jpg). Set explicitly on every page:

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import sunset from "@/assets/images/coma-ruga-sunset.jpg";
+import hero from "@/assets/images/coma-ruga-beach-palms.jpg";
 import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
@@ -107,8 +107,8 @@ export default function NlHomePage() {
       {/* Hero */}
       <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden text-cream">
         <Image
-          src={sunset}
-          alt="Gouden zonsondergang boven de palmbomen op het strand van Coma-ruga aan de Costa Daurada"
+          src={hero}
+          alt="Palmbomen onder een strakblauwe lucht op het strand van Coma-ruga aan de Costa Daurada"
           placeholder="blur"
           priority
           fill

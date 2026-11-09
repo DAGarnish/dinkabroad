@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const credits = [
-  ["Sunset at Coma-ruga beach", "Víctor", "CC BY-SA 2.0", "https://commons.wikimedia.org/wiki/File:Platja_de_Coma-ruga_(el_Vendrell)_-_1.jpg"],
+  ["Palm trees on Coma-ruga beach", "Luis Miguel Bugallo Sánchez (Lmbuga)", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Coma_Ruga._El_Vendrell._Abril_2014._-1.jpg"],
   ["Palms on Coma-ruga beach", "Luis Miguel Bugallo Sánchez (Lmbuga)", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Praia_de_Coma-ruga._El_Vendrell._Tarragona-28.jpg"],
   ["Coma-ruga bay", "Luis Miguel Bugallo Sánchez (Lmbuga)", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Praia_e_vila_de_Coma_Ruga._El_Vendrell._Tarragona-24.jpg"],
   ["Coma-ruga seafront", "Luis Miguel Bugallo Sánchez (Lmbuga)", "CC BY-SA 3.0", "https://commons.wikimedia.org/wiki/File:Coma_Ruga._El_Vendrell._Abril_2014_01.jpg"],

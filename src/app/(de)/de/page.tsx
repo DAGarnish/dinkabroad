@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import sunset from "@/assets/images/coma-ruga-sunset.jpg";
+import hero from "@/assets/images/coma-ruga-beach-palms.jpg";
 import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
@@ -107,8 +107,8 @@ export default function StartseitePage() {
       {/* Hero */}
       <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden text-cream">
         <Image
-          src={sunset}
-          alt="Goldener Sonnenuntergang über den Palmen am Strand von Coma-ruga an der Costa Daurada"
+          src={hero}
+          alt="Palmen unter strahlend blauem Himmel am Strand von Coma-ruga an der Costa Daurada"
           placeholder="blur"
           priority
           fill

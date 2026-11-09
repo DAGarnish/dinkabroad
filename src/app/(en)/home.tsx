@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import sunset from "@/assets/images/coma-ruga-sunset.jpg";
+import hero from "@/assets/images/coma-ruga-beach-palms.jpg";
 import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
@@ -104,8 +104,8 @@ export function Home({ currency }: { currency: Currency }) {
       {/* Hero */}
       <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden text-cream">
         <Image
-          src={sunset}
-          alt="Golden sunset over palm trees on the beach at Coma-ruga, Costa Daurada"
+          src={hero}
+          alt="Palm trees under a clear blue sky on the beach at Coma-ruga, Costa Daurada"
           placeholder="blur"
           priority
           fill
