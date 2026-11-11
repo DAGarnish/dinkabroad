@@ -21,7 +21,7 @@ const manrope = Manrope({
 // The <html> document shared by the English, Spanish, French, German and Dutch root layouts.
 export function SiteShell({ lang, children }: { lang: Lang; children: React.ReactNode }) {
   return (
-    <html lang={language(lang).htmlLang} className={`${fraunces.variable} ${manrope.variable} antialiased`}>
+    <html lang={lang === "en-US" ? "en-US" : language(lang).htmlLang} className={`${fraunces.variable} ${manrope.variable} antialiased`}>
       <body className="flex min-h-svh flex-col">
         <JsonLd data={{ "@graph": [organizationSchema, websiteSchema] }} />
         <Header lang={lang} />

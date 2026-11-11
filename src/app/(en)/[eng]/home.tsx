@@ -11,6 +11,7 @@ import { pageMetadata } from "@/lib/metadata";
 import { retreats } from "@/lib/retreats";
 import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
+import { type Lang, spell } from "@/lib/i18n";
 
 export const homeMetadata = pageMetadata({
   title: "Pickleball Holiday & Camps in Barcelona, Spain | Dink Abroad",
@@ -68,7 +69,8 @@ const faqs: FaqItem[] = [
 ];
 
 // The English homepage. Served by `page.tsx` in euros, and in pounds or dollars to UK and US visitors (see proxy.ts).
-export function Home({ currency }: { currency: Currency }) {
+export function Home({ currency, lang }: { currency: Currency; lang: Lang }) {
+  const localFaqs = faqs.map((f) => ({ ...f, question: spell(f.question, lang), answer: spell(f.answer, lang) }));
   return (
     <>
       <JsonLd
@@ -96,7 +98,7 @@ export function Home({ currency }: { currency: Currency }) {
               tripSchema(r, { description: r.summary, touristType: r.audience }),
             ),
             hotelSchema,
-            faqSchema(faqs),
+            faqSchema(localFaqs),
           ],
         }}
       />
@@ -122,7 +124,7 @@ export function Home({ currency }: { currency: Currency }) {
             Pickleball retreats on the <em className="font-normal">Barcelona</em> coast
           </h1>
           <p className="mt-6 max-w-xl animate-rise text-lg leading-relaxed text-cream text-shadow-md text-shadow-ink/50 [animation-delay:240ms] sm:text-xl">
-            <strong className="font-semibold text-white">Small-group pickleball holidays</strong> in{" "}
+            <strong className="font-semibold text-white">{spell("Small-group pickleball holidays", lang)}</strong> in{" "}
             <strong className="font-semibold text-ball">sunny Coma-ruga</strong>, a scenic hour by train from
             Barcelona. Expert coaching, friendly tournaments and a beachfront hotel.
           </p>
@@ -181,7 +183,7 @@ export function Home({ currency }: { currency: Currency }) {
           <div className="relative">
             <Image
               src={courts}
-              alt="Four red and grey outdoor pickleball courts at our club in Coma-ruga, Spain, under a clear blue sky"
+              alt={spell("Four red and grey outdoor pickleball courts at our club in Coma-ruga, Spain, under a clear blue sky", lang)}
               title="Our pickleball courts in Coma-ruga"
               placeholder="blur"
               sizes="(min-width: 1024px) 45vw, 100vw"
@@ -206,27 +208,27 @@ export function Home({ currency }: { currency: Currency }) {
           />
           <div className="mt-16 grid gap-8 lg:grid-cols-2">
             {retreats.map((r) => (
-              <RetreatCard key={r.slug} retreat={r} lang="en-GB" currency={currency} />
+              <RetreatCard key={r.slug} retreat={r} lang={lang} currency={currency} />
             ))}
           </div>
         </Container>
       </section>
 
-      <ComaRugaSection lang="en-GB" />
-      <HotelSection lang="en-GB" />
+      <ComaRugaSection lang={lang} />
+      <HotelSection lang={lang} />
 
       {/* FAQ */}
       <section id="faq" className="scroll-mt-10 py-24 sm:py-32">
         <Container className="grid gap-12 lg:grid-cols-[1fr_1.6fr]">
           <SectionHeading eyebrow="Good to know" title="Frequently asked questions" />
-          <Faq items={faqs} />
+          <Faq items={localFaqs} />
         </Container>
       </section>
 
       <EnquirySection
-        lang="en-GB"
+        lang={lang}
         title="Ready to play pickleball by the sea?"
-        intro="Tell us a little about you and we'll send the full programme, dates, pricing and availability, personally, within 24 hours."
+        intro={spell("Tell us a little about you and we'll send the full programme, dates, pricing and availability, personally, within 24 hours.", lang)}
       />
     </>
   );

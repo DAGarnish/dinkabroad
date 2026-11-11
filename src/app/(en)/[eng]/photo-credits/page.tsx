@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Container } from "@/components/ui";
+import { englishLang, spell } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   title: "Photo credits",
-  description: "Credits and licences for the photography used on Dink Abroad.",
+  description: "Credits and licenses for the photography used on Dink Abroad.",
   alternates: { canonical: "/photo-credits" },
   robots: { index: false, follow: true },
 };
@@ -19,20 +20,21 @@ const credits = [
   ["Penedès vineyards", "Angela Llop", "CC BY-SA 2.0", "https://commons.wikimedia.org/wiki/File:Vinyes_de_Tardor,_Pontons,_Alt_Pened%C3%A8s_-_51621982488.jpg"],
 ];
 
-export default function PhotoCredits() {
+export default async function PhotoCredits({ params }: { params: Promise<{ eng: string }> }) {
+  const lang = englishLang((await params).eng);
   return (
     <div className="bg-ink pt-28">
       <section className="bg-cream py-20">
         <Container className="max-w-3xl">
           <h1 className="font-display text-5xl tracking-tight">Photo credits</h1>
           <p className="mt-4 text-stone">
-            Photography from Wikimedia Commons, used under the licences below. Images have been resized and cropped.
+            {spell("Photography from Wikimedia Commons, used under the licences below. Images have been resized and cropped.", lang)}
           </p>
           <ul className="mt-10 divide-y divide-line border-y border-line">
             {credits.map(([title, author, licence, url]) => (
               <li key={url} className="py-4 text-sm">
                 <a href={url} className="font-semibold text-sea hover:underline" rel="noopener">
-                  {title}
+                  {spell(title, lang)}
                 </a>{" "}
                 by {author}, {licence}
               </li>

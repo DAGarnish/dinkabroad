@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import "../globals.css";
+import { notFound } from "next/navigation";
+import "../../globals.css";
 import { SiteShell } from "@/components/SiteShell";
 import { ogImage } from "@/lib/metadata";
 import { site } from "@/lib/site";
+import { ENGLISH_VARIANTS, englishLang } from "@/lib/i18n";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -40,6 +42,20 @@ export const viewport: Viewport = {
   themeColor: "#0e2a2f",
 };
 
-export default function EnglishLayout({ children }: { children: React.ReactNode }) {
-  return <SiteShell lang="en-GB">{children}</SiteShell>;
+// US English by default, British English for en-GB browsers; see src/proxy.ts.
+export function generateStaticParams() {
+  return ENGLISH_VARIANTS.map((eng) => ({ eng }));
+}
+
+export default async function EnglishLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ eng: string }>;
+}) {
+  const { eng } = await params;
+  // Only /uk and /us exist; any other first segment is not an English page.
+  if (!(ENGLISH_VARIANTS as readonly string[]).includes(eng)) notFound();
+  return <SiteShell lang={englishLang(eng)}>{children}</SiteShell>;
 }

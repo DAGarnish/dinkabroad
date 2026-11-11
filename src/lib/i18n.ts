@@ -156,13 +156,59 @@ const en = {
 
 export type Ui = typeof en;
 
+// British English words and their US forms. Page titles and descriptions are
+// not converted, so "holiday" stays there for UK searches.
+const UK_TO_US: Record<string, string> = {
+  centre: "center",
+  programme: "program",
+  Programme: "Program",
+  enquiry: "inquiry",
+  Enquiry: "Inquiry",
+  enquiries: "inquiries",
+  enquire: "inquire",
+  Enquire: "Inquire",
+  travellers: "travelers",
+  Travellers: "Travelers",
+  favourite: "favorite",
+  favourites: "favorites",
+  grey: "gray",
+  colours: "colors",
+  licence: "license",
+  licences: "licenses",
+  amphitheatre: "amphitheater",
+  holiday: "vacation",
+  holidays: "vacations",
+  Holiday: "Vacation",
+  Holidays: "Vacations",
+};
+const UK_WORDS = new RegExp(`\\b(${Object.keys(UK_TO_US).join("|")})\\b`, "g");
+
+/** English copy is written in British English; this returns it in the visitor's English. */
+/** English pages are prebuilt twice, under app/(en)/[eng]: "uk" (British) and "us" (US). src/proxy.ts picks one per visitor. */
+export const ENGLISH_VARIANTS = ["uk", "us"] as const;
+
+export function englishLang(eng: string): Lang {
+  return eng === "uk" ? "en-GB" : "en-US";
+}
+
+export function spell(text: string, lang: Lang): string {
+  return lang === "en-US" ? text.replace(UK_WORDS, (word) => UK_TO_US[word]) : text;
+}
+
+/** Deep US conversion of a dictionary; links and ids are left as they are. */
+function usify<T>(value: T): T {
+  if (typeof value === "string") return spell(value, "en-US") as T;
+  if (Array.isArray(value)) return value.map(usify) as T;
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.entries(value).map(([k, v]) => [k, k === "href" || k === "id" ? v : usify(v)]),
+    ) as T;
+  }
+  return value;
+}
+
 const enUS: Ui = {
-  ...en,
-  hotel: {
-    ...en.hotel,
-    features: en.hotel.features.map(([t, d]) => [t.replace("centre", "center"), d]),
-  },
-  enquiry: { ...en.enquiry, bullets: ["Full program, dates and pricing", ...en.enquiry.bullets.slice(1)] },
+  ...usify(en),
   fx: { ...en.fx, dateLocale: "en-US" },
 };
 
