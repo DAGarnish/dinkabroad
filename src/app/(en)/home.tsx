@@ -112,17 +112,22 @@ export function Home({ currency }: { currency: Currency }) {
           sizes="100vw"
           className="-z-10 object-cover"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/60 via-ink/20 to-ink/90" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/40 via-ink/10 to-ink/85" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink/70 via-ink/30 to-transparent" />
         <Container className="w-full pt-36 pb-16 sm:pb-24">
           <p className="animate-rise text-xs font-semibold tracking-[0.3em] text-ball uppercase">
             Pickleball retreats · Barcelona coast
           </p>
-          <h1 className="mt-6 max-w-4xl animate-rise font-display text-5xl leading-[1.02] font-light tracking-tight text-balance [animation-delay:120ms] sm:text-7xl lg:text-[5.5rem]">
+          <h1 className="mt-6 max-w-4xl animate-rise font-display text-5xl leading-[1.02] font-light tracking-tight text-balance text-shadow-lg text-shadow-ink/40 [animation-delay:120ms] sm:text-7xl lg:text-[5.5rem]">
             Pickleball retreats on the <em className="font-normal">Barcelona</em> coast
           </h1>
-          <p className="mt-6 max-w-xl animate-rise text-lg leading-relaxed text-cream/85 [animation-delay:240ms] sm:text-xl">
-            Small-group pickleball holidays in sunny Coma-ruga, a scenic hour by train from Barcelona.
-            Expert coaching, friendly tournaments and a beachfront hotel. All you do is play.
+          <p className="mt-6 max-w-xl animate-rise text-lg leading-relaxed text-cream text-shadow-md text-shadow-ink/50 [animation-delay:240ms] sm:text-xl">
+            <strong className="font-semibold text-white">Small-group pickleball holidays</strong> in{" "}
+            <strong className="font-semibold text-ball">sunny Coma-ruga</strong>, a scenic hour by train from
+            Barcelona. Expert coaching, friendly tournaments and a beachfront hotel.
+          </p>
+          <p className="mt-4 animate-rise font-display text-3xl leading-tight text-ball text-shadow-md text-shadow-ink/50 [animation-delay:300ms] sm:text-4xl">
+            <em className="font-normal">All you do is play.</em>
           </p>
           <div className="mt-10 flex animate-rise flex-wrap gap-3 [animation-delay:360ms]">
             <Link
@@ -138,7 +143,7 @@ export function Home({ currency }: { currency: Currency }) {
               Connect with us
             </Link>
           </div>
-          <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/20 pt-8 text-sm sm:grid-cols-4">
+          <ul className="mt-16 grid max-w-4xl grid-cols-2 gap-x-8 gap-y-4 border-t border-cream/30 pt-8 text-sm text-shadow-md text-shadow-ink/50 sm:grid-cols-4">
             {[
               ["Max 16", "players per retreat"],
               ["4★", "beachfront hotel"],
@@ -147,7 +152,7 @@ export function Home({ currency }: { currency: Currency }) {
             ].map(([k, v]) => (
               <li key={v}>
                 <span className="block font-display text-2xl">{k}</span>
-                <span className="text-cream/70">{v}</span>
+                <span className="text-cream/85">{v}</span>
               </li>
             ))}
           </ul>
