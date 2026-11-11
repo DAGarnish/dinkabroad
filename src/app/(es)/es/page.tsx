@@ -124,9 +124,6 @@ export default function InicioPage() {
             <strong className="font-semibold text-ball">soleada Coma-ruga</strong>, a una hora de Barcelona en un tren con vistas al mar. Entrenadores
             expertos, torneos amistosos y un hotel en primera línea.
           </p>
-          <p className="mt-4 animate-rise font-display text-3xl leading-tight text-ball text-shadow-md text-shadow-ink/50 [animation-delay:300ms] sm:text-4xl">
-            <em className="font-normal">Tú solo tienes que jugar.</em>
-          </p>
           <div className="mt-10 flex animate-rise flex-wrap gap-3 [animation-delay:360ms]">
             <Link
               href="#retreats"

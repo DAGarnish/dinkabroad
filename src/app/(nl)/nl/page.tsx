@@ -129,9 +129,6 @@ export default function NlHomePage() {
             <strong className="font-semibold text-ball">zonnige Coma-ruga</strong>, een uur met de trein langs de kust vanaf Barcelona. Topcoaching, gezellige
             toernooien en een hotel aan het strand.
           </p>
-          <p className="mt-4 animate-rise font-display text-3xl leading-tight text-ball text-shadow-md text-shadow-ink/50 [animation-delay:300ms] sm:text-4xl">
-            <em className="font-normal">Jij hoeft alleen nog te spelen.</em>
-          </p>
           <div className="mt-10 flex animate-rise flex-wrap gap-3 [animation-delay:360ms]">
             <Link
               href="#retreats"

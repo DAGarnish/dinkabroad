@@ -126,9 +126,6 @@ export function Home({ currency }: { currency: Currency }) {
             <strong className="font-semibold text-ball">sunny Coma-ruga</strong>, a scenic hour by train from
             Barcelona. Expert coaching, friendly tournaments and a beachfront hotel.
           </p>
-          <p className="mt-4 animate-rise font-display text-3xl leading-tight text-ball text-shadow-md text-shadow-ink/50 [animation-delay:300ms] sm:text-4xl">
-            <em className="font-normal">All you do is play.</em>
-          </p>
           <div className="mt-10 flex animate-rise flex-wrap gap-3 [animation-delay:360ms]">
             <Link
               href="#retreats"

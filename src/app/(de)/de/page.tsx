@@ -129,9 +129,6 @@ export default function StartseitePage() {
             <strong className="font-semibold text-ball">sonnigen Coma-ruga</strong>, eine Stunde mit dem Zug entlang der Küste von Barcelona entfernt.
             Erstklassiges Training, lockere Turniere und ein Hotel direkt am Strand.
           </p>
-          <p className="mt-4 animate-rise font-display text-3xl leading-tight text-ball text-shadow-md text-shadow-ink/50 [animation-delay:300ms] sm:text-4xl">
-            <em className="font-normal">Sie müssen nur noch spielen.</em>
-          </p>
           <div className="mt-10 flex animate-rise flex-wrap gap-3 [animation-delay:360ms]">
             <Link
               href="#retreats"

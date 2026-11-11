@@ -129,9 +129,6 @@ export default function AccueilPage() {
             <strong className="font-semibold text-ball">lumineuse Coma-ruga</strong>, à une heure de Barcelone par un train qui longe la mer. Coaching de
             qualité, tournois amicaux et hôtel en bord de mer.
           </p>
-          <p className="mt-4 animate-rise font-display text-3xl leading-tight text-ball text-shadow-md text-shadow-ink/50 [animation-delay:300ms] sm:text-4xl">
-            <em className="font-normal">Vous n’avez plus qu’à jouer.</em>
-          </p>
           <div className="mt-10 flex animate-rise flex-wrap gap-3 [animation-delay:360ms]">
             <Link
               href="#retreats"
