@@ -10,6 +10,7 @@ import seafront from "@/assets/images/coma-ruga-seafront.jpg";
 import vineyards from "@/assets/images/penedes-vineyards.jpg";
 import clubAerial from "@/assets/images/pickleball-club-coma-ruga-aerial.jpg";
 import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
+import reus from "@/assets/images/reus-casa-navas.jpg";
 import sagrada from "@/assets/images/sagrada-familia.jpg";
 import sitges from "@/assets/images/sitges.jpg";
 import tarragona from "@/assets/images/tarragona-amphitheatre.jpg";
@@ -46,6 +47,7 @@ const images: Record<string, StaticImageData> = {
   "penedes-vineyards": vineyards,
   "pickleball-club-coma-ruga-aerial": clubAerial,
   "pickleball-courts-coma-ruga": courts,
+  "reus-casa-navas": reus,
   "sagrada-familia": sagrada,
   sitges,
   "tarragona-amphitheatre": tarragona,
