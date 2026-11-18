@@ -4,6 +4,11 @@
 # today or earlier is moved into content/blog/ and committed. The push makes
 # Vercel redeploy the site, so the post goes live and joins the sitemap.
 # Run it by hand from the Actions tab ("Run workflow") to publish early.
+#
+# Each published post also gets a GitHub issue mentioning @DAGarnish, so
+# GitHub emails a notification with the post's title and link (user request,
+# 2026-11-18: email garnish.ecom@gmail.com for all blog updates). The issue is
+# closed straight away; it's only there to send the email.
 name: Publish scheduled posts
 
 on:
@@ -13,6 +18,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   publish:
@@ -43,3 +49,16 @@ jobs:
           git config user.email "garnish.ecom@gmail.com"
           git commit -m "Publish scheduled post:${{ steps.move.outputs.moved }}"
           git push
+
+      - name: Email a notification for each published post
+        if: steps.move.outputs.moved != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for slug in ${{ steps.move.outputs.moved }}; do
+            title=$(grep -m1 '^title:' "content/blog/$slug.md" | sed 's/^title:[[:space:]]*//')
+            url="https://dinkabroad.com/blog/$slug"
+            body=$(printf '@DAGarnish New blog post published on Dink Abroad:\n\n**%s**\n%s\n\nIt goes live once Vercel finishes deploying, usually within a couple of minutes.' "$title" "$url")
+            number=$(gh issue create --title "Published: $title" --body "$body" | grep -o '[0-9]*$')
+            gh issue close "$number" --reason completed
+          done
