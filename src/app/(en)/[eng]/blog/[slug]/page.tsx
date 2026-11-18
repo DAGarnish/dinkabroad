@@ -71,7 +71,9 @@ export default async function BlogPost({ params }: { params: Params }) {
             ← All articles
           </Link>
           <div className="mt-8">
-            <Eyebrow>{formatDate(post.date, lang)}</Eyebrow>
+            <Eyebrow>
+              {post.scheduled ? `Preview · scheduled for ${formatDate(post.date, lang)}` : formatDate(post.date, lang)}
+            </Eyebrow>
           </div>
           <h1 className="mt-4 font-display text-4xl leading-[1.08] tracking-tight text-balance sm:text-5xl">{post.title}</h1>
           <p className="mt-5 text-lg leading-relaxed text-stone">{post.description}</p>

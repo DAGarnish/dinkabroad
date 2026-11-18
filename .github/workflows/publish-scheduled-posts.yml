@@ -1,0 +1,45 @@
+# Publishes scheduled blog posts on their date.
+#
+# Every morning, any post in content/scheduled/ whose front matter `date:` is
+# today or earlier is moved into content/blog/ and committed. The push makes
+# Vercel redeploy the site, so the post goes live and joins the sitemap.
+# Run it by hand from the Actions tab ("Run workflow") to publish early.
+name: Publish scheduled posts
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # 07:00 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Move due posts into content/blog
+        id: move
+        run: |
+          today=$(date -u +%Y-%m-%d)
+          moved=""
+          shopt -s nullglob
+          for file in content/scheduled/*.md; do
+            date=$(grep -m1 '^date:' "$file" | sed 's/^date:[[:space:]]*//' | tr -d '"'"'"' \r')
+            if [[ -n "$date" && ! "$date" > "$today" ]]; then
+              mkdir -p content/blog
+              git mv "$file" "content/blog/$(basename "$file")"
+              moved="$moved $(basename "$file" .md)"
+            fi
+          done
+          echo "moved=$moved" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.move.outputs.moved != ''
+        run: |
+          git config user.name "DAG"
+          git config user.email "garnish.ecom@gmail.com"
+          git commit -m "Publish scheduled post:${{ steps.move.outputs.moved }}"
+          git push

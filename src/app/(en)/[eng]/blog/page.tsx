@@ -52,7 +52,10 @@ export default async function BlogIndex({ params }: { params: Promise<{ eng: str
                     />
                   </div>
                   <div className="p-6">
-                    <p className="text-xs text-stone">{formatDate(post.date, lang)}</p>
+                    <p className="text-xs text-stone">
+                      {post.scheduled && <span className="mr-2 rounded-full bg-ball px-2 py-0.5 font-semibold text-ink">Scheduled</span>}
+                      {formatDate(post.date, lang)}
+                    </p>
                     <h2 className="mt-2 font-display text-2xl leading-tight tracking-tight group-hover:text-sea">
                       {spell(post.title, lang)}
                     </h2>

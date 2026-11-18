@@ -30,6 +30,12 @@ import tarragona from "@/assets/images/tarragona-amphitheatre.jpg";
  * Write posts in British English, like the rest of the English site; US visitors
  * get US spelling through spell(). Titles and descriptions stay British in
  * metadata, so "holiday" is kept for UK searches.
+ *
+ * Scheduled posts: put them in content/scheduled/ with a future date. The
+ * GitHub Action in .github/workflows/publish-scheduled-posts.yml moves each one
+ * into content/blog/ on its date, which redeploys the site. Preview deployments
+ * show scheduled posts too, so they can be read and approved in advance.
+ * Links to a post that isn't published yet are shown as plain text until it is.
  */
 
 const images: Record<string, StaticImageData> = {
@@ -46,6 +52,9 @@ const images: Record<string, StaticImageData> = {
 };
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
+const SCHEDULED_DIR = path.join(process.cwd(), "content", "scheduled");
+/** Vercel preview deployments and local builds show scheduled posts; production does not. */
+const SHOW_SCHEDULED = process.env.VERCEL_ENV !== "production";
 
 export type PostMeta = {
   slug: string;
@@ -55,6 +64,7 @@ export type PostMeta = {
   image: StaticImageData;
   imageAlt: string;
   keywords: string[];
+  scheduled: boolean;
 };
 
 function parse(file: string): { data: Record<string, string>; body: string } {
@@ -68,9 +78,18 @@ function parse(file: string): { data: Record<string, string>; body: string } {
   return { data, body: match[2] };
 }
 
+function fileFor(slug: string): { file: string; scheduled: boolean } | null {
+  const published = path.join(BLOG_DIR, `${slug}.md`);
+  if (fs.existsSync(published)) return { file: published, scheduled: false };
+  const scheduled = path.join(SCHEDULED_DIR, `${slug}.md`);
+  if (SHOW_SCHEDULED && fs.existsSync(scheduled)) return { file: scheduled, scheduled: true };
+  return null;
+}
+
 function read(slug: string): { meta: PostMeta; body: string } | null {
-  const file = path.join(BLOG_DIR, `${slug}.md`);
-  if (!fs.existsSync(file)) return null;
+  const found = fileFor(slug);
+  if (!found) return null;
+  const { file, scheduled } = found;
   const { data, body } = parse(fs.readFileSync(file, "utf8"));
   if (!data.title || !data.date) throw new Error(`content/blog/${slug}.md needs a title and a date`);
   const image = images[data.image ?? ""] ?? bay;
@@ -83,19 +102,38 @@ function read(slug: string): { meta: PostMeta; body: string } | null {
       image,
       imageAlt: data.imageAlt || data.title,
       keywords: data.keywords ? data.keywords.split(",").map((k) => k.trim()).filter(Boolean) : [],
+      scheduled,
     },
     body,
   };
 }
 
-/** All posts, newest first. */
+function slugsIn(dir: string): string[] {
+  return fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith(".md")).map((f) => f.replace(/\.md$/, "")) : [];
+}
+
+/** All visible posts (published, plus scheduled on previews), newest first. */
 export function getPosts(): PostMeta[] {
-  if (!fs.existsSync(BLOG_DIR)) return [];
-  return fs
-    .readdirSync(BLOG_DIR)
-    .filter((f) => f.endsWith(".md"))
-    .map((f) => read(f.replace(/\.md$/, ""))!.meta)
+  const slugs = new Set([...slugsIn(BLOG_DIR), ...(SHOW_SCHEDULED ? slugsIn(SCHEDULED_DIR) : [])]);
+  return [...slugs]
+    .map((slug) => read(slug)!.meta)
     .sort((a, b) => b.date.localeCompare(a.date));
+}
+
+/**
+ * Links to blog posts that aren't visible yet become plain text. A link with the
+ * title "when-live", e.g. [Read our Tarragona guide](/blog/tarragona "when-live").,
+ * disappears entirely (with its trailing full stop) until that post is published.
+ */
+function unlinkHidden(html: string): string {
+  const visible = new Set(getPosts().map((p) => p.slug));
+  return html.replace(
+    /\s?<a href="\/blog\/([^"/#?]+)\/?"( title="when-live")?>([\s\S]*?)<\/a>(\.?)/g,
+    (link, slug: string, whenLive: string | undefined, text: string, stop: string) => {
+      if (visible.has(slug)) return whenLive ? link.replace(' title="when-live"', "") : link;
+      return whenLive ? "" : `${link.match(/^\s?/)![0]}${text}${stop}`;
+    },
+  );
 }
 
 /** Converts only the text between tags, so links and image paths are never altered. */
@@ -110,7 +148,7 @@ export function getPost(slug: string, lang: Lang) {
     ...post.meta,
     title: spell(post.meta.title, lang),
     description: spell(post.meta.description, lang),
-    html: spellHtml(marked.parse(post.body, { async: false }), lang),
+    html: spellHtml(unlinkHidden(marked.parse(post.body, { async: false })), lang),
   };
 }
 

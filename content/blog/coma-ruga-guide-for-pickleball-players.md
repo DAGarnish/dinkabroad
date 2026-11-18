@@ -36,19 +36,19 @@ Coma-ruga's position on the coast is its secret weapon. All of these are easy ha
 
 ### Tarragona
 
-Around 30 km south, Tarragona was one of the most important cities of Roman Spain, and its Roman remains are a UNESCO World Heritage Site. The amphitheatre sits right above the sea, and the old town is full of Roman walls, medieval streets and good places for a vermouth.
+Around 30 km south, Tarragona was one of the most important cities of Roman Spain, and its Roman remains are a UNESCO World Heritage Site. The amphitheatre sits right above the sea, and the old town is full of Roman walls, medieval streets and good places for a vermouth. [Read our full Tarragona guide](/blog/tarragona-day-trip-from-coma-ruga "when-live").
 
 ### Sitges
 
-Up the coast towards Barcelona, Sitges is the glamorous neighbour: whitewashed streets, a seafront church, a lively bar scene and a string of beaches. Go in the late afternoon and stay for dinner.
+Up the coast towards Barcelona, Sitges is the glamorous neighbour: whitewashed streets, a seafront church, a lively bar scene and a string of beaches. Go in the late afternoon and stay for dinner. [Read our full Sitges guide](/blog/sitges-day-trip-from-coma-ruga "when-live").
 
 ### Reus
 
-Inland from Tarragona, Reus is a handsome market town known for its modernista architecture, its strong links to Antoni Gaudí, and its long tradition of vermouth. It's a great place for a slow afternoon of wandering and tapas.
+Inland from Tarragona, Reus is a handsome market town known for its modernista architecture, its strong links to Antoni Gaudí, and its long tradition of vermouth. It's a great place for a slow afternoon of wandering and tapas. [Read our full Reus guide](/blog/reus-day-trip-gaudi-vermouth "when-live").
 
 ### The Penedès
 
-Catalonia's cava country starts just inland. Small family wineries and big cava houses alike offer tastings, and the vineyards are beautiful in autumn.
+Catalonia's cava country starts just inland. Small family wineries and big cava houses alike offer tastings, and the vineyards are beautiful in autumn. [Read our full Penedès guide](/blog/penedes-cava-country-day-trip "when-live").
 
 ## When to go
 
