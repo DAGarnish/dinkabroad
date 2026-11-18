@@ -40,9 +40,15 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL(internal[1] ?? "/", request.url), 308);
   }
 
+  const spelling = spellingFor(request.headers.get("accept-language"));
+
+  // Blog posts come in both spellings, with no prices so no currency versions.
+  if (pathname === "/blog" || pathname.startsWith("/blog/")) {
+    return NextResponse.rewrite(new URL(`/${spelling}${pathname}`, request.url));
+  }
+
   if (!(pathname in englishPages)) return;
 
-  const spelling = spellingFor(request.headers.get("accept-language"));
   const currency = englishPages[pathname]
     ? currencyByCountry[request.headers.get("x-vercel-ip-country") ?? ""]
     : undefined;
@@ -56,6 +62,8 @@ export const config = {
     "/pickleball-holiday-barcelona",
     "/pickleball-vacation-barcelona",
     "/photo-credits",
+    "/blog",
+    "/blog/:path*",
     "/uk/:path*",
     "/us/:path*",
     "/gbp/:path*",

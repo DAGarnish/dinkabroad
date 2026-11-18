@@ -41,6 +41,7 @@ const en = {
     { href: "/#coma-ruga", label: "Coma-ruga" },
     { href: "/#hotel", label: "Luxury hotel" },
     { href: "/#faq", label: "FAQ" },
+    { href: "/blog", label: "Blog" },
   ],
   headerCta: "Get the info",
   openMenu: "Open menu",
@@ -52,6 +53,7 @@ const en = {
     links: [
       { href: "/pickleball-holiday-barcelona", label: "Local Dink: pickleball holiday (UK & Europe)" },
       { href: "/pickleball-vacation-barcelona", label: "Long-Haul Lob: pickleball vacation (USA & Canada)" },
+      { href: "/blog", label: "Blog: pickleball travel guides" },
     ],
     baseCamp: "Base camp",
     country: "Spain",
@@ -180,6 +182,25 @@ const UK_TO_US: Record<string, string> = {
   holidays: "vacations",
   Holiday: "Vacation",
   Holidays: "Vacations",
+  // Common in blog posts.
+  colour: "color",
+  Colour: "Color",
+  flavour: "flavor",
+  flavours: "flavors",
+  centres: "centers",
+  organise: "organize",
+  organised: "organized",
+  organising: "organizing",
+  realise: "realize",
+  practise: "practice",
+  practising: "practicing",
+  travelling: "traveling",
+  traveller: "traveler",
+  metres: "meters",
+  kilometres: "kilometers",
+  cosy: "cozy",
+  defence: "defense",
+  offence: "offense",
 };
 const UK_WORDS = new RegExp(`\\b(${Object.keys(UK_TO_US).join("|")})\\b`, "g");
 
