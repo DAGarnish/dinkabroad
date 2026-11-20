@@ -12,7 +12,7 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Vacaciones de pickleball en Barcelona, España | Dink Abroad",
+  title: "Vacaciones de pickleball cerca de Barcelona, España | Dink Abroad",
   description:
     "Retiros, campus y vacaciones de pickleball en la costa de Barcelona. Máx. 16 jugadores, entrenamientos, torneo y hotel 4★ en primera línea de playa.",
   path: "/es",

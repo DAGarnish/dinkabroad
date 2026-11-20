@@ -19,7 +19,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Stage de pickleball à Barcelone : 5 jours dès 999 €",
+  title: "Stage de pickleball près de Barcelone : 5 jours dès 999 €",
   absoluteTitle: true,
   description:
     "Stage de pickleball de 5 jours près de Barcelone : coaching le matin, tournoi, hôtel 4★ en bord de mer et excursions à Sitges et Tarragone. Dès 999 €.",

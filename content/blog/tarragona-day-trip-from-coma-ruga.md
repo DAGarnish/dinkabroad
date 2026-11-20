@@ -1,7 +1,7 @@
 ---
 title: Tarragona: A Day Trip to Roman Spain from the Costa Daurada
 description: Tarragona's Roman amphitheatre, walls and circus are a UNESCO World Heritage Site, just 30 km from Coma-ruga. What to see, where to eat and how to plan an afternoon.
-date: 2026-12-02
+date: 2026-11-19
 image: tarragona-amphitheatre
 imageAlt: The Roman amphitheatre of Tarragona above the Mediterranean
 keywords: tarragona day trip, tarragona roman ruins, things to do in tarragona, tarragona amphitheatre, tarraco unesco

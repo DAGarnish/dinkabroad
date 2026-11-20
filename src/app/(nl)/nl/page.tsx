@@ -12,7 +12,7 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Pickleballvakantie in Barcelona, Spanje | Dink Abroad",
+  title: "Pickleballvakantie bij Barcelona, Spanje | Dink Abroad",
   description:
     "Pickleballreizen en -vakanties aan de kust van Barcelona, Spanje. Max. 16 spelers, training, een toernooi en een 4★-strandhotel in Coma-ruga.",
   path: "/nl",

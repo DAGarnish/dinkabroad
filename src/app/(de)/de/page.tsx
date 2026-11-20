@@ -12,7 +12,7 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Pickleball-Camp & Urlaub in Barcelona, Spanien | Dink Abroad",
+  title: "Pickleball-Camp & Urlaub bei Barcelona, Spanien | Dink Abroad",
   description:
     "Pickleball-Reisen, Camps und Urlaub an der Küste von Barcelona. Max. 16 Spieler, Training, Turnier und ein 4★-Strandhotel in Coma-ruga.",
   path: "/de",

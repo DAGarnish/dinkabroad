@@ -9,7 +9,7 @@ import { ENGLISH_VARIANTS, englishLang } from "@/lib/i18n";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Pickleball Holiday & Camps in Barcelona, Spain | Dink Abroad",
+    default: "Pickleball Holiday & Camps near Barcelona, Spain | Dink Abroad",
     template: "%s | Dink Abroad",
   },
   description: site.description,

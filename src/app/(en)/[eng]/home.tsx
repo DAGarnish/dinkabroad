@@ -14,7 +14,7 @@ import { absoluteUrl } from "@/lib/site";
 import { type Lang, spell } from "@/lib/i18n";
 
 export const homeMetadata = pageMetadata({
-  title: "Pickleball Holiday & Camps in Barcelona, Spain | Dink Abroad",
+  title: "Pickleball Holiday & Camps near Barcelona, Spain | Dink Abroad",
   description:
     "Pickleball holidays, camps and retreats on the Barcelona coast in Spain. Max 16 players, morning coaching, a tournament and a beachfront 4★ hotel.",
   path: "/",
