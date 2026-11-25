@@ -2,13 +2,15 @@
 
 import { useActionState, useEffect, useState } from "react";
 import { submitEnquiry, type EnquiryState } from "@/app/actions";
-import { type Lang, type RetreatChoice, ui } from "@/lib/i18n";
+import { type Lang, type RetreatChoice, siteOf, ui } from "@/lib/i18n";
 import { StartDatePicker } from "./StartDatePicker";
 
 type Props = {
   lang: Lang;
   defaultRetreat?: RetreatChoice | "";
   defaultPhoneCode?: string;
+  /** The start-date picker lists Barcelona retreat dates, so pages for other trips hide it. */
+  showDates?: boolean;
 };
 
 const phoneCodes = [
@@ -35,7 +37,7 @@ const input =
 
 const initialState: EnquiryState = { status: "idle" };
 
-export function EnquiryForm({ lang, defaultRetreat = "", defaultPhoneCode = "+44" }: Props) {
+export function EnquiryForm({ lang, defaultRetreat = "", defaultPhoneCode = "+44", showDates = true }: Props) {
   const t = ui(lang).form;
   const [state, action, pending] = useActionState(submitEnquiry, initialState);
   // The success state we've already moved on from, so the empty form shows again.
@@ -104,6 +106,8 @@ export function EnquiryForm({ lang, defaultRetreat = "", defaultPhoneCode = "+44
             <option value="">{t.whichRetreat}</option>
             <option>Local Dink</option>
             <option>Long-Haul Lob</option>
+            {/* The Costa del Sol page is English only for now. */}
+            {siteOf(lang) === "en" && <option>Costa del Sol</option>}
             <option>{t.notSure}</option>
           </select>
         </label>
@@ -125,17 +129,19 @@ export function EnquiryForm({ lang, defaultRetreat = "", defaultPhoneCode = "+44
             ))}
           </select>
         </label>
-        <StartDatePicker
-          locale={ui(lang).fx.dateLocale}
-          labels={{
-            label: t.startDates,
-            help: t.startDatesHelp,
-            any: t.startDatesAny,
-            preferred: t.startDatesPreferred,
-            clear: t.startDatesClear,
-            booked: t.startDatesBooked,
-          }}
-        />
+        {showDates && (
+          <StartDatePicker
+            locale={ui(lang).fx.dateLocale}
+            labels={{
+              label: t.startDates,
+              help: t.startDatesHelp,
+              any: t.startDatesAny,
+              preferred: t.startDatesPreferred,
+              clear: t.startDatesClear,
+              booked: t.startDatesBooked,
+            }}
+          />
+        )}
         <label className="block sm:col-span-2">
           <span className="sr-only">{t.anythingElse}</span>
           <textarea name="message" rows={3} placeholder={t.message} className={input} />

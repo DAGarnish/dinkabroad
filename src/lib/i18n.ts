@@ -30,7 +30,7 @@ export function language(lang: Lang) {
   return languages.find((l) => l.site === siteOf(lang))!;
 }
 
-export type RetreatChoice = "Local Dink" | "Long-Haul Lob";
+export type RetreatChoice = "Local Dink" | "Long-Haul Lob" | "Costa del Sol";
 
 const en = {
   home: "/",
@@ -53,6 +53,7 @@ const en = {
     links: [
       { href: "/pickleball-holiday-barcelona", label: "Local Dink: pickleball holiday (UK & Europe)" },
       { href: "/pickleball-vacation-barcelona", label: "Long-Haul Lob: pickleball vacation (USA & Canada)" },
+      { href: "/pickleball-holiday-costa-del-sol", label: "Coming soon: pickleball holiday on the Costa del Sol" },
       { href: "/blog", label: "Blog: pickleball travel guides" },
     ],
     baseCamp: "Base camp",
@@ -116,6 +117,20 @@ const en = {
       ["Two restaurants", "A Mediterranean buffet and an à la carte restaurant for dinner."],
       ["Balcony rooms", "Bright, spacious, air-conditioned rooms, many with sea views."],
       ["Fitness centre", "Warm up, cool down or squeeze in an extra session."],
+    ],
+  },
+  groups: {
+    eyebrow: "Bring your own group",
+    title: "Private pickleball trips for clubs, companies & groups",
+    intro: "Clubs, coaches, companies and friends: we can build a private pickleball trip around your group, your dates and your level.",
+    contact: "Contact us",
+    cards: [
+      ["I’m a coach", "I want to take my students away for a week of focused training, match play and sunshine, with courts, hotel and logistics handled."],
+      ["We’re a group of friends", "We want our own pickleball holiday by the sea: our dates, our level, and someone else sorting the details."],
+      ["I’m a company", "I’m looking for a team-building trip that mixes sport, Mediterranean food and time together away from the office."],
+      ["I’m a travel agency", "I want to offer my clients a hosted pickleball holiday on the Barcelona coast, with a beachfront 4★ hotel."],
+      ["I’m a club", "I want to organise a club trip, training camp or tour for our members, with coaching and friendly matches against local Catalan players."],
+      ["I’m an event organiser", "I want to run a tournament, camp or pickleball event on the Costa Daurada, with courts, accommodation and local partners in place."],
     ],
   },
   enquiry: {
@@ -317,6 +332,20 @@ const es: Ui = {
       ["Gimnasio", "Para calentar, estirar o meter una sesión extra."],
     ],
   },
+  groups: {
+    eyebrow: "Trae a tu propio grupo",
+    title: "Viajes de pickleball privados para clubes, empresas y grupos",
+    intro: "Clubes, entrenadores, empresas y amigos: organizamos un viaje de pickleball privado a medida de tu grupo, tus fechas y tu nivel.",
+    contact: "Contáctanos",
+    cards: [
+      ["Soy entrenador", "Quiero llevar a mis alumnos a una semana de entrenamiento, partidos y sol, con pistas, hotel y logística resueltos."],
+      ["Somos un grupo de amigos", "Queremos nuestras propias vacaciones de pickleball junto al mar: nuestras fechas, nuestro nivel y que otro se ocupe de los detalles."],
+      ["Soy una empresa", "Busco un viaje de team building que combine deporte, cocina mediterránea y tiempo juntos lejos de la oficina."],
+      ["Soy una agencia de viajes", "Quiero ofrecer a mis clientes unas vacaciones de pickleball con anfitrión en la costa de Barcelona, en un hotel 4★ en primera línea."],
+      ["Soy un club", "Quiero organizar un viaje, un campus o una gira para nuestros socios, con entrenamientos y partidos amistosos contra jugadores catalanes."],
+      ["Organizo eventos", "Quiero celebrar un torneo, un campus o un evento de pickleball en la Costa Daurada, con pistas, alojamiento y socios locales ya listos."],
+    ],
+  },
   enquiry: {
     eyebrow: "Plazas limitadas · máx. 16 jugadores",
     bullets: ["Programa completo, fechas y precios", "Respuesta personal en 24 horas", "Sin compromiso y sin spam"],
@@ -437,6 +466,20 @@ const fr: Ui = {
       ["Deux restaurants", "Un buffet méditerranéen et un restaurant à la carte pour le dîner."],
       ["Chambres avec balcon", "Lumineuses, spacieuses et climatisées, beaucoup avec vue sur la mer."],
       ["Salle de sport", "Pour s’échauffer, récupérer ou ajouter une séance."],
+    ],
+  },
+  groups: {
+    eyebrow: "Venez avec votre groupe",
+    title: "Séjours pickleball privés pour clubs, entreprises et groupes",
+    intro: "Clubs, coachs, entreprises ou amis : nous construisons un séjour pickleball privé autour de votre groupe, de vos dates et de votre niveau.",
+    contact: "Contactez-nous",
+    cards: [
+      ["Je suis coach", "Je veux emmener mes élèves pour une semaine d’entraînement, de matchs et de soleil, avec terrains, hôtel et logistique gérés."],
+      ["Nous sommes un groupe d’amis", "Nous voulons nos propres vacances pickleball au bord de la mer : nos dates, notre niveau, et quelqu’un d’autre pour les détails."],
+      ["Je suis une entreprise", "Je cherche un séjour team building qui mêle sport, cuisine méditerranéenne et moments partagés loin du bureau."],
+      ["Je suis une agence de voyages", "Je veux proposer à mes clients des vacances pickleball accompagnées sur la côte de Barcelone, dans un hôtel 4★ en bord de plage."],
+      ["Je suis un club", "Je veux organiser un voyage, un stage ou une tournée pour nos membres, avec entraînements et matchs amicaux contre des joueurs catalans."],
+      ["J’organise des événements", "Je veux organiser un tournoi, un stage ou un événement pickleball sur la Costa Daurada, avec terrains, hébergement et partenaires locaux en place."],
     ],
   },
   enquiry: {
@@ -561,6 +604,20 @@ const de: Ui = {
       ["Fitnessstudio", "Zum Aufwärmen, Auslaufen oder für eine Extra-Einheit."],
     ],
   },
+  groups: {
+    eyebrow: "Kommen Sie mit Ihrer Gruppe",
+    title: "Private Pickleball-Reisen für Vereine, Firmen & Gruppen",
+    intro: "Vereine, Trainer, Unternehmen und Freundeskreise: Wir stellen eine private Pickleball-Reise rund um Ihre Gruppe, Ihre Termine und Ihr Niveau zusammen.",
+    contact: "Kontakt aufnehmen",
+    cards: [
+      ["Ich bin Trainer", "Ich möchte mit meinen Schülern eine Woche voller Training, Matches und Sonne verbringen, mit Plätzen, Hotel und Organisation aus einer Hand."],
+      ["Wir sind ein Freundeskreis", "Wir wünschen uns unseren eigenen Pickleball-Urlaub am Meer: unsere Termine, unser Niveau, und jemand anderes kümmert sich um die Details."],
+      ["Ich bin ein Unternehmen", "Ich suche eine Teambuilding-Reise, die Sport, mediterrane Küche und gemeinsame Zeit fern vom Büro verbindet."],
+      ["Ich bin ein Reisebüro", "Ich möchte meinen Kunden einen betreuten Pickleball-Urlaub an der Küste von Barcelona anbieten, in einem 4★-Strandhotel."],
+      ["Ich bin ein Verein", "Ich möchte eine Vereinsreise, ein Trainingslager oder eine Tour für unsere Mitglieder organisieren, mit Training und Freundschaftsspielen gegen katalanische Spieler."],
+      ["Ich organisiere Events", "Ich möchte ein Turnier, Camp oder Pickleball-Event an der Costa Daurada veranstalten, mit Plätzen, Unterkunft und lokalen Partnern vor Ort."],
+    ],
+  },
   enquiry: {
     eyebrow: "Begrenzte Plätze · max. 16 Spieler",
     bullets: ["Komplettes Programm, Termine und Preise", "Persönliche Antwort innerhalb von 24 Stunden", "Unverbindlich und ohne Spam"],
@@ -681,6 +738,20 @@ const nl: Ui = {
       ["Twee restaurants", "Een mediterraan buffet en een à-la-carterestaurant voor het diner."],
       ["Kamers met balkon", "Licht, ruim en met airco, veel met zeezicht."],
       ["Fitnessruimte", "Om op te warmen, uit te lopen of een extra sessie in te passen."],
+    ],
+  },
+  groups: {
+    eyebrow: "Kom met je eigen groep",
+    title: "Privé pickleballreizen voor clubs, bedrijven & groepen",
+    intro: "Clubs, trainers, bedrijven en vriendengroepen: we stellen een privé pickleballreis samen rond jouw groep, jouw data en jouw niveau.",
+    contact: "Neem contact op",
+    cards: [
+      ["Ik ben trainer", "Ik wil met mijn leerlingen een week trainen, wedstrijden spelen en genieten van de zon, met banen, hotel en logistiek geregeld."],
+      ["Wij zijn een vriendengroep", "We willen onze eigen pickleballvakantie aan zee: onze data, ons niveau, en iemand anders die de details regelt."],
+      ["Ik ben een bedrijf", "Ik zoek een teambuildingreis die sport, mediterraan eten en tijd samen buiten kantoor combineert."],
+      ["Ik ben een reisbureau", "Ik wil mijn klanten een begeleide pickleballvakantie aan de kust van Barcelona aanbieden, in een 4★-hotel aan het strand."],
+      ["Ik ben een club", "Ik wil een clubreis, trainingskamp of tour voor onze leden organiseren, met training en vriendschappelijke wedstrijden tegen Catalaanse spelers."],
+      ["Ik organiseer evenementen", "Ik wil een toernooi, kamp of pickleballevenement aan de Costa Daurada houden, met banen, accommodatie en lokale partners al geregeld."],
     ],
   },
   enquiry: {

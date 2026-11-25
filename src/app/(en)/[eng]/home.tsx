@@ -2,9 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import hero from "@/assets/images/coma-ruga-beach-palms.jpg";
 import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
+import mijas from "@/assets/images/mijas-pickleball-courts-terrace.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
-import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
+import { ComaRugaSection, EnquirySection, GroupsSection, HotelSection, RetreatCard } from "@/components/sections";
 import { Container, SectionHeading } from "@/components/ui";
 import type { Currency } from "@/lib/fx";
 import { pageMetadata } from "@/lib/metadata";
@@ -211,9 +212,40 @@ export function Home({ currency, lang }: { currency: Currency; lang: Lang }) {
               <RetreatCard key={r.slug} retreat={r} lang={lang} currency={currency} />
             ))}
           </div>
+          {/* Teaser for the next destination. The homepage stays Barcelona-focused until it launches. */}
+          <Link
+            href="/pickleball-holiday-costa-del-sol"
+            className="group mt-8 grid overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-line transition hover:shadow-xl sm:grid-cols-[14rem_1fr] lg:grid-cols-[18rem_1fr]"
+          >
+            <div className="relative aspect-[16/9] overflow-hidden sm:aspect-auto">
+              <Image
+                src={mijas}
+                alt=""
+                placeholder="blur"
+                fill
+                sizes="(min-width: 1024px) 18rem, (min-width: 640px) 14rem, 100vw"
+                className="object-cover transition duration-700 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-col justify-center gap-3 p-7 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+              <div>
+                <p className="text-xs font-semibold tracking-[0.2em] text-terracotta uppercase">Coming next</p>
+                <h3 className="mt-2 font-display text-3xl tracking-tight">
+                  {spell("Pickleball holiday on the Costa del Sol", lang)}
+                </h3>
+                <p className="mt-2 max-w-xl leading-relaxed text-stone">
+                  Eight floodlit courts in Mijas, near Málaga. Register your interest to hear dates first.
+                </p>
+              </div>
+              <span className="shrink-0 font-semibold underline decoration-1 underline-offset-4 transition group-hover:text-terracotta">
+                Find out more <span aria-hidden="true">→</span>
+              </span>
+            </div>
+          </Link>
         </Container>
       </section>
 
+      <GroupsSection lang={lang} />
       <ComaRugaSection lang={lang} />
       <HotelSection lang={lang} />
 

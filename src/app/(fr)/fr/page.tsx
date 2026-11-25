@@ -4,7 +4,7 @@ import hero from "@/assets/images/coma-ruga-beach-palms.jpg";
 import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
-import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
+import { ComaRugaSection, EnquirySection, GroupsSection, HotelSection, RetreatCard } from "@/components/sections";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 import { retreatsFr } from "@/lib/retreats";
@@ -216,6 +216,7 @@ export default function AccueilPage() {
         </Container>
       </section>
 
+      <GroupsSection lang="fr" />
       <ComaRugaSection lang="fr" />
       <HotelSection lang="fr" />
 

@@ -1,6 +1,8 @@
 ---
 title: Pickleball Holiday in Spain: What to Expect on Your First Trip
 description: Thinking about a pickleball holiday in Spain? Here's how a week of coaching, match play and Mediterranean afternoons near Barcelona actually works, from levels and packing to getting there.
+seoTitle: Pickleball Holiday Spain: What to Expect on Your First Trip
+seoDescription: Thinking about a pickleball holiday in Spain? How a week of coaching, match play and Mediterranean afternoons near Barcelona works, from levels to packing.
 date: 2026-11-18
 image: pickleball-club-coma-ruga-aerial
 imageAlt: Aerial view of four pickleball courts in Coma-ruga with the Mediterranean behind

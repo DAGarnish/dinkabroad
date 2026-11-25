@@ -4,7 +4,7 @@ import hero from "@/assets/images/coma-ruga-beach-palms.jpg";
 import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
 import { Faq, type FaqItem } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
-import { ComaRugaSection, EnquirySection, HotelSection, RetreatCard } from "@/components/sections";
+import { ComaRugaSection, EnquirySection, GroupsSection, HotelSection, RetreatCard } from "@/components/sections";
 import { Container, SectionHeading } from "@/components/ui";
 import { pageMetadata } from "@/lib/metadata";
 import { retreatsEs } from "@/lib/retreats";
@@ -12,7 +12,7 @@ import { faqSchema, hotelSchema, tripSchema } from "@/lib/schema";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Vacaciones de pickleball cerca de Barcelona, España | Dink Abroad",
+  title: "Retiros y vacaciones de pickleball cerca de Barcelona",
   description:
     "Retiros, campus y vacaciones de pickleball en la costa de Barcelona. Máx. 16 jugadores, entrenamientos, torneo y hotel 4★ en primera línea de playa.",
   path: "/es",
@@ -211,6 +211,7 @@ export default function InicioPage() {
         </Container>
       </section>
 
+      <GroupsSection lang="es" />
       <ComaRugaSection lang="es" />
       <HotelSection lang="es" />
 

@@ -1,6 +1,8 @@
 ---
 title: Reus: Gaudí's Home Town, Modernisme and the Home of Vermouth
 description: An afternoon in Reus, inland from the Costa Daurada: the Gaudí Centre, the modernista route, vermouth culture, shopping and where to eat. A guide for visitors to Coma-ruga.
+seoTitle: Reus Day Trip: Gaudí Centre, Modernisme & Vermouth Bars
+seoDescription: An afternoon in Reus, Gaudí's home town: the Gaudí Centre, the modernista route, vermouth bars, shopping and where to eat, near the Costa Daurada.
 date: 2026-11-19
 image: reus-casa-navas
 imageAlt: Casa Navàs, the modernista house by Lluís Domènech i Montaner on the Plaça del Mercadal in Reus

@@ -21,7 +21,12 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   // British spelling in metadata, as on the rest of the site, so "holiday" stays for UK searches.
   const post = getPost(slug, "en-GB");
   if (!post) return {};
-  const base = pageMetadata({ title: post.title, description: post.description, path: `/blog/${slug}` });
+  const base = pageMetadata({
+    title: post.seoTitle ?? post.title,
+    absoluteTitle: Boolean(post.seoTitle),
+    description: post.seoDescription ?? post.description,
+    path: `/blog/${slug}`,
+  });
   return {
     ...base,
     keywords: post.keywords,

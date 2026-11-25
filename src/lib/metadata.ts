@@ -26,6 +26,7 @@ export function pageMetadata({
   absoluteTitle = false,
   siteLang = "en",
   locale,
+  image: customImage,
 }: {
   title: string;
   description: string;
@@ -33,9 +34,11 @@ export function pageMetadata({
   absoluteTitle?: boolean;
   siteLang?: Site;
   locale?: string;
+  /** A page-specific share image (1200×630 in public/), instead of the shared one. */
+  image?: { url: string; alt: string };
 }): Metadata {
   const set = counterpart(path);
-  const image = ogImage(siteLang);
+  const image = customImage ? { ...customImage, width: 1200, height: 630 } : ogImage(siteLang);
   return {
     title: absoluteTitle ? { absolute: title } : title,
     description,

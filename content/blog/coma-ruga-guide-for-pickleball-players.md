@@ -1,6 +1,8 @@
 ---
 title: Coma-ruga: A Pickleball Player's Guide to Barcelona's Quieter Coast
 description: Where Coma-ruga is, how to get there from Barcelona, what to do between games, and the best day trips along the Costa Daurada, from Roman Tarragona to Sitges and cava country.
+seoTitle: Coma-ruga Guide for Pickleball Players near Barcelona
+seoDescription: Where Coma-ruga is, how to get there from Barcelona, what to do between games, and the best Costa Daurada day trips, from Tarragona to Sitges.
 date: 2026-11-18
 image: coma-ruga-bay
 imageAlt: The bay at Coma-ruga with calm turquoise water and the town behind the beach

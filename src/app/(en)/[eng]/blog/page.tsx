@@ -7,7 +7,8 @@ import { formatDate, getPosts } from "@/lib/blog";
 import { englishLang, spell } from "@/lib/i18n";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Pickleball Travel Blog: Spain, Barcelona & the Costa Daurada",
+  title: "Pickleball Travel Blog: Spain, Barcelona & Costa Daurada",
+  absoluteTitle: true,
   description:
     "Guides to pickleball holidays in Spain, playing near Barcelona, and getting the most out of Coma-ruga and the Costa Daurada, from the Dink Abroad team.",
   path: "/blog",

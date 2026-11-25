@@ -19,7 +19,7 @@ import { breadcrumbSchema, faqSchema, hotelSchema, tripSchema } from "@/lib/sche
 import { hotel } from "@/lib/site";
 
 export const metadata = pageMetadata({
-  title: "Vacaciones de pickleball cerca de Barcelona: 5 días desde 999 €",
+  title: "Vacaciones pickleball cerca de Barcelona: 5 días desde 999 €",
   absoluteTitle: true,
   description:
     "Campus de pickleball de 5 días cerca de Barcelona: entrenamientos, torneo, hotel 4★ en primera línea y excursiones a Sitges y Tarragona. Desde 999 €.",

@@ -1,6 +1,8 @@
 ---
 title: Sitges: A Day Trip Guide for Pickleball Players on the Costa Daurada
 description: How to spend an afternoon in Sitges from Coma-ruga or Barcelona: the seafront church, the beaches, the modernista museums, where to eat, and the best wine tasting nearby.
+seoTitle: Sitges Day Trip from Barcelona: Beaches, Old Town & Food
+seoDescription: How to spend a day in Sitges from Barcelona or Coma-ruga: the seafront church, beaches, modernista museums, where to eat and wine tasting nearby.
 date: 2026-11-19
 image: sitges
 imageAlt: The seafront and church of Sant Bartomeu i Santa Tecla in Sitges

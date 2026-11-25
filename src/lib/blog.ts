@@ -26,6 +26,8 @@ import tarragona from "@/assets/images/tarragona-amphitheatre.jpg";
  *   image: coma-ruga-bay          (one of the names in `images` below)
  *   imageAlt: The bay at Coma-ruga
  *   keywords: pickleball holiday spain, pickleball barcelona
+ *   seoTitle: Optional <title> for Google, max 60 characters (else the title + " | Dink Abroad")
+ *   seoDescription: Optional snippet for Google, 120–155 characters (else the description)
  *   ---
  *
  * Write posts in British English, like the rest of the English site; US visitors
@@ -67,6 +69,9 @@ export type PostMeta = {
   imageAlt: string;
   keywords: string[];
   scheduled: boolean;
+  /** Search-result title and snippet, when the on-page title and standfirst are too long for Google. */
+  seoTitle?: string;
+  seoDescription?: string;
 };
 
 function parse(file: string): { data: Record<string, string>; body: string } {
@@ -105,6 +110,8 @@ function read(slug: string): { meta: PostMeta; body: string } | null {
       imageAlt: data.imageAlt || data.title,
       keywords: data.keywords ? data.keywords.split(",").map((k) => k.trim()).filter(Boolean) : [],
       scheduled,
+      seoTitle: data.seoTitle || undefined,
+      seoDescription: data.seoDescription || undefined,
     },
     body,
   };

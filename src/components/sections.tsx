@@ -2,6 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import bay from "@/assets/images/coma-ruga-bay.jpg";
 import seafront from "@/assets/images/coma-ruga-seafront.jpg";
+import palms from "@/assets/images/coma-ruga-palms.jpg";
+import penedes from "@/assets/images/penedes-vineyards.jpg";
+import clubAerial from "@/assets/images/pickleball-club-coma-ruga-aerial.jpg";
+import courts from "@/assets/images/pickleball-courts-coma-ruga.jpg";
+import sagrada from "@/assets/images/sagrada-familia.jpg";
+import tarragona from "@/assets/images/tarragona-amphitheatre.jpg";
 import { type Lang, type RetreatChoice, language, ui } from "@/lib/i18n";
 import { type Currency, convertPrice } from "@/lib/fx";
 import { type Retreat, formatPrice } from "@/lib/retreats";
@@ -322,18 +328,65 @@ export function HotelSection({ lang }: { lang: Lang }) {
   );
 }
 
+// Photos for the group cards, in the same order as `groups.cards` in i18n.ts.
+const groupImages = [courts, palms, penedes, sagrada, clubAerial, tarragona];
+
+// "Who are you?" cards for groups: four across, then two wide ones, each linking to the enquiry form.
+export function GroupsSection({ lang }: { lang: Lang }) {
+  const t = ui(lang).groups;
+  return (
+    <section id="groups" className="scroll-mt-10 pt-24 sm:pt-32">
+      <Container>
+        <SectionHeading eyebrow={t.eyebrow} title={t.title} intro={t.intro} align="center" />
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {t.cards.map(([title, text], i) => {
+            const wide = i >= 4;
+            return (
+              <Link
+                key={title}
+                href="#enquire"
+                className={`group flex flex-col overflow-hidden rounded-[2rem] bg-white shadow-sm ring-1 ring-line transition hover:-translate-y-1 hover:shadow-xl ${wide ? "lg:col-span-2" : ""}`}
+              >
+                <div className={`relative overflow-hidden ${wide ? "aspect-[16/9] lg:aspect-[2/1]" : "aspect-[16/9] sm:aspect-[6/5]"}`}>
+                  <Image
+                    src={groupImages[i]}
+                    alt=""
+                    placeholder="blur"
+                    fill
+                    sizes={wide ? "(min-width: 1024px) 50vw, (min-width: 640px) 50vw, 100vw" : "(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"}
+                    className="object-cover transition duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-7 sm:p-8">
+                  <h3 className="font-display text-2xl tracking-tight sm:text-3xl">{title}</h3>
+                  <p className="mt-3 leading-relaxed text-stone">{text}</p>
+                  <span className="mt-auto pt-6 font-semibold text-ink underline decoration-1 underline-offset-4 transition group-hover:text-terracotta">
+                    {t.contact} <span aria-hidden="true">→</span>
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </Container>
+    </section>
+  );
+}
+
 export function EnquirySection({
   lang,
   title,
   intro,
   defaultRetreat,
   defaultPhoneCode,
+  showDates,
 }: {
   lang: Lang;
   title: string;
   intro: string;
   defaultRetreat?: RetreatChoice;
   defaultPhoneCode?: string;
+  showDates?: boolean;
 }) {
   const t = ui(lang).enquiry;
   return (
@@ -357,7 +410,7 @@ export function EnquirySection({
           </ul>
           <WhatsAppButton label={t.whatsapp} message={t.whatsappMessage} />
         </div>
-        <EnquiryForm lang={lang} defaultRetreat={defaultRetreat} defaultPhoneCode={defaultPhoneCode} />
+        <EnquiryForm lang={lang} defaultRetreat={defaultRetreat} defaultPhoneCode={defaultPhoneCode} showDates={showDates} />
       </Container>
     </section>
   );

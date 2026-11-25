@@ -14,6 +14,7 @@ const englishPages: Record<string, boolean> = {
   "/": true,
   "/pickleball-holiday-barcelona": true,
   "/pickleball-vacation-barcelona": true,
+  "/pickleball-holiday-costa-del-sol": false,
   "/photo-credits": false,
 };
 
@@ -61,6 +62,7 @@ export const config = {
     "/",
     "/pickleball-holiday-barcelona",
     "/pickleball-vacation-barcelona",
+    "/pickleball-holiday-costa-del-sol",
     "/photo-credits",
     "/blog",
     "/blog/:path*",

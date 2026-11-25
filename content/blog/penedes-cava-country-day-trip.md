@@ -1,6 +1,8 @@
 ---
 title: The Penedès: Exploring Catalonia's Cava Country from the Coast
 description: Coma-ruga sits on the edge of the Penedès, Catalonia's wine country. How to explore the cava cellars, family vineyards and wine towns of the region on a day off from pickleball.
+seoTitle: Penedès Day Trip: Cava Tasting & Wineries near Barcelona
+seoDescription: Plan a day in the Penedès, Catalonia's cava country: cellar tours, family vineyards and wine towns, an easy trip from Barcelona's coast.
 date: 2026-11-19
 image: penedes-vineyards
 imageAlt: Autumn vineyards in the Alt Penedès, Catalonia

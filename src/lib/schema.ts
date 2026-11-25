@@ -15,7 +15,7 @@ export const organizationSchema = {
   description: site.description,
   slogan: site.tagline,
   areaServed: ["GB", "IE", "NL", "DE", "BE", "FR", "US", "CA"],
-  knowsAbout: ["Pickleball", "Pickleball holidays", "Sports travel", "Barcelona", "Costa Daurada"],
+  knowsAbout: ["Pickleball", "Pickleball holidays", "Pickleball camps", "Sports travel", "Barcelona", "Costa Daurada", "Costa del Sol", "Málaga"],
 };
 
 export const websiteSchema = {

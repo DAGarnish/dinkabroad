@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages },
     }));
   });
+  // English-only pages (no translations yet, so no hreflang alternates).
+  const englishOnly = ["/pickleball-holiday-costa-del-sol"].map((path) => ({
+    url: absoluteUrl(path),
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  }));
   // The blog is English only, so no hreflang alternates.
   const posts = getPosts();
   const blog = [
@@ -26,5 +32,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
   ];
-  return [...pages, ...blog];
+  return [...pages, ...englishOnly, ...blog];
 }
