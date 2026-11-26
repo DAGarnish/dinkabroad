@@ -31,7 +31,7 @@ export const metadata = pageMetadata({
 const venueFacts = [
   ["8 courts", "Dedicated pickleball courts, all floodlit, plus clay and hard tennis courts"],
   ["Since 1979", "A family-run club in the foothills of Mijas, now a home for pickleball on the coast"],
-  ["Mountain views", "A shaded terrace overlooking the courts, with the Sierra de Mijas behind"],
+  ["Mountain views", "A shaded terrace overlooking the courts, away from the coastal wind, with the Sierra de Mijas behind"],
   ["Local players", "A friendly, established pickleball community to play with and against"],
 ];
 
